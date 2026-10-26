@@ -1,0 +1,317 @@
+{
+  "version": 1,
+  "title": "Tiny delivery",
+  "duration": 16,
+  "fps": 30,
+  "captions": [],
+  "score": [
+    {
+      "at": 0.1,
+      "pitch": 36,
+      "length": 0.16,
+      "voice": "tick",
+      "gain": 0.16
+    },
+    {
+      "at": 0.25,
+      "pitch": 60,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 0.75,
+      "pitch": 67,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 0.9,
+      "pitch": 43,
+      "length": 0.16,
+      "voice": "tick",
+      "gain": 0.16
+    },
+    {
+      "at": 1.25,
+      "pitch": 72,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 1.7,
+      "pitch": 38,
+      "length": 0.16,
+      "voice": "tick",
+      "gain": 0.16
+    },
+    {
+      "at": 1.75,
+      "pitch": 67,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 2.25,
+      "pitch": 60,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 2.5,
+      "pitch": 43,
+      "length": 0.16,
+      "voice": "tick",
+      "gain": 0.16
+    },
+    {
+      "at": 2.75,
+      "pitch": 67,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 3.25,
+      "pitch": 74,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 3.3,
+      "pitch": 36,
+      "length": 0.16,
+      "voice": "tick",
+      "gain": 0.16
+    },
+    {
+      "at": 3.75,
+      "pitch": 72,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 4.1,
+      "pitch": 43,
+      "length": 0.16,
+      "voice": "tick",
+      "gain": 0.16
+    },
+    {
+      "at": 4.25,
+      "pitch": 62,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 4.75,
+      "pitch": 69,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 4.9,
+      "pitch": 38,
+      "length": 0.16,
+      "voice": "tick",
+      "gain": 0.16
+    },
+    {
+      "at": 5.25,
+      "pitch": 74,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 5.7,
+      "pitch": 43,
+      "length": 0.16,
+      "voice": "tick",
+      "gain": 0.16
+    },
+    {
+      "at": 5.75,
+      "pitch": 69,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 6.25,
+      "pitch": 65,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 6.5,
+      "pitch": 36,
+      "length": 0.16,
+      "voice": "tick",
+      "gain": 0.16
+    },
+    {
+      "at": 6.75,
+      "pitch": 72,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 7.25,
+      "pitch": 77,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 7.3,
+      "pitch": 43,
+      "length": 0.16,
+      "voice": "tick",
+      "gain": 0.16
+    },
+    {
+      "at": 7.75,
+      "pitch": 76,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 8.1,
+      "pitch": 48,
+      "length": 0.16,
+      "voice": "tick",
+      "gain": 0.16
+    },
+    {
+      "at": 8.25,
+      "pitch": 60,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 8.75,
+      "pitch": 64,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 8.9,
+      "pitch": 55,
+      "length": 0.16,
+      "voice": "tick",
+      "gain": 0.16
+    },
+    {
+      "at": 9.25,
+      "pitch": 67,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 9.7,
+      "pitch": 60,
+      "length": 0.16,
+      "voice": "tick",
+      "gain": 0.16
+    },
+    {
+      "at": 9.75,
+      "pitch": 72,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 10.25,
+      "pitch": 76,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 10.5,
+      "pitch": 67,
+      "length": 0.16,
+      "voice": "tick",
+      "gain": 0.16
+    },
+    {
+      "at": 10.75,
+      "pitch": 79,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 11.25,
+      "pitch": 84,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 11.3,
+      "pitch": 72,
+      "length": 0.16,
+      "voice": "tick",
+      "gain": 0.16
+    },
+    {
+      "at": 11.75,
+      "pitch": 79,
+      "length": 0.38,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 12.1,
+      "pitch": 76,
+      "length": 0.16,
+      "voice": "tick",
+      "gain": 0.16
+    },
+    {
+      "at": 13.2,
+      "pitch": 72,
+      "length": 1.5,
+      "voice": "bell",
+      "gain": 0.2
+    },
+    {
+      "at": 13.47,
+      "pitch": 76,
+      "length": 1.5,
+      "voice": "bell",
+      "gain": 0.2
+    },
+    {
+      "at": 13.74,
+      "pitch": 79,
+      "length": 1.5,
+      "voice": "bell",
+      "gain": 0.2
+    },
+    {
+      "at": 14.01,
+      "pitch": 84,
+      "length": 1.5,
+      "voice": "bell",
+      "gain": 0.2
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "title": "Pocket greenhouse",
+  "duration": 16,
+  "fps": 30,
+  "captions": [],
+  "score": [
+    {
+      "at": 0.15,
+      "pitch": 48,
+      "length": 1.55,
+      "voice": "soft",
+      "gain": 0.08
+    },
+    {
+      "at": 0.35,
+      "pitch": 60,
+      "length": 0.72,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 1.15,
+      "pitch": 64,
+      "length": 0.72,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 1.95,
+      "pitch": 67,
+      "length": 0.72,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 1.95,
+      "pitch": 48,
+      "length": 1.55,
+      "voice": "soft",
+      "gain": 0.08
+    },
+    {
+      "at": 2.75,
+      "pitch": 72,
+      "length": 0.72,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 3.55,
+      "pitch": 67,
+      "length": 0.72,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 3.75,
+      "pitch": 53,
+      "length": 1.55,
+      "voice": "soft",
+      "gain": 0.08
+    },
+    {
+      "at": 4.35,
+      "pitch": 64,
+      "length": 0.72,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 5.15,
+      "pitch": 62,
+      "length": 0.72,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 5.55,
+      "pitch": 53,
+      "length": 1.55,
+      "voice": "soft",
+      "gain": 0.08
+    },
+    {
+      "at": 5.95,
+      "pitch": 65,
+      "length": 0.72,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 6.75,
+      "pitch": 69,
+      "length": 0.72,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 7.35,
+      "pitch": 55,
+      "length": 1.55,
+      "voice": "soft",
+      "gain": 0.08
+    },
+    {
+      "at": 7.55,
+      "pitch": 74,
+      "length": 0.72,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 8.35,
+      "pitch": 69,
+      "length": 0.72,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 9.15,
+      "pitch": 65,
+      "length": 0.72,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 9.15,
+      "pitch": 55,
+      "length": 1.55,
+      "voice": "soft",
+      "gain": 0.08
+    },
+    {
+      "at": 9.95,
+      "pitch": 64,
+      "length": 0.72,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 10,
+      "pitch": 79,
+      "length": 1.6,
+      "voice": "bell",
+      "gain": 0.15
+    },
+    {
+      "at": 10.4,
+      "pitch": 84,
+      "length": 1.6,
+      "voice": "bell",
+      "gain": 0.15
+    },
+    {
+      "at": 10.75,
+      "pitch": 67,
+      "length": 0.72,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 10.8,
+      "pitch": 88,
+      "length": 1.6,
+      "voice": "bell",
+      "gain": 0.15
+    },
+    {
+      "at": 10.95,
+      "pitch": 48,
+      "length": 1.55,
+      "voice": "soft",
+      "gain": 0.08
+    },
+    {
+      "at": 11.2,
+      "pitch": 91,
+      "length": 1.6,
+      "voice": "bell",
+      "gain": 0.15
+    },
+    {
+      "at": 11.55,
+      "pitch": 72,
+      "length": 0.72,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 12.35,
+      "pitch": 76,
+      "length": 0.72,
+      "voice": "pluck",
+      "gain": 0.24
+    },
+    {
+      "at": 12.75,
+      "pitch": 60,
+      "length": 1.55,
+      "voice": "soft",
+      "gain": 0.08
+    }
+  ]
+}

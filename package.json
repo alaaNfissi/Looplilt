@@ -1,0 +1,20 @@
+{
+  "name": "looplilt",
+  "version": "0.1.0",
+  "description": "Small stories. Real motion. Editable Canvas films with local video export.",
+  "type": "module",
+  "private": true,
+  "author": "Alaa Nfissi",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "bin": { "looplilt": "bin/looplilt.mjs" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "test:browser": "node scripts/verify-browser.mjs",
+    "setup": "playwright install chromium",
+    "demo": "node bin/looplilt.mjs build examples/paper-garden --out output/paper-garden.html",
+    "site": "node scripts/build-site.mjs",
+    "pack": "node scripts/pack.mjs"
+  },
+  "dependencies": { "playwright": "1.58.2" }
+}

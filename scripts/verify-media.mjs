@@ -1,0 +1,23 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import assert from 'node:assert/strict';
+import { renderProject, storyboard } from '../lib/render.mjs';
+import { makeSound } from '../lib/sound.mjs';
+
+const root = fileURLToPath(new URL('../', import.meta.url));
+await fs.mkdir(path.join(root, '.validation'), { recursive: true });
+const dir = await fs.mkdtemp(path.join(root, '.validation/media-'));
+const project = { version: 1, title: 'Narration mixing check', duration: 2, fps: 12, captions: [{ start: 0, end: 2, text: 'A local audio track and readable captions.' }], score: [] };
+await fs.writeFile(path.join(dir, 'project.json'), JSON.stringify(project));
+await fs.writeFile(path.join(dir, 'draw.js'), 'function drawFrame({ctx,w,h,t}) { ctx.fillStyle="#f5f2e8";ctx.fillRect(0,0,w,h);ctx.fillStyle="#ea815e";ctx.fillRect(w*0.15+t*w*0.2,h*0.35,w*0.15,h*0.2); }');
+const voice = path.join(dir, 'test-tone.wav');
+await fs.writeFile(voice, makeSound({ duration: 1.5, score: [{ at: 0, length: 1.4, pitch: 60, gain: 0.2 }] }));
+const out = path.join(dir, 'with-local-audio.mp4');
+const report = await renderProject(dir, out, { format: 'portrait', narration: voice });
+assert.equal(report.frames, 24); assert.equal(report.duration, 2); assert.equal(report.width, 720);
+await assert.rejects(renderProject(dir, out), /already exists/);
+await fs.writeFile(path.join(dir, 'too-long.wav'), makeSound({ duration: 3, score: [] }));
+await assert.rejects(renderProject(dir, path.join(dir, 'invalid.mp4'), { narration: path.join(dir, 'too-long.wav') }), /longer than the film/);
+await storyboard(dir, path.join(dir, 'storyboard.png'), 'portrait');
+console.log(`Caption, local audio mixing, duration, overwrite protection, and storyboard checks passed: ${dir}`);

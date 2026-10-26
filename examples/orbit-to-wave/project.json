@@ -1,0 +1,233 @@
+{
+  "version": 1,
+  "title": "One motion. Two views.",
+  "duration": 16,
+  "fps": 30,
+  "captions": [],
+  "score": [
+    {
+      "at": 0,
+      "pitch": 45,
+      "length": 3.2,
+      "voice": "soft",
+      "gain": 0.1
+    },
+    {
+      "at": 0.3,
+      "pitch": 57,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 0.9,
+      "pitch": 64,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 1.5,
+      "pitch": 69,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 2.1,
+      "pitch": 76,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 2.7,
+      "pitch": 72,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 3.3,
+      "pitch": 69,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 3.6,
+      "pitch": 48,
+      "length": 3.2,
+      "voice": "soft",
+      "gain": 0.1
+    },
+    {
+      "at": 3.9,
+      "pitch": 64,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 4.5,
+      "pitch": 60,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 5.1,
+      "pitch": 57,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 5.7,
+      "pitch": 64,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 6.3,
+      "pitch": 69,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 6.9,
+      "pitch": 76,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 7.2,
+      "pitch": 41,
+      "length": 3.2,
+      "voice": "soft",
+      "gain": 0.1
+    },
+    {
+      "at": 7.5,
+      "pitch": 72,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 8.1,
+      "pitch": 69,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 8.7,
+      "pitch": 64,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 9.3,
+      "pitch": 60,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 9.9,
+      "pitch": 57,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 10,
+      "pitch": 81,
+      "length": 1.8,
+      "voice": "bell",
+      "gain": 0.12
+    },
+    {
+      "at": 10.5,
+      "pitch": 64,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 10.8,
+      "pitch": 43,
+      "length": 3.2,
+      "voice": "soft",
+      "gain": 0.1
+    },
+    {
+      "at": 11.1,
+      "pitch": 69,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 11.2,
+      "pitch": 76,
+      "length": 1.8,
+      "voice": "bell",
+      "gain": 0.12
+    },
+    {
+      "at": 11.7,
+      "pitch": 76,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 12.3,
+      "pitch": 72,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 12.4,
+      "pitch": 81,
+      "length": 1.8,
+      "voice": "bell",
+      "gain": 0.12
+    },
+    {
+      "at": 12.9,
+      "pitch": 69,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 13.5,
+      "pitch": 64,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    },
+    {
+      "at": 13.6,
+      "pitch": 84,
+      "length": 1.8,
+      "voice": "bell",
+      "gain": 0.12
+    },
+    {
+      "at": 14.1,
+      "pitch": 60,
+      "length": 0.55,
+      "voice": "soft",
+      "gain": 0.16
+    }
+  ]
+}

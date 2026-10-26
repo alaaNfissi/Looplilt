@@ -1,0 +1,4 @@
+interface:
+  display_name: "Looplilt"
+  short_description: "Make editable visual stories and local videos"
+  default_prompt: "Use $looplilt to turn my idea into an editable animation with original visuals and a local video export."
