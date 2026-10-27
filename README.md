@@ -1,13 +1,18 @@
 <p align="center"><img src="site/assets/banner.svg" alt="Looplilt — Small stories. Real motion." width="100%"></p>
 
-<p align="center"><strong>Editable Canvas stories. Standalone players. Local video export.</strong></p>
-<p align="center"><a href="https://alaanfissi.github.io/Looplilt/">Watch the films</a> · <a href="#quick-start">Make your first film</a> · <a href="docs/authoring.md">Drawing guide</a> · <a href="LICENSE">MIT license</a></p>
+<p align="center"><strong>A little studio for ideas that move.</strong></p>
+<p align="center">Editable Canvas scenes → a player you can scrub → a film you can share.</p>
+<p align="center"><a href="https://alaanfissi.github.io/Looplilt/">Visit the screening room ↗</a> &nbsp; · &nbsp; <a href="#quick-start">Make your first film</a> &nbsp; · &nbsp; <a href="docs/authoring.md">Drawing guide</a> &nbsp; · &nbsp; <a href="LICENSE">MIT licensed</a></p>
 
 Looplilt is a small animation toolkit by **Alaa Nfissi**. A project has two files: a timeline in `project.json` and a drawing in `draw.js`. Change a shape, move a beat, add a score, and see the result in a self-contained HTML player. When it feels right, export an MP4.
 
+**Draw it. Give it rhythm. Make it a film.** Everything runs on your computer. The project stays small, the source stays editable, and the finished film is yours to share.
+
 The examples, illustrations, characters, and scores in this repository were created for Looplilt. Open one, change something, and make it yours.
 
-## Three original starting points
+## The screening room
+
+Three working projects. Three different visual languages. Each one is an invitation to try something.
 
 | Paper world | Visual explanation | Pixel comedy |
 | --- | --- | --- |
@@ -15,6 +20,12 @@ The examples, illustrations, characters, and scores in this repository were crea
 | [Pocket greenhouse](examples/paper-garden) — a seed becomes a paper flower. | [One motion. Two views.](examples/orbit-to-wave) — an orbit traces a wave. | [Tiny delivery](examples/tiny-delivery) — a robot learns to read the box. |
 
 Each film is 16 seconds, with an original procedural score. [Watch and download the wide and vertical versions](https://alaanfissi.github.io/Looplilt/#films).
+
+| Make it yours | Keep the creative loop short |
+| --- | --- |
+| **A drawing you can change** | Two project files, normal Canvas APIs, and time you can reason about. |
+| **A preview you can pass around** | One self-contained HTML file with playback, seeking, and sound. |
+| **A film you can take anywhere** | Local H.264 export, three frame formats, captions, and your narration. |
 
 ## Quick start
 
@@ -87,6 +98,7 @@ ChatGPT needs an environment that can edit files and run Node, a browser, and FF
 - [Architecture](docs/architecture.md): how the player and renderer fit together.
 - [Contributing](CONTRIBUTING.md): focused improvements and original examples.
 - [Validation](docs/validation.md): what is checked and what still needs a human eye.
+- [Brand kit](docs/brand.md): editable logos, colors, repository cover, and social artwork.
 
 ```sh
 npm test

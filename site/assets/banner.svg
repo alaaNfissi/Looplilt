@@ -1,6 +1,64 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
-<title id="title">Looplilt</title><desc id="desc">Small stories. Real motion. Editable Canvas films by Alaa Nfissi.</desc>
-<rect width="1280" height="640" rx="28" fill="#172824"/>
-<g fill="none" stroke="#d9e7ce" opacity=".09"><path d="M40 120H1240M40 240H1240M40 360H1240M40 480H1240M40 600H1240M120 40V600M360 40V600M600 40V600M840 40V600M1080 40V600"/></g>
-<g font-family="Arial,Helvetica,sans-serif" fill="#f5f2e8"><text x="72" y="114" font-size="16" letter-spacing="5" fill="#b8cda8">CODE / MOTION / STORY</text><text x="66" y="270" font-size="115" font-weight="700" letter-spacing="-6">Looplilt</text><text x="73" y="345" font-size="32" fill="#d0dcc6">Small stories. Real motion.</text><text x="73" y="538" font-size="19" fill="#b8cda8">Your story. Your source. Your film.</text></g>
-<g transform="translate(940 322) rotate(-12)"><rect x="-135" y="-150" width="238" height="295" rx="12" fill="#d3e4b7" transform="rotate(-14)"/><rect x="-105" y="-140" width="238" height="295" rx="12" fill="#ea815e" transform="rotate(8)"/><rect x="-116" y="-134" width="238" height="295" rx="12" fill="#f5f2e8"/><path d="M40-55a75 75 0 1 0 23 115" fill="none" stroke="#172824" stroke-width="19" stroke-linecap="round"/><path d="M55-97v57H-2" fill="none" stroke="#172824" stroke-width="19" stroke-linejoin="round"/><path d="m-26-8 58 32-58 32Z" fill="#ea815e"/><path d="M-75 119H-2" stroke="#9ea88f" stroke-width="6"/></g></svg>
+<title id="title">Looplilt — Small stories. Real motion.</title>
+<desc id="desc">A little studio for ideas that move. An original paper flower, orbit diagram, and pixel robot sit in a playful stack of film frames.</desc>
+<defs>
+  <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#38544a"/></pattern>
+</defs>
+<rect width="1280" height="640" rx="0" fill="#102d29"/>
+<rect x="650" y="30" width="600" height="580" fill="url(#dots)" opacity=".55"/>
+<path d="M778 145c130-93 373 10 364 196s-235 252-361 119" fill="none" stroke="#587359"/>
+<circle cx="1129" cy="245" r="8" fill="#ff956f"/>
+<g transform="translate(57 44) scale(.6)"><path d="M27 20v36c0 13 10 23 23 23s23-10 23-23-10-23-23-23-23 10-23 23" fill="none" stroke="#d5ed74" stroke-width="13" stroke-linecap="round"/><circle cx="74" cy="18" r="7" fill="#ff956f"/></g>
+<text x="119" y="89" fill="#f5f0e6" font-family="Arial,Helvetica,sans-serif" font-size="40" font-weight="700" letter-spacing="-2">looplilt</text>
+<text x="62" y="182" fill="#c5d4b9" font-family="Consolas,monospace" font-size="11" letter-spacing="2.5">A LITTLE STUDIO FOR IDEAS THAT MOVE</text>
+<text x="56" y="286" fill="#f5f0e6" font-family="Arial,Helvetica,sans-serif" font-size="84" font-weight="600" letter-spacing="-4">Small stories.</text>
+<text x="57" y="378" fill="#d5ed74" font-family="Georgia,serif" font-size="91" font-style="italic" letter-spacing="-4">Real motion.</text>
+<text x="62" y="440" fill="#c1d0c0" font-family="Arial,Helvetica,sans-serif" font-size="19">Draw it. Give it rhythm. Make it a film.</text>
+<g font-family="Consolas,monospace" font-size="11" fill="#d5e2c8">
+<text x="62" y="548">EDITABLE SCENES</text><text x="220" y="548" fill="#d5ed74">+</text>
+<text x="249" y="548">ORIGINAL SOUND</text><text x="400" y="548" fill="#d5ed74">+</text>
+<text x="430" y="548">LOCAL EXPORT</text></g>
+<path d="M62 574h508" stroke="#476049"/>
+<text x="62" y="603" fill="#91a78e" font-family="Consolas,monospace" font-size="10" letter-spacing="1.5">OPEN SOURCE · MIT LICENSE · BY ALAA NFISSI</text>
+<g transform="translate(804 80) rotate(10 190 200)">
+<rect x="7" y="10" width="352" height="353" rx="9" fill="#081d1b" opacity=".45"/>
+<rect width="352" height="353" rx="9" fill="#b9aedb"/>
+<text x="18" y="29" fill="#102d29" font-family="Consolas,monospace" font-size="9" letter-spacing="1">03 / A LITTLE DIFFERENT PERSPECTIVE</text>
+<path d="M19 45h313" stroke="#82799e"/>
+<g transform="translate(230 82) scale(.75)" fill="#102d29">
+<path d="M26 0h7v22h-7zM4 22h52v7h8v48h-8v7H4v-7h-8V29h8zM8 88h40v35H8zM0 91h-10v28H0zM56 91h10v28H56zM8 126h12v19H0v-7h8zM36 126h12v12h8v7H36z"/>
+<path d="M7 36h42v27H7z" fill="#d5ed74"/><path d="M14 44h6v7h-6zM35 44h6v7h-6z" fill="#102d29"/><path d="M24 56h8v3h-8z" fill="#102d29"/>
+<rect x="61" y="88" width="48" height="45" fill="#ff956f"/><path d="M84 88v45" stroke="#b4684f" stroke-width="5"/>
+</g>
+<path d="M25 269h300" stroke="#82799e"/><text x="25" y="303" fill="#102d29" font-family="Arial,Helvetica,sans-serif" font-size="22">Think sideways.</text>
+<text x="25" y="328" fill="#3b4443" font-family="Consolas,monospace" font-size="9">A CHARACTER. A SETUP. A LITTLE SURPRISE.</text>
+</g>
+<g transform="translate(688 204) rotate(-9 160 190)">
+<rect x="7" y="9" width="305" height="335" rx="7" fill="#081d1b" opacity=".45"/>
+<rect width="305" height="335" rx="7" fill="#f5f0e6"/>
+<text x="18" y="28" fill="#4e6253" font-family="Consolas,monospace" font-size="9" letter-spacing="1">01 / POCKET GREENHOUSE</text>
+<rect x="15" y="42" width="275" height="235" fill="#e5e8cd" rx="3"/>
+<circle cx="245" cy="79" r="18" fill="#d5ed74"/>
+<path d="M151 224V115" fill="none" stroke="#496c49" stroke-width="7"/>
+<path d="M150 192c-45 0-58-27-50-31 32-3 48 12 50 31M155 171c38 0 52-26 45-31-29-2-43 15-45 31" fill="#73955e"/>
+<g transform="translate(152 116)" fill="#ff956f">
+<ellipse cy="-20" rx="17" ry="24"/><ellipse cy="20" rx="17" ry="24"/><ellipse cx="-20" rx="24" ry="17"/><ellipse cx="20" rx="24" ry="17"/>
+</g>
+<circle cx="152" cy="116" r="15" fill="#d5ed74"/><circle cx="148" cy="114" r="2" fill="#102d29"/><circle cx="157" cy="114" r="2" fill="#102d29"/><path d="M149 121q4 3 7 0" fill="none" stroke="#102d29" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M113 213h79l-12 48h-55z" fill="#c77b56"/><rect x="109" y="208" width="87" height="12" rx="3" fill="#dd9567"/>
+<path d="M111 260h84" stroke="#657954" stroke-width="2"/>
+<g transform="translate(225 144) rotate(-16)"><ellipse cx="-4" cy="-7" rx="9" ry="5" fill="#fffdf6"/><ellipse cx="5" cy="-7" rx="9" ry="5" fill="#fffdf6"/><ellipse rx="11" ry="7" fill="#d5ed74"/><path d="M-3-6v12M4-6v12" stroke="#102d29" stroke-width="3"/><circle cx="10" cy="-1" r="2" fill="#102d29"/></g>
+<text x="21" y="307" fill="#102d29" font-family="Georgia,serif" font-size="22" font-style="italic">Let a little idea grow.</text>
+</g>
+<g transform="translate(1012 425) rotate(7 95 66)">
+<rect x="4" y="5" width="193" height="132" rx="6" fill="#081d1b" opacity=".45"/>
+<rect width="193" height="132" rx="6" fill="#d5ed74"/>
+<text x="13" y="22" fill="#102d29" font-family="Consolas,monospace" font-size="8">02 / FIND THE RHYTHM</text>
+<circle cx="48" cy="72" r="27" fill="none" stroke="#78934f" stroke-width="1.5"/>
+<path d="M48 45v54M21 72h157" stroke="#9bb75c"/>
+<path d="M78 72q14-46 28 0t28 0t28 0" fill="none" stroke="#102d29" stroke-width="3"/>
+<path d="M48 72l20-18h92" fill="none" stroke="#b27046" stroke-dasharray="3 3"/>
+<circle cx="68" cy="54" r="5" fill="#ff956f" stroke="#102d29"/>
+<text x="14" y="119" fill="#102d29" font-family="Georgia,serif" font-size="13" font-style="italic">One motion. Two views.</text>
+</g>
+</svg>

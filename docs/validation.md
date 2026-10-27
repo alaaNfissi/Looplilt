@@ -17,3 +17,9 @@ The initial release was checked on Windows with Node 24.19.0. The 16 core tests 
 All six bundled MP4s contain 480 frames at 30 fps for a 16-second duration. Their measured integrated loudness ranges from −16.13 to −15.54 LUFS, with true peaks from −5.78 to −1.49 dBTP. Every file passed format checks and full decoding. A separate short fixture verified captions, local audio mixing, duration rejection, existing-output protection, and storyboard generation.
 
 The ZIPs were also checked with Python's ZIP reader. These automated checks and sampled visual inspections do not imply that narration was recorded or that the example scores received a listening review.
+
+## Website and identity refresh — 26 October 2026
+
+The screening-room site was checked at 320, 390, 768, and 1440 px widths. The checks cover horizontal overflow, local links, all six video sources, format switching, hero film selection, pause preservation, keyboard seeking, and reduced-motion startup. The local verification server supports video byte ranges so seeking behaves as it does on the deployed site. Desktop and phone layouts and the original SVG cover were also inspected visually.
+
+The 16 core tests remain passing. The brand kit includes editable light and dark wordmarks, a standalone mark, an SVG icon, and reproducible PNG social and touch assets.

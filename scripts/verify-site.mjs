@@ -13,7 +13,14 @@ const server = http.createServer(async (request, response) => {
     const file = path.resolve(site, '.' + decodeURIComponent(url.pathname === '/' ? '/index.html' : url.pathname));
     if (!file.startsWith(site + path.sep)) { response.writeHead(403).end(); return; }
     const data = await fs.readFile(file);
-    response.writeHead(200, { 'Content-Type': types[path.extname(file)] || 'application/octet-stream', 'Content-Length': data.length }).end(data);
+    const headers = { 'Content-Type': types[path.extname(file)] || 'application/octet-stream', 'Accept-Ranges': 'bytes' };
+    if (request.headers.range) {
+      const match = /^bytes=(\d+)-(\d*)$/.exec(request.headers.range);
+      const start = match ? Number(match[1]) : -1;
+      const end = match?.[2] ? Math.min(Number(match[2]), data.length - 1) : data.length - 1;
+      if (start < 0 || start > end) { response.writeHead(416, { 'Content-Range': `bytes */${data.length}` }).end(); return; }
+      response.writeHead(206, { ...headers, 'Content-Length': end - start + 1, 'Content-Range': `bytes ${start}-${end}/${data.length}` }).end(data.subarray(start, end + 1));
+    } else response.writeHead(200, { ...headers, 'Content-Length': data.length }).end(data);
   } catch { response.writeHead(404).end(); }
 });
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
@@ -34,6 +41,22 @@ try {
         const response = await page.request.get(new URL(href, origin).href); assert.ok(response.ok(), href);
       }
       await page.screenshot({ path: path.join(folder, `site-${width}.png`), fullPage: true });
+      const hero = page.locator('#hero-video');
+      await page.locator('[data-preview="tiny-delivery"]').click();
+      await page.waitForFunction(() => document.querySelector('#hero-video').currentTime > 0.1);
+      assert.equal(await page.locator('#hero-name').textContent(), 'Tiny delivery');
+      await page.locator('#hero-toggle').click();
+      assert.equal(await hero.evaluate(video => video.paused), true);
+      await page.locator('#hero-seek').focus();
+      await page.keyboard.press('Home');
+      for (let step = 0; step < 5; step++) await page.keyboard.press('PageUp');
+      await page.waitForFunction(() => !document.querySelector('#hero-video').seeking);
+      assert.ok(await hero.evaluate(video => video.currentTime) > 1, 'Keyboard seeking updates the preview');
+      await page.locator('[data-preview="orbit-to-wave"]').click();
+      assert.equal(await hero.evaluate(video => video.paused), true, 'Changing films preserves manual pause');
+      await page.emulateMedia({ reducedMotion: 'reduce' });
+      await page.locator('[data-preview="paper-garden"]').click();
+      assert.equal(await hero.evaluate(video => video.paused), true, 'Reduced motion disables preview autoplay');
       for (const article of await page.locator('.film').all()) {
         const video = article.locator('video');
         await video.evaluate(async element => { element.muted = true; await element.play(); });
@@ -46,8 +69,17 @@ try {
         await video.evaluate(element => element.pause());
       }
       assert.deepEqual(failures, []);
-      console.log(`${width}px: layout, local links, six video sources, format controls passed`);
+      console.log(`${width}px: layout, links, six films, preview selection, pause, seeking, and reduced motion passed`);
       await page.close();
+    }
+    for (const width of [320, 768]) {
+      const page = await browser.newPage({ viewport: { width, height: 900 }, reducedMotion: 'reduce' });
+      await page.goto(origin, { waitUntil: 'networkidle' });
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `No horizontal overflow at ${width}px`);
+      assert.equal(await page.locator('#hero-video').evaluate(video => video.paused), true);
+      await page.screenshot({ path: path.join(folder, `site-${width}.png`), fullPage: true });
+      await page.close();
+      console.log(`${width}px: layout and reduced-motion startup passed`);
     }
   });
 } finally { await new Promise(resolve => server.close(resolve)); }
