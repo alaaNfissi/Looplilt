@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { EXAMPLE_NAMES } from '../lib/catalog.mjs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
@@ -13,20 +14,21 @@ const folder = await fs.mkdtemp(path.join(root, '.validation/browser-'));
 const hash = image => createHash('sha256').update(image).digest('hex');
 const results = [];
 await withBrowser(async browser => {
-  for (const slug of ['paper-garden', 'orbit-to-wave', 'tiny-delivery']) {
+  for (const slug of EXAMPLE_NAMES) {
     const project = await readProject(path.join(root, 'examples', slug));
     for (const format of ['landscape', 'portrait', 'square']) {
       const html = await makeHtml(project, format);
       const page = await filmPage(browser, html, 1440, 1000);
       const errors = []; page.on('pageerror', error => errors.push(error.message));
       const samples = [];
-      for (const t of [0, 3.5, 8.5, 13.5]) {
+      const times = [0, 0.21, 0.44, 0.7, 0.99].map(fraction => Math.floor(project.data.duration * project.data.fps * fraction) / project.data.fps);
+      for (const t of times) {
         const png = await framePng(page, t);
         await fs.writeFile(path.join(folder, `${slug}-${format}-${t}.png`), png);
         samples.push(hash(png));
       }
       assert.equal(new Set(samples).size, samples.length, `${slug} must visibly change across beats`);
-      for (let i = 3; i >= 0; i--) assert.equal(hash(await framePng(page, [0, 3.5, 8.5, 13.5][i])), samples[i], `${slug} frames must be independent of seek order`);
+      for (let i = times.length - 1; i >= 0; i--) assert.equal(hash(await framePng(page, times[i])), samples[i], `${slug} frames must be independent of seek order`);
       await page.locator('#restart').click();
       await page.locator('#play').click();
       await page.waitForFunction(() => Number(document.querySelector('#timeline').value) > 0.1);

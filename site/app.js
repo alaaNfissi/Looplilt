@@ -4,16 +4,16 @@ const toggle = document.querySelector('#hero-toggle');
 const seek = document.querySelector('#hero-seek');
 const clock = document.querySelector('#hero-time');
 const films = {
-  'paper-garden': ['Pocket greenhouse', 'PAPER WORLD / 01'],
-  'orbit-to-wave': ['One motion. Two views.', 'VISUAL EXPLANATION / 02'],
-  'tiny-delivery': ['Tiny delivery', 'PIXEL COMEDY / 03']
+  'one-more-light': ['One More Light', 'PIXEL ADVENTURE / 01'],
+  'the-missing-beat': ['The Missing Beat', 'JAZZ-CLUB COMEDY / 02'],
+  'paper-garden': ['Pocket greenhouse', 'PAPER WORLD / 03']
 };
 let previewWanted = !reducedMotion.matches;
 let previewVisible = true;
 let previewVersion = 0;
 const stamp = value => '00:' + String(Math.floor(Number.isFinite(value) ? value : 0)).padStart(2, '0');
 function syncPreview() {
-  const duration = Number.isFinite(hero.duration) ? hero.duration : 16;
+  const duration = Number.isFinite(hero.duration) ? hero.duration : 40;
   seek.max = duration;
   seek.value = hero.currentTime;
   seek.setAttribute('aria-valuetext', hero.currentTime.toFixed(1) + ' of ' + duration.toFixed(0) + ' seconds');
@@ -73,7 +73,7 @@ document.querySelectorAll('.film').forEach(article => {
     const format = button.dataset.format;
     video.pause();
     video.src = 'media/' + article.dataset.slug + '-' + format + '.mp4';
-    video.poster = 'media/' + article.dataset.slug + '-' + format + '.png';
+    video.poster = 'media/' + article.dataset.slug + '-' + format + '.' + article.dataset.poster;
     article.querySelector('.film-player').classList.toggle('portrait', format === 'portrait');
     article.querySelector('.download').href = video.src;
     article.querySelectorAll('[data-format]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
@@ -90,3 +90,16 @@ document.querySelector('#copy').addEventListener('click', async () => {
 });
 syncPreview();
 applyPlayback();
+
+document.querySelector('#copy-prompt').addEventListener('click', async () => {
+  const prompt = document.querySelector('#installation-prompt');
+  const status = document.querySelector('#prompt-status');
+  try {
+    await navigator.clipboard.writeText(prompt.value);
+    status.textContent = 'Copied. Paste it into your coding agent.';
+    document.querySelector('#copy-prompt').textContent = 'Copied ✓';
+  } catch {
+    prompt.focus(); prompt.select();
+    status.textContent = 'Prompt selected. Use your device’s copy command.';
+  }
+});

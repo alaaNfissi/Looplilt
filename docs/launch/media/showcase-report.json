@@ -1,0 +1,430 @@
+[
+  {
+    "slug": "one-more-light",
+    "format": "landscape",
+    "file": "one-more-light-landscape.mp4",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "frames": 1200,
+    "duration": 40,
+    "video": "h264",
+    "audio": {
+      "codec": "aac",
+      "channels": 2,
+      "sampleRate": 48000
+    },
+    "integratedLufs": -14.79,
+    "truePeakDb": -1.35,
+    "bytes": 2448998,
+    "sha256": "6379ff7fbcb480452efbb88f75949b46d833efece22c0e74d1ceccdd6e1faa79",
+    "sourceSha256": {
+      "project.json": "82d137e28e58e35bb63e0d0359d1ec770ec8e4aabc942f5dc085eddce69b9c01",
+      "draw.js": "262cccac70f967de2566e6984e371a65ebc50f877f8161d6163e45e569d8c6b5"
+    },
+    "playback": {
+      "format": "landscape",
+      "width": 1280,
+      "height": 720,
+      "duration": 40,
+      "ended": true,
+      "decoded": 1200,
+      "dropped": 0,
+      "error": null
+    }
+  },
+  {
+    "slug": "one-more-light",
+    "format": "portrait",
+    "file": "one-more-light-portrait.mp4",
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "frames": 1200,
+    "duration": 40,
+    "video": "h264",
+    "audio": {
+      "codec": "aac",
+      "channels": 2,
+      "sampleRate": 48000
+    },
+    "integratedLufs": -14.79,
+    "truePeakDb": -1.35,
+    "bytes": 2295832,
+    "sha256": "e98a08cea43b824edc1e8b79f0da4d20dfe346999d46bb259b95294f5db6bf4a",
+    "sourceSha256": {
+      "project.json": "82d137e28e58e35bb63e0d0359d1ec770ec8e4aabc942f5dc085eddce69b9c01",
+      "draw.js": "262cccac70f967de2566e6984e371a65ebc50f877f8161d6163e45e569d8c6b5"
+    },
+    "playback": {
+      "format": "portrait",
+      "width": 720,
+      "height": 1280,
+      "duration": 40,
+      "ended": true,
+      "decoded": 1200,
+      "dropped": 0,
+      "error": null
+    }
+  },
+  {
+    "slug": "the-missing-beat",
+    "format": "landscape",
+    "file": "the-missing-beat-landscape.mp4",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "frames": 1080,
+    "duration": 36,
+    "video": "h264",
+    "audio": {
+      "codec": "aac",
+      "channels": 2,
+      "sampleRate": 48000
+    },
+    "integratedLufs": -15.59,
+    "truePeakDb": -1.41,
+    "bytes": 5945080,
+    "sha256": "8082aeab9f53738a76dd42d6c0ee8fa97dae31e57fae18004c10ef9c1fd39028",
+    "sourceSha256": {
+      "project.json": "2dd40e554839de72d7c6eca477c59093eaa7a28b2b82a7248a90cd2c4616f956",
+      "draw.js": "488cb7873bfe313d04cc12a79168de46cbf073291c2a5a74c65b3dd20843e326"
+    },
+    "playback": {
+      "format": "landscape",
+      "width": 1280,
+      "height": 720,
+      "duration": 36,
+      "ended": true,
+      "decoded": 1080,
+      "dropped": 0,
+      "error": null
+    },
+    "earlierPlayback": {
+      "format": "landscape",
+      "width": 1280,
+      "height": 720,
+      "duration": 36,
+      "ended": true,
+      "decoded": 1080,
+      "dropped": 4,
+      "error": null
+    }
+  },
+  {
+    "slug": "the-missing-beat",
+    "format": "portrait",
+    "file": "the-missing-beat-portrait.mp4",
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "frames": 1080,
+    "duration": 36,
+    "video": "h264",
+    "audio": {
+      "codec": "aac",
+      "channels": 2,
+      "sampleRate": 48000
+    },
+    "integratedLufs": -15.59,
+    "truePeakDb": -1.41,
+    "bytes": 5358697,
+    "sha256": "662e0ed0e5efcee7152c4a5b2681193dcda5def349837db74042812b108a5a90",
+    "sourceSha256": {
+      "project.json": "2dd40e554839de72d7c6eca477c59093eaa7a28b2b82a7248a90cd2c4616f956",
+      "draw.js": "488cb7873bfe313d04cc12a79168de46cbf073291c2a5a74c65b3dd20843e326"
+    },
+    "playback": {
+      "format": "portrait",
+      "width": 720,
+      "height": 1280,
+      "duration": 36,
+      "ended": true,
+      "decoded": 1080,
+      "dropped": 0,
+      "error": null
+    },
+    "earlierPlayback": {
+      "format": "portrait",
+      "width": 720,
+      "height": 1280,
+      "duration": 36,
+      "ended": true,
+      "decoded": 1080,
+      "dropped": 0,
+      "error": null
+    }
+  },
+  {
+    "slug": "moonrise-express",
+    "format": "landscape",
+    "file": "moonrise-express-landscape.mp4",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "frames": 720,
+    "duration": 24,
+    "video": "h264",
+    "audio": {
+      "codec": "aac",
+      "channels": 2,
+      "sampleRate": 48000
+    },
+    "integratedLufs": -16.41,
+    "truePeakDb": -3.98,
+    "bytes": 2766139,
+    "sha256": "2788e2fa0fef431c6a94dd16fdceab902457dd27a411ec00287b65c06e03387b",
+    "sourceSha256": {
+      "project.json": "675a4a38a1a02e6322684874c0d824aacbdb49c5b5c8418b47fc1c18a2107c24",
+      "draw.js": "8305d4ed3cfeb03407d41e203c8fd2685947420256f36794f54d17bde9b4d34f"
+    },
+    "playback": {
+      "format": "landscape",
+      "width": 1280,
+      "height": 720,
+      "duration": 24,
+      "ended": true,
+      "decoded": 720,
+      "dropped": 0,
+      "error": null
+    }
+  },
+  {
+    "slug": "moonrise-express",
+    "format": "portrait",
+    "file": "moonrise-express-portrait.mp4",
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "frames": 720,
+    "duration": 24,
+    "video": "h264",
+    "audio": {
+      "codec": "aac",
+      "channels": 2,
+      "sampleRate": 48000
+    },
+    "integratedLufs": -16.41,
+    "truePeakDb": -3.98,
+    "bytes": 2260771,
+    "sha256": "75a3b293a1a70677cb628eb596246c033cedba161bb61a41e294efb647409799",
+    "sourceSha256": {
+      "project.json": "675a4a38a1a02e6322684874c0d824aacbdb49c5b5c8418b47fc1c18a2107c24",
+      "draw.js": "8305d4ed3cfeb03407d41e203c8fd2685947420256f36794f54d17bde9b4d34f"
+    },
+    "playback": {
+      "format": "portrait",
+      "width": 720,
+      "height": 1280,
+      "duration": 24,
+      "ended": true,
+      "decoded": 720,
+      "dropped": 0,
+      "error": null
+    }
+  },
+  {
+    "slug": "neon-relay",
+    "format": "landscape",
+    "file": "neon-relay-landscape.mp4",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "frames": 720,
+    "duration": 24,
+    "video": "h264",
+    "audio": {
+      "codec": "aac",
+      "channels": 2,
+      "sampleRate": 48000
+    },
+    "integratedLufs": -15.97,
+    "truePeakDb": -3.02,
+    "bytes": 2127882,
+    "sha256": "26ebdee41a8002f4e0917079ec0e81cbaadd8e047494dbb8ae1964b0222b3481",
+    "sourceSha256": {
+      "project.json": "9d4db46b73200ade2f786973e3be456ab7af5b7fdc0e2bbf65fd9c8373b6f86e",
+      "draw.js": "0d73aefc20312e5559810ff95a87c0336f007fa878a3dd991cdfbcb3203c8875"
+    },
+    "playback": {
+      "format": "landscape",
+      "width": 1280,
+      "height": 720,
+      "duration": 24,
+      "ended": true,
+      "decoded": 720,
+      "dropped": 0,
+      "error": null
+    }
+  },
+  {
+    "slug": "neon-relay",
+    "format": "portrait",
+    "file": "neon-relay-portrait.mp4",
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "frames": 720,
+    "duration": 24,
+    "video": "h264",
+    "audio": {
+      "codec": "aac",
+      "channels": 2,
+      "sampleRate": 48000
+    },
+    "integratedLufs": -15.97,
+    "truePeakDb": -3.02,
+    "bytes": 2003312,
+    "sha256": "4c2662ed994936403bf1a89b570e9c3ffa5d3ec1f8fd20c7a3e95a2620cedd2d",
+    "sourceSha256": {
+      "project.json": "9d4db46b73200ade2f786973e3be456ab7af5b7fdc0e2bbf65fd9c8373b6f86e",
+      "draw.js": "0d73aefc20312e5559810ff95a87c0336f007fa878a3dd991cdfbcb3203c8875"
+    },
+    "playback": {
+      "format": "portrait",
+      "width": 720,
+      "height": 1280,
+      "duration": 24,
+      "ended": true,
+      "decoded": 720,
+      "dropped": 0,
+      "error": null
+    }
+  },
+  {
+    "slug": "ink-tide",
+    "format": "landscape",
+    "file": "ink-tide-landscape.mp4",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "frames": 660,
+    "duration": 22,
+    "video": "h264",
+    "audio": {
+      "codec": "aac",
+      "channels": 2,
+      "sampleRate": 48000
+    },
+    "integratedLufs": -15.71,
+    "truePeakDb": -1.15,
+    "bytes": 1379654,
+    "sha256": "0674a30b4a98694c55a5e0359c344e9ad60609f660673834c6a6fd95e309d206",
+    "sourceSha256": {
+      "project.json": "1d37f6e1f3f6834a5795b036c19fcef5f1b83bcf50f0659623fd8a638299dcd0",
+      "draw.js": "c47eca8c5eeb3f644f03c6d7319d92d575b2b60c2e1204d86b4d1296c334e345"
+    },
+    "playback": {
+      "format": "landscape",
+      "width": 1280,
+      "height": 720,
+      "duration": 22,
+      "ended": true,
+      "decoded": 660,
+      "dropped": 0,
+      "error": null
+    }
+  },
+  {
+    "slug": "ink-tide",
+    "format": "portrait",
+    "file": "ink-tide-portrait.mp4",
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "frames": 660,
+    "duration": 22,
+    "video": "h264",
+    "audio": {
+      "codec": "aac",
+      "channels": 2,
+      "sampleRate": 48000
+    },
+    "integratedLufs": -15.71,
+    "truePeakDb": -1.15,
+    "bytes": 1376925,
+    "sha256": "ff08accb86079d4721669789839ba34c415f3375ae68b377a4488c74816effd5",
+    "sourceSha256": {
+      "project.json": "1d37f6e1f3f6834a5795b036c19fcef5f1b83bcf50f0659623fd8a638299dcd0",
+      "draw.js": "c47eca8c5eeb3f644f03c6d7319d92d575b2b60c2e1204d86b4d1296c334e345"
+    },
+    "playback": {
+      "format": "portrait",
+      "width": 720,
+      "height": 1280,
+      "duration": 22,
+      "ended": true,
+      "decoded": 660,
+      "dropped": 0,
+      "error": null
+    }
+  },
+  {
+    "slug": "the-little-lift",
+    "format": "landscape",
+    "file": "the-little-lift-landscape.mp4",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "frames": 720,
+    "duration": 24,
+    "video": "h264",
+    "audio": {
+      "codec": "aac",
+      "channels": 2,
+      "sampleRate": 48000
+    },
+    "integratedLufs": -16.18,
+    "truePeakDb": -1.71,
+    "bytes": 1256483,
+    "sha256": "2498f4c05e2d2fc81b079c0fa26216fead3c7e660120317305a8da902dea6694",
+    "sourceSha256": {
+      "project.json": "d8b1ad4afd0e126fde10736c82baf0eaafda3c4df432daff077a10814302cda5",
+      "draw.js": "126315bbeaed51eebef9b9304a65a91dcecd77f57f89539aa65ed10b0f7b35b3"
+    },
+    "playback": {
+      "format": "landscape",
+      "width": 1280,
+      "height": 720,
+      "duration": 24,
+      "ended": true,
+      "decoded": 720,
+      "dropped": 0,
+      "error": null
+    }
+  },
+  {
+    "slug": "the-little-lift",
+    "format": "portrait",
+    "file": "the-little-lift-portrait.mp4",
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "frames": 720,
+    "duration": 24,
+    "video": "h264",
+    "audio": {
+      "codec": "aac",
+      "channels": 2,
+      "sampleRate": 48000
+    },
+    "integratedLufs": -16.18,
+    "truePeakDb": -1.71,
+    "bytes": 1270427,
+    "sha256": "c76cf802354267d4d58c4a97de46f076711b0d857b2281f0cec288837465d05e",
+    "sourceSha256": {
+      "project.json": "d8b1ad4afd0e126fde10736c82baf0eaafda3c4df432daff077a10814302cda5",
+      "draw.js": "126315bbeaed51eebef9b9304a65a91dcecd77f57f89539aa65ed10b0f7b35b3"
+    },
+    "playback": {
+      "format": "portrait",
+      "width": 720,
+      "height": 1280,
+      "duration": 24,
+      "ended": true,
+      "decoded": 720,
+      "dropped": 0,
+      "error": null
+    }
+  }
+]

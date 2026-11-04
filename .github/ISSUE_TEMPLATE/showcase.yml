@@ -1,0 +1,51 @@
+name: Share a creation
+description: Show a working film and the editable source. This is a new community initiative.
+title: "[Showcase] "
+body:
+  - type: markdown
+    attributes:
+      value: "Make something small, then show how it works. Please avoid private files and credentials."
+  - type: input
+    id: title
+    attributes:
+      label: Film title and public creator credit
+      placeholder: A small surprise — your chosen name
+    validations:
+      required: true
+  - type: input
+    id: film
+    attributes:
+      label: Playable film or preview link
+      description: A standalone HTML player or video is welcome.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Editable project source
+      description: Link to project.json and draw.js, with their license.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What did you make or change?
+      description: Include the Looplilt version, one interesting technique, and any setup difficulty.
+    validations:
+      required: true
+  - type: textarea
+    id: credits
+    attributes:
+      label: Artwork, audio, and source credits
+      description: List outside assets and their licenses, or say that the work is original. Keep notices for starter code you reused.
+    validations:
+      required: true
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: Permission
+      options:
+        - label: I have permission to share these files and links.
+          required: true
+        - label: Looplilt may link to this creation with the public credit above. This does not transfer ownership.
+          required: true

@@ -27,8 +27,14 @@ In PowerShell, use `$env:LOOPLILT_FFMPEG = 'C:/tools/ffmpeg.exe'`. In a POSIX sh
 
 ## Development commands
 
-`npm test` checks project validation, audio output, HTML embedding, file protection, packaging, and process timeouts. `npm run test:browser` checks real playback and seek-order repeatability across three examples and three formats. `node scripts/make-showcase.mjs --out output/showcase` creates fresh wide/tall videos, posters, HTML players, a social card, and measured audio reports. The output folder must not already exist; its parent must exist.
+`npm test` checks project validation, audio output, HTML embedding, file protection, packaging, and process timeouts. `npm run test:browser` checks real playback and seek-order repeatability across ten examples and three formats. `node scripts/make-showcase.mjs --out output/showcase` creates all nine gallery films as fresh wide/tall videos, posters, HTML players, a social card, and measured audio reports. The output folder must not already exist; its parent must exist.
 
 `npm run site` copies reviewed site files into `.site`. `npm run pack` creates source and portable skill ZIPs in `dist` and prints their checksums. These generated folders are ignored by Git.
 
-GitHub Pages deploys the checked-in `site` assets using the workflow in this repository. To update a film, render and review it first, then copy only its public MP4, poster, and player into the matching site folders.
+GitHub Pages deploys the checked-in `site` assets using the workflow in this repository. To update a film, render and review it first, then copy its public MP4 and poster into the matching site folders. The site build generates standalone players directly from the editable examples. Generated players embed PCM audio and are omitted from source archives to avoid duplicating large audio payloads.
+
+## Slow or unresponsive headless graphics
+
+If Chromium starts but setting page content repeatedly times out, test LOOPLILT_DISABLE_GPU=1 for the current command or shell. This optional diagnostic disables Chromium GPU acceleration; it does not disable the browser sandbox or change FFmpeg encoding. It helped the Windows validation host after intermittent graphics initialization timeouts. Leave it unset unless needed. Rendering performance is machine-dependent; this is a compatibility fallback, not a claim of faster rendering.
+
+PowerShell: $env:LOOPLILT_DISABLE_GPU="1". Bash/zsh: export LOOPLILT_DISABLE_GPU=1. Clear the variable to return to the default. See the launch quality report for the tested configuration.

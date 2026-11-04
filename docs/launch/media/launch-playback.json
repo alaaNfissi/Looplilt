@@ -1,0 +1,22 @@
+[
+  {
+    "format": "landscape",
+    "width": 1280,
+    "height": 720,
+    "duration": 26,
+    "ended": true,
+    "decoded": 780,
+    "dropped": 0,
+    "error": null
+  },
+  {
+    "format": "portrait",
+    "width": 720,
+    "height": 1280,
+    "duration": 26,
+    "ended": true,
+    "decoded": 780,
+    "dropped": 0,
+    "error": null
+  }
+]

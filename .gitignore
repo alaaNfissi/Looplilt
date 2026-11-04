@@ -10,3 +10,6 @@ dist/
 *.log
 .DS_Store
 Thumbs.db
+
+# The site build generates standalone players from the examples.
+/site/play/*.html

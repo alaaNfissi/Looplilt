@@ -1,0 +1,46 @@
+[
+  {
+    "file": "little-idea-landscape.mp4",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "frames": 780,
+    "duration": 26,
+    "video": "h264",
+    "audio": "aac",
+    "loudness": {
+      "input_i": "-15.07",
+      "input_tp": "-1.50",
+      "input_lra": "1.90",
+      "input_thresh": "-25.54",
+      "output_i": "-16.01",
+      "output_tp": "-2.22",
+      "output_lra": "2.00",
+      "output_thresh": "-26.49",
+      "normalization_type": "dynamic",
+      "target_offset": "0.01"
+    }
+  },
+  {
+    "file": "little-idea-portrait.mp4",
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "frames": 780,
+    "duration": 26,
+    "video": "h264",
+    "audio": "aac",
+    "loudness": {
+      "input_i": "-15.07",
+      "input_tp": "-1.50",
+      "input_lra": "1.90",
+      "input_thresh": "-25.54",
+      "output_i": "-16.01",
+      "output_tp": "-2.22",
+      "output_lra": "2.00",
+      "output_thresh": "-26.49",
+      "normalization_type": "dynamic",
+      "target_offset": "0.01"
+    }
+  }
+]
