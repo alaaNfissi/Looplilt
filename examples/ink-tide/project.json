@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "title": "Ink tide",
+  "duration": 22,
+  "fps": 30,
+  "captions": [],
+  "score": [
+    {
+      "at": 0,
+      "pitch": 36,
+      "length": 21.9,
+      "voice": "surf",
+      "gain": 0.023,
+      "pan": -0.45,
+      "send": 0.04
+    },
+    {
+      "at": 0.1,
+      "pitch": 36,
+      "length": 21.7,
+      "voice": "wind",
+      "gain": 0.012,
+      "pan": 0.5,
+      "send": 0.03
+    },
+    {
+      "at": 0.2,
+      "pitch": 48,
+      "length": 4.4,
+      "voice": "strings",
+      "gain": 0.055,
+      "pan": -0.44999999999999996,
+      "send": 0.7
+    },
+    {
+      "at": 0.2,
+      "pitch": 55,
+      "length": 4.4,
+      "voice": "strings",
+      "gain": 0.055,
+      "pan": -0.15,
+      "send": 0.7
+    },
+    {
+      "at": 0.2,
+      "pitch": 60,
+      "length": 4.4,
+      "voice": "strings",
+      "gain": 0.055,
+      "pan": 0.15,
+      "send": 0.7
+    },
+    {
+      "at": 0.2,
+      "pitch": 64,
+      "length": 4.4,
+      "voice": "strings",
+      "gain": 0.055,
+      "pan": 0.44999999999999996,
+      "send": 0.7
+    },
+    {
+      "at": 0.4,
+      "pitch": 60,
+      "length": 1.6,
+      "voice": "guitar",
+      "gain": 0.24,
+      "pan": -0.35,
+      "send": 0.65
+    },
+    {
+      "at": 2.2,
+      "pitch": 67,
+      "length": 1.6,
+      "voice": "guitar",
+      "gain": 0.24,
+      "pan": -0.35,
+      "send": 0.65
+    },
+    {
+      "at": 4.1,
+      "pitch": 62,
+      "length": 1.6,
+      "voice": "guitar",
+      "gain": 0.24,
+      "pan": -0.35,
+      "send": 0.65
+    },
+    {
+      "at": 6.2,
+      "pitch": 64,
+      "length": 0.6,
+      "voice": "guitar",
+      "gain": 0.24,
+      "pan": -0.35,
+      "send": 0.65
+    },
+    {
+      "at": 6.2,
+      "pitch": 88,
+      "length": 0.15,
+      "voice": "bell",
+      "gain": 0.025,
+      "pan": 0.3,
+      "send": 0.6
+    },
+    {
+      "at": 6.3,
+      "pitch": 72,
+      "length": 0.3,
+      "voice": "brush",
+      "gain": 0.022,
+      "pan": 0.25,
+      "send": 0.3
+    },
+    {
+      "at": 7.2,
+      "pitch": 64,
+      "length": 0.6,
+      "voice": "guitar",
+      "gain": 0.24,
+      "pan": -0.35,
+      "send": 0.65
+    },
+    {
+      "at": 7.2,
+      "pitch": 88,
+      "length": 0.15,
+      "voice": "bell",
+      "gain": 0.025,
+      "pan": 0.3,
+      "send": 0.6
+    },
+    {
+      "at": 7.3,
+      "pitch": 72,
+      "length": 0.3,
+      "voice": "brush",
+      "gain": 0.022,
+      "pan": 0.25,
+      "send": 0.3
+    },
+    {
+      "at": 9.2,
+      "pitch": 76,
+      "length": 1.6,
+      "voice": "guitar",
+      "gain": 0.24,
+      "pan": -0.35,
+      "send": 0.65
+    },
+    {
+      "at": 9.4,
+      "pitch": 72,
+      "length": 0.3,
+      "voice": "brush",
+      "gain": 0.022,
+      "pan": 0.25,
+      "send": 0.3
+    },
+    {
+      "at": 10.4,
+      "pitch": 79,
+      "length": 1.6,
+      "voice": "guitar",
+      "gain": 0.24,
+      "pan": -0.35,
+      "send": 0.65
+    },
+    {
+      "at": 12,
+      "pitch": 60,
+      "length": 1.5,
+      "voice": "guitar",
+      "gain": 0.19,
+      "pan": -0.4,
+      "send": 0.65
+    },
+    {
+      "at": 12,
+      "pitch": 48,
+      "length": 3.8,
+      "voice": "strings",
+      "gain": 0.055,
+      "pan": -0.5249999999999999,
+      "send": 0.7
+    },
+    {
+      "at": 12,
+      "pitch": 55,
+      "length": 3.8,
+      "voice": "strings",
+      "gain": 0.055,
+      "pan": -0.175,
+      "send": 0.7
+    },
+    {
+      "at": 12,
+      "pitch": 62,
+      "length": 3.8,
+      "voice": "strings",
+      "gain": 0.055,
+      "pan": 0.175,
+      "send": 0.7
+    },
+    {
+      "at": 12,
+      "pitch": 67,
+      "length": 3.8,
+      "voice": "strings",
+      "gain": 0.055,
+      "pan": 0.5249999999999999,
+      "send": 0.7
+    },
+    {
+      "at": 12.5,
+      "pitch": 76,
+      "length": 1.2,
+      "voice": "marimba",
+      "gain": 0.13,
+      "pan": 0.45,
+      "send": 0.65
+    },
+    {
+      "at": 12.5,
+      "pitch": 72,
+      "length": 0.3,
+      "voice": "brush",
+      "gain": 0.022,
+      "pan": 0.25,
+      "send": 0.3
+    },
+    {
+      "at": 13,
+      "pitch": 64,
+      "length": 1.5,
+      "voice": "guitar",
+      "gain": 0.19,
+      "pan": -0.4,
+      "send": 0.65
+    },
+    {
+      "at": 13.5,
+      "pitch": 79,
+      "length": 1.2,
+      "voice": "marimba",
+      "gain": 0.13,
+      "pan": 0.45,
+      "send": 0.65
+    },
+    {
+      "at": 14,
+      "pitch": 67,
+      "length": 1.5,
+      "voice": "guitar",
+      "gain": 0.19,
+      "pan": -0.4,
+      "send": 0.65
+    },
+    {
+      "at": 14.5,
+      "pitch": 74,
+      "length": 1.2,
+      "voice": "marimba",
+      "gain": 0.13,
+      "pan": 0.45,
+      "send": 0.65
+    },
+    {
+      "at": 15,
+      "pitch": 72,
+      "length": 1.5,
+      "voice": "guitar",
+      "gain": 0.19,
+      "pan": -0.4,
+      "send": 0.65
+    },
+    {
+      "at": 15.5,
+      "pitch": 72,
+      "length": 1.2,
+      "voice": "marimba",
+      "gain": 0.13,
+      "pan": 0.45,
+      "send": 0.65
+    },
+    {
+      "at": 15.5,
+      "pitch": 72,
+      "length": 0.3,
+      "voice": "brush",
+      "gain": 0.022,
+      "pan": 0.25,
+      "send": 0.3
+    },
+    {
+      "at": 16,
+      "pitch": 67,
+      "length": 1.5,
+      "voice": "guitar",
+      "gain": 0.19,
+      "pan": -0.4,
+      "send": 0.65
+    },
+    {
+      "at": 16,
+      "pitch": 48,
+      "length": 3.8,
+      "voice": "strings",
+      "gain": 0.055,
+      "pan": -0.5249999999999999,
+      "send": 0.7
+    },
+    {
+      "at": 16,
+      "pitch": 55,
+      "length": 3.8,
+      "voice": "strings",
+      "gain": 0.055,
+      "pan": -0.175,
+      "send": 0.7
+    },
+    {
+      "at": 16,
+      "pitch": 62,
+      "length": 3.8,
+      "voice": "strings",
+      "gain": 0.055,
+      "pan": 0.175,
+      "send": 0.7
+    },
+    {
+      "at": 16,
+      "pitch": 67,
+      "length": 3.8,
+      "voice": "strings",
+      "gain": 0.055,
+      "pan": 0.5249999999999999,
+      "send": 0.7
+    },
+    {
+      "at": 16.5,
+      "pitch": 76,
+      "length": 1.2,
+      "voice": "marimba",
+      "gain": 0.13,
+      "pan": 0.45,
+      "send": 0.65
+    },
+    {
+      "at": 17,
+      "pitch": 64,
+      "length": 1.5,
+      "voice": "guitar",
+      "gain": 0.19,
+      "pan": -0.4,
+      "send": 0.65
+    },
+    {
+      "at": 17.5,
+      "pitch": 79,
+      "length": 1.2,
+      "voice": "marimba",
+      "gain": 0.13,
+      "pan": 0.45,
+      "send": 0.65
+    },
+    {
+      "at": 18,
+      "pitch": 62,
+      "length": 1.5,
+      "voice": "guitar",
+      "gain": 0.19,
+      "pan": -0.4,
+      "send": 0.65
+    },
+    {
+      "at": 18.5,
+      "pitch": 74,
+      "length": 1.2,
+      "voice": "marimba",
+      "gain": 0.13,
+      "pan": 0.45,
+      "send": 0.65
+    },
+    {
+      "at": 19,
+      "pitch": 67,
+      "length": 1.5,
+      "voice": "guitar",
+      "gain": 0.19,
+      "pan": -0.4,
+      "send": 0.65
+    },
+    {
+      "at": 19.5,
+      "pitch": 79,
+      "length": 1.2,
+      "voice": "marimba",
+      "gain": 0.13,
+      "pan": 0.45,
+      "send": 0.65
+    },
+    {
+      "at": 20,
+      "pitch": 48,
+      "length": 1.9,
+      "voice": "piano",
+      "gain": 0.09,
+      "pan": 0.3,
+      "send": 0.7
+    },
+    {
+      "at": 20,
+      "pitch": 60,
+      "length": 1.9,
+      "voice": "piano",
+      "gain": 0.09,
+      "pan": 0.3,
+      "send": 0.7
+    },
+    {
+      "at": 20,
+      "pitch": 64,
+      "length": 1.9,
+      "voice": "piano",
+      "gain": 0.09,
+      "pan": 0.3,
+      "send": 0.7
+    },
+    {
+      "at": 20,
+      "pitch": 67,
+      "length": 1.9,
+      "voice": "piano",
+      "gain": 0.09,
+      "pan": -0.3,
+      "send": 0.7
+    },
+    {
+      "at": 20,
+      "pitch": 74,
+      "length": 1.9,
+      "voice": "piano",
+      "gain": 0.09,
+      "pan": 0.3,
+      "send": 0.7
+    }
+  ],
+  "audio": {
+    "mode": "studio",
+    "room": 0.68,
+    "delay": 0.12,
+    "echoSeconds": 0.5
+  }
+}

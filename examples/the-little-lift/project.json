@@ -1,0 +1,1030 @@
+{
+  "version": 1,
+  "title": "The Little Lift",
+  "duration": 24,
+  "fps": 30,
+  "captions": [
+    {
+      "start": 0.5,
+      "end": 4.2,
+      "text": "The bridge is one floor too high."
+    },
+    {
+      "start": 8,
+      "end": 15,
+      "text": "A little weight can make a big difference."
+    },
+    {
+      "start": 19.5,
+      "end": 23.5,
+      "text": "Everybody needs a little lift."
+    }
+  ],
+  "score": [
+    {
+      "at": 0.3,
+      "pitch": 72,
+      "length": 0.8,
+      "voice": "marimba",
+      "gain": 0.17,
+      "pan": 0.3,
+      "send": 0.5
+    },
+    {
+      "at": 0.3,
+      "pitch": 48,
+      "length": 1.4,
+      "voice": "piano",
+      "gain": 0.1,
+      "pan": -0.3,
+      "send": 0.4
+    },
+    {
+      "at": 0.3,
+      "pitch": 60,
+      "length": 1.4,
+      "voice": "piano",
+      "gain": 0.1,
+      "pan": -0.3,
+      "send": 0.4
+    },
+    {
+      "at": 0.3,
+      "pitch": 64,
+      "length": 1.4,
+      "voice": "piano",
+      "gain": 0.1,
+      "pan": -0.3,
+      "send": 0.4
+    },
+    {
+      "at": 0.3,
+      "pitch": 67,
+      "length": 1.4,
+      "voice": "piano",
+      "gain": 0.1,
+      "pan": -0.3,
+      "send": 0.4
+    },
+    {
+      "at": 0.78,
+      "pitch": 76,
+      "length": 0.8,
+      "voice": "marimba",
+      "gain": 0.17,
+      "pan": 0.3,
+      "send": 0.5
+    },
+    {
+      "at": 1.26,
+      "pitch": 79,
+      "length": 0.8,
+      "voice": "marimba",
+      "gain": 0.17,
+      "pan": 0.3,
+      "send": 0.5
+    },
+    {
+      "at": 1.74,
+      "pitch": 76,
+      "length": 0.8,
+      "voice": "marimba",
+      "gain": 0.17,
+      "pan": 0.3,
+      "send": 0.5
+    },
+    {
+      "at": 1.74,
+      "pitch": 48,
+      "length": 1.4,
+      "voice": "piano",
+      "gain": 0.1,
+      "pan": -0.3,
+      "send": 0.4
+    },
+    {
+      "at": 1.74,
+      "pitch": 60,
+      "length": 1.4,
+      "voice": "piano",
+      "gain": 0.1,
+      "pan": -0.3,
+      "send": 0.4
+    },
+    {
+      "at": 1.74,
+      "pitch": 64,
+      "length": 1.4,
+      "voice": "piano",
+      "gain": 0.1,
+      "pan": -0.3,
+      "send": 0.4
+    },
+    {
+      "at": 1.74,
+      "pitch": 67,
+      "length": 1.4,
+      "voice": "piano",
+      "gain": 0.1,
+      "pan": -0.3,
+      "send": 0.4
+    },
+    {
+      "at": 2.22,
+      "pitch": 74,
+      "length": 0.8,
+      "voice": "marimba",
+      "gain": 0.17,
+      "pan": 0.3,
+      "send": 0.5
+    },
+    {
+      "at": 2.7,
+      "pitch": 77,
+      "length": 0.8,
+      "voice": "marimba",
+      "gain": 0.17,
+      "pan": 0.3,
+      "send": 0.5
+    },
+    {
+      "at": 3.18,
+      "pitch": 81,
+      "length": 0.8,
+      "voice": "marimba",
+      "gain": 0.17,
+      "pan": 0.3,
+      "send": 0.5
+    },
+    {
+      "at": 3.18,
+      "pitch": 48,
+      "length": 1.4,
+      "voice": "piano",
+      "gain": 0.1,
+      "pan": -0.3,
+      "send": 0.4
+    },
+    {
+      "at": 3.18,
+      "pitch": 60,
+      "length": 1.4,
+      "voice": "piano",
+      "gain": 0.1,
+      "pan": -0.3,
+      "send": 0.4
+    },
+    {
+      "at": 3.18,
+      "pitch": 64,
+      "length": 1.4,
+      "voice": "piano",
+      "gain": 0.1,
+      "pan": -0.3,
+      "send": 0.4
+    },
+    {
+      "at": 3.18,
+      "pitch": 67,
+      "length": 1.4,
+      "voice": "piano",
+      "gain": 0.1,
+      "pan": -0.3,
+      "send": 0.4
+    },
+    {
+      "at": 3.66,
+      "pitch": 77,
+      "length": 0.8,
+      "voice": "marimba",
+      "gain": 0.17,
+      "pan": 0.3,
+      "send": 0.5
+    },
+    {
+      "at": 4.14,
+      "pitch": 72,
+      "length": 0.8,
+      "voice": "marimba",
+      "gain": 0.17,
+      "pan": 0.3,
+      "send": 0.5
+    },
+    {
+      "at": 4.62,
+      "pitch": 76,
+      "length": 0.8,
+      "voice": "marimba",
+      "gain": 0.17,
+      "pan": 0.3,
+      "send": 0.5
+    },
+    {
+      "at": 4.62,
+      "pitch": 48,
+      "length": 1.4,
+      "voice": "piano",
+      "gain": 0.1,
+      "pan": -0.3,
+      "send": 0.4
+    },
+    {
+      "at": 4.62,
+      "pitch": 60,
+      "length": 1.4,
+      "voice": "piano",
+      "gain": 0.1,
+      "pan": -0.3,
+      "send": 0.4
+    },
+    {
+      "at": 4.62,
+      "pitch": 64,
+      "length": 1.4,
+      "voice": "piano",
+      "gain": 0.1,
+      "pan": -0.3,
+      "send": 0.4
+    },
+    {
+      "at": 4.62,
+      "pitch": 67,
+      "length": 1.4,
+      "voice": "piano",
+      "gain": 0.1,
+      "pan": -0.3,
+      "send": 0.4
+    },
+    {
+      "at": 5.1,
+      "pitch": 79,
+      "length": 0.8,
+      "voice": "marimba",
+      "gain": 0.17,
+      "pan": 0.3,
+      "send": 0.5
+    },
+    {
+      "at": 5.58,
+      "pitch": 84,
+      "length": 0.8,
+      "voice": "marimba",
+      "gain": 0.17,
+      "pan": 0.3,
+      "send": 0.5
+    },
+    {
+      "at": 7,
+      "pitch": 38,
+      "length": 0.3,
+      "voice": "kick",
+      "gain": 0.24,
+      "pan": 0,
+      "send": 0.12
+    },
+    {
+      "at": 7.05,
+      "pitch": 45,
+      "length": 0.25,
+      "voice": "footstep",
+      "gain": 0.2,
+      "pan": -0.3,
+      "send": 0.25
+    },
+    {
+      "at": 8,
+      "pitch": 36,
+      "length": 8,
+      "voice": "wind",
+      "gain": 0.035,
+      "pan": -0.45,
+      "send": 0.08
+    },
+    {
+      "at": 8,
+      "pitch": 60,
+      "length": 0.65,
+      "voice": "guitar",
+      "gain": 0.23,
+      "pan": -0.3,
+      "send": 0.45
+    },
+    {
+      "at": 8,
+      "pitch": 48,
+      "length": 1.95,
+      "voice": "strings",
+      "gain": 0.085,
+      "pan": 0.45,
+      "send": 0.6
+    },
+    {
+      "at": 8,
+      "pitch": 60,
+      "length": 1.95,
+      "voice": "strings",
+      "gain": 0.085,
+      "pan": 0.45,
+      "send": 0.6
+    },
+    {
+      "at": 8,
+      "pitch": 67,
+      "length": 1.95,
+      "voice": "strings",
+      "gain": 0.085,
+      "pan": -0.45,
+      "send": 0.6
+    },
+    {
+      "at": 8.25,
+      "pitch": 72,
+      "length": 0.5,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.35,
+      "send": 0.5
+    },
+    {
+      "at": 8.25,
+      "pitch": 45,
+      "length": 0.075,
+      "voice": "tick",
+      "gain": 0.04,
+      "pan": 0,
+      "send": 0.2
+    },
+    {
+      "at": 8.5,
+      "pitch": 60,
+      "length": 0.65,
+      "voice": "guitar",
+      "gain": 0.23,
+      "pan": -0.3,
+      "send": 0.45
+    },
+    {
+      "at": 8.75,
+      "pitch": 72,
+      "length": 0.5,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.35,
+      "send": 0.5
+    },
+    {
+      "at": 8.75,
+      "pitch": 45,
+      "length": 0.075,
+      "voice": "tick",
+      "gain": 0.04,
+      "pan": 0,
+      "send": 0.2
+    },
+    {
+      "at": 9,
+      "pitch": 62,
+      "length": 0.65,
+      "voice": "guitar",
+      "gain": 0.23,
+      "pan": -0.3,
+      "send": 0.45
+    },
+    {
+      "at": 9.25,
+      "pitch": 74,
+      "length": 0.5,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.35,
+      "send": 0.5
+    },
+    {
+      "at": 9.25,
+      "pitch": 45,
+      "length": 0.075,
+      "voice": "tick",
+      "gain": 0.04,
+      "pan": 0,
+      "send": 0.2
+    },
+    {
+      "at": 9.5,
+      "pitch": 62,
+      "length": 0.65,
+      "voice": "guitar",
+      "gain": 0.23,
+      "pan": -0.3,
+      "send": 0.45
+    },
+    {
+      "at": 9.75,
+      "pitch": 74,
+      "length": 0.5,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.35,
+      "send": 0.5
+    },
+    {
+      "at": 9.75,
+      "pitch": 45,
+      "length": 0.075,
+      "voice": "tick",
+      "gain": 0.04,
+      "pan": 0,
+      "send": 0.2
+    },
+    {
+      "at": 10,
+      "pitch": 64,
+      "length": 0.65,
+      "voice": "guitar",
+      "gain": 0.23,
+      "pan": -0.3,
+      "send": 0.45
+    },
+    {
+      "at": 10,
+      "pitch": 48,
+      "length": 1.95,
+      "voice": "strings",
+      "gain": 0.085,
+      "pan": 0.45,
+      "send": 0.6
+    },
+    {
+      "at": 10,
+      "pitch": 64,
+      "length": 1.95,
+      "voice": "strings",
+      "gain": 0.085,
+      "pan": 0.45,
+      "send": 0.6
+    },
+    {
+      "at": 10,
+      "pitch": 71,
+      "length": 1.95,
+      "voice": "strings",
+      "gain": 0.085,
+      "pan": -0.45,
+      "send": 0.6
+    },
+    {
+      "at": 10.25,
+      "pitch": 76,
+      "length": 0.5,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.35,
+      "send": 0.5
+    },
+    {
+      "at": 10.25,
+      "pitch": 45,
+      "length": 0.075,
+      "voice": "tick",
+      "gain": 0.04,
+      "pan": 0,
+      "send": 0.2
+    },
+    {
+      "at": 10.5,
+      "pitch": 64,
+      "length": 0.65,
+      "voice": "guitar",
+      "gain": 0.23,
+      "pan": -0.3,
+      "send": 0.45
+    },
+    {
+      "at": 10.75,
+      "pitch": 76,
+      "length": 0.5,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.35,
+      "send": 0.5
+    },
+    {
+      "at": 10.75,
+      "pitch": 45,
+      "length": 0.075,
+      "voice": "tick",
+      "gain": 0.04,
+      "pan": 0,
+      "send": 0.2
+    },
+    {
+      "at": 11,
+      "pitch": 67,
+      "length": 0.65,
+      "voice": "guitar",
+      "gain": 0.23,
+      "pan": -0.3,
+      "send": 0.45
+    },
+    {
+      "at": 11.25,
+      "pitch": 79,
+      "length": 0.5,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.35,
+      "send": 0.5
+    },
+    {
+      "at": 11.25,
+      "pitch": 45,
+      "length": 0.075,
+      "voice": "tick",
+      "gain": 0.04,
+      "pan": 0,
+      "send": 0.2
+    },
+    {
+      "at": 11.5,
+      "pitch": 67,
+      "length": 0.65,
+      "voice": "guitar",
+      "gain": 0.23,
+      "pan": -0.3,
+      "send": 0.45
+    },
+    {
+      "at": 11.75,
+      "pitch": 79,
+      "length": 0.5,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.35,
+      "send": 0.5
+    },
+    {
+      "at": 11.75,
+      "pitch": 45,
+      "length": 0.075,
+      "voice": "tick",
+      "gain": 0.04,
+      "pan": 0,
+      "send": 0.2
+    },
+    {
+      "at": 12,
+      "pitch": 69,
+      "length": 0.65,
+      "voice": "guitar",
+      "gain": 0.23,
+      "pan": -0.3,
+      "send": 0.45
+    },
+    {
+      "at": 12,
+      "pitch": 48,
+      "length": 1.95,
+      "voice": "strings",
+      "gain": 0.085,
+      "pan": 0.45,
+      "send": 0.6
+    },
+    {
+      "at": 12,
+      "pitch": 69,
+      "length": 1.95,
+      "voice": "strings",
+      "gain": 0.085,
+      "pan": -0.45,
+      "send": 0.6
+    },
+    {
+      "at": 12,
+      "pitch": 76,
+      "length": 1.95,
+      "voice": "strings",
+      "gain": 0.085,
+      "pan": 0.45,
+      "send": 0.6
+    },
+    {
+      "at": 12.25,
+      "pitch": 81,
+      "length": 0.5,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.35,
+      "send": 0.5
+    },
+    {
+      "at": 12.25,
+      "pitch": 45,
+      "length": 0.075,
+      "voice": "tick",
+      "gain": 0.04,
+      "pan": 0,
+      "send": 0.2
+    },
+    {
+      "at": 12.5,
+      "pitch": 69,
+      "length": 0.65,
+      "voice": "guitar",
+      "gain": 0.23,
+      "pan": -0.3,
+      "send": 0.45
+    },
+    {
+      "at": 12.75,
+      "pitch": 81,
+      "length": 0.5,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.35,
+      "send": 0.5
+    },
+    {
+      "at": 12.75,
+      "pitch": 45,
+      "length": 0.075,
+      "voice": "tick",
+      "gain": 0.04,
+      "pan": 0,
+      "send": 0.2
+    },
+    {
+      "at": 13,
+      "pitch": 71,
+      "length": 0.65,
+      "voice": "guitar",
+      "gain": 0.23,
+      "pan": -0.3,
+      "send": 0.45
+    },
+    {
+      "at": 13.25,
+      "pitch": 83,
+      "length": 0.5,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.35,
+      "send": 0.5
+    },
+    {
+      "at": 13.25,
+      "pitch": 45,
+      "length": 0.075,
+      "voice": "tick",
+      "gain": 0.04,
+      "pan": 0,
+      "send": 0.2
+    },
+    {
+      "at": 13.5,
+      "pitch": 71,
+      "length": 0.65,
+      "voice": "guitar",
+      "gain": 0.23,
+      "pan": -0.3,
+      "send": 0.45
+    },
+    {
+      "at": 13.75,
+      "pitch": 83,
+      "length": 0.5,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.35,
+      "send": 0.5
+    },
+    {
+      "at": 13.75,
+      "pitch": 45,
+      "length": 0.075,
+      "voice": "tick",
+      "gain": 0.04,
+      "pan": 0,
+      "send": 0.2
+    },
+    {
+      "at": 14,
+      "pitch": 72,
+      "length": 0.65,
+      "voice": "guitar",
+      "gain": 0.23,
+      "pan": -0.3,
+      "send": 0.45
+    },
+    {
+      "at": 14,
+      "pitch": 48,
+      "length": 1.95,
+      "voice": "strings",
+      "gain": 0.085,
+      "pan": 0.45,
+      "send": 0.6
+    },
+    {
+      "at": 14,
+      "pitch": 72,
+      "length": 1.95,
+      "voice": "strings",
+      "gain": 0.085,
+      "pan": 0.45,
+      "send": 0.6
+    },
+    {
+      "at": 14,
+      "pitch": 79,
+      "length": 1.95,
+      "voice": "strings",
+      "gain": 0.085,
+      "pan": -0.45,
+      "send": 0.6
+    },
+    {
+      "at": 14.25,
+      "pitch": 84,
+      "length": 0.5,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.35,
+      "send": 0.5
+    },
+    {
+      "at": 14.25,
+      "pitch": 45,
+      "length": 0.075,
+      "voice": "tick",
+      "gain": 0.04,
+      "pan": 0,
+      "send": 0.2
+    },
+    {
+      "at": 14.5,
+      "pitch": 72,
+      "length": 0.65,
+      "voice": "guitar",
+      "gain": 0.23,
+      "pan": -0.3,
+      "send": 0.45
+    },
+    {
+      "at": 14.75,
+      "pitch": 84,
+      "length": 0.5,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.35,
+      "send": 0.5
+    },
+    {
+      "at": 14.75,
+      "pitch": 45,
+      "length": 0.075,
+      "voice": "tick",
+      "gain": 0.04,
+      "pan": 0,
+      "send": 0.2
+    },
+    {
+      "at": 15,
+      "pitch": 76,
+      "length": 0.65,
+      "voice": "guitar",
+      "gain": 0.23,
+      "pan": -0.3,
+      "send": 0.45
+    },
+    {
+      "at": 15.25,
+      "pitch": 88,
+      "length": 0.5,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.35,
+      "send": 0.5
+    },
+    {
+      "at": 15.25,
+      "pitch": 45,
+      "length": 0.075,
+      "voice": "tick",
+      "gain": 0.04,
+      "pan": 0,
+      "send": 0.2
+    },
+    {
+      "at": 15.5,
+      "pitch": 76,
+      "length": 0.65,
+      "voice": "guitar",
+      "gain": 0.23,
+      "pan": -0.3,
+      "send": 0.45
+    },
+    {
+      "at": 15.75,
+      "pitch": 88,
+      "length": 0.5,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.35,
+      "send": 0.5
+    },
+    {
+      "at": 15.75,
+      "pitch": 45,
+      "length": 0.075,
+      "voice": "tick",
+      "gain": 0.04,
+      "pan": 0,
+      "send": 0.2
+    },
+    {
+      "at": 16,
+      "pitch": 72,
+      "length": 0.8,
+      "voice": "piano",
+      "gain": 0.18,
+      "pan": 0.1,
+      "send": 0.5
+    },
+    {
+      "at": 16.55,
+      "pitch": 76,
+      "length": 0.8,
+      "voice": "piano",
+      "gain": 0.18,
+      "pan": 0.1,
+      "send": 0.5
+    },
+    {
+      "at": 17.1,
+      "pitch": 79,
+      "length": 0.8,
+      "voice": "piano",
+      "gain": 0.18,
+      "pan": 0.1,
+      "send": 0.5
+    },
+    {
+      "at": 17.65,
+      "pitch": 84,
+      "length": 0.8,
+      "voice": "piano",
+      "gain": 0.18,
+      "pan": 0.1,
+      "send": 0.5
+    },
+    {
+      "at": 18.2,
+      "pitch": 79,
+      "length": 0.8,
+      "voice": "piano",
+      "gain": 0.18,
+      "pan": 0.1,
+      "send": 0.5
+    },
+    {
+      "at": 18.5,
+      "pitch": 48,
+      "length": 3.3,
+      "voice": "strings",
+      "gain": 0.075,
+      "pan": -0.5,
+      "send": 0.55
+    },
+    {
+      "at": 18.5,
+      "pitch": 55,
+      "length": 3.3,
+      "voice": "strings",
+      "gain": 0.075,
+      "pan": -0.25,
+      "send": 0.55
+    },
+    {
+      "at": 18.5,
+      "pitch": 60,
+      "length": 3.3,
+      "voice": "strings",
+      "gain": 0.075,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 18.5,
+      "pitch": 64,
+      "length": 3.3,
+      "voice": "strings",
+      "gain": 0.075,
+      "pan": 0.25,
+      "send": 0.55
+    },
+    {
+      "at": 18.5,
+      "pitch": 67,
+      "length": 3.3,
+      "voice": "strings",
+      "gain": 0.075,
+      "pan": 0.5,
+      "send": 0.55
+    },
+    {
+      "at": 18.75,
+      "pitch": 76,
+      "length": 0.8,
+      "voice": "piano",
+      "gain": 0.18,
+      "pan": 0.1,
+      "send": 0.5
+    },
+    {
+      "at": 19.3,
+      "pitch": 74,
+      "length": 0.8,
+      "voice": "piano",
+      "gain": 0.18,
+      "pan": 0.1,
+      "send": 0.5
+    },
+    {
+      "at": 19.85,
+      "pitch": 77,
+      "length": 0.8,
+      "voice": "piano",
+      "gain": 0.18,
+      "pan": 0.1,
+      "send": 0.5
+    },
+    {
+      "at": 20.4,
+      "pitch": 79,
+      "length": 0.8,
+      "voice": "piano",
+      "gain": 0.18,
+      "pan": 0.1,
+      "send": 0.5
+    },
+    {
+      "at": 20.95,
+      "pitch": 84,
+      "length": 0.8,
+      "voice": "piano",
+      "gain": 0.18,
+      "pan": 0.1,
+      "send": 0.5
+    },
+    {
+      "at": 22,
+      "pitch": 48,
+      "length": 1.8,
+      "voice": "piano",
+      "gain": 0.12,
+      "pan": -0.25,
+      "send": 0.6
+    },
+    {
+      "at": 22,
+      "pitch": 60,
+      "length": 1.8,
+      "voice": "piano",
+      "gain": 0.12,
+      "pan": -0.25,
+      "send": 0.6
+    },
+    {
+      "at": 22,
+      "pitch": 64,
+      "length": 1.8,
+      "voice": "piano",
+      "gain": 0.12,
+      "pan": -0.25,
+      "send": 0.6
+    },
+    {
+      "at": 22,
+      "pitch": 67,
+      "length": 1.8,
+      "voice": "piano",
+      "gain": 0.12,
+      "pan": -0.25,
+      "send": 0.6
+    },
+    {
+      "at": 22.5,
+      "pitch": 84,
+      "length": 1.3,
+      "voice": "bell",
+      "gain": 0.055,
+      "pan": 0.3,
+      "send": 0.6
+    }
+  ],
+  "audio": {
+    "mode": "studio",
+    "room": 0.45,
+    "delay": 0.06,
+    "echoSeconds": 0.375
+  }
+}

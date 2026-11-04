@@ -19,9 +19,9 @@ Start with `node bin/looplilt.mjs init my-film`. The folder contains a complete 
 }
 ```
 
-Duration is 0.5–600 seconds; frame rate is an integer from 1–60. Their product must be a whole number. Captions must be ordered, non-overlapping, and inside the film. Notes also stay inside the film. MIDI pitch 69 is A440; supported pitches are 24–108. `gain` defaults to 0.2 and `voice` defaults to `soft`. Other voices are `bell`, `pluck`, and `tick`.
+Duration is 0.5–600 seconds; frame rate is an integer from 1–60. Their product must be a whole number. Captions must be ordered, non-overlapping, and inside the film. Notes also stay inside the film. MIDI pitch 69 is A440; supported pitches are 24–108. `gain` defaults to 0.2 and `voice` defaults to `soft`. Other mono voices are `bell`, `pluck`, `tick`, and `chip`. Add `"audio": { "mode": "studio" }` to opt into stereo sound, 15 additional instrument and environment voices, per-note panning, room reflections, and echo. See the [sound studio guide](audio.md) for the complete schema and composition examples.
 
-The synthesizer produces a mono 48 kHz WAV with deterministic samples and peak headroom. Video export mixes an optional narration recording over a quieter score and normalizes the mix toward −16 LUFS with a −1.5 dBTP target. These are processing targets; measure the encoded audio when delivery specifications matter.
+The original engine produces a mono 48 kHz WAV; studio mode produces stereo with deterministic samples and peak headroom. Video export mixes an optional narration recording over a quieter score and normalizes the mix toward −16 LUFS with a −1.5 dBTP target. These are processing targets; measure the encoded audio when delivery specifications matter.
 
 ## Draw a moment
 
