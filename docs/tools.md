@@ -19,7 +19,7 @@ In PowerShell, use `$env:LOOPLILT_FFMPEG = 'C:/tools/ffmpeg.exe'`. In a POSIX sh
 ## Troubleshooting
 
 - **Browser executable missing:** run `npm run setup` from the repository. On a supported Linux system, Playwright may also need system packages; use its documented dependency installer.
-- **Browser sandbox unavailable:** use a normal user account and a host that supports Chromium sandboxing. The renderer does not disable the sandbox as a workaround.
+- **Browser sandbox unavailable:** use a normal user account and a host that supports Chromium sandboxing. Ubuntu 23.10+ can block user namespaces for downloaded Chromium binaries. Ask the host administrator to follow [Chromium's AppArmor guidance](https://chromium.googlesource.com/chromium/src/+/main/docs/security/apparmor-userns-restrictions.md), using a profile scoped to the installed executable. Our temporary CI runner loads such profiles for its installed Playwright browsers. Looplilt itself does not alter host policy or disable the browser sandbox.
 - **FFmpeg command missing:** install FFmpeg/FFprobe, restart the terminal, and check `PATH` or set the executable variables.
 - **Drawing depends on frame history:** replace mutable counters and random calls with expressions based on `t`. Seek to the same time twice in the HTML player.
 - **Existing output:** choose a new filename. This protects work already on disk.

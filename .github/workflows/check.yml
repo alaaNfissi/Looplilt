@@ -34,6 +34,22 @@ jobs:
           cache: npm
       - run: npm ci --ignore-scripts
       - run: npx --no-install playwright install --with-deps chromium
+      - name: Allow Chromium sandbox namespaces on this runner
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -d '' chromium_bins < <(find "$HOME/.cache/ms-playwright" -type f \( -name chrome -o -name chrome-headless-shell \) -print0)
+          if [ "${#chromium_bins[@]}" -eq 0 ]; then
+            echo 'No installed Chromium executable found' >&2
+            exit 1
+          fi
+          sandbox_profile="$RUNNER_TEMP/looplilt-playwright.apparmor"
+          printf 'abi <abi/4.0>,\ninclude <tunables/global>\n' > "$sandbox_profile"
+          for i in "${!chromium_bins[@]}"; do
+            printf 'profile looplilt-playwright-%s "%s" flags=(unconfined) {\n  userns,\n}\n' "$i" "${chromium_bins[$i]}" >> "$sandbox_profile"
+          done
+          # Exact installed paths only; Chromium's own sandbox stays enabled.
+          sudo apparmor_parser --replace "$sandbox_profile"
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - run: npm run site
       - run: npm run test:browser
