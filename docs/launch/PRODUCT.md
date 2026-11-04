@@ -1,6 +1,6 @@
 # Product assessment and decisions
 
-Review baseline: 26 October 2026, main commit `a7c750e`, stable release `v0.1.0`. Work is isolated on `feature/browser-remix-launch`. This is preparation for review, not a launched release.
+Review baseline: 26 October 2026, main commit `a7c750e`, stable release `v0.1.0`. This assessment informed v0.2.0; the maintainer approved promotion to main and release publication on 3 November 2026.
 
 ## What inspection established
 
@@ -44,4 +44,4 @@ The largest remaining risk is that people enjoy the remixer but never work with 
 
 A second risk is installation variability. Report actual tested environments and preserve an HTML-only route. A successful scripted installation is not an independently measured agent success rate.
 
-Keep the existing release and production site intact until review. Candidate URLs in launch drafts must not be posted until the relevant paths are live and the maintainer has approved publication.
+Preserve earlier release assets. Verify launch destinations after deployment and domain activation. External posts still require the maintainer's approval.

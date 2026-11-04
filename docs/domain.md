@@ -1,6 +1,6 @@
 # Official website: looplilt.com
 
-Looplilt's canonical website is **https://looplilt.com/**. GitHub Pages remains the host. This branch prepares the metadata, links, and deployment instructions; it does not change DNS or the live Pages settings.
+Looplilt's canonical website is **https://looplilt.com/**. GitHub Pages remains the host. The repository provides the metadata, links, and deployment instructions. DNS and the live Pages custom-domain setting must be configured together at cutover.
 
 ## Before the cutover
 

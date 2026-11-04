@@ -33,7 +33,7 @@ For example, from that workspace the portable runtime can build a preview:
 node .agents/skills/looplilt/runtime/bin/looplilt.mjs build my-first-loop --out my-first-loop-v2.html
 ```
 
-The skill locates `runtime/` relative to its own `SKILL.md`. It does not depend on the original clone's absolute path. You can also unpack the `looplilt-skill-0.1.0.zip` asset from the [stable release](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.1.0) into a new skill folder. Keep `SKILL.md` and `runtime/` at the same level. The stable archive has the earlier skill wording; its build and render commands remain the same.
+The skill locates `runtime/` relative to its own `SKILL.md`. It does not depend on the original clone's absolute path. You can also unpack the `looplilt-skill-0.2.0.zip` asset from the [stable release](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.2.0) into a new skill folder. Keep `SKILL.md` and `runtime/` at the same level. The archive includes the instruction skill and its matching portable runtime.
 
 In Codex, check that Looplilt appears in the skill selector, or explicitly mention `$looplilt`. If discovery has not refreshed, reopen the session. Follow [Codex's documented local skill locations](https://learn.chatgpt.com/docs/build-skills). A successful file copy verifies installation layout; selector discovery and an independent agent completing the task are separate checks.
 
@@ -45,7 +45,7 @@ The repository's `skills/looplilt/SKILL.md` follows the open instruction format 
 npx skills@1.7.4 add alaaNfissi/Looplilt --list
 ```
 
-Discovery was verified with skills 1.7.4 against a local copy of this candidate: `skills add . --list` found exactly one skill, `looplilt`. This verifies discovery, not an agent session selecting or following the skill. The remote command above targets the published branch; it may download and execute a package. Its [telemetry documentation](https://github.com/vercel-labs/skills#telemetry) describes `DISABLE_TELEMETRY=1` and `DO_NOT_TRACK=1`. A repository skill-only install does **not** include Looplilt's sibling CLI: keep a checkout accessible or use our portable bundle. It is not a complete one-command film toolchain. No directory listing or native plugin integration is claimed.
+Discovery was verified with skills 1.7.4 against a local copy of this release: `skills add . --list` found exactly one skill, `looplilt`. This verifies discovery, not an agent session selecting or following the skill. The remote command above targets the published branch; it may download and execute a package. Its [telemetry documentation](https://github.com/vercel-labs/skills#telemetry) describes `DISABLE_TELEMETRY=1` and `DO_NOT_TRACK=1`. A repository skill-only install does **not** include Looplilt's sibling CLI: keep a checkout accessible or use our portable bundle. It is not a complete one-command film toolchain. No directory listing or native plugin integration is claimed.
 
 ## Add video export when you need it
 

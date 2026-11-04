@@ -1,6 +1,6 @@
-# Candidate quality report
+# Release quality report
 
-Validation dates: 29 October–3 November 2026. This report separates executed checks from launch gates. The stable v0.1.0 release is unchanged; this candidate must be reviewed before merging, deploying, or publishing.
+Validation dates: 29 October–3 November 2026. This report records executed checks and remaining limits for v0.2.0. The maintainer approved promotion to main and release publication on 3 November. The v0.1.0 release assets remain available.
 
 ## Executed locally
 
@@ -36,7 +36,7 @@ Both compositions of each revised film were reviewed through full-duration conta
 
 The original three scores remain byte-identical in a before/after comparison on this host. Studio mode is explicit opt-in. Unit tests cover all new timbres, exact stereo duration, deterministic samples, panning, decaying room tails, and dense-mix peak headroom.
 
-The final gallery was reviewed visually on desktop and mobile. [Desktop capture](media/site-desktop.png), [phone capture](media/site-mobile.png), and [jazz-film card](media/gallery-jazz.png) show the candidate. The gallery does not autoplay its nine films or preload their video data; the muted hero is independently controlled and respects reduced motion.
+The final gallery was reviewed visually on desktop and mobile. [Desktop capture](media/site-desktop.png), [phone capture](media/site-mobile.png), and [jazz-film card](media/gallery-jazz.png) show the release design. The gallery does not autoplay its nine films or preload their video data; the muted hero is independently controlled and respects reduced motion.
 
 ## Environment limitations and pending checks
 
@@ -44,12 +44,12 @@ The final gallery was reviewed visually on desktop and mobile. [Desktop capture]
 - An optional LOOPLILT_DISABLE_GPU=1 compatibility setting was used for the remixer media check and the launch renders after intermittent headless timeouts. The sandbox stayed enabled. Website, installation, and twelve-format regression checks subsequently passed with default graphics settings.
 
 - A file-layout and CLI discovery test does not prove Codex's live skill selector or an independent agent's success rate. No independent-user study or native integration is claimed.
-- Human listening on headphones and a phone, physical-device testing, and non-Chromium browser coverage remain prelaunch review tasks. No subjective sound review is claimed.
+- Human listening on headphones and a phone, physical-device testing, and non-Chromium browser coverage were not covered by this validation. No subjective sound review is claimed.
 - looplilt.com DNS, GitHub Pages custom-domain settings, certificate issuance, HTTPS enforcement, and real redirects are prepared but not activated or verified. Follow [the domain handoff](../domain.md).
-- Launch posts, directory submissions, analytics services, a release, and production deployment have not been published or enabled.
+- Launch posts, directory submissions, and analytics services have not been published or enabled. Domain activation remains pending the DNS handoff.
 
 ## Baseline preserved
 
 Before changes, the 16-test core suite, site build and four-width checks, doctor, init/build/sound, full 16-second render and decode, media fixture, and release packaging were exercised. Nine original example/format browser combinations subsequently passed. Existing release assets were preserved.
 
-The branch adds a real constrained remixer, a portable installer, a setup prompt, a clickable runtime credit, an optional stereo sound studio, original editable films, and review materials. It introduces no backend, user-code editor, tracking, uploaded artwork, or cloud rendering.
+The release adds a real constrained remixer, a portable installer, a setup prompt, a clickable runtime credit, an optional stereo sound studio, original editable films, and review materials. It introduces no backend, user-code editor, tracking, uploaded artwork, or cloud rendering.

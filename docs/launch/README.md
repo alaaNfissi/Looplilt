@@ -1,6 +1,6 @@
 # Looplilt launch preparation
 
-This folder is a review package. The current stable release and production site remain unchanged until the maintainer approves a merge and deployment. External posts and directory submissions are drafts only.
+This folder records the product decisions, validation, and launch materials for Looplilt v0.2.0. The maintainer approved promotion to main and release publication on 3 November 2026. External posts and directory submissions remain drafts; domain activation has its own DNS and HTTPS checks.
 
 - [Product assessment and decisions](PRODUCT.md)
 - [Channel-specific launch materials](LAUNCH.md)

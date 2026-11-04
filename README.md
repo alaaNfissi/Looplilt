@@ -41,7 +41,7 @@ Each film has original artwork and a procedural score. [Watch and download wide 
 
 Try the [Pocket greenhouse remixer](https://looplilt.com/remix/) to change colors, words, and pacing in your browser, then download the actual editable project. No installation or account is needed for that first creative step. MP4 export runs locally.
 
-**This branch is a development candidate.** The remixer and new installer will become public after review and deployment. The published [v0.1.0 release](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.1.0) remains unchanged. To preview this branch locally, run `npm run site` and serve `.site/` with a local HTTP server.
+Download [Looplilt v0.2.0](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.2.0) for the source or portable skill bundle. The [GitHub Pages address](https://alaanfissi.github.io/Looplilt/) remains available during the looplilt.com domain transition. To preview locally, run `npm run site` and serve `.site/` with a local HTTP server.
 
 Install [Node.js 22 or newer](https://nodejs.org/). HTML previews use only Node's built-in modules.
 
