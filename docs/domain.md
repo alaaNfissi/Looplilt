@@ -24,7 +24,7 @@ Use Automatic TTL. Replace conflicting parking/URL-redirect/web records for thes
 
 Optional IPv6: four AAAA records at `@`: `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`. Do not keep AAAA records pointing to another host.
 
-These are the [GitHub Pages addresses and domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), checked 29 October 2026. The CNAME value has no protocol or repository path. With apex and www configured, Pages redirects www to the configured apex.
+These are the [GitHub Pages addresses and domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), rechecked 3 November 2026. The CNAME value has no protocol or repository path. With apex and www configured, Pages redirects www to the configured apex.
 
 ## HTTPS and deployment
 
@@ -41,10 +41,10 @@ Check DNS with `Resolve-DnsName looplilt.com -Type A` and `Resolve-DnsName www.l
 - HTTPS has a valid certificate on apex and www; HTTP upgrades to HTTPS.
 - www redirects to apex; the previous https://alaanfissi.github.io/Looplilt/ URL redirects to the correct home page.
 - Old deep links such as `/Looplilt/remix/` and `/Looplilt/play/paper-garden.html` reach the equivalent new paths. Test actual redirect responses; do not assume path behavior.
-- Home, all six existing videos, standalone players, remixer download, and setup-prompt copying work on desktop and mobile.
+- Home, all nine films in both formats (18 videos), standalone players, remixer download, and setup-prompt copying work on desktop and mobile.
 - Social-card, favicon, robots.txt, sitemap.xml, and release-download links load successfully.
 - No mixed-content errors, missing modules, redirect loops, or unexpected external requests occur.
 
-Run `node scripts/verify-domain.mjs` after activation for public HTTP/redirect checks. It is read-only and deliberately fails while the domain is unconfigured.
+Run `node scripts/verify-domain.mjs` after activation for public HTTP/redirect checks. It checks seven canonical/redirect routes and the availability and content types of 53 assets across the nine films, using HEAD requests for large files. It is read-only and deliberately fails while the domain is unconfigured. Automated fixtures exercise successful routing, incorrect redirects, missing videos, and HTML responses masquerading as video; these do not replace live checks after activation.
 
 If the cutover fails, restore the saved web DNS and Pages setting together, retain domain verification, and restore prior canonical metadata through a normal revert PR if needed. Avoid leaving web DNS pointed at an unclaimed Pages hostname. Production activation and these live checks remain pending.

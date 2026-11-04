@@ -8,12 +8,13 @@ Windows, Node.js 24.19.0, Playwright 1.58.2 / Chromium 145, FFmpeg and FFprobe. 
 
 | Check | Observed result |
 | --- | --- |
-| Core unit suite | 28 tests passed, including project validation, overwrite protection, audio determinism, ZIP safety, source-text escaping, prompt consistency, canonical metadata, band-limited chip synthesis, and the stereo studio |
+| Core unit suite | 32 tests passed, including project validation, overwrite protection, audio determinism, ZIP safety, source-text escaping, prompt consistency, canonical metadata, band-limited chip synthesis, and the stereo studio |
 | Remixer | Controls, invalid values, safe text, real ZIP download, play/pause, reset, keyboard seeking, four viewport widths, and no external requests passed again on 3 November |
 | Preview/export parity | 15 byte-identical PNG comparisons: five times in each of wide, tall, and square, using a customized title, palette, and pace |
 | Downloaded project | Actual browser ZIP rendered to a 12.8-second MP4: 384 frames, 1280×720, 30 fps, H.264/AAC; complete decoding passed |
 | Website | Layout at 320, 390, 768, and 1440 pixels; all 18 gallery MP4 variants; preview selection, pause, keyboard seek, reduced motion, links, and exact clipboard prompt passed |
 | Source packaging | A fresh copy without generated gallery HTML passed all 28 core tests, built nine standalone players, and produced source and portable-skill archives. The source ZIP is about 41 MB; the portable runtime/skill ZIP is about 119 KB. Versioned checksums preserve earlier manifests. |
+| Domain cutover checker | Four fixture tests cover canonical redirects, all nine films and 53 assets, missing videos, and incorrect media types. Current public DNS still points to Namecheap parking; live GitHub Pages DNS, certificate, and redirect verification remains pending activation. |
 | Former repository path | Home → remixer navigation and relative assets passed when mounted at /Looplilt/; canonical metadata uses looplilt.com |
 | Portable skill | New destination, inventory hashes, existing-folder refusal, independent runtime lookup, dependency-free init/build, drawing, playback, and safe attribution link passed again with the expanded runtime on 3 November |
 | Skill metadata/discovery | Skill validator passed. skills CLI 1.7.4 found exactly one local skill named looplilt; telemetry was disabled |
