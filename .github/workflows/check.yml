@@ -23,7 +23,8 @@ jobs:
       - run: npm run site
       - run: npm run pack
   browser-and-media:
-    runs-on: ubuntu-latest
+    # Playwright 1.58 supports Ubuntu 24.04; keep browser dependencies reproducible.
+    runs-on: ubuntu-24.04
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
