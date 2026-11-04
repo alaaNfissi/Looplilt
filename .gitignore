@@ -3,6 +3,8 @@ output/
 dist/
 .site/
 .validation/
+.agents/
+.claude/
 .env
 .env.*
 *.log

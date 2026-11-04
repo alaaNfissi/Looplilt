@@ -1,0 +1,33 @@
+import fs from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import { installSkill } from './install-skill.mjs';
+import { run } from '../lib/process.mjs';
+import { sha256 } from '../lib/archive.mjs';
+import { withBrowser, filmPage, framePng } from '../lib/browser.mjs';
+
+const folder = await fs.mkdtemp(path.join(os.tmpdir(), 'looplilt-first-use-'));
+const destination = path.join(folder, '.agents', 'skills', 'looplilt');
+const installed = await installSkill(destination);
+const inventory = JSON.parse(await fs.readFile(path.join(destination, 'INVENTORY.json'), 'utf8'));
+for (const item of inventory) assert.equal(sha256(await fs.readFile(path.join(destination, item.path))), item.sha256, item.path);
+assert.ok(!inventory.some(item => /(?:node_modules|site\/|launch\/media)/.test(item.path)));
+assert.ok(await fs.readFile(installed.skill, 'utf8').then(text => text.includes('runtime/package.json')));
+await assert.rejects(installSkill(destination), { code: 'EEXIST' });
+assert.equal(sha256(await fs.readFile(installed.skill)), inventory.find(item => item.path === 'SKILL.md').sha256);
+const project = path.join(folder, 'my-first-loop'), preview = path.join(folder, 'my-first-loop.html');
+await run(process.execPath, [installed.cli, 'init', project], { cwd: folder });
+await run(process.execPath, [installed.cli, 'build', project, '--out', preview], { cwd: folder });
+await assert.rejects(fs.access(path.join(destination, 'runtime', 'node_modules')));
+await withBrowser(async browser => {
+  const page = await filmPage(browser, await fs.readFile(preview, 'utf8'), 1280, 900);
+  assert.notDeepEqual(await framePng(page, 0), await framePng(page, 11));
+  await page.locator('#restart').click(); await page.locator('#play').click();
+  await page.waitForFunction(() => Number(document.querySelector('#timeline').value) > 0.1);
+  await page.locator('#play').click();
+  assert.equal(await page.locator('a[href="https://looplilt.com/"]').getAttribute('rel'), 'noopener noreferrer');
+  await page.close();
+});
+console.log('Portable install: inventory, existing-folder protection, independent runtime lookup, dependency-free init/build, drawing, playback, and attribution link passed');
+console.log(folder);

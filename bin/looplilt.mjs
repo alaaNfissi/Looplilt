@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import fs from 'node:fs/promises';
+import { EXAMPLE_NAMES } from '../lib/catalog.mjs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readProject, writeNew } from '../lib/project.mjs';
@@ -7,9 +8,9 @@ import { buildProject } from '../lib/build.mjs';
 import { captionsVtt, makeSound } from '../lib/sound.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const HELP = `Looplilt — small stories, real motion
+const HELP = `Looplilt â€” small stories, real motion
 
-  node bin/looplilt.mjs init <folder> [--example paper-garden|orbit-to-wave|tiny-delivery]
+  node bin/looplilt.mjs init <folder> [--example ${EXAMPLE_NAMES.join('|')}]
   node bin/looplilt.mjs build <project> --out <film.html> [--format landscape|portrait|square]
   node bin/looplilt.mjs render <project> --out <film.mp4> [--format portrait] [--workers 2] [--narration voice.wav]
   node bin/looplilt.mjs storyboard <project> --out <sheet.png> [--format portrait]
@@ -38,14 +39,14 @@ export function argumentsFor(args) {
 async function main(args) {
   const command = args.shift();
   if (!command || ['help', '--help', '-h'].includes(command)) { console.log(HELP); return; }
-  if (command === '--version') { console.log('0.1.0'); return; }
+  if (command === '--version') { console.log(JSON.parse(await fs.readFile(path.join(root, 'package.json'), 'utf8')).version); return; }
   const { values, options } = argumentsFor(args);
   const project = values[0];
   if (command !== 'doctor' && (!project || values.length !== 1)) throw new Error('Provide exactly one project folder or input file');
   if (['build', 'render', 'storyboard', 'captions', 'sound'].includes(command) && !options.out) throw new Error('--out is required');
   if (command === 'init') {
     const example = options.example || 'paper-garden';
-    if (!['paper-garden', 'orbit-to-wave', 'tiny-delivery'].includes(example)) throw new Error('Unknown example');
+    if (!EXAMPLE_NAMES.includes(example)) throw new Error('Unknown example');
     await fs.mkdir(project, { recursive: false });
     const source = path.join(root, 'examples', example);
     for (const name of await fs.readdir(source)) {
@@ -67,7 +68,7 @@ async function main(args) {
       const { withBrowser } = await import('../lib/browser.mjs');
       console.log(`Node ${process.version}`);
       for (const binary of [media.ffmpeg(), media.ffprobe()]) console.log((await run(binary, ['-version'])).stdout.split('\n')[0]);
-      await withBrowser(async browser => console.log(`Chromium ${browser.version()} — sandbox enabled`));
+      await withBrowser(async browser => console.log(`Chromium ${browser.version()} â€” sandbox enabled`));
     }
   } else throw new Error(`Unknown command: ${command}\n${HELP}`);
 }

@@ -7,3 +7,5 @@ For a code change, run `npm test`. If it affects drawing, the player, or renderi
 Examples should tell a distinct visual story and include their editable drawing and score. Submit only material you have the right to share. Do not copy another project's illustrations, characters, prose, code, or example media into the collection. By contributing, you agree to license your contribution under this repository's MIT license; retain notices required for any separately licensed contribution and discuss them before adding it.
 
 The maintainer is Alaa Nfissi. Use descriptive commit messages about the change.
+
+To share a finished original film, use the [showcase guide](docs/community.md) and the repository's Share a creation issue form. This is a new initiative: submissions are reviewed before any gallery inclusion.

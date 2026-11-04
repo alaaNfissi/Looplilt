@@ -1,0 +1,9 @@
+Set up Looplilt for me in this workspace so we can make editable animated films together.
+
+Use the official repository: https://github.com/alaaNfissi/Looplilt. Reuse a healthy existing checkout or clone it into a new Looplilt folder, preserving my existing files. Check for Git and Node.js 22 or newer; use the installation instructions for my operating system if either is missing. Read the checkout's README and skills/looplilt/SKILL.md.
+
+Make the Looplilt skill available to this coding agent at project scope. If scripts/install-skill.mjs exists, run it with this agent's project skill directory as the destination; for Codex that is .agents/skills/looplilt in my workspace. This installs a portable copy with its runtime. If that command is unavailable, follow the skill explicitly from the checkout and tell me its location. Do not claim that a skill adds execution tools or that it was discovered unless you verified that.
+
+Create a new my-first-loop project and build a standalone HTML preview with Looplilt's CLI. HTML needs only Node; do not make browser or video dependencies a prerequisite. Open the preview if your tools permit, check playback and seeking, and give me the exact project and player paths. If you cannot inspect playback, say so.
+
+Finish by telling me how to ask for a change to the film. If I request MP4 export, set up the pinned Chromium dependency and FFmpeg/FFprobe, run doctor, render a short film, and verify it with check. Do not publish anything or overwrite an existing project. Ask only for missing choices or permissions that actually block setup.

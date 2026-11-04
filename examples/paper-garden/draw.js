@@ -1,13 +1,16 @@
 // Pocket greenhouse: a small paper world drawn entirely with Canvas paths.
-function drawFrame({ ctx: c, w, h, t, portrait }) {
+function drawFrame({ ctx: c, w, h, t, portrait, settings = {} }) {
+  t *= settings.pace ?? 1;
   const u = Math.min(w, h) / 720;
   const clamp = x => Math.max(0, Math.min(1, x));
   const ease = x => { x = clamp(x); return x * x * (3 - 2 * x); };
   const at = (start, duration) => ease((t - start) / duration);
-  const ink = '#263e32', paper = '#f5efde', coral = '#e78561', leaf = '#688b54';
+  const ink = '#263e32', paper = '#f5efde', coral = '#e78561', leaf = settings.leaf ?? '#688b54';
+  const petal = settings.petal ?? '#e99b6e';
+  const petalLight = petal === '#e99b6e' ? '#f4ba88' : '#' + petal.slice(1).match(/../g).map(hex => Math.round(parseInt(hex, 16) * 0.72 + 255 * 0.28).toString(16).padStart(2, '0')).join('');
   const circle = (x, y, r, fill) => { c.fillStyle = fill; c.beginPath(); c.arc(x, y, r, 0, Math.PI * 2); c.fill(); };
   function label(text, x, y, size, color = ink, weight = 500) {
-    c.fillStyle = color; c.font = `${weight} ${size * u}px Georgia, serif`; c.textAlign = 'center'; c.fillText(text, x, y);
+    c.fillStyle = color; c.font = `${weight} ${size * u}px Georgia, serif`; c.textAlign = 'center'; c.fillText(text, x, y, w - 84 * u);
   }
   function oval(x, y, rx, ry, color, angle = 0) {
     c.fillStyle = color; c.beginPath(); c.ellipse(x, y, rx, ry, angle, 0, Math.PI * 2); c.fill();
@@ -23,7 +26,7 @@ function drawFrame({ ctx: c, w, h, t, portrait }) {
   c.strokeStyle = '#d7ceaf'; c.lineWidth = 1.5 * u;
   c.strokeRect(28 * u, 28 * u, w - 56 * u, h - 56 * u);
   label('A SMALL EXPERIMENT IN POSSIBILITY', w / 2, h * 0.105, 13, '#6c7961', 600);
-  label('Pocket greenhouse', w / 2, h * 0.19, portrait ? 43 : 54, ink, 600);
+  label(settings.title ?? 'Pocket greenhouse', w / 2, h * 0.19, portrait ? 43 : 54, ink, 600);
   const stageX = w / 2, stageY = portrait ? h * 0.60 : h * 0.65;
   c.save(); c.translate(stageX, stageY); c.scale(u, u);
   // Paper landscape and folded stage.
@@ -73,7 +76,7 @@ function drawFrame({ ctx: c, w, h, t, portrait }) {
   foliage(2, -147, 0.1, at(6.4, 1.6) * 0.75);
   const bloom = at(8.1, 2.2);
   c.save(); c.translate(sway, top); c.scale(bloom, bloom); c.rotate(Math.sin(t) * 0.025);
-  for (let i = 0; i < 9; i++) { c.rotate(Math.PI * 2 / 9); oval(0, -32, 17, 35, i % 2 ? '#f4ba88' : '#e99b6e'); }
+  for (let i = 0; i < 9; i++) { c.rotate(Math.PI * 2 / 9); oval(0, -32, 17, 35, i % 2 ? petalLight : petal); }
   circle(0, 0, 24, '#d8a343'); circle(0, 0, 18, '#594d32');
   for (let i = 0; i < 18; i++) circle(Math.cos(i * 2.4) * Math.sqrt(i) * 3.5, Math.sin(i * 2.4) * Math.sqrt(i) * 3.5, 1.4, '#edcf75');
   c.restore();

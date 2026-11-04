@@ -7,9 +7,11 @@ description: Create editable Canvas animations with Looplilt, preview them as st
 
 Use Looplilt for procedural, editable visual stories. Respect the user's requested format, story, language, and delivery scope. The project owns its artwork and drawing code; do not import illustrations or examples from unrelated projects.
 
-Locate the Looplilt repository by its `package.json` and `bin/looplilt.mjs`. In the portable skill bundle it is in `runtime/` beside this file. Commands below run from that root. If the environment cannot run Node, Chromium, and FFmpeg, produce editable project files and explain which local steps remain. An instruction file does not supply execution tools or a voice service.
+First look for `runtime/package.json` and `runtime/bin/looplilt.mjs` beside this skill file. The portable installer and release bundle include that runtime; its location is relative to the skill, not the working directory. Otherwise locate the Looplilt checkout by its `package.json` (name `looplilt`) and `bin/looplilt.mjs`. Commands below run from the runtime root, with explicit paths to the user's project and output. If no runtime is available, follow the official repository's setup instructions; do not mistake this instruction file for an installed CLI.
 
-Read `docs/authoring.md` for the project schema and drawing API. Read `docs/tools.md` when installing, rendering, or troubleshooting local tools.
+HTML previews need only Node.js 22+. Do not block that first working preview on browser downloads or FFmpeg. For MP4 export, add the pinned Chromium and FFmpeg/FFprobe, then run `doctor`. If the environment lacks execution tools, produce editable project files and explain what remains. A skill does not supply a shell, browser, or voice service. Read `docs/agents.md` for installation routes and the copyable setup prompt.
+
+Read `docs/authoring.md` for the project schema and drawing API. For rich sound, read `docs/audio.md`: explicit studio mode adds stereo instruments, percussion, environmental textures, panning, room reflections, and echo. Arrange sound around the story instead of repeating a simple pulse. Read `docs/showcase.md` to choose a relevant original example. Read `docs/tools.md` when installing, rendering, or troubleshooting local tools.
 
 Translate the idea into a few visible actions before adding text. Create a project with `node bin/looplilt.mjs init <new-folder>`, or write `project.json` and `draw.js` directly. Derive drawing state from absolute time `t`; avoid mutable frame counters, unseeded randomness, external requests, and remote fonts. Compose for the actual width and height. Reserve space for captions when present.
 

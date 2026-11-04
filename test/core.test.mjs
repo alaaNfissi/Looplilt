@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
+import { EXAMPLE_NAMES } from '../lib/catalog.mjs';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -54,7 +55,7 @@ test('output creation never replaces existing user files', async () => {
   } finally { await fs.rm(dir, { recursive: true }); }
 });
 test('all original examples validate and build a standalone document', async () => {
-  for (const slug of ['paper-garden', 'orbit-to-wave', 'tiny-delivery']) {
+  for (const slug of EXAMPLE_NAMES) {
     const project = await readProject(path.join(root, 'examples', slug));
     const html = await makeHtml(project, 'portrait');
     assert.ok(html.includes('width="720" height="1280"'));
