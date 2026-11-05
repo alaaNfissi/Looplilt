@@ -41,7 +41,7 @@ Each film has original artwork and a procedural score. [Watch and download wide 
 
 Try the [Pocket greenhouse remixer](https://looplilt.com/remix/) to change colors, words, and pacing in your browser, then download the actual editable project. No installation or account is needed for that first creative step. MP4 export runs locally.
 
-Download [Looplilt v0.2.0](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.2.0) for the source or portable skill bundle. The [GitHub Pages address](https://alaanfissi.github.io/Looplilt/) remains available during the looplilt.com domain transition. To preview locally, run `npm run site` and serve `.site/` with a local HTTP server.
+Download [Looplilt v0.2.0](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.2.0) for the source or portable skill bundle. The showcase is live at [looplilt.com](https://looplilt.com/); the former GitHub Pages address redirects there. To preview locally, run `npm run site` and serve `.site/` with a local HTTP server.
 
 Install [Node.js 22 or newer](https://nodejs.org/). HTML previews use only Node's built-in modules.
 
@@ -132,7 +132,7 @@ ChatGPT needs an environment that can edit files and run Node, a browser, and FF
 - [Architecture](docs/architecture.md): how the player and renderer fit together.
 - [Contributing](CONTRIBUTING.md): focused improvements and original examples.
 - [Validation](docs/validation.md): what is checked and what still needs a human eye.
-- [Official domain](docs/domain.md): GitHub Pages, DNS, HTTPS, and the transition checklist.
+- [Official domain](docs/domain.md): GitHub Pages, DNS, HTTPS, and verification checks.
 - [Brand kit](docs/brand.md): editable logos, colors, repository cover, and social artwork.
 - [Remixer design](docs/remixer.md): trusted parameters, source downloads, and preview parity.
 - [Share a creation](docs/community.md): a small, new showcase initiative built around working films.

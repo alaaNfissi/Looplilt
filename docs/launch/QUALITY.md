@@ -1,6 +1,6 @@
 # Release quality report
 
-Validation dates: 29 October–3 November 2026. This report records executed checks and remaining limits for v0.2.0. The maintainer approved promotion to main and release publication on 3 November. The v0.1.0 release assets remain available.
+Validation dates: 29 October–4 November 2026. This report records executed checks and remaining limits for v0.2.0. The maintainer approved promotion to main and release publication on 3 November. The v0.1.0 release assets remain available.
 
 ## Executed locally
 
@@ -14,7 +14,7 @@ Windows, Node.js 24.19.0, Playwright 1.58.2 / Chromium 145, FFmpeg and FFprobe. 
 | Downloaded project | Actual browser ZIP rendered to a 12.8-second MP4: 384 frames, 1280×720, 30 fps, H.264/AAC; complete decoding passed |
 | Website | Layout at 320, 390, 768, and 1440 pixels; all 18 gallery MP4 variants; preview selection, pause, keyboard seek, reduced motion, links, and exact clipboard prompt passed |
 | Source packaging | A fresh copy without generated gallery HTML passed all 28 core tests, built nine standalone players, and produced source and portable-skill archives. The source ZIP is about 41 MB; the portable runtime/skill ZIP is about 119 KB. Versioned checksums preserve earlier manifests. |
-| Domain cutover checker | Four fixture tests cover canonical redirects, all nine films and 53 assets, missing videos, and incorrect media types. Current public DNS still points to Namecheap parking; live GitHub Pages DNS, certificate, and redirect verification remains pending activation. |
+| Domain cutover checker | Four fixture tests cover canonical redirects, all nine films and 53 assets, missing videos, and incorrect media types. On 4 November, ownership verification, all four A and four AAAA records, the www CNAME, and HTTPS enforcement were completed. The live checker passed seven routes and 53 assets with normal TLS validation, including old home/remixer/player redirects. Existing email DNS was preserved. |
 | Former repository path | Home → remixer navigation and relative assets passed when mounted at /Looplilt/; canonical metadata uses looplilt.com |
 | Portable skill | New destination, inventory hashes, existing-folder refusal, independent runtime lookup, dependency-free init/build, drawing, playback, and safe attribution link passed again with the expanded runtime on 3 November |
 | Skill metadata/discovery | Skill validator passed. skills CLI 1.7.4 found exactly one local skill named looplilt; telemetry was disabled |
@@ -45,8 +45,7 @@ The final gallery was reviewed visually on desktop and mobile. [Desktop capture]
 
 - A file-layout and CLI discovery test does not prove Codex's live skill selector or an independent agent's success rate. No independent-user study or native integration is claimed.
 - Human listening on headphones and a phone, physical-device testing, and non-Chromium browser coverage were not covered by this validation. No subjective sound review is claimed.
-- looplilt.com DNS, GitHub Pages custom-domain settings, certificate issuance, HTTPS enforcement, and real redirects are prepared but not activated or verified. Follow [the domain handoff](../domain.md).
-- Launch posts, directory submissions, and analytics services have not been published or enabled. Domain activation remains pending the DNS handoff.
+- Launch posts, directory submissions, and analytics services have not been published or enabled.
 
 ## Baseline preserved
 

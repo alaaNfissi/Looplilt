@@ -9,7 +9,7 @@ This folder records the product decisions, validation, and launch materials for 
 - [Community contribution loop](../community.md)
 - [Copyable installation prompt](../installation-prompt.txt)
 - [Reproduce the film](WORKED-EXAMPLE.md)
-- [Domain transition](../domain.md)
+- [Official domain and HTTPS](../domain.md)
 - [Original launch-film source](../../examples/little-idea)
 
 The launch film, **A little idea**, is 26 seconds with original procedural sound. A restless dot becomes a flower, an orbit, and a kite. The code labels display values that drive the actual drawings. It is an editable Looplilt project, not a recording of an agent session.
