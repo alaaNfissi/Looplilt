@@ -9,6 +9,14 @@ const canvas = $('#remix-canvas'), ctx = canvas.getContext('2d', { alpha: false 
 const seek = $('#seek'), play = $('#play'), download = $('#download'), status = $('#download-status');
 const sizes = { landscape: [1280, 720], portrait: [720, 1280], square: [960, 960] };
 const motion = matchMedia('(prefers-reduced-motion: reduce)');
+const preview = $('#preview-surface'), expand = $('#expand-preview');
+const palettes = { original: [REMIX_DEFAULTS.petal, REMIX_DEFAULTS.leaf], lilac: ['#b9aedb', '#4b7870'], rose: ['#d87f87', '#68864c'] };
+function syncPalette() {
+  document.querySelectorAll('[data-palette]').forEach(button => {
+    const [petal, leaf] = palettes[button.dataset.palette];
+    button.setAttribute('aria-pressed', String($('#petal').value === petal && $('#leaf').value === leaf));
+  });
+}
 let settings = remixSettings(), data = remixProject(project, settings), format = 'landscape';
 let time = 11, playing = false, last = 0, request = 0, firstPlay = true;
 function render() {
@@ -43,6 +51,7 @@ function change() {
     $('.canvas-desk').className = `canvas-desk ${format === 'portrait' ? 'tall' : format === 'square' ? 'square' : ''}`;
     $('#preview-heading').textContent = settings.title;
     $('#form-error').textContent = ''; download.disabled = false;
+    syncPalette();
     render();
   } catch (error) { pause(); $('#form-error').textContent = error.message; download.disabled = true; }
 }
@@ -62,7 +71,6 @@ $('#reset-settings').addEventListener('click', () => {
   play.textContent = 'Play from start'; change(); status.textContent = 'Original greenhouse restored.';
 });
 document.querySelectorAll('[data-palette]').forEach(button => button.addEventListener('click', () => {
-  const palettes = { original: [REMIX_DEFAULTS.petal, REMIX_DEFAULTS.leaf], lilac: ['#b9aedb', '#4b7870'], rose: ['#d87f87', '#68864c'] };
   [$('#petal').value, $('#leaf').value] = palettes[button.dataset.palette]; change();
 }));
 download.addEventListener('click', () => {
@@ -76,4 +84,19 @@ download.addEventListener('click', () => {
     status.textContent = 'Your source download is ready. Extract it, then follow the README inside.';
   } catch (error) { status.textContent = `Download failed: ${error.message}`; }
 });
+if (document.fullscreenEnabled && preview.requestFullscreen) {
+  expand.hidden = false;
+  expand.addEventListener('click', async () => {
+    try {
+      if (document.fullscreenElement) await document.exitFullscreen();
+      else await preview.requestFullscreen();
+    } catch { $('#boot-status').textContent = 'Large preview is unavailable in this browser. The inline preview still works.'; }
+  });
+  document.addEventListener('fullscreenchange', () => {
+    const expanded = document.fullscreenElement === preview;
+    expand.textContent = expanded ? 'Close ×' : 'Expand ↗';
+    expand.setAttribute('aria-label', expanded ? 'Exit the large preview' : 'Expand the live preview');
+  });
+}
+syncPalette();
 render(); play.disabled = false; seek.disabled = false; download.disabled = false; $('#boot-status').textContent = '';

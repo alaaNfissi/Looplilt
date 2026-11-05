@@ -14,6 +14,8 @@ The examples, illustrations, characters, and scores in this repository were crea
 
 Nine original films, from a five-shot lighthouse adventure to a quiet ink-paper encounter. The six new stories pair richer staging with distinct stereo arrangements; the three compact starters make the fundamentals easy to explore.
 
+**Visual styles:** pixel art, illustration, Art Deco, motion graphics, ink & wash, isometric, paper cutout, and mathematical visualization. [Filter the screening room by style](https://looplilt.com/#films); open “Inside this film” for the drawing techniques and original score.
+
 | Pixel adventure · 40s | Jazz-club comedy · 36s | Art Deco postcard · 24s |
 | --- | --- | --- |
 | [![One More Light](site/media/one-more-light-landscape.png)](https://looplilt.com/play/one-more-light.html) | [![The Missing Beat](site/media/the-missing-beat-landscape.png)](https://looplilt.com/play/the-missing-beat.html) | [![Moonrise Express](site/media/moonrise-express-landscape.png)](https://looplilt.com/play/moonrise-express.html) |
@@ -41,7 +43,7 @@ Each film has original artwork and a procedural score. [Watch and download wide 
 
 Try the [Pocket greenhouse remixer](https://looplilt.com/remix/) to change colors, words, and pacing in your browser, then download the actual editable project. No installation or account is needed for that first creative step. MP4 export runs locally.
 
-Download [Looplilt v0.2.0](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.2.0) for the source or portable skill bundle. The showcase is live at [looplilt.com](https://looplilt.com/); the former GitHub Pages address redirects there. To preview locally, run `npm run site` and serve `.site/` with a local HTTP server.
+Download [Looplilt v0.2.1](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.2.1) for the source or portable skill bundle. The showcase is live at [looplilt.com](https://looplilt.com/); the former GitHub Pages address redirects there. To preview locally, run `npm run site` and serve `.site/` with a local HTTP server.
 
 Install [Node.js 22 or newer](https://nodejs.org/). HTML previews use only Node's built-in modules.
 
@@ -97,7 +99,7 @@ node bin/looplilt.mjs check output/narrated.mp4
 
 ## Let your coding agent set it up
 
-Copy this prompt into a coding agent with local file and terminal access. The [setup guide](docs/agents.md) explains portable skill installation and platform limitations.
+Copy this prompt into a coding agent with local file and terminal access. Examples include **OpenAI Codex, Claude Code, Cursor Agent, Gemini CLI, and GitHub Copilot CLI**. Other agents can use Looplilt when they have the same tools; it is not tied to a model or provider. Text-only chats need an execution environment to build and render. The [compatibility table and setup guide](docs/agents.md#compatible-agents) explain each skill location, requirements, and what has actually been tested.
 
 <!-- SETUP_PROMPT_START -->
 ```text
@@ -105,7 +107,7 @@ Set up Looplilt for me in this workspace so we can make editable animated films 
 
 Use the official repository: https://github.com/alaaNfissi/Looplilt. Reuse a healthy existing checkout or clone it into a new Looplilt folder, preserving my existing files. Check for Git and Node.js 22 or newer; use the installation instructions for my operating system if either is missing. Read the checkout's README and skills/looplilt/SKILL.md.
 
-Make the Looplilt skill available to this coding agent at project scope. If scripts/install-skill.mjs exists, run it with this agent's project skill directory as the destination; for Codex that is .agents/skills/looplilt in my workspace. This installs a portable copy with its runtime. If that command is unavailable, follow the skill explicitly from the checkout and tell me its location. Do not claim that a skill adds execution tools or that it was discovered unless you verified that.
+Make the Looplilt skill available to this coding agent at project scope. Read docs/agents.md for the current setup. If scripts/install-skill.mjs exists, run it with a new skill directory in my workspace: .agents/skills/looplilt for Codex, .claude/skills/looplilt for Claude Code, .cursor/skills/looplilt for Cursor, .gemini/skills/looplilt for Gemini CLI, or .github/skills/looplilt for GitHub Copilot CLI. For another agent, use its documented project skill directory. This installs a portable copy with its runtime. Inspect and reuse a healthy existing installation instead of overwriting it. If skill installation is unavailable, follow SKILL.md explicitly from the checkout and tell me its location. Do not claim that a skill adds execution tools or that it was discovered unless you verified that.
 
 Create a new my-first-loop project and build a standalone HTML preview with Looplilt's CLI. HTML needs only Node; do not make browser or video dependencies a prerequisite. Open the preview if your tools permit, check playback and seeking, and give me the exact project and player paths. If you cannot inspect playback, say so.
 

@@ -31,6 +31,11 @@ try {
       await page.locator('#copy-prompt').click();
       assert.equal((await page.evaluate(() => navigator.clipboard.readText())).replaceAll('\r\n', '\n').trim(), prompt);
       const hero = page.locator('#hero-video');
+      await page.locator('#hero-sound').click();
+      assert.equal(await hero.evaluate(video => video.muted), false, 'Sound turns on only after a gesture');
+      assert.equal(await page.locator('#hero-sound').getAttribute('aria-pressed'), 'true');
+      await page.locator('#hero-sound').click();
+      assert.equal(await hero.evaluate(video => video.muted), true);
       await page.locator('[data-preview="the-missing-beat"]').click();
       await page.waitForFunction(() => document.querySelector('#hero-video').currentTime > 0.1);
       assert.equal(await page.locator('#hero-name').textContent(), 'The Missing Beat');
@@ -47,6 +52,33 @@ try {
       await page.locator('[data-preview="paper-garden"]').click();
       assert.equal(await hero.evaluate(video => video.paused), true, 'Reduced motion disables preview autoplay');
       assert.equal(await page.locator('.film').count(), SHOWCASE.length);
+      for (const button of await page.locator('[data-filter]').all()) {
+        await button.focus(); await page.keyboard.press('Enter');
+        const key = await button.getAttribute('data-filter');
+        const expected = key === 'all' ? SHOWCASE.length : Number(await button.locator('span').textContent());
+        assert.equal(await page.locator('.film:visible').count(), expected, key + ' filter');
+        if (key !== 'all') assert.equal(await page.locator(`.film:visible:not([data-style="${key}"])`).count(), 0);
+      }
+      await page.locator('[data-filter="all"]').click();
+      const firstFilm = page.locator('.film').first().locator('video');
+      await firstFilm.evaluate(async video => { video.muted = true; await video.play(); });
+      await page.locator('[data-filter="ink"]').click();
+      assert.equal(await firstFilm.evaluate(video => video.paused), true, 'Filtering pauses hidden films');
+      await page.locator('#hero-name').click();
+      await page.waitForFunction(() => !document.querySelector('#film-paper-garden').hidden);
+      assert.equal(await page.locator('.film:visible').count(), SHOWCASE.length, 'A film link reveals its card after filtering');
+      await page.locator('[data-filter="ink"]').click();
+      await page.locator('#hero-name').click();
+      await page.waitForFunction(() => !document.querySelector('#film-paper-garden').hidden);
+      assert.equal(await page.locator('.film:visible').count(), SHOWCASE.length, 'The same hash link also reveals a filtered card');
+      for (const control of await page.locator('[data-filter], [data-format], #copy, #copy-prompt, #hero-toggle, #hero-sound').all()) {
+        assert.ok((await control.boundingBox()).height >= 44, 'Important touch controls are at least 44px high');
+      }
+      await firstFilm.evaluate(async video => { video.muted = true; await video.play(); });
+      await page.locator('#hero-toggle').click();
+      await page.waitForFunction(() => !document.querySelector('#hero-video').paused);
+      assert.equal(await firstFilm.evaluate(video => video.paused), true, 'Choosing the hero pauses a playing gallery film');
+      await page.locator('#hero-toggle').click();
       for (const article of await page.locator('.film').all()) {
         const video = article.locator('video');
         await video.evaluate(async element => { element.muted = true; await element.play(); });
@@ -59,9 +91,29 @@ try {
         await video.evaluate(element => element.pause());
       }
       assert.deepEqual(failures, []);
-      console.log(`${width}px: layout, links, ${SHOWCASE.length * 2} film variants, preview selection, pause, seeking, and reduced motion passed`);
+      console.log(`${width}px: layout, links, ${SHOWCASE.length * 2} film variants, sound, style filters, touch targets, preview selection, pause, seeking, and reduced motion passed`);
       await page.close();
     }
+    const fallback = await browser.newPage({ reducedMotion: 'reduce' });
+    await fallback.addInitScript(() => {
+      Object.defineProperty(navigator, 'clipboard', { value: { writeText: async () => { throw new Error('Clipboard unavailable'); } } });
+    });
+    await fallback.goto(origin);
+    await fallback.locator('#copy-prompt').click();
+    assert.equal(await fallback.locator('.prompt-details').getAttribute('open'), '');
+    assert.equal(await fallback.locator('#installation-prompt').evaluate(input => input.selectionEnd - input.selectionStart), (await fallback.locator('#installation-prompt').inputValue()).length);
+    await fallback.locator('#copy').click();
+    assert.equal(await fallback.evaluate(() => getSelection().toString()), await fallback.locator('#commands').textContent());
+    await fallback.close();
+    const plain = await browser.newPage({ javaScriptEnabled: false, viewport: { width: 390, height: 844 } });
+    await plain.goto(origin);
+    assert.equal(await plain.locator('#hero-video').getAttribute('controls'), '');
+    assert.equal(await plain.locator('.film:visible').count(), SHOWCASE.length);
+    assert.equal(await plain.locator('.film-filters').isVisible(), false);
+    await plain.locator('.prompt-details summary').click();
+    assert.ok((await plain.locator('#installation-prompt').inputValue()).startsWith('Set up Looplilt'));
+    await plain.close();
+    console.log('Unavailable clipboard and no-JavaScript fallbacks passed');
     for (const width of [320, 768]) {
       const page = await browser.newPage({ viewport: { width, height: 900 }, reducedMotion: 'reduce' });
       await page.goto(origin, { waitUntil: 'networkidle' });

@@ -1,8 +1,17 @@
 # Changelog
 
+## 0.2.1 — 2026-11-04
+
+- Redesign the launch site with a compact film gallery, eight explicit visual-style filters, story descriptions, and expandable craft and score notes.
+- Add opt-in preview sound, larger touch controls, clearer wide/tall playback, and resilient clipboard and media fallbacks.
+- Improve phone navigation and switching between remix controls and the result; add an optional full-screen preview and accessible palette selection.
+- Present agent-assisted and terminal setup together. Document Codex, Claude Code, Cursor Agent, Gemini CLI, and GitHub Copilot CLI, with honest tool requirements and verified installation boundaries.
+- Welcome contributions in animation, music, writing, design, testing, and code.
+- Complete the looplilt.com custom domain, canonical redirects, and enforced HTTPS on GitHub Pages.
+
 ## 0.2.0 — 2026-11-03
 
-- Add six original story films in wide and portrait, expanding the showcase to nine visual styles. Each project includes editable drawings and a distinct score.
+- Add six original story films in wide and portrait, expanding the showcase to nine films across eight visual styles. Each project includes editable drawings and a distinct score.
 - Add optional stereo scoring with 20 synthesized voices, instrument panning, room reflections, echo, percussion, and environmental sounds. Existing mono scores remain compatible.
 - Add a browser remixer for Pocket greenhouse, with constrained controls, matching preview/export frames, and downloadable editable source.
 - Add a portable instruction-skill installer and a copyable setup prompt, with a dependency-free path to a first HTML film.

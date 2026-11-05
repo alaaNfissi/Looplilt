@@ -1,6 +1,6 @@
 # Launch materials — review only
 
-Prepared from primary platform guidance checked 26–28 October 2026. Nothing here has been posted, scheduled, submitted, or sent. The remixer is included in v0.2.0. The looplilt.com destination still requires the DNS transition; verify every destination immediately before posting.
+Prepared from primary platform guidance checked 26–28 October 2026. Nothing here has been posted, scheduled, submitted, or sent. The remixer is included from v0.2.0. The canonical looplilt.com site, redirects, and enforced HTTPS are live; verify every destination immediately before posting.
 
 ## Phases and audiences
 

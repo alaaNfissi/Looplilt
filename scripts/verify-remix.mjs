@@ -25,6 +25,8 @@ try {
     await page.waitForTimeout(300);
     assert.ok(await page.locator('canvas').evaluate(canvas => canvas.toDataURL()) === initial, 'Starts paused');
     await page.locator('[data-palette="lilac"]').click();
+    assert.equal(await page.locator('[data-palette="lilac"]').getAttribute('aria-pressed'), 'true');
+    assert.equal(await page.locator('[data-palette="original"]').getAttribute('aria-pressed'), 'false');
     assert.ok(await page.locator('canvas').evaluate(canvas => canvas.toDataURL()) !== initial, 'A palette changes the actual drawing');
     await page.locator('#title').fill('<svg onload=alert(1)>');
     assert.equal(await page.locator('#preview-heading').textContent(), '<svg onload=alert(1)>');
@@ -78,10 +80,21 @@ try {
     await page.locator('#play').click();
     assert.equal(await page.locator('#play').textContent(), 'Play');
     await page.locator('#reset-settings').click();
+    assert.equal(await page.locator('[data-palette="original"]').getAttribute('aria-pressed'), 'true');
     assert.ok(await page.locator('canvas').evaluate(canvas => canvas.toDataURL()) === initial, 'Reset returns exact original frame');
     for (const width of [1440, 768, 390, 320]) {
       await page.setViewportSize({ width, height: 1100 });
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `Layout at ${width}px`);
+      if (width <= 390) {
+        assert.ok(await page.locator('#title').evaluate(input => parseFloat(getComputedStyle(input).fontSize)) >= 16, 'Mobile text fields avoid input zoom');
+        await page.locator('[data-palette="lilac"]').click();
+        assert.equal(await page.locator('[data-palette="lilac"]').getAttribute('aria-pressed'), 'true', 'Phone palette is not covered by the preview');
+        await page.locator('.preview-return').click();
+        const preview = await page.locator('#preview-surface').boundingBox();
+        assert.ok(preview.y >= 70 && preview.y + preview.height < 1100, 'Phone preview link reveals the complete result');
+        await page.locator('.preview-edit').click();
+        await page.locator('#reset-settings').click();
+      }
       await page.screenshot({ path: path.join(folder, `remix-${width}.png`), fullPage: true });
     }
     await page.locator('#seek').focus(); await page.keyboard.press('Home'); await page.keyboard.press('ArrowRight');

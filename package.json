@@ -1,6 +1,6 @@
 {
   "name": "looplilt",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Small stories. Real motion. Editable Canvas films with local video export.",
   "type": "module",
   "private": true,

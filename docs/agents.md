@@ -2,6 +2,26 @@
 
 Copy the [installation prompt](installation-prompt.txt) into a local coding agent. It asks the agent to install Looplilt, make a first working HTML film, and tell you where the editable source lives. It works without an API key for Looplilt; your coding agent has its own access requirements.
 
+## Compatible agents
+
+Looplilt is a local JavaScript CLI and an instruction skill. It does not depend on a particular AI model or provider. An agent needs permission to read and edit project files and run Node.js commands. A browser is needed to inspect playback; MP4 export also requires Chromium and FFmpeg/FFprobe.
+
+Use the setup prompt with these coding agents. The table records their **documented skill support**, checked on 4 November 2026. It is not a claim that an independent end-to-end Looplilt session has been tested in every product.
+
+| Coding agent | Project skill destination | Official documentation |
+| --- | --- | --- |
+| OpenAI Codex | `.agents/skills/looplilt` | [Local skill discovery](https://learn.chatgpt.com/docs/build-skills) |
+| Claude Code | `.claude/skills/looplilt` | [Extend Claude with skills](https://code.claude.com/docs/en/skills) |
+| Cursor Agent | `.cursor/skills/looplilt` | [Agent Skills](https://cursor.com/docs/skills) |
+| Gemini CLI | `.gemini/skills/looplilt` | [Agent Skills](https://geminicli.com/docs/cli/skills/) |
+| GitHub Copilot CLI | `.github/skills/looplilt` | [Adding agent skills](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-skills) |
+
+These are examples, not an exhaustive list. Another coding agent can follow `SKILL.md` and run the CLI if it has the required tools, even without automatic skill discovery. Use one destination appropriate to your agent. Its permissions, model quality, and operating environment determine what it can execute.
+
+A text-only ChatGPT, Claude, Gemini, or other chat session can help write the two project files, but cannot build or render them without file and process tools. A skill does not add those tools. Hosted agents may also restrict browser downloads, binaries, or access to finished files.
+
+**What we verified:** portable installation, bundled runtime commands, HTML builds, project downloads, and local video rendering. Agent-specific selector discovery and independent task success rates are separate checks. The setup prompt asks the agent to report what it actually verified.
+
 ## Start with the smallest working setup
 
 Git downloads the source. Node.js 22+ builds HTML using built-in modules. From a fresh workspace:
@@ -33,7 +53,7 @@ For example, from that workspace the portable runtime can build a preview:
 node .agents/skills/looplilt/runtime/bin/looplilt.mjs build my-first-loop --out my-first-loop-v2.html
 ```
 
-The skill locates `runtime/` relative to its own `SKILL.md`. It does not depend on the original clone's absolute path. You can also unpack the `looplilt-skill-0.2.0.zip` asset from the [stable release](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.2.0) into a new skill folder. Keep `SKILL.md` and `runtime/` at the same level. The archive includes the instruction skill and its matching portable runtime.
+The skill locates `runtime/` relative to its own `SKILL.md`. It does not depend on the original clone's absolute path. You can also unpack the `looplilt-skill-0.2.1.zip` asset from the [stable release](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.2.1) into a new skill folder. Keep `SKILL.md` and `runtime/` at the same level. The archive includes the instruction skill and its matching portable runtime.
 
 In Codex, check that Looplilt appears in the skill selector, or explicitly mention `$looplilt`. If discovery has not refreshed, reopen the session. Follow [Codex's documented local skill locations](https://learn.chatgpt.com/docs/build-skills). A successful file copy verifies installation layout; selector discovery and an independent agent completing the task are separate checks.
 

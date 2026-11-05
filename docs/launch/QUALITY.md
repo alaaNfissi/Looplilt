@@ -1,5 +1,7 @@
 # Release quality report
 
+For the latest website, setup, and mobile improvements, see the [v0.2.1 launch review](LAUNCH-REVIEW.md). This report preserves the preceding film and runtime validation.
+
 Validation dates: 29 October–4 November 2026. This report records executed checks and remaining limits for v0.2.0. The maintainer approved promotion to main and release publication on 3 November. The v0.1.0 release assets remain available.
 
 ## Executed locally
