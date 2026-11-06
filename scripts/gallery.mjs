@@ -5,11 +5,13 @@ import path from 'node:path';
 const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 // Visual styles are explicit; genre and story remain in the film descriptions.
 const styles = [
+  ['storybook', 'Clockwork storybook'], ['science', 'Scientific visualization'], ['kinetic', 'Kinetic typography'],
   ['pixel', 'Pixel art'], ['illustration', 'Illustration'], ['deco', 'Art Deco'],
   ['motion', 'Motion graphics'], ['ink', 'Ink & wash'], ['isometric', 'Isometric'],
   ['paper', 'Paper cutout'], ['math', 'Math visualization']
 ];
 const styleFor = {
+  'brass-observatory': 'storybook', 'the-quiet-between': 'science', 'make-room': 'kinetic',
   'one-more-light': 'pixel', 'the-missing-beat': 'illustration', 'moonrise-express': 'deco',
   'neon-relay': 'motion', 'ink-tide': 'ink', 'the-little-lift': 'isometric',
   'paper-garden': 'paper', 'orbit-to-wave': 'math', 'tiny-delivery': 'pixel'
@@ -36,10 +38,10 @@ export async function galleryMarkup(root) {
       </div>
     </article>`);
   }
-  const filters = [['all', 'All films', SHOWCASE.length], ...styles.map(([key, label]) => [key, label, counts.get(key)])];
+  const filters = [['all', 'All films', SHOWCASE.length], ...styles.filter(([key]) => counts.get(key) > 0).map(([key, label]) => [key, label, counts.get(key)])];
   const buttons = filters.map(([key, label, count]) => `<button type="button" data-filter="${key}" aria-pressed="${key === 'all'}" aria-controls="film-grid">${escape(label)} <span>${count}</span></button>`).join('');
   return {
     cards: cards.join('\n'),
-    index: '<div class="film-toolbar"><div class="film-filters" role="group" aria-label="Filter films by visual style" hidden>' + buttons + '</div><p id="film-count" class="film-count" role="status" aria-live="polite">9 original films · 8 visual styles · sound on, when you press play</p></div>'
+    index: '<div class="film-toolbar"><div class="film-filters" role="group" aria-label="Filter films by visual style" hidden>' + buttons + '</div><p id="film-count" class="film-count" role="status" aria-live="polite">' + SHOWCASE.length + ' original films · ' + [...counts.values()].filter(Boolean).length + ' visual styles · sound on, when you press play</p></div>'
   };
 }

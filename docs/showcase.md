@@ -1,11 +1,14 @@
 # A tour of the original films
 
-The showcase contains nine complete, editable Looplilt projects. Six new stories explore different visual and musical approaches; three compact starters expose the fundamentals. A separate 26-second launch film, [Little Idea](../examples/little-idea), moves through several visual metaphors.
+The showcase contains twelve complete, editable Looplilt projects. Narrative, scientific, and kinetic-typography films now demonstrate the named-scene workflow; the existing stories and three compact starters remain available. A separate 26-second launch film, [Little Idea](../examples/little-idea), moves through several visual metaphors.
 
 Every scene is drawn by Looplilt’s Canvas runtime. Every example score is synthesized by Looplilt. There are no stock clips, image-generation outputs, sampled music tracks, or private client projects in this collection.
 
 | Film | Story and visual approach | Sound |
 | --- | --- | --- |
+| [The Brass Observatory](../examples/brass-observatory) · 32s | Clockwork storybook: a keeper fits a missing gear, aligns a telescope, and discovers a constellation. Five named shots, mechanisms, gestures, and layered scenery. | A six-track chamber waltz, plucked motifs, strings, piano, and clockwork details. |
+| [The Quiet Between](../examples/the-quiet-between) · 32s | Scientific visualization: synchronized traces, a phase dial, point-by-point addition, and a perspective interference field. | A spacious five-track piano, pad, marimba, bass, and brushed arrangement. |
+| [Make Room](../examples/make-room) · 28s | Kinetic typography: letter blocks, a circle that cannot fit, a spring-driven rearrangement, a curved route, and a geometric bloom. | Eight tracks of syncopated bass, clipped piano, brass, plucked phrases, drums, and sustained harmony. |
 | [One More Light](../examples/one-more-light) · 40s | A lighthouse keeper restores a beacon. Pixel sprites, a coastal world, five shots, camera pans, a mechanism close-up, and a returning boat. | Strings, plucked melody, restrained chip lead, weather, footsteps, and machinery. |
 | [The Missing Beat](../examples/the-missing-beat) · 36s | A newcomer finds a place in a jazz band. Character acting, ensemble choreography, close-ups, stage lighting, costumes, instruments, and audience reactions. | Walking bass, piano-like keys, brass, brushes, drums, and a triangle cue. |
 | [Moonrise Express](../examples/moonrise-express) · 24s | The last train arrives where someone is waiting. Art Deco shapes, a layered viaduct, mountains, water glints, and a camera move toward the reunion. | A string-and-piano waltz and railway rhythm that slows at arrival. |
@@ -24,7 +27,7 @@ Pixel art works by snapping geometry and camera positions to a chosen grid. Use 
 
 Wide, portrait, and square frames receive their own dimensions. The examples use that information to fit the scene. Wide and portrait MP4s are prepared for the gallery; square output is checked for playback and deterministic drawing but is not a separately curated gallery edit.
 
-The new stereo studio expands the sound palette to 20 synthesized voices with panning, room reflections, echo, percussion, and environmental textures. The six new films use different arrangements. See [audio.md](audio.md) for the exact controls and the distinction between synthesized timbres and recorded instruments.
+The new stereo studio expands the sound palette to 20 synthesized voices with panning, room reflections, echo, percussion, and environmental textures. The larger films use different arrangements. Named patterns and tracks in the three newest projects keep phrases and cue alignment editable. See [audio.md](audio.md) for the exact controls and the distinction between synthesized timbres and recorded instruments.
 
 ## Start with the closest creative problem
 
@@ -49,4 +52,4 @@ The destination must be new. The command renders both formats, captures the cata
 
 Looplilt provides drawing, playback, synthesis, captions, and local export. It does not automatically invent a story, generate character artwork from a prompt, provide text-to-speech, or select licensed music. A person or coding agent authors the project files. The files remain inspectable and editable.
 
-Storyboards help with composition; repeatability, decoding, and loudness checks help with technical quality. They do not replace watching and listening to a finished film. See [the quality record](launch/QUALITY.md) for checks actually run and their limits.
+Storyboards help with composition; repeatability, decoding, and loudness checks help with technical quality. They do not replace watching and listening to a finished film. See [the current quality record](evolution/REPORT.md) for checks actually run and their limits.

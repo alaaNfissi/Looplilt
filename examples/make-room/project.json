@@ -1,0 +1,870 @@
+{
+  "version": 1,
+  "title": "Make Room",
+  "duration": 28,
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "full",
+      "label": "No space left",
+      "start": 0,
+      "end": 4,
+      "description": "A packed typographic grid leaves a small coral circle outside.",
+      "params": {
+        "accent": "#d45d3b"
+      }
+    },
+    {
+      "id": "try",
+      "label": "A bad fit",
+      "start": 4,
+      "end": 10,
+      "description": "The circle tries three times to enter a square opening, then pauses.",
+      "params": {
+        "accent": "#d45d3b"
+      }
+    },
+    {
+      "id": "open",
+      "label": "Change the arrangement",
+      "start": 10,
+      "end": 16,
+      "description": "Letter blocks tilt like gates and a curved route opens between them.",
+      "params": {
+        "accent": "#d45d3b"
+      }
+    },
+    {
+      "id": "room",
+      "label": "Make room",
+      "start": 16,
+      "end": 22,
+      "description": "Letters spread and settle into MAKE ROOM as the circle finds its place.",
+      "params": {
+        "accent": "#d45d3b"
+      }
+    },
+    {
+      "id": "next",
+      "label": "What comes next",
+      "start": 22,
+      "end": 28,
+      "description": "The circle becomes the center of a rotating geometric flower beside the final invitation.",
+      "params": {
+        "accent": "#d45d3b"
+      }
+    }
+  ],
+  "cues": [
+    {
+      "id": "rearrange",
+      "at": 10
+    },
+    {
+      "id": "make-room",
+      "at": 16
+    },
+    {
+      "id": "bloom",
+      "at": 22
+    }
+  ],
+  "audio": {
+    "mode": "studio",
+    "room": 0.12,
+    "delay": 0.08,
+    "echoSeconds": 0.25
+  },
+  "captions": [],
+  "score": [
+    {
+      "at": 5.1,
+      "length": 0.11,
+      "pitch": 65,
+      "voice": "footstep",
+      "gain": 0.14,
+      "pan": -0.35
+    },
+    {
+      "at": 6.2,
+      "length": 0.11,
+      "pitch": 65,
+      "voice": "footstep",
+      "gain": 0.14,
+      "pan": -0.35
+    },
+    {
+      "at": 7.4,
+      "length": 0.11,
+      "pitch": 65,
+      "voice": "footstep",
+      "gain": 0.14,
+      "pan": -0.35
+    },
+    {
+      "at": 10,
+      "length": 1,
+      "pitch": 72,
+      "voice": "wind",
+      "gain": 0.04,
+      "pan": 0.35
+    }
+  ],
+  "music": {
+    "bpm": 120,
+    "patterns": [
+      {
+        "id": "bass-walk",
+        "beats": 8,
+        "notes": [
+          {
+            "beat": 0,
+            "pitch": 41,
+            "length": 0.6,
+            "gain": 0.8
+          },
+          {
+            "beat": 1.5,
+            "pitch": 41,
+            "length": 0.3,
+            "gain": 0.8
+          },
+          {
+            "beat": 2.5,
+            "pitch": 48,
+            "length": 0.4,
+            "gain": 0.8
+          },
+          {
+            "beat": 3.5,
+            "pitch": 51,
+            "length": 0.4,
+            "gain": 0.8
+          },
+          {
+            "beat": 4,
+            "pitch": 46,
+            "length": 0.6,
+            "gain": 0.8
+          },
+          {
+            "beat": 5.5,
+            "pitch": 46,
+            "length": 0.3,
+            "gain": 0.8
+          },
+          {
+            "beat": 6.5,
+            "pitch": 48,
+            "length": 0.35,
+            "gain": 0.8
+          },
+          {
+            "beat": 7.5,
+            "pitch": 40,
+            "length": 0.35,
+            "gain": 0.8
+          }
+        ]
+      },
+      {
+        "id": "bass-home",
+        "beats": 8,
+        "notes": [
+          {
+            "beat": 0,
+            "pitch": 41,
+            "length": 1.2,
+            "gain": 0.8
+          },
+          {
+            "beat": 2,
+            "pitch": 48,
+            "length": 0.6,
+            "gain": 0.8
+          },
+          {
+            "beat": 3.5,
+            "pitch": 53,
+            "length": 0.35,
+            "gain": 0.8
+          },
+          {
+            "beat": 4,
+            "pitch": 46,
+            "length": 1.2,
+            "gain": 0.8
+          },
+          {
+            "beat": 6,
+            "pitch": 48,
+            "length": 0.7,
+            "gain": 0.8
+          },
+          {
+            "beat": 7,
+            "pitch": 41,
+            "length": 0.9,
+            "gain": 0.8
+          }
+        ]
+      },
+      {
+        "id": "keys-cut",
+        "beats": 8,
+        "notes": [
+          {
+            "beat": 0.5,
+            "pitch": 65,
+            "length": 0.45,
+            "gain": 0.8
+          },
+          {
+            "beat": 0.5,
+            "pitch": 69,
+            "length": 0.45,
+            "gain": 0.8
+          },
+          {
+            "beat": 0.5,
+            "pitch": 72,
+            "length": 0.45,
+            "gain": 0.8
+          },
+          {
+            "beat": 3,
+            "pitch": 63,
+            "length": 0.5,
+            "gain": 0.8
+          },
+          {
+            "beat": 3,
+            "pitch": 67,
+            "length": 0.5,
+            "gain": 0.8
+          },
+          {
+            "beat": 3,
+            "pitch": 70,
+            "length": 0.5,
+            "gain": 0.8
+          },
+          {
+            "beat": 4.5,
+            "pitch": 65,
+            "length": 0.45,
+            "gain": 0.8
+          },
+          {
+            "beat": 4.5,
+            "pitch": 69,
+            "length": 0.45,
+            "gain": 0.8
+          },
+          {
+            "beat": 4.5,
+            "pitch": 72,
+            "length": 0.45,
+            "gain": 0.8
+          },
+          {
+            "beat": 7,
+            "pitch": 60,
+            "length": 0.6,
+            "gain": 0.8
+          },
+          {
+            "beat": 7,
+            "pitch": 65,
+            "length": 0.6,
+            "gain": 0.8
+          },
+          {
+            "beat": 7,
+            "pitch": 69,
+            "length": 0.6,
+            "gain": 0.8
+          }
+        ]
+      },
+      {
+        "id": "brass-reply",
+        "beats": 8,
+        "notes": [
+          {
+            "beat": 0,
+            "pitch": 72,
+            "length": 0.25,
+            "gain": 0.8
+          },
+          {
+            "beat": 0.75,
+            "pitch": 74,
+            "length": 0.2,
+            "gain": 0.8
+          },
+          {
+            "beat": 1.5,
+            "pitch": 77,
+            "length": 0.7,
+            "gain": 0.8
+          },
+          {
+            "beat": 3,
+            "pitch": 72,
+            "length": 0.45,
+            "gain": 0.8
+          },
+          {
+            "beat": 4.5,
+            "pitch": 79,
+            "length": 0.2,
+            "gain": 0.8
+          },
+          {
+            "beat": 5.25,
+            "pitch": 77,
+            "length": 0.2,
+            "gain": 0.8
+          },
+          {
+            "beat": 6,
+            "pitch": 74,
+            "length": 0.6,
+            "gain": 0.8
+          },
+          {
+            "beat": 7,
+            "pitch": 72,
+            "length": 0.6,
+            "gain": 0.8
+          }
+        ]
+      },
+      {
+        "id": "pluck-route",
+        "beats": 8,
+        "notes": [
+          {
+            "beat": 0,
+            "pitch": 77,
+            "length": 0.3,
+            "gain": 0.8
+          },
+          {
+            "beat": 0.75,
+            "pitch": 81,
+            "length": 0.35,
+            "gain": 0.8
+          },
+          {
+            "beat": 1.5,
+            "pitch": 84,
+            "length": 0.3,
+            "gain": 0.8
+          },
+          {
+            "beat": 2.25,
+            "pitch": 81,
+            "length": 0.45,
+            "gain": 0.8
+          },
+          {
+            "beat": 3.5,
+            "pitch": 79,
+            "length": 0.35,
+            "gain": 0.8
+          },
+          {
+            "beat": 4,
+            "pitch": 77,
+            "length": 0.3,
+            "gain": 0.8
+          },
+          {
+            "beat": 5,
+            "pitch": 74,
+            "length": 0.4,
+            "gain": 0.8
+          },
+          {
+            "beat": 6,
+            "pitch": 72,
+            "length": 0.35,
+            "gain": 0.8
+          },
+          {
+            "beat": 7.25,
+            "pitch": 77,
+            "length": 0.5,
+            "gain": 0.8
+          }
+        ]
+      },
+      {
+        "id": "kick-step",
+        "beats": 8,
+        "notes": [
+          {
+            "beat": 0,
+            "pitch": 36,
+            "length": 0.28,
+            "gain": 0.8
+          },
+          {
+            "beat": 1.75,
+            "pitch": 36,
+            "length": 0.24,
+            "gain": 0.8
+          },
+          {
+            "beat": 3,
+            "pitch": 36,
+            "length": 0.28,
+            "gain": 0.8
+          },
+          {
+            "beat": 4,
+            "pitch": 36,
+            "length": 0.28,
+            "gain": 0.8
+          },
+          {
+            "beat": 5.5,
+            "pitch": 36,
+            "length": 0.24,
+            "gain": 0.8
+          },
+          {
+            "beat": 7,
+            "pitch": 36,
+            "length": 0.28,
+            "gain": 0.8
+          }
+        ]
+      },
+      {
+        "id": "snare-turn",
+        "beats": 8,
+        "notes": [
+          {
+            "beat": 1,
+            "pitch": 62,
+            "length": 0.16,
+            "gain": 0.8
+          },
+          {
+            "beat": 3,
+            "pitch": 62,
+            "length": 0.17,
+            "gain": 0.7
+          },
+          {
+            "beat": 5,
+            "pitch": 62,
+            "length": 0.16,
+            "gain": 0.8
+          },
+          {
+            "beat": 7,
+            "pitch": 62,
+            "length": 0.18,
+            "gain": 0.75
+          },
+          {
+            "beat": 7.5,
+            "pitch": 62,
+            "length": 0.12,
+            "gain": 0.3
+          }
+        ]
+      },
+      {
+        "id": "hat-weave",
+        "beats": 8,
+        "notes": [
+          {
+            "beat": 0,
+            "pitch": 80,
+            "length": 0.07,
+            "gain": 0.6
+          },
+          {
+            "beat": 0.5,
+            "pitch": 80,
+            "length": 0.07,
+            "gain": 0.32
+          },
+          {
+            "beat": 1,
+            "pitch": 80,
+            "length": 0.07,
+            "gain": 0.6
+          },
+          {
+            "beat": 1.5,
+            "pitch": 80,
+            "length": 0.07,
+            "gain": 0.32
+          },
+          {
+            "beat": 2,
+            "pitch": 80,
+            "length": 0.07,
+            "gain": 0.6
+          },
+          {
+            "beat": 2.5,
+            "pitch": 80,
+            "length": 0.07,
+            "gain": 0.32
+          },
+          {
+            "beat": 3,
+            "pitch": 80,
+            "length": 0.07,
+            "gain": 0.6
+          },
+          {
+            "beat": 3.5,
+            "pitch": 80,
+            "length": 0.07,
+            "gain": 0.32
+          },
+          {
+            "beat": 4,
+            "pitch": 80,
+            "length": 0.07,
+            "gain": 0.6
+          },
+          {
+            "beat": 4.5,
+            "pitch": 80,
+            "length": 0.07,
+            "gain": 0.32
+          },
+          {
+            "beat": 5,
+            "pitch": 80,
+            "length": 0.07,
+            "gain": 0.6
+          },
+          {
+            "beat": 5.5,
+            "pitch": 80,
+            "length": 0.07,
+            "gain": 0.32
+          },
+          {
+            "beat": 6,
+            "pitch": 80,
+            "length": 0.07,
+            "gain": 0.6
+          },
+          {
+            "beat": 6.5,
+            "pitch": 80,
+            "length": 0.07,
+            "gain": 0.32
+          },
+          {
+            "beat": 7,
+            "pitch": 80,
+            "length": 0.07,
+            "gain": 0.6
+          },
+          {
+            "beat": 7.5,
+            "pitch": 80,
+            "length": 0.07,
+            "gain": 0.32
+          }
+        ]
+      },
+      {
+        "id": "arrival",
+        "beats": 8,
+        "notes": [
+          {
+            "beat": 0,
+            "pitch": 65,
+            "length": 3.7,
+            "gain": 0.55
+          },
+          {
+            "beat": 0,
+            "pitch": 69,
+            "length": 3.7,
+            "gain": 0.5
+          },
+          {
+            "beat": 0,
+            "pitch": 72,
+            "length": 3.7,
+            "gain": 0.45
+          },
+          {
+            "beat": 4,
+            "pitch": 65,
+            "length": 3.8,
+            "gain": 0.4
+          },
+          {
+            "beat": 4,
+            "pitch": 72,
+            "length": 3.8,
+            "gain": 0.4
+          },
+          {
+            "beat": 4,
+            "pitch": 77,
+            "length": 3.8,
+            "gain": 0.4
+          }
+        ]
+      }
+    ],
+    "tracks": [
+      {
+        "id": "round-bass",
+        "voice": "bass",
+        "gain": 0.23,
+        "pan": 0,
+        "send": 0.08,
+        "clips": [
+          {
+            "pattern": "bass-walk",
+            "at": 0
+          },
+          {
+            "pattern": "bass-walk",
+            "at": 4
+          },
+          {
+            "pattern": "bass-walk",
+            "at": 8
+          },
+          {
+            "pattern": "bass-walk",
+            "at": 12
+          },
+          {
+            "pattern": "bass-walk",
+            "at": 16
+          },
+          {
+            "pattern": "bass-home",
+            "at": 20
+          },
+          {
+            "pattern": "bass-home",
+            "at": 24
+          }
+        ]
+      },
+      {
+        "id": "clipped-keys",
+        "voice": "piano",
+        "gain": 0.13,
+        "pan": -0.22,
+        "send": 0.12,
+        "clips": [
+          {
+            "pattern": "keys-cut",
+            "at": 0
+          },
+          {
+            "pattern": "keys-cut",
+            "at": 4
+          },
+          {
+            "pattern": "keys-cut",
+            "at": 12
+          },
+          {
+            "pattern": "keys-cut",
+            "at": 16
+          },
+          {
+            "pattern": "keys-cut",
+            "at": 20
+          },
+          {
+            "pattern": "keys-cut",
+            "at": 24
+          }
+        ]
+      },
+      {
+        "id": "brass-conversation",
+        "voice": "brass",
+        "gain": 0.09,
+        "pan": 0.3,
+        "send": 0.16,
+        "clips": [
+          {
+            "pattern": "brass-reply",
+            "at": 0
+          },
+          {
+            "pattern": "brass-reply",
+            "at": 4
+          },
+          {
+            "pattern": "brass-reply",
+            "at": 20
+          },
+          {
+            "pattern": "brass-reply",
+            "at": 24
+          }
+        ]
+      },
+      {
+        "id": "the-new-route",
+        "voice": "guitar",
+        "gain": 0.2,
+        "pan": -0.32,
+        "send": 0.22,
+        "clips": [
+          {
+            "pattern": "pluck-route",
+            "at": 12
+          },
+          {
+            "pattern": "pluck-route",
+            "at": 16
+          }
+        ]
+      },
+      {
+        "id": "kick",
+        "voice": "kick",
+        "gain": 0.24,
+        "pan": 0,
+        "send": 0.03,
+        "clips": [
+          {
+            "pattern": "kick-step",
+            "at": 0
+          },
+          {
+            "pattern": "kick-step",
+            "at": 4
+          },
+          {
+            "pattern": "kick-step",
+            "at": 8
+          },
+          {
+            "pattern": "kick-step",
+            "at": 12
+          },
+          {
+            "pattern": "kick-step",
+            "at": 16
+          },
+          {
+            "pattern": "kick-step",
+            "at": 20
+          },
+          {
+            "pattern": "kick-step",
+            "at": 24
+          }
+        ]
+      },
+      {
+        "id": "snare",
+        "voice": "snare",
+        "gain": 0.1,
+        "pan": 0.1,
+        "send": 0.13,
+        "clips": [
+          {
+            "pattern": "snare-turn",
+            "at": 0
+          },
+          {
+            "pattern": "snare-turn",
+            "at": 4
+          },
+          {
+            "pattern": "snare-turn",
+            "at": 8
+          },
+          {
+            "pattern": "snare-turn",
+            "at": 12
+          },
+          {
+            "pattern": "snare-turn",
+            "at": 16
+          },
+          {
+            "pattern": "snare-turn",
+            "at": 20
+          },
+          {
+            "pattern": "snare-turn",
+            "at": 24
+          }
+        ]
+      },
+      {
+        "id": "hat",
+        "voice": "hat",
+        "gain": 0.08,
+        "pan": -0.45,
+        "send": 0.07,
+        "clips": [
+          {
+            "pattern": "hat-weave",
+            "at": 0
+          },
+          {
+            "pattern": "hat-weave",
+            "at": 4
+          },
+          {
+            "pattern": "hat-weave",
+            "at": 8
+          },
+          {
+            "pattern": "hat-weave",
+            "at": 12
+          },
+          {
+            "pattern": "hat-weave",
+            "at": 16
+          },
+          {
+            "pattern": "hat-weave",
+            "at": 20
+          },
+          {
+            "pattern": "hat-weave",
+            "at": 24
+          }
+        ]
+      },
+      {
+        "id": "open-harmony",
+        "voice": "strings",
+        "gain": 0.04,
+        "pan": 0.3,
+        "send": 0.28,
+        "clips": [
+          {
+            "pattern": "arrival",
+            "at": 20
+          },
+          {
+            "pattern": "arrival",
+            "at": 24
+          }
+        ]
+      }
+    ]
+  }
+}

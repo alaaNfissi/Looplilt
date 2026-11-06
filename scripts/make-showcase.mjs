@@ -9,12 +9,14 @@ import { renderProject, ffmpeg } from '../lib/render.mjs';
 import { run } from '../lib/process.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-if (process.argv.length !== 4 || process.argv[2] !== '--out') throw new Error('Usage: node scripts/make-showcase.mjs --out <new-folder>');
+if (![4,6].includes(process.argv.length) || process.argv[2] !== '--out' || (process.argv.length === 6 && process.argv[4] !== '--only')) throw new Error('Usage: node scripts/make-showcase.mjs --out <new-folder> [--only slug,slug]');
+const selected = process.argv[5]?.split(',');
+if (selected && selected.some(slug => !SHOWCASE.some(film => film.slug === slug))) throw new Error('Unknown showcase film');
 const folder = path.resolve(process.argv[3]);
 await fs.mkdir(folder, { recursive: false });
 for (const name of ['media', 'play', 'assets']) await fs.mkdir(path.join(folder, name));
 const reports = [];
-for (const { slug, posterType, posterTime } of SHOWCASE) {
+for (const { slug, posterType, posterTime } of SHOWCASE.filter(film => !selected || selected.includes(film.slug))) {
   const dir = path.join(root, 'examples', slug), project = await readProject(dir);
   await fs.writeFile(path.join(folder, 'play', `${slug}.html`), await makeHtml(project));
   for (const format of ['landscape', 'portrait']) {

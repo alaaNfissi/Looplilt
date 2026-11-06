@@ -1,0 +1,515 @@
+{
+  "version": 1,
+  "title": "The Brass Observatory",
+  "duration": 32,
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "arrival",
+      "label": "The keeper arrives",
+      "start": 0,
+      "end": 6,
+      "description": "A small clockwork keeper crosses a sleeping hillside toward an observatory. One patch of sky remains dark.",
+      "params": {
+        "accent": "#e5b772"
+      }
+    },
+    {
+      "id": "search",
+      "label": "An empty chart",
+      "start": 6,
+      "end": 12,
+      "description": "Inside the dome, the keeper checks the telescope and a star chart. The sight never settles.",
+      "params": {
+        "accent": "#e5b772"
+      }
+    },
+    {
+      "id": "repair",
+      "label": "The missing part",
+      "start": 12,
+      "end": 18,
+      "description": "A close view of the brass mechanism reveals an empty space. A small green gear fits, and the entire train begins to turn.",
+      "params": {
+        "accent": "#e5b772"
+      }
+    },
+    {
+      "id": "alignment",
+      "label": "Finding the sky",
+      "start": 18,
+      "end": 24,
+      "description": "The repaired telescope tilts upward. A beam leaves its lens as the keeper steps back.",
+      "params": {
+        "accent": "#e5b772"
+      }
+    },
+    {
+      "id": "reply",
+      "label": "The sky answers",
+      "start": 24,
+      "end": 32,
+      "description": "The dome opens. A thread of light draws a bird-shaped constellation, and the keeper raises both hands beneath it.",
+      "params": {
+        "accent": "#e5b772",
+        "glow": 1
+      }
+    }
+  ],
+  "cues": [
+    {
+      "id": "first-look",
+      "at": 6
+    },
+    {
+      "id": "open-case",
+      "at": 12
+    },
+    {
+      "id": "gear-fits",
+      "at": 15.5
+    },
+    {
+      "id": "align",
+      "at": 18
+    },
+    {
+      "id": "sky-replies",
+      "at": 24
+    }
+  ],
+  "audio": {
+    "mode": "studio",
+    "room": 0.32,
+    "delay": 0.08,
+    "echoSeconds": 0.5
+  },
+  "captions": [
+    {
+      "start": 1,
+      "end": 4.8,
+      "text": "Every night, one part of the sky stayed dark."
+    },
+    {
+      "start": 13,
+      "end": 17,
+      "text": "Sometimes the missing piece is a small one."
+    },
+    {
+      "start": 27,
+      "end": 31,
+      "text": "And sometimes, the whole sky answers."
+    }
+  ],
+  "score": [
+    {
+      "at": 0,
+      "length": 31.2,
+      "pitch": 48,
+      "voice": "wind",
+      "gain": 0.035,
+      "pan": -0.5,
+      "send": 0.3
+    },
+    {
+      "at": 15.5,
+      "length": 0.12,
+      "pitch": 60,
+      "voice": "footstep",
+      "gain": 0.16,
+      "pan": 0.1,
+      "send": 0.12
+    },
+    {
+      "at": 23.7,
+      "length": 2,
+      "pitch": 84,
+      "voice": "bell",
+      "gain": 0.12,
+      "pan": 0.35,
+      "send": 0.65
+    },
+    {
+      "at": 29.8,
+      "length": 1.4,
+      "pitch": 79,
+      "voice": "bell",
+      "gain": 0.09,
+      "pan": -0.25,
+      "send": 0.6
+    }
+  ],
+  "music": {
+    "bpm": 90,
+    "patterns": [
+      {
+        "id": "keeper",
+        "beats": 3,
+        "notes": [
+          {
+            "beat": 0,
+            "length": 0.75,
+            "pitch": 64,
+            "gain": 0.9
+          },
+          {
+            "beat": 1,
+            "length": 0.5,
+            "pitch": 67,
+            "gain": 0.7
+          },
+          {
+            "beat": 1.5,
+            "length": 0.45,
+            "pitch": 69,
+            "gain": 0.6
+          },
+          {
+            "beat": 2,
+            "length": 0.8,
+            "pitch": 67,
+            "gain": 0.8
+          }
+        ]
+      },
+      {
+        "id": "question",
+        "beats": 3,
+        "notes": [
+          {
+            "beat": 0,
+            "length": 1.2,
+            "pitch": 62,
+            "gain": 0.8
+          },
+          {
+            "beat": 1.5,
+            "length": 0.45,
+            "pitch": 65,
+            "gain": 0.65
+          },
+          {
+            "beat": 2.25,
+            "length": 0.6,
+            "pitch": 63,
+            "gain": 0.5
+          }
+        ]
+      },
+      {
+        "id": "answer",
+        "beats": 3,
+        "notes": [
+          {
+            "beat": 0,
+            "length": 0.45,
+            "pitch": 67,
+            "gain": 0.8
+          },
+          {
+            "beat": 0.5,
+            "length": 0.45,
+            "pitch": 69,
+            "gain": 0.65
+          },
+          {
+            "beat": 1,
+            "length": 0.8,
+            "pitch": 72,
+            "gain": 0.85
+          },
+          {
+            "beat": 2,
+            "length": 0.8,
+            "pitch": 76,
+            "gain": 0.7
+          }
+        ]
+      },
+      {
+        "id": "clock",
+        "beats": 3,
+        "notes": [
+          {
+            "beat": 0,
+            "length": 0.12,
+            "pitch": 60,
+            "gain": 0.5
+          },
+          {
+            "beat": 1,
+            "length": 0.12,
+            "pitch": 60,
+            "gain": 0.24
+          },
+          {
+            "beat": 2,
+            "length": 0.12,
+            "pitch": 60,
+            "gain": 0.34
+          }
+        ]
+      },
+      {
+        "id": "bass",
+        "beats": 3,
+        "notes": [
+          {
+            "beat": 0,
+            "length": 1,
+            "pitch": 36,
+            "gain": 0.7
+          },
+          {
+            "beat": 2,
+            "length": 0.8,
+            "pitch": 43,
+            "gain": 0.5
+          }
+        ]
+      },
+      {
+        "id": "harmony",
+        "beats": 3,
+        "notes": [
+          {
+            "beat": 0,
+            "length": 2.8,
+            "pitch": 48,
+            "gain": 0.45
+          },
+          {
+            "beat": 0,
+            "length": 2.8,
+            "pitch": 55,
+            "gain": 0.35
+          },
+          {
+            "beat": 0,
+            "length": 2.8,
+            "pitch": 60,
+            "gain": 0.35
+          }
+        ]
+      },
+      {
+        "id": "turning",
+        "beats": 3,
+        "notes": [
+          {
+            "beat": 0,
+            "length": 0.35,
+            "pitch": 60,
+            "gain": 0.55
+          },
+          {
+            "beat": 0.5,
+            "length": 0.35,
+            "pitch": 64,
+            "gain": 0.45
+          },
+          {
+            "beat": 1,
+            "length": 0.35,
+            "pitch": 67,
+            "gain": 0.6
+          },
+          {
+            "beat": 1.5,
+            "length": 0.35,
+            "pitch": 72,
+            "gain": 0.5
+          },
+          {
+            "beat": 2,
+            "length": 0.35,
+            "pitch": 67,
+            "gain": 0.45
+          },
+          {
+            "beat": 2.5,
+            "length": 0.35,
+            "pitch": 64,
+            "gain": 0.4
+          }
+        ]
+      }
+    ],
+    "tracks": [
+      {
+        "id": "keeper-motif",
+        "voice": "guitar",
+        "gain": 0.21,
+        "pan": -0.27,
+        "send": 0.33,
+        "clips": [
+          {
+            "pattern": "keeper",
+            "at": 0,
+            "repeat": 3,
+            "transpose": 0
+          },
+          {
+            "pattern": "question",
+            "at": 6,
+            "repeat": 3,
+            "transpose": 0
+          },
+          {
+            "pattern": "keeper",
+            "at": 18,
+            "repeat": 3,
+            "transpose": 0
+          },
+          {
+            "pattern": "answer",
+            "at": 24,
+            "repeat": 3,
+            "transpose": 0
+          }
+        ]
+      },
+      {
+        "id": "room",
+        "voice": "strings",
+        "gain": 0.15,
+        "pan": 0.3,
+        "send": 0.48,
+        "clips": [
+          {
+            "pattern": "harmony",
+            "at": 0,
+            "repeat": 3,
+            "transpose": 0
+          },
+          {
+            "pattern": "harmony",
+            "at": 6,
+            "repeat": 3,
+            "transpose": 2
+          },
+          {
+            "pattern": "harmony",
+            "at": 12,
+            "repeat": 3,
+            "transpose": -3
+          },
+          {
+            "pattern": "harmony",
+            "at": 18,
+            "repeat": 3,
+            "transpose": 5
+          },
+          {
+            "pattern": "harmony",
+            "at": 24,
+            "repeat": 3,
+            "transpose": 0
+          }
+        ]
+      },
+      {
+        "id": "floor",
+        "voice": "bass",
+        "gain": 0.16,
+        "pan": 0,
+        "send": 0.05,
+        "clips": [
+          {
+            "pattern": "bass",
+            "at": 0,
+            "repeat": 3,
+            "transpose": 0
+          },
+          {
+            "pattern": "bass",
+            "at": 6,
+            "repeat": 3,
+            "transpose": 2
+          },
+          {
+            "pattern": "bass",
+            "at": 12,
+            "repeat": 3,
+            "transpose": -3
+          },
+          {
+            "pattern": "bass",
+            "at": 18,
+            "repeat": 3,
+            "transpose": 5
+          },
+          {
+            "pattern": "bass",
+            "at": 24,
+            "repeat": 3,
+            "transpose": 0
+          }
+        ]
+      },
+      {
+        "id": "clockwork",
+        "voice": "tick",
+        "gain": 0.06,
+        "pan": 0.4,
+        "send": 0.12,
+        "clips": [
+          {
+            "pattern": "clock",
+            "at": 0,
+            "repeat": 6,
+            "transpose": 0
+          },
+          {
+            "pattern": "clock",
+            "at": 12,
+            "repeat": 6,
+            "transpose": 0
+          }
+        ]
+      },
+      {
+        "id": "mechanism",
+        "voice": "marimba",
+        "gain": 0.14,
+        "pan": -0.4,
+        "send": 0.28,
+        "clips": [
+          {
+            "pattern": "turning",
+            "at": {
+              "cue": "open-case"
+            },
+            "repeat": 3,
+            "transpose": 0
+          },
+          {
+            "pattern": "turning",
+            "at": {
+              "cue": "align"
+            },
+            "repeat": 3,
+            "transpose": 7
+          }
+        ]
+      },
+      {
+        "id": "sky",
+        "voice": "piano",
+        "gain": 0.19,
+        "pan": 0.25,
+        "send": 0.55,
+        "clips": [
+          {
+            "pattern": "answer",
+            "at": {
+              "cue": "sky-replies"
+            },
+            "repeat": 3,
+            "transpose": 12
+          }
+        ]
+      }
+    ]
+  }
+}
