@@ -6,3 +6,7 @@
 
 *.jpg binary
 site/play/*.html linguist-generated=true
+
+# Retain the exact original bytes documented by the independent trial manifest.
+docs/evolution/trials/*/*/project.json -text
+docs/evolution/trials/*/*/draw.js -text
