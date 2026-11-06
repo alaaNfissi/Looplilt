@@ -19,6 +19,55 @@ function syncPalette() {
 }
 let settings = remixSettings(), data = remixProject(project, settings), format = 'landscape';
 let time = 11, playing = false, last = 0, request = 0, firstPlay = true;
+
+const soundButton = $('#remix-sound'), audio = $('#remix-audio'), audioStatus = $('#audio-status');
+let soundOn = false, soundWorker, soundUrl, soundTimer, generation = 0;
+function soundState() {
+  soundButton.textContent = soundOn ? 'Sound on' : 'Sound off';
+  soundButton.setAttribute('aria-pressed', String(soundOn));
+}
+function clearAudio() {
+  generation++; clearTimeout(soundTimer); soundWorker?.terminate(); soundWorker = undefined;
+  audio.pause(); audio.removeAttribute('src'); audio.load();
+  if (soundUrl) URL.revokeObjectURL(soundUrl); soundUrl = undefined;
+  soundButton.removeAttribute('aria-busy'); audioStatus.textContent = '';
+}
+function syncAudio() {
+  if (!soundOn || !audio.src || !playing) return;
+  audio.currentTime = Math.min(time, data.duration);
+  audio.play().catch(() => { audioStatus.textContent = 'Press Play again to start the score.'; });
+}
+function prepareAudio() {
+  if (!soundOn || audio.src || soundWorker) return;
+  const current = generation;
+  soundButton.setAttribute('aria-busy', 'true');
+  audioStatus.textContent = 'Preparing your score locally…';
+  const finish = error => {
+    if (current !== generation) return;
+    clearTimeout(soundTimer); soundWorker?.terminate(); soundWorker = undefined;
+    soundButton.removeAttribute('aria-busy');
+    if (error) { soundOn = false; soundState(); audioStatus.textContent = 'Sound unavailable: ' + error; }
+  };
+  try {
+    soundWorker = new Worker(new URL('./audio-worker.js', import.meta.url));
+    soundTimer = setTimeout(() => finish('preparation exceeded 90 seconds. Try again.'), 90000);
+    soundWorker.onerror = event => finish(event.message || 'audio worker failed');
+    soundWorker.onmessage = ({ data: message }) => {
+      if (current !== generation) return;
+      if (message.error) { finish(message.error); return; }
+      soundUrl = URL.createObjectURL(new Blob([message.bytes], { type: 'audio/wav' }));
+      audio.src = soundUrl; audioStatus.textContent = '';
+      finish(); syncAudio();
+    };
+    soundWorker.postMessage(data);
+  } catch (error) { finish(error.message); }
+}
+soundButton.addEventListener('click', () => {
+  soundOn = !soundOn; soundState();
+  if (soundOn) { prepareAudio(); syncAudio(); } else audio.pause();
+});
+addEventListener('pagehide', () => { pause(); clearAudio(); });
+
 function render() {
   canvas.width = sizes[format][0]; canvas.height = sizes[format][1];
   const t = Math.min(time, (Math.round(data.duration * data.fps) - 1) / data.fps);
@@ -28,11 +77,11 @@ function render() {
   $('#time').textContent = `${time.toFixed(1)} / ${data.duration.toFixed(1)} s`;
 }
 function pause() {
-  playing = false; cancelAnimationFrame(request); play.textContent = firstPlay ? 'Play from start' : 'Play';
+  playing = false; audio.pause(); cancelAnimationFrame(request); play.textContent = firstPlay ? 'Play from start' : 'Play';
 }
 function tick(now) {
   if (!playing) return;
-  time = Math.min(data.duration, time + Math.max(0, now - last) / 1000); last = now;
+  time = Math.min(data.duration, soundOn && audio.src && !audio.paused && audio.readyState >= 2 ? audio.currentTime : time + Math.max(0, now - last) / 1000); last = now;
   if (time >= data.duration) pause();
   render();
   if (playing) request = requestAnimationFrame(tick);
@@ -46,6 +95,7 @@ function change() {
     const next = readControls(), previousPace = settings.pace;
     settings = next; data = remixProject(project, settings);
     time = Math.min(data.duration, time * previousPace / settings.pace);
+    if (settings.pace !== previousPace) { clearAudio(); prepareAudio(); }
     format = $('#format').value;
     if (!Object.hasOwn(sizes, format)) throw new Error('Choose a supported frame');
     $('.canvas-desk').className = `canvas-desk ${format === 'portrait' ? 'tall' : format === 'square' ? 'square' : ''}`;
@@ -61,13 +111,13 @@ form.addEventListener('change', change);
 play.addEventListener('click', () => {
   if (playing) { pause(); return; }
   if (firstPlay || time >= data.duration) time = 0;
-  firstPlay = false; playing = true; play.textContent = 'Pause'; last = performance.now(); request = requestAnimationFrame(tick);
+  firstPlay = false; playing = true; prepareAudio(); syncAudio(); play.textContent = 'Pause'; last = performance.now(); request = requestAnimationFrame(tick);
 });
 seek.addEventListener('input', () => { pause(); firstPlay = false; play.textContent = 'Play'; time = Number(seek.value); render(); });
 document.addEventListener('visibilitychange', () => { if (document.hidden) pause(); });
 motion.addEventListener('change', () => { if (motion.matches) pause(); });
 $('#reset-settings').addEventListener('click', () => {
-  pause(); form.reset(); settings = remixSettings(); data = remixProject(project, settings); time = 11; firstPlay = true;
+  pause(); clearAudio(); soundOn = false; soundState(); form.reset(); settings = remixSettings(); data = remixProject(project, settings); time = 11; firstPlay = true;
   play.textContent = 'Play from start'; change(); status.textContent = 'Original greenhouse restored.';
 });
 document.querySelectorAll('[data-palette]').forEach(button => button.addEventListener('click', () => {
@@ -99,4 +149,4 @@ if (document.fullscreenEnabled && preview.requestFullscreen) {
   });
 }
 syncPalette();
-render(); play.disabled = false; seek.disabled = false; download.disabled = false; $('#boot-status').textContent = '';
+render(); soundButton.hidden = false; play.disabled = false; seek.disabled = false; download.disabled = false; $('#boot-status').textContent = '';

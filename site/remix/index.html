@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; worker-src 'self'; media-src blob:; object-src 'none'; base-uri 'none'; form-action 'none'">
   <title>Grow something yours — Looplilt remixer</title>
   <meta name="description" content="Change a title, a color, a little timing. Remix Pocket greenhouse in your browser and download the editable Looplilt project. No account or install.">
   <meta property="og:title" content="Grow something yours — Looplilt">
@@ -38,10 +38,10 @@
         <p id="download-status" role="status" aria-live="polite"></p>
       </form>
       <section id="preview-surface" class="remix-preview" aria-labelledby="preview-heading">
-        <div class="preview-top"><h2 id="preview-heading">Your pocket greenhouse</h2><span>SILENT PREVIEW</span><button id="expand-preview" type="button" aria-label="Expand the live preview" aria-controls="preview-surface" hidden>Expand ↗</button></div>
+        <div class="preview-top"><h2 id="preview-heading">Your pocket greenhouse</h2><button id="remix-sound" type="button" aria-pressed="false" hidden>Sound off</button><button id="expand-preview" type="button" aria-label="Expand the live preview" aria-controls="preview-surface" hidden>Expand ↗</button></div>
         <div class="canvas-desk"><canvas id="remix-canvas" width="1280" height="720" role="img" aria-label="A paper seed grows into a flower, with a raincloud, sunshine, and a visiting bee."></canvas></div>
         <div class="remix-transport"><button id="play" type="button" disabled>Play from start</button><label class="sr-only" for="seek">Preview position in seconds</label><input id="seek" type="range" min="0" max="16" step="0.0333333333" value="11" disabled><output id="time" for="seek">11.0 / 16.0 s</output></div>
-        <p class="preview-foot">Silent preview. Your downloaded project includes the original score, retimed to your pace.</p>
+        <p class="preview-foot">Turn on the original score. Change the pace; the music follows. Your download keeps both.</p><p id="audio-status" role="status" aria-live="polite"></p><audio id="remix-audio" preload="metadata"></audio>
         <a class="preview-edit" href="#settings">Edit your film ↓</a>
         <p id="boot-status" role="status">Loading the greenhouse…</p>
       </section>

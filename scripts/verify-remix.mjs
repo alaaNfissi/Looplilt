@@ -2,6 +2,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
+import { makeSound } from '../lib/sound.mjs';
 import { withBrowser, filmPage, framePng } from '../lib/browser.mjs';
 import { readProject } from '../lib/project.mjs';
 import { makeHtml } from '../lib/build.mjs';
@@ -18,6 +20,13 @@ try {
     page.on('pageerror', error => errors.push(error.message));
     page.on('request', request => { if (!request.url().startsWith(server.origin) && !request.url().startsWith('blob:')) external.push(request.url()); });
     page.on('response', response => { if (response.status() >= 400) errors.push(`${response.status()} ${response.url()}`); });
+    await page.addInitScript(() => {
+      const original = URL.createObjectURL;
+      URL.createObjectURL = function(blob) {
+        if (blob.type === 'audio/wav') window.remixAudioHash = blob.arrayBuffer().then(bytes => crypto.subtle.digest('SHA-256', bytes)).then(hash => Array.from(new Uint8Array(hash), v => v.toString(16).padStart(2,'0')).join(''));
+        return original.call(URL, blob);
+      };
+    });
     await page.goto(`${server.origin}/remix/`, { waitUntil: 'domcontentloaded', timeout: 60000 });
     await page.waitForFunction(() => document.querySelector('#boot-status').textContent === '');
     assert.equal(await page.locator('#play').textContent(), 'Play from start');
@@ -36,6 +45,18 @@ try {
     await page.locator('#title').fill('A little élan');
     await page.locator('#pace').selectOption('1.25');
     assert.equal(await page.locator('#seek').getAttribute('max'), '12.8');
+    await page.locator('#remix-sound').click();
+    await page.waitForFunction(() => document.querySelector('#remix-audio').src && !document.querySelector('#remix-sound').hasAttribute('aria-busy'));
+    assert.equal(await page.locator('#remix-audio').evaluate(a => a.paused), true, 'Enabling sound does not start a paused film');
+    await page.locator('#play').click();
+    await page.waitForFunction(() => document.querySelector('#remix-audio').currentTime > .15);
+    assert.ok(await page.evaluate(() => Math.abs(Number(document.querySelector('#seek').value) - document.querySelector('#remix-audio').currentTime) < .2), 'Audio and picture share the playback clock');
+    await page.locator('#play').click();
+    assert.equal(await page.locator('#remix-audio').evaluate(a => a.paused), true);
+    await page.locator('#pace').selectOption('0.8');
+    await page.waitForFunction(() => document.querySelector('#remix-audio').duration === 20);
+    await page.locator('#pace').selectOption('1.25');
+    await page.waitForFunction(() => document.querySelector('#remix-audio').duration === 12.8);
     const pending = page.waitForEvent('download');
     await page.locator('#download').click();
     const download = await pending, zipPath = path.join(folder, 'my-greenhouse.zip');
@@ -55,6 +76,7 @@ try {
     }
     assert.equal(allowed.size, 0);
     const project = await readProject(projectPath);
+    assert.equal(await page.evaluate(() => window.remixAudioHash), createHash('sha256').update(makeSound(project.data)).digest('hex'), 'Worker PCM exactly matches the exported score');
     assert.equal(project.data.title, 'A little élan'); assert.equal(project.data.duration, 12.8);
     for (const format of ['landscape', 'portrait', 'square']) {
       await page.locator('#format').selectOption(format);
@@ -102,7 +124,7 @@ try {
     assert.deepEqual(errors, []); assert.deepEqual(external, []);
     await page.close();
   });
-  console.log('Remixer: controls, invalid input, safe text, source download, 15 pixel parity checks, playback, reset, keyboard, four widths, and no external requests passed');
+  console.log('Remixer: exact worker/export PCM, sound synchronization, pace changes, controls, invalid input, safe text, source download, 15 pixel parity checks, playback, reset, keyboard, four widths, and no external requests passed');
   console.log(`Render this downloaded project for the full media check: ${path.join(folder, 'my-greenhouse')}`);
 } finally { await server.close(); }
 console.log(folder);

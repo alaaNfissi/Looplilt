@@ -446,3 +446,5 @@ footer p { margin:7px 0 0; line-height:1.8 }
   *,*::before,*::after { transition:none!important; animation:none!important }
   .button:hover { transform:none }
 }
+
+.iteration-note{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,72px);padding:48px 0 36px;border-top:1px solid #637f70;margin-top:36px}.iteration-note h3{font-size:clamp(30px,3.5vw,46px);line-height:1.1;letter-spacing:-.035em;margin:16px 0}.iteration-note h3 em{font-family:Georgia,serif;font-weight:400}.iteration-note p{max-width:36em;font-size:14px;line-height:1.8}.iteration-code{align-self:center;border:1px solid #698273;border-radius:12px;min-width:0;overflow:hidden;background:#173b32}.iteration-code>span{display:block;font-size:10px;letter-spacing:.12em;padding:16px 20px;border-bottom:1px solid #698273;color:#d5ed74}.iteration-code pre{font-size:clamp(11px,1vw,13px);line-height:1.9;padding:4px 20px;overflow-x:auto;color:#fff6df}.iteration-code small{display:block;padding:0 20px 18px;font-size:11px;line-height:1.6;color:#c4d2bf}@media(max-width:700px){.iteration-note{grid-template-columns:1fr;padding-top:32px;gap:20px}}

@@ -50,3 +50,5 @@
  .next-steps li,.take-home p{font-size:14px}
 }
 @media(max-width:360px){.remix-transport{gap:6px;padding-inline:9px}.remix-transport button{min-width:85px;font-size:11px}.remix-transport output{font-size:9px}}
+
+#remix-sound{flex-shrink:0;min-height:44px;padding:9px 12px;border:1px solid #708a78;border-radius:6px;background:transparent;color:#f5f0e6;font:12px system-ui;cursor:pointer}#remix-sound[aria-pressed=true]{background:#d5ed74;color:#102d29}#remix-sound:focus-visible{outline:3px solid #e47649;outline-offset:3px}#audio-status{font-size:12px;line-height:1.5;margin:8px 16px;color:#f5c49a}#audio-status:empty{display:none}@media(max-width:360px){.preview-top{gap:5px}#remix-sound,#expand-preview{padding-inline:8px;font-size:11px}}
