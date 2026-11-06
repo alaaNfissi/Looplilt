@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.1 — 2026-11-06
+
+- Keep the gallery status accurate after changing style filters: derive the visual-style count from the current films instead of retaining the earlier eight-style total.
+- Verify the initial, filtered and restored gallery summaries in the real browser suite.
+
 ## 0.3.0 — 2026-11-06
 
 - Add optional named scenes, creative parameters and shared cues while preserving version-1 projects.

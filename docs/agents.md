@@ -53,7 +53,7 @@ For example, from that workspace the portable runtime can build a preview:
 node .agents/skills/looplilt/runtime/bin/looplilt.mjs build my-first-loop --out my-first-loop-v2.html
 ```
 
-The skill locates `runtime/` relative to its own `SKILL.md`. It does not depend on the original clone's absolute path. You can also unpack the `looplilt-skill-0.3.0.zip` asset from the [stable release](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.3.0) into a new skill folder. Keep `SKILL.md` and `runtime/` at the same level. The archive includes the instruction skill and its matching portable runtime.
+The skill locates `runtime/` relative to its own `SKILL.md`. It does not depend on the original clone's absolute path. You can also unpack the `looplilt-skill-0.3.1.zip` asset from the [stable release](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.3.1) into a new skill folder. Keep `SKILL.md` and `runtime/` at the same level. The archive includes the instruction skill and its matching portable runtime.
 
 In Codex, check that Looplilt appears in the skill selector, or explicitly mention `$looplilt`. If discovery has not refreshed, reopen the session. Follow [Codex's documented local skill locations](https://learn.chatgpt.com/docs/build-skills). A successful file copy verifies installation layout; selector discovery and an independent agent completing the task are separate checks.
 

@@ -10,6 +10,7 @@ const films = {
   'paper-garden': { title: 'Pocket greenhouse', kind: 'PAPER CUTOUT / STARTER', duration: 16 }
 };
 const articles = [...document.querySelectorAll('.film')];
+const visualStyleCount = new Set(articles.map(article => article.dataset.style)).size;
 const filterButtons = [...document.querySelectorAll('[data-filter]')];
 let activePreview = 'one-more-light';
 let previewWanted = !reducedMotion.matches && !navigator.connection?.saveData;
@@ -151,7 +152,7 @@ function filterFilms(key) {
   filterButtons.forEach(button => button.setAttribute('aria-pressed', String(button === selected)));
   const label = selected.firstChild.textContent.trim();
   document.querySelector('#film-count').textContent = key === 'all'
-    ? articles.length + ' original films · 8 visual styles · sound on, when you press play'
+    ? articles.length + ' original films · ' + visualStyleCount + ' visual styles · sound on, when you press play'
     : count + (count === 1 ? ' film' : ' films') + ' · ' + label + ' · original music included';
 }
 filterButtons.forEach(button => button.addEventListener('click', () => filterFilms(button.dataset.filter)));

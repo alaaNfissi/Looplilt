@@ -52,14 +52,19 @@ try {
       await page.locator('[data-preview="paper-garden"]').click();
       assert.equal(await hero.evaluate(video => video.paused), true, 'Reduced motion disables preview autoplay');
       assert.equal(await page.locator('.film').count(), SHOWCASE.length);
+      const styleCount = await page.locator('[data-filter]:not([data-filter="all"])').count();
+      const allSummary = `${SHOWCASE.length} original films · ${styleCount} visual styles · sound on, when you press play`;
+      assert.equal(await page.locator('#film-count').textContent(), allSummary, 'Initial summary matches the available styles');
       for (const button of await page.locator('[data-filter]').all()) {
         await button.focus(); await page.keyboard.press('Enter');
         const key = await button.getAttribute('data-filter');
+        if (key === 'all') assert.equal(await page.locator('#film-count').textContent(), allSummary, 'All-films summary retains the current style count');
         const expected = key === 'all' ? SHOWCASE.length : Number(await button.locator('span').textContent());
         assert.equal(await page.locator('.film:visible').count(), expected, key + ' filter');
         if (key !== 'all') assert.equal(await page.locator(`.film:visible:not([data-style="${key}"])`).count(), 0);
       }
       await page.locator('[data-filter="all"]').click();
+      assert.equal(await page.locator('#film-count').textContent(), allSummary, 'Returning from a style filter restores the full summary');
       const firstFilm = page.locator('.film').first().locator('video');
       await firstFilm.evaluate(async video => { video.muted = true; await video.play(); });
       await page.locator('[data-filter="ink"]').click();
