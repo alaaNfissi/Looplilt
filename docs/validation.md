@@ -1,25 +1,23 @@
 # Validation
 
-The test suite checks malformed timeline data, caption overlap, invalid sound events, exact PCM length, audio headroom, safe HTML embedding, existing-file protection, CLI parsing, and process timeouts. Browser checks sample the same frames in different orders, exercise playback and sound controls, and test landscape, portrait, and square layouts for all three examples.
+Checks distinguish technical correctness from creative judgment. A valid file is not proof of an excellent film.
 
-Video export checks H.264 / AAC codecs, pixel format, dimensions, frame count, frame rate, duration, and full decoding before creating the final output. Showcase generation also measures integrated loudness and true peak from the delivered AAC track.
+| Layer | Reproducible command | What it checks |
+| --- | --- | --- |
+| Core and security | npm test | Schema limits, motion, music, revisions, output protection, HTML escaping, process cancellation, preview request boundaries, packaging. |
+| All examples | npm run test:browser | Three formats, seek-order repeatability, actual playback and sound controls for every catalog example. |
+| Creation workflow | npm run test:workflow | Live preview reload/errors, shot navigation, exact frames, targeted edits, worker/Node PCM, responsive layouts and bounded hostile drawing. |
+| Real media workflow | LOOPLILT_TEST_MEDIA=1 npm run test:workflow | Full and scene-range exports, exact frames, decoded colors and order, audio timing, cancellation, output protection. |
+| Website | npm run site; npm run test:site | Desktop/phone layouts, links, every media variant, filters, clipboard, focus/keyboard, reduced motion, no-JS and subpath operation. |
+| Remixer | npm run test:remix | Actual controls and ZIP download, 15 export/preview image comparisons, audio opt-in/sync/retiming and exact worker/export PCM. |
+| Installation | npm run test:install | Portable skill, first HTML without npm dependencies, paths with spaces, existing-file protection. |
+| Performance | node scripts/benchmark.mjs new-report-folder | Actual render time, HTML size/build/load, sampled scratch storage and Node RSS, draw latency and hashes. |
+| Deployment | node scripts/verify-domain.mjs | Canonical HTTPS redirects, routes and every showcase media asset. |
 
-These checks detect concrete failures; they do not judge storytelling, artistic merit, voice quality, licensing of user-supplied material, or readability in every viewing context. Review composition at phone size, watch the full film, and listen to audio before publishing your own work. The bundled example scores contain no narration.
+Set environment variables using your shell syntax; for example, PowerShell uses `$env:LOOPLILT_TEST_MEDIA='1'`. Media tests require Chromium, FFmpeg and FFprobe. Performance output folders must be new. Use LOOPLILT_BENCH_ENGINE to point the benchmark at a different trusted checkout while keeping the harness unchanged.
 
-The repeatability check samples one time on separate pages and after an intervening seek. The broader browser suite samples four beats. Neither is a proof of determinism at every possible time. Browser and font versions can change the pixels between machines.
+Video export checks H.264/AAC, yuv420p, dimensions, frame count/rate, duration and complete decoding before creating the destination. Showcase generation also measures the delivered AAC's integrated loudness and true peak. Export uses explicit Rec.709 conversion and metadata.
 
-All tests run locally without a service account. CI runs the core suite on Linux and Windows; browser tests can also be run locally with `npm run test:browser`.
+Image comparisons apply within the same browser, platform and font environment. Runtime checks sample repeatability; they cannot prove all possible drawing times are deterministic. Tests do not establish physical-device support, human listening quality, cross-provider agent success, artistic merit, or rights to a user's supplied assets.
 
-## Release checks — 26 October 2026
-
-The initial release was checked on Windows with Node 24.19.0. The 16 core tests passed. All three examples passed playback and seek-order checks in landscape, portrait, and square formats. The site passed layout, local-link, playback, and format-switching checks at 1440 px and 390 px widths using Playwright's Chromium 145 browser.
-
-All six bundled MP4s contain 480 frames at 30 fps for a 16-second duration. Their measured integrated loudness ranges from −16.13 to −15.54 LUFS, with true peaks from −5.78 to −1.49 dBTP. Every file passed format checks and full decoding. A separate short fixture verified captions, local audio mixing, duration rejection, existing-output protection, and storyboard generation.
-
-The ZIPs were also checked with Python's ZIP reader. These automated checks and sampled visual inspections do not imply that narration was recorded or that the example scores received a listening review.
-
-## Website and identity refresh — 26 October 2026
-
-The screening-room site was checked at 320, 390, 768, and 1440 px widths. The checks cover horizontal overflow, local links, all six video sources, format switching, hero film selection, pause preservation, keyboard seeking, and reduced-motion startup. The local verification server supports video byte ranges so seeking behaves as it does on the deployed site. Desktop and phone layouts and the original SVG cover were also inspected visually.
-
-The 16 core tests remain passing. The brand kit includes editable light and dark wordmarks, a standalone mark, an SVG icon, and reproducible PNG social and touch assets.
+The [0.3 evidence report](evolution/REPORT.md) records executed results, original films, baseline comparisons and limitations. The [previous launch report](launch/QUALITY.md) is historical evidence for the earlier release, not a current test run.

@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.3.0 — 2026-11-06
+
+- Add optional named scenes, creative parameters and shared cues while preserving version-1 projects.
+- Add inspect, exact-frame export, scene/time-range rendering, source-hash-checked revisions to new folders, JSON results, and a local read-only watch preview.
+- Add pure-time keyframes, easing, analytical springs, cubic paths and scoped transforms, plus named musical patterns and tracks.
+- Generate portable-player sound on demand with the same PCM engine in a worker; keep an embedded-PCM fallback. Add synchronized, opt-in sound to the browser remixer.
+- Stream ordered PNG batches to FFmpeg with backpressure, explicit Rec.709 color conversion, bounded child lifetimes, cancellation, staging and full decoding before final output.
+- Add three original films: The Brass Observatory, The Quiet Between and Make Room, with wide/tall exports and distinct arrangements. Preserve the existing films.
+- Update the public workflow, agent setup prompt, APIs, security review, installation guidance, and release evidence. Extend CI to Node 22 and 24 core checks on Windows and Linux, plus actual browser/media workflow tests.
+- Publish reproducible local baseline comparisons and separate-agent creation/revision evidence with their limitations.
+
 ## 0.2.1 — 2026-11-04
 
 - Redesign the launch site with a compact film gallery, eight explicit visual-style filters, story descriptions, and expandable craft and score notes.

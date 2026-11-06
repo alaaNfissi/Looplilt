@@ -2,6 +2,8 @@
 
 Start with `node bin/looplilt.mjs init my-film`. The folder contains a complete example you can edit. A project is deliberately small: `project.json` describes time and sound; `draw.js` draws the current frame.
 
+For named shots, exact-frame review, live preview, motion helpers, musical patterns, and guarded revisions, start with the [creation workflow](workflow.md). All additions are optional; existing version-1 projects keep working.
+
 ## Project data
 
 ```json
@@ -37,7 +39,7 @@ function drawFrame({ ctx, w, h, t }) {
 }
 ```
 
-`ctx` is a Canvas 2D context. `w` and `h` are the requested output dimensions. `t` is an absolute time in seconds. `progress` is `t / duration`; `frame` is the current integer frame index. `portrait` is true when height exceeds width.
+`ctx` is a Canvas 2D context. `w` and `h` are the requested output dimensions. `t` is an absolute time in seconds. `progress` is `t / duration`; `frame` is the current integer frame index. `portrait` is true when height exceeds width. Optional `shot` contains the named scene and local time; `motion` supplies pure-time helpers, `cue(id)` resolves a named time, and `project` contains validated data.
 
 Derive every position from `t`. Do not accumulate movement between frames, mutate global scene state, read the wall clock, or use unseeded randomness. Frames may be rendered out of order on separate browser pages. The runtime resets the canvas before every drawing call and adds captions afterward. Browser, operating system, and font differences can change pixels between machines; repeatability checks apply within the same rendering environment.
 

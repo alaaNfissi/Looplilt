@@ -1,0 +1,606 @@
+{
+  "method": "Balanced baseline/current/baseline/current runs, same host, two workers, GPU disabled for both as a documented host compatibility setting.",
+  "memoryLimit": "Node RSS only; excludes browser and encoder processes. Samples at 100ms. Not total system memory.",
+  "failures": [
+    {
+      "run": "matched-baseline-a",
+      "gpuDisabled": false,
+      "completed": "tiny-delivery",
+      "failure": "One More Light preview page.setContent timed out at 30 seconds. Partial run retained privately; excluded from the balanced comparison."
+    }
+  ],
+  "runs": [
+    {
+      "run": "software-baseline-a",
+      "version": "0.2.1",
+      "platform": "win32",
+      "arch": "x64",
+      "node": "v24.19.0",
+      "cpus": 12,
+      "memoryMetric": "Sampled Node process RSS; excludes Chromium and FFmpeg. Not total system memory.",
+      "storageMetric": "Sampled bytes in this run’s private scratch directory; 100 ms interval.",
+      "workers": 2,
+      "chromiumGpuDisabled": true,
+      "samples": [
+        {
+          "slug": "tiny-delivery",
+          "seconds": 16,
+          "frames": 480,
+          "htmlBuildMs": 153.80680000000007,
+          "htmlBytes": 2063187,
+          "previewLoadMs": 703.7582,
+          "draw": {
+            "frames": 120,
+            "medianMs": 0.10000002384185791,
+            "p95Ms": 0.30000001192092896,
+            "maxMs": 1.199999988079071
+          },
+          "framesAt": [
+            {
+              "time": 0,
+              "sha256": "a2b7199923d8252dfc963d55a3cfb4dc25916eedfc6f5e67f3b624bd2106b984"
+            },
+            {
+              "time": 3.2,
+              "sha256": "9cf54ba1eeb419031784215bce0ca2762225c1c3f8d16bdbb3221e112c935aab"
+            },
+            {
+              "time": 6.4,
+              "sha256": "ccee7689f51cb7ce2d1ea855c939ad8bfaefe744fe2c8e28304c50bda0b317d7"
+            },
+            {
+              "time": 9.6,
+              "sha256": "849975fcb4c56e5bd50f1c0e18ad1bbd13fd4e48c9e16deba593ffaaa68e6180"
+            },
+            {
+              "time": 12.8,
+              "sha256": "90c44ad6a49c0313552cb29af8dc9cffc5509b01a3366b25bc7cd18731e6e88b"
+            },
+            {
+              "time": 15.833333333333334,
+              "sha256": "7257a06a16b83c6742a5ba993fd2b184ff50a49c1c3adfbd2c477c463f8029a1"
+            }
+          ],
+          "media": {
+            "file": "tiny-delivery.mp4",
+            "width": 1280,
+            "height": 720,
+            "fps": 30,
+            "frames": 480,
+            "duration": 16,
+            "video": "h264",
+            "audio": "aac"
+          },
+          "renderMs": 17837.459300000002,
+          "peakScratchBytes": 25029884,
+          "peakScratchFiles": 482,
+          "sampledNodePeakRss": 173158400,
+          "outputBytes": 475208,
+          "scratchAfter": {
+            "bytes": 0,
+            "files": 0
+          }
+        },
+        {
+          "slug": "one-more-light",
+          "seconds": 40,
+          "frames": 1200,
+          "htmlBuildMs": 8270.9631,
+          "htmlBytes": 10286874,
+          "previewLoadMs": 1508.6682999999975,
+          "draw": {
+            "frames": 120,
+            "medianMs": 0.699999988079071,
+            "p95Ms": 1.199999988079071,
+            "maxMs": 2.199999988079071
+          },
+          "framesAt": [
+            {
+              "time": 0,
+              "sha256": "4c21066a0ce4758834d391cb6c1445663cc1aa1cc5d57cbe3442472efa2c7318"
+            },
+            {
+              "time": 8,
+              "sha256": "bb89b01aed439b0cee62eafb835ed465cb060d7a09d666733fb858ed4b702ee7"
+            },
+            {
+              "time": 16,
+              "sha256": "9da4dbcd78390f2e1805f5c4a1f603f6595a25ae5e55c23d9a338f2d9b549675"
+            },
+            {
+              "time": 24,
+              "sha256": "e03e64ee3ec87df92a27fb899a0152d2428bec30fb6bf78d3f838755444adcb6"
+            },
+            {
+              "time": 32,
+              "sha256": "7f34a78962d904061bb0693954b131d76d0cf985d7eac102ba90889e0044bdd0"
+            },
+            {
+              "time": 39.6,
+              "sha256": "845d94b29297914ef576d6e7d196a392f64ce944bd6dceca024392e5b574323a"
+            }
+          ],
+          "media": {
+            "file": "one-more-light.mp4",
+            "width": 1280,
+            "height": 720,
+            "fps": 30,
+            "frames": 1200,
+            "duration": 40,
+            "video": "h264",
+            "audio": "aac"
+          },
+          "renderMs": 53162.8098,
+          "peakScratchBytes": 46929941,
+          "peakScratchFiles": 1202,
+          "sampledNodePeakRss": 299995136,
+          "outputBytes": 2448998,
+          "scratchAfter": {
+            "bytes": 0,
+            "files": 0
+          }
+        }
+      ],
+      "chromium": "145.0.7632.6"
+    },
+    {
+      "run": "software-current-a",
+      "version": "0.3.0",
+      "platform": "win32",
+      "arch": "x64",
+      "node": "v24.19.0",
+      "cpus": 12,
+      "memoryMetric": "Sampled Node process RSS; excludes Chromium and FFmpeg. Not total system memory.",
+      "storageMetric": "Sampled bytes in this run’s private scratch directory; 100 ms interval.",
+      "workers": 2,
+      "chromiumGpuDisabled": true,
+      "samples": [
+        {
+          "slug": "tiny-delivery",
+          "seconds": 16,
+          "frames": 480,
+          "htmlBuildMs": 5.447400000000016,
+          "htmlBytes": 36081,
+          "previewLoadMs": 164.83449999999993,
+          "draw": {
+            "frames": 120,
+            "medianMs": 0.10000002384185791,
+            "p95Ms": 0.30000001192092896,
+            "maxMs": 1
+          },
+          "framesAt": [
+            {
+              "time": 0,
+              "sha256": "a2b7199923d8252dfc963d55a3cfb4dc25916eedfc6f5e67f3b624bd2106b984"
+            },
+            {
+              "time": 3.2,
+              "sha256": "9cf54ba1eeb419031784215bce0ca2762225c1c3f8d16bdbb3221e112c935aab"
+            },
+            {
+              "time": 6.4,
+              "sha256": "ccee7689f51cb7ce2d1ea855c939ad8bfaefe744fe2c8e28304c50bda0b317d7"
+            },
+            {
+              "time": 9.6,
+              "sha256": "849975fcb4c56e5bd50f1c0e18ad1bbd13fd4e48c9e16deba593ffaaa68e6180"
+            },
+            {
+              "time": 12.8,
+              "sha256": "90c44ad6a49c0313552cb29af8dc9cffc5509b01a3366b25bc7cd18731e6e88b"
+            },
+            {
+              "time": 15.833333333333334,
+              "sha256": "7257a06a16b83c6742a5ba993fd2b184ff50a49c1c3adfbd2c477c463f8029a1"
+            }
+          ],
+          "media": {
+            "file": "tiny-delivery.mp4",
+            "width": 1280,
+            "height": 720,
+            "fps": 30,
+            "frames": 480,
+            "duration": 16,
+            "video": "h264",
+            "audio": "aac",
+            "colorSpace": "bt709",
+            "range": {
+              "start": 0,
+              "end": 16,
+              "firstFrame": 0,
+              "frames": 480,
+              "duration": 16
+            },
+            "pipeline": "ordered-png-stream",
+            "metrics": {
+              "elapsedMs": 18302,
+              "peakBufferedPngBytes": 103274,
+              "encodedPngBytes": 23018632,
+              "temporaryPngFiles": 0
+            }
+          },
+          "renderMs": 18473.4703,
+          "peakScratchBytes": 2059446,
+          "peakScratchFiles": 29,
+          "sampledNodePeakRss": 136675328,
+          "outputBytes": 476166,
+          "scratchAfter": {
+            "bytes": 0,
+            "files": 0
+          }
+        },
+        {
+          "slug": "one-more-light",
+          "seconds": 40,
+          "frames": 1200,
+          "htmlBuildMs": 1.8834999999962747,
+          "htmlBytes": 67768,
+          "previewLoadMs": 150.23979999999574,
+          "draw": {
+            "frames": 120,
+            "medianMs": 0.699999988079071,
+            "p95Ms": 1.300000011920929,
+            "maxMs": 1.600000023841858
+          },
+          "framesAt": [
+            {
+              "time": 0,
+              "sha256": "4c21066a0ce4758834d391cb6c1445663cc1aa1cc5d57cbe3442472efa2c7318"
+            },
+            {
+              "time": 8,
+              "sha256": "bb89b01aed439b0cee62eafb835ed465cb060d7a09d666733fb858ed4b702ee7"
+            },
+            {
+              "time": 16,
+              "sha256": "9da4dbcd78390f2e1805f5c4a1f603f6595a25ae5e55c23d9a338f2d9b549675"
+            },
+            {
+              "time": 24,
+              "sha256": "e03e64ee3ec87df92a27fb899a0152d2428bec30fb6bf78d3f838755444adcb6"
+            },
+            {
+              "time": 32,
+              "sha256": "7f34a78962d904061bb0693954b131d76d0cf985d7eac102ba90889e0044bdd0"
+            },
+            {
+              "time": 39.6,
+              "sha256": "845d94b29297914ef576d6e7d196a392f64ce944bd6dceca024392e5b574323a"
+            }
+          ],
+          "media": {
+            "file": "one-more-light.mp4",
+            "width": 1280,
+            "height": 720,
+            "fps": 30,
+            "frames": 1200,
+            "duration": 40,
+            "video": "h264",
+            "audio": "aac",
+            "colorSpace": "bt709",
+            "range": {
+              "start": 0,
+              "end": 40,
+              "firstFrame": 0,
+              "frames": 1200,
+              "duration": 40
+            },
+            "pipeline": "ordered-png-stream",
+            "metrics": {
+              "elapsedMs": 33176,
+              "peakBufferedPngBytes": 68480,
+              "encodedPngBytes": 36800899,
+              "temporaryPngFiles": 0
+            }
+          },
+          "renderMs": 33262.5074,
+          "peakScratchBytes": 10167885,
+          "peakScratchFiles": 29,
+          "sampledNodePeakRss": 208916480,
+          "outputBytes": 2440605,
+          "scratchAfter": {
+            "bytes": 0,
+            "files": 0
+          }
+        }
+      ],
+      "chromium": "145.0.7632.6"
+    },
+    {
+      "run": "software-baseline-b",
+      "version": "0.2.1",
+      "platform": "win32",
+      "arch": "x64",
+      "node": "v24.19.0",
+      "cpus": 12,
+      "memoryMetric": "Sampled Node process RSS; excludes Chromium and FFmpeg. Not total system memory.",
+      "storageMetric": "Sampled bytes in this run’s private scratch directory; 100 ms interval.",
+      "workers": 2,
+      "chromiumGpuDisabled": true,
+      "samples": [
+        {
+          "slug": "tiny-delivery",
+          "seconds": 16,
+          "frames": 480,
+          "htmlBuildMs": 133.39390000000003,
+          "htmlBytes": 2063187,
+          "previewLoadMs": 405.038,
+          "draw": {
+            "frames": 120,
+            "medianMs": 0.10000002384185791,
+            "p95Ms": 0.3999999761581421,
+            "maxMs": 1.100000023841858
+          },
+          "framesAt": [
+            {
+              "time": 0,
+              "sha256": "a2b7199923d8252dfc963d55a3cfb4dc25916eedfc6f5e67f3b624bd2106b984"
+            },
+            {
+              "time": 3.2,
+              "sha256": "9cf54ba1eeb419031784215bce0ca2762225c1c3f8d16bdbb3221e112c935aab"
+            },
+            {
+              "time": 6.4,
+              "sha256": "ccee7689f51cb7ce2d1ea855c939ad8bfaefe744fe2c8e28304c50bda0b317d7"
+            },
+            {
+              "time": 9.6,
+              "sha256": "849975fcb4c56e5bd50f1c0e18ad1bbd13fd4e48c9e16deba593ffaaa68e6180"
+            },
+            {
+              "time": 12.8,
+              "sha256": "90c44ad6a49c0313552cb29af8dc9cffc5509b01a3366b25bc7cd18731e6e88b"
+            },
+            {
+              "time": 15.833333333333334,
+              "sha256": "7257a06a16b83c6742a5ba993fd2b184ff50a49c1c3adfbd2c477c463f8029a1"
+            }
+          ],
+          "media": {
+            "file": "tiny-delivery.mp4",
+            "width": 1280,
+            "height": 720,
+            "fps": 30,
+            "frames": 480,
+            "duration": 16,
+            "video": "h264",
+            "audio": "aac"
+          },
+          "renderMs": 27452.8365,
+          "peakScratchBytes": 25029884,
+          "peakScratchFiles": 507,
+          "sampledNodePeakRss": 184639488,
+          "outputBytes": 475208,
+          "scratchAfter": {
+            "bytes": 0,
+            "files": 0
+          }
+        },
+        {
+          "slug": "one-more-light",
+          "seconds": 40,
+          "frames": 1200,
+          "htmlBuildMs": 8845.279500000004,
+          "htmlBytes": 10286874,
+          "previewLoadMs": 8209.3877,
+          "draw": {
+            "frames": 120,
+            "medianMs": 0.699999988079071,
+            "p95Ms": 1.199999988079071,
+            "maxMs": 4
+          },
+          "framesAt": [
+            {
+              "time": 0,
+              "sha256": "4c21066a0ce4758834d391cb6c1445663cc1aa1cc5d57cbe3442472efa2c7318"
+            },
+            {
+              "time": 8,
+              "sha256": "bb89b01aed439b0cee62eafb835ed465cb060d7a09d666733fb858ed4b702ee7"
+            },
+            {
+              "time": 16,
+              "sha256": "9da4dbcd78390f2e1805f5c4a1f603f6595a25ae5e55c23d9a338f2d9b549675"
+            },
+            {
+              "time": 24,
+              "sha256": "e03e64ee3ec87df92a27fb899a0152d2428bec30fb6bf78d3f838755444adcb6"
+            },
+            {
+              "time": 32,
+              "sha256": "7f34a78962d904061bb0693954b131d76d0cf985d7eac102ba90889e0044bdd0"
+            },
+            {
+              "time": 39.6,
+              "sha256": "845d94b29297914ef576d6e7d196a392f64ce944bd6dceca024392e5b574323a"
+            }
+          ],
+          "media": {
+            "file": "one-more-light.mp4",
+            "width": 1280,
+            "height": 720,
+            "fps": 30,
+            "frames": 1200,
+            "duration": 40,
+            "video": "h264",
+            "audio": "aac"
+          },
+          "renderMs": 69064.77519999999,
+          "peakScratchBytes": 46929941,
+          "peakScratchFiles": 1202,
+          "sampledNodePeakRss": 210079744,
+          "outputBytes": 2448998,
+          "scratchAfter": {
+            "bytes": 0,
+            "files": 0
+          }
+        }
+      ],
+      "chromium": "145.0.7632.6"
+    },
+    {
+      "run": "software-current-b",
+      "version": "0.3.0",
+      "platform": "win32",
+      "arch": "x64",
+      "node": "v24.19.0",
+      "cpus": 12,
+      "memoryMetric": "Sampled Node process RSS; excludes Chromium and FFmpeg. Not total system memory.",
+      "storageMetric": "Sampled bytes in this run’s private scratch directory; 100 ms interval.",
+      "workers": 2,
+      "chromiumGpuDisabled": true,
+      "samples": [
+        {
+          "slug": "tiny-delivery",
+          "seconds": 16,
+          "frames": 480,
+          "htmlBuildMs": 2.3722000000000207,
+          "htmlBytes": 36081,
+          "previewLoadMs": 164.6289999999999,
+          "draw": {
+            "frames": 120,
+            "medianMs": 0.10000002384185791,
+            "p95Ms": 0.5,
+            "maxMs": 1.199999988079071
+          },
+          "framesAt": [
+            {
+              "time": 0,
+              "sha256": "a2b7199923d8252dfc963d55a3cfb4dc25916eedfc6f5e67f3b624bd2106b984"
+            },
+            {
+              "time": 3.2,
+              "sha256": "9cf54ba1eeb419031784215bce0ca2762225c1c3f8d16bdbb3221e112c935aab"
+            },
+            {
+              "time": 6.4,
+              "sha256": "ccee7689f51cb7ce2d1ea855c939ad8bfaefe744fe2c8e28304c50bda0b317d7"
+            },
+            {
+              "time": 9.6,
+              "sha256": "849975fcb4c56e5bd50f1c0e18ad1bbd13fd4e48c9e16deba593ffaaa68e6180"
+            },
+            {
+              "time": 12.8,
+              "sha256": "90c44ad6a49c0313552cb29af8dc9cffc5509b01a3366b25bc7cd18731e6e88b"
+            },
+            {
+              "time": 15.833333333333334,
+              "sha256": "7257a06a16b83c6742a5ba993fd2b184ff50a49c1c3adfbd2c477c463f8029a1"
+            }
+          ],
+          "media": {
+            "file": "tiny-delivery.mp4",
+            "width": 1280,
+            "height": 720,
+            "fps": 30,
+            "frames": 480,
+            "duration": 16,
+            "video": "h264",
+            "audio": "aac",
+            "colorSpace": "bt709",
+            "range": {
+              "start": 0,
+              "end": 16,
+              "firstFrame": 0,
+              "frames": 480,
+              "duration": 16
+            },
+            "pipeline": "ordered-png-stream",
+            "metrics": {
+              "elapsedMs": 9873,
+              "peakBufferedPngBytes": 103274,
+              "encodedPngBytes": 23018632,
+              "temporaryPngFiles": 0
+            }
+          },
+          "renderMs": 9968.1169,
+          "peakScratchBytes": 2059446,
+          "peakScratchFiles": 29,
+          "sampledNodePeakRss": 137330688,
+          "outputBytes": 476166,
+          "scratchAfter": {
+            "bytes": 0,
+            "files": 0
+          }
+        },
+        {
+          "slug": "one-more-light",
+          "seconds": 40,
+          "frames": 1200,
+          "htmlBuildMs": 2.0432999999993626,
+          "htmlBytes": 67768,
+          "previewLoadMs": 218.52869999999893,
+          "draw": {
+            "frames": 120,
+            "medianMs": 0.800000011920929,
+            "p95Ms": 1.699999988079071,
+            "maxMs": 3.799999952316284
+          },
+          "framesAt": [
+            {
+              "time": 0,
+              "sha256": "4c21066a0ce4758834d391cb6c1445663cc1aa1cc5d57cbe3442472efa2c7318"
+            },
+            {
+              "time": 8,
+              "sha256": "bb89b01aed439b0cee62eafb835ed465cb060d7a09d666733fb858ed4b702ee7"
+            },
+            {
+              "time": 16,
+              "sha256": "9da4dbcd78390f2e1805f5c4a1f603f6595a25ae5e55c23d9a338f2d9b549675"
+            },
+            {
+              "time": 24,
+              "sha256": "e03e64ee3ec87df92a27fb899a0152d2428bec30fb6bf78d3f838755444adcb6"
+            },
+            {
+              "time": 32,
+              "sha256": "7f34a78962d904061bb0693954b131d76d0cf985d7eac102ba90889e0044bdd0"
+            },
+            {
+              "time": 39.6,
+              "sha256": "845d94b29297914ef576d6e7d196a392f64ce944bd6dceca024392e5b574323a"
+            }
+          ],
+          "media": {
+            "file": "one-more-light.mp4",
+            "width": 1280,
+            "height": 720,
+            "fps": 30,
+            "frames": 1200,
+            "duration": 40,
+            "video": "h264",
+            "audio": "aac",
+            "colorSpace": "bt709",
+            "range": {
+              "start": 0,
+              "end": 40,
+              "firstFrame": 0,
+              "frames": 1200,
+              "duration": 40
+            },
+            "pipeline": "ordered-png-stream",
+            "metrics": {
+              "elapsedMs": 25289,
+              "peakBufferedPngBytes": 68480,
+              "encodedPngBytes": 36800899,
+              "temporaryPngFiles": 0
+            }
+          },
+          "renderMs": 25381.919100000003,
+          "peakScratchBytes": 10167885,
+          "peakScratchFiles": 29,
+          "sampledNodePeakRss": 207699968,
+          "outputBytes": 2440605,
+          "scratchAfter": {
+            "bytes": 0,
+            "files": 0
+          }
+        }
+      ],
+      "chromium": "145.0.7632.6"
+    }
+  ]
+}

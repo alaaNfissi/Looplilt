@@ -7,7 +7,7 @@ import { run } from '../lib/process.mjs';
 import { sha256 } from '../lib/archive.mjs';
 import { withBrowser, filmPage, framePng } from '../lib/browser.mjs';
 
-const folder = await fs.mkdtemp(path.join(os.tmpdir(), 'looplilt-first-use-'));
+const folder = await fs.mkdtemp(path.join(os.tmpdir(), 'looplilt first use-'));
 const destination = path.join(folder, '.agents', 'skills', 'looplilt');
 const installed = await installSkill(destination);
 const inventory = JSON.parse(await fs.readFile(path.join(destination, 'INVENTORY.json'), 'utf8'));
@@ -17,12 +17,14 @@ assert.ok(await fs.readFile(installed.skill, 'utf8').then(text => text.includes(
 await assert.rejects(installSkill(destination), { code: 'EEXIST' });
 assert.equal(sha256(await fs.readFile(installed.skill)), inventory.find(item => item.path === 'SKILL.md').sha256);
 const project = path.join(folder, 'my-first-loop'), preview = path.join(folder, 'my-first-loop.html');
-await run(process.execPath, [installed.cli, 'init', project], { cwd: folder });
+await run(process.execPath, [installed.cli, 'init', project, '--example', 'brass-observatory'], { cwd: folder });
 await run(process.execPath, [installed.cli, 'build', project, '--out', preview], { cwd: folder });
 await assert.rejects(fs.access(path.join(destination, 'runtime', 'node_modules')));
+const inspected=JSON.parse((await run(process.execPath,[installed.cli,'inspect',project,'--json'],{cwd:folder})).stdout);
+assert.equal(inspected.scenes.length,5);assert.equal(inspected.audio.tracks.length,6);
 await withBrowser(async browser => {
   const page = await filmPage(browser, await fs.readFile(preview, 'utf8'), 1280, 900);
-  assert.notDeepEqual(await framePng(page, 0), await framePng(page, 11));
+  assert.notDeepEqual(await framePng(page, 0), await framePng(page, 15));
   await page.locator('#restart').click(); await page.locator('#play').click();
   await page.waitForFunction(() => Number(document.querySelector('#timeline').value) > 0.1);
   await page.locator('#play').click();

@@ -1,6 +1,6 @@
 {
   "name": "looplilt",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Small stories. Real motion. Editable Canvas films with local video export.",
   "type": "module",
   "private": true,
@@ -21,7 +21,9 @@
     "pack": "node scripts/pack.mjs",
     "test:site": "node scripts/verify-site.mjs",
     "test:remix": "node scripts/verify-remix.mjs",
-    "test:install": "node scripts/verify-install.mjs"
+    "test:install": "node scripts/verify-install.mjs",
+    "test:workflow": "node scripts/verify-workflow.mjs",
+    "benchmark": "node scripts/benchmark.mjs"
   },
   "dependencies": {
     "playwright": "1.58.2"

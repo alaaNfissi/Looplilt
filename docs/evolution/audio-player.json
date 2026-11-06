@@ -1,0 +1,53 @@
+{
+  "method": "Single additional local run, GPU compatibility setting enabled. UI ticks sampled every 20ms while preparing sound. First-sound includes the click and WAV readiness; not a universal latency guarantee.",
+  "rows": [
+    {
+      "slug": "tiny-delivery",
+      "mode": "synth",
+      "htmlBytes": 36081,
+      "buildMs": 4.602499999999964,
+      "loadMs": 196.8644999999999,
+      "firstSoundMs": 279.0778,
+      "uiTicksWhilePreparing": 14,
+      "pcmSha256": "d136ba87e46d444164c616f40124c1f4472fb5a3b642e4313809ddda338bbdf1",
+      "workerParity": true,
+      "audioPlaybackPauseSeek": true
+    },
+    {
+      "slug": "tiny-delivery",
+      "mode": "pcm",
+      "htmlBytes": 2072455,
+      "buildMs": 132.57510000000002,
+      "loadMs": 408.8285999999989,
+      "firstSoundMs": 54.65400000000045,
+      "uiTicksWhilePreparing": 2,
+      "pcmSha256": "d136ba87e46d444164c616f40124c1f4472fb5a3b642e4313809ddda338bbdf1",
+      "workerParity": false,
+      "audioPlaybackPauseSeek": true
+    },
+    {
+      "slug": "one-more-light",
+      "mode": "synth",
+      "htmlBytes": 67768,
+      "buildMs": 1.8364000000001397,
+      "loadMs": 153.9995999999992,
+      "firstSoundMs": 8464.8436,
+      "uiTicksWhilePreparing": 423,
+      "pcmSha256": "d1974aee164350a84628034b31f8f478ffbcdc364ab8a989fd2ea5206683b3d8",
+      "workerParity": true,
+      "audioPlaybackPauseSeek": true
+    },
+    {
+      "slug": "one-more-light",
+      "mode": "pcm",
+      "htmlBytes": 10296142,
+      "buildMs": 8307.5043,
+      "loadMs": 2482.997399999993,
+      "firstSoundMs": 36.23559999999998,
+      "uiTicksWhilePreparing": 1,
+      "pcmSha256": "d1974aee164350a84628034b31f8f478ffbcdc364ab8a989fd2ea5206683b3d8",
+      "workerParity": false,
+      "audioPlaybackPauseSeek": true
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "path": "baseline/creation/project.json",
+    "bytes": 6328,
+    "sha256": "6ca025b3904d68b093cb7216dadb101854eae52a2d08cb0fef1a44cd9b2671ec"
+  },
+  {
+    "path": "baseline/creation/draw.js",
+    "bytes": 11980,
+    "sha256": "7ed89633c8d6ca3acce6ae13c43bb1dfa5f1fd943e1650bd518dc1729d3fc07e"
+  },
+  {
+    "path": "baseline/revision/project.json",
+    "bytes": 6328,
+    "sha256": "6ca025b3904d68b093cb7216dadb101854eae52a2d08cb0fef1a44cd9b2671ec"
+  },
+  {
+    "path": "baseline/revision/draw.js",
+    "bytes": 12188,
+    "sha256": "b12a19528527b86a99a720797cc76fabec0a002a44076af99ec7f1d3f0663410"
+  },
+  {
+    "path": "current/creation/project.json",
+    "bytes": 4915,
+    "sha256": "d766625125f21ee0fb918a6c0bfafd1d39a03c5e8037011174e8eaacfb4e3d95"
+  },
+  {
+    "path": "current/creation/draw.js",
+    "bytes": 10264,
+    "sha256": "0bd354dc7dc48d59c919c6358b1d63d08b8543716992b7fe7735380d1b1683e8"
+  },
+  {
+    "path": "current/revision/project.json",
+    "bytes": 4915,
+    "sha256": "949ac5b2600810097ec9e4acd93559b818e0d3ac2899d492a02f09a83fed970b"
+  },
+  {
+    "path": "current/revision/draw.js",
+    "bytes": 10339,
+    "sha256": "fc1e1e1dcfd9aa4bf1146149d4ebc1b3b17a873e64f180ada4bf51d2c7313861"
+  }
+]

@@ -1,7 +1,7 @@
 <p align="center"><img src="site/assets/banner.svg" alt="Looplilt — Small stories. Real motion." width="100%"></p>
 
 <p align="center"><strong>An open-source JavaScript toolkit for small animated films.</strong></p>
-<p align="center">Editable Canvas scenes → a player you can scrub → a film you can share.</p>
+<p align="center">Name the shots → inspect the moment → refine it → share the film.</p>
 <p align="center"><a href="https://looplilt.com/">Visit the screening room ↗</a> &nbsp; · &nbsp; <a href="#quick-start">Make your first film</a> &nbsp; · &nbsp; <a href="docs/authoring.md">Drawing guide</a> &nbsp; · &nbsp; <a href="LICENSE">MIT licensed</a></p>
 
 Looplilt is a small animation toolkit by **Alaa Nfissi**. A project has two files: a timeline in `project.json` and a drawing in `draw.js`. Change a shape, move a beat, add a score, and see the result in a self-contained HTML player. When it feels right, export an MP4.
@@ -12,9 +12,14 @@ The examples, illustrations, characters, and scores in this repository were crea
 
 ## The screening room
 
-Nine original films, from a five-shot lighthouse adventure to a quiet ink-paper encounter. The six new stories pair richer staging with distinct stereo arrangements; the three compact starters make the fundamentals easy to explore.
+Twelve original films, from a clockwork observatory to a wave experiment and expressive kinetic type. Three compact starters keep the fundamentals approachable; the larger films show staging, responsive composition, and distinct musical arrangements.
 
-**Visual styles:** pixel art, illustration, Art Deco, motion graphics, ink & wash, isometric, paper cutout, and mathematical visualization. [Filter the screening room by style](https://looplilt.com/#films); open “Inside this film” for the drawing techniques and original score.
+**Visual styles:** clockwork storybook, scientific visualization, kinetic typography, pixel art, illustration, Art Deco, motion graphics, ink & wash, isometric, paper cutout, and mathematical visualization. [Filter the screening room by style](https://looplilt.com/#films); open “Inside this film” for the drawing techniques and original score.
+
+| Clockwork storybook · 32s | Scientific visualization · 32s | Kinetic typography · 28s |
+| --- | --- | --- |
+| [![The Brass Observatory](site/media/brass-observatory-landscape.jpg)](https://looplilt.com/play/brass-observatory.html) | [![The Quiet Between](site/media/the-quiet-between-landscape.png)](https://looplilt.com/play/the-quiet-between.html) | [![Make Room](site/media/make-room-landscape.png)](https://looplilt.com/play/make-room.html) |
+| [The Brass Observatory](examples/brass-observatory) — a small repair opens a wider sky. | [The Quiet Between](examples/the-quiet-between) — an experiment in the way waves meet. | [Make Room](examples/make-room) — change the arrangement, open a way. |
 
 | Pixel adventure · 40s | Jazz-club comedy · 36s | Art Deco postcard · 24s |
 | --- | --- | --- |
@@ -43,18 +48,18 @@ Each film has original artwork and a procedural score. [Watch and download wide 
 
 Try the [Pocket greenhouse remixer](https://looplilt.com/remix/) to change colors, words, and pacing in your browser, then download the actual editable project. No installation or account is needed for that first creative step. MP4 export runs locally.
 
-Download [Looplilt v0.2.1](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.2.1) for the source or portable skill bundle. The showcase is live at [looplilt.com](https://looplilt.com/); the former GitHub Pages address redirects there. To preview locally, run `npm run site` and serve `.site/` with a local HTTP server.
+Download [Looplilt v0.3.0](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.3.0) for the source or portable skill bundle. The showcase is live at [looplilt.com](https://looplilt.com/); the former GitHub Pages address redirects there. To preview locally, run `npm run site` and serve `.site/` with a local HTTP server.
 
 Install [Node.js 22 or newer](https://nodejs.org/). HTML previews use only Node's built-in modules.
 
 ```sh
 git clone https://github.com/alaaNfissi/Looplilt.git
 cd Looplilt
-node bin/looplilt.mjs init my-film
+node bin/looplilt.mjs init my-film --example brass-observatory
 node bin/looplilt.mjs build my-film --out my-film.html
 ```
 
-Open `my-film.html` in a browser. Press **Play**, then **Sound off** to turn the score on. Edit `my-film/draw.js`, rebuild with a new output filename, and scrub the result. Generated files are never overwritten.
+Open `my-film.html` in a browser. Press **Play**, then **Sound off** to turn the score on. For live editing, run `node bin/looplilt.mjs preview my-film` and open the private local URL. Save a source change to reload at the current moment. Stop with Ctrl+C. You can also rebuild portable HTML with a new output filename. Generated files are never overwritten.
 
 Choose any gallery project by its folder name, for example `--example one-more-light`, `--example the-missing-beat`, or `--example ink-tide`. The 26-second [launch film](examples/little-idea) is also available as `--example little-idea`. No account, service key, or hosted rendering service is needed.
 
@@ -70,7 +75,7 @@ node bin/looplilt.mjs render my-film --out output/my-film.mp4
 node bin/looplilt.mjs render my-film --format portrait --out output/my-film-tall.mp4
 ```
 
-The renderer captures exact frames, then encodes H.264 video with AAC audio. It checks seek-order repeatability before rendering and decodes the finished MP4 to check for errors. Canvas capture and H.264 encoding use portable defaults; this version has no GPU-specific encoder option.
+The renderer streams ordered exact frames to FFmpeg, then verifies H.264 video with AAC audio and explicit Rec.709 color. It checks seek-order repeatability before rendering and decodes the finished MP4 to check for errors. Canvas capture and H.264 encoding use portable defaults; this version has no GPU-specific encoder option.
 
 | Format | Resolution |
 | --- | --- |
@@ -82,11 +87,12 @@ Scenes receive the actual dimensions and can recompose for each format. They are
 
 ## What is inside
 
-- **A direct drawing API:** `drawFrame({ ctx, w, h, t, progress, frame, portrait })`. Use normal Canvas paths, text, transforms, and compositing.
-- **A portable player:** one HTML file with a timeline, play/pause, restart, sound, and no external runtime requests.
-- **An optional stereo sound studio:** 20 synthesized voices, instrument layers, panning, room reflections, echo, and environmental effects. Existing mono scores remain compatible. [Compose a score](docs/audio.md).
+- **A precise creative workflow:** named scenes, editable parameters, shared cues, pure-time motion helpers, exact frames, scene-range exports, and source-hash-checked revisions. [Create and refine](docs/workflow.md).
+- **A direct drawing API:** `drawFrame({ ctx, w, h, t, progress, frame, portrait, shot, motion, cue, project })`. Use normal Canvas paths, text, transforms, and compositing.
+- **A portable player:** one compact HTML file with scene navigation, a timeline, story descriptions, and locally prepared sound. No external runtime requests.
+- **An optional stereo sound studio:** 20 synthesized voices, named tracks, reusable musical patterns, panning, room reflections, echo, and environmental effects. Existing mono scores remain compatible. [Compose a score](docs/audio.md).
 - **Captions and narration:** timed caption cues drawn into the film, WebVTT export, and an optional local narration track. Voice recording or speech synthesis happens outside Looplilt.
-- **A review path:** six-panel storyboards, exact frame sampling, format checks, and full video decoding.
+- **A review path:** read-only JSON inspection, exact-frame PNGs, scene storyboards, format checks, and full video decoding.
 - **A coding-assistant skill:** reusable authoring guidance for compatible local environments. Plain JavaScript works just as well by hand.
 
 ```sh
@@ -109,9 +115,9 @@ Use the official repository: https://github.com/alaaNfissi/Looplilt. Reuse a hea
 
 Make the Looplilt skill available to this coding agent at project scope. Read docs/agents.md for the current setup. If scripts/install-skill.mjs exists, run it with a new skill directory in my workspace: .agents/skills/looplilt for Codex, .claude/skills/looplilt for Claude Code, .cursor/skills/looplilt for Cursor, .gemini/skills/looplilt for Gemini CLI, or .github/skills/looplilt for GitHub Copilot CLI. For another agent, use its documented project skill directory. This installs a portable copy with its runtime. Inspect and reuse a healthy existing installation instead of overwriting it. If skill installation is unavailable, follow SKILL.md explicitly from the checkout and tell me its location. Do not claim that a skill adds execution tools or that it was discovered unless you verified that.
 
-Create a new my-first-loop project and build a standalone HTML preview with Looplilt's CLI. HTML needs only Node; do not make browser or video dependencies a prerequisite. Open the preview if your tools permit, check playback and seeking, and give me the exact project and player paths. If you cannot inspect playback, say so.
+Create a new my-first-loop project and build a standalone HTML preview with Looplilt's CLI. Prefer --example brass-observatory when init help lists it, so the first film has named scenes and a layered score. Run inspect --json when available and summarize its scenes and creative controls. HTML needs only Node; do not make browser or video dependencies a prerequisite. Open the preview if your tools permit, check playback and seeking, and give me the exact project and player paths. If you cannot inspect playback, say so.
 
-Finish by telling me how to ask for a change to the film. If I request MP4 export, set up the pinned Chromium dependency and FFmpeg/FFprobe, run doctor, render a short film, and verify it with check. Do not publish anything or overwrite an existing project. Ask only for missing choices or permissions that actually block setup.
+Finish by telling me how to ask for a change to one scene, and give the local preview command for editing. Use a source-hash-checked revision into a new folder for an existing scene parameter; new actions may require drawing code. Inspect changed frames and check that unrelated scenes stay unchanged. If I request MP4 export, set up the pinned Chromium dependency and FFmpeg/FFprobe, run doctor, render a short film, and verify it with check. Do not publish anything or overwrite an existing project. Ask only for missing choices or permissions that actually block setup.
 ```
 <!-- SETUP_PROMPT_END -->
 
@@ -127,6 +133,9 @@ ChatGPT needs an environment that can edit files and run Node, a browser, and FF
 
 ## Learn and contribute
 
+- [Creation workflow](docs/workflow.md): scenes, motion, live preview, exact inspection, and bounded revisions.
+- [Programmatic use](docs/api.md): module contracts, cancellation, and output protections.
+- [Evolution evidence](docs/evolution/REPORT.md): baseline comparisons, independent trials, security, and limitations.
 - [Authoring](docs/authoring.md): timing, composition, captions, scores, and project data.
 - [Sound studio](docs/audio.md): voices, stereo placement, room sound, composition, and narration.
 - [Capability tour](docs/showcase.md): original films, techniques, and useful starting points.
@@ -147,7 +156,7 @@ npm run site
 npm run pack
 ```
 
-Looplilt is intentionally small. It supports trusted, self-contained Canvas projects up to ten minutes at 1–60 fps. It is not a timeline editor, a 3D engine, or a hosted media service. Rendering time and temporary storage grow with resolution and frame count; test a short section first.
+Looplilt is intentionally small. It supports trusted, self-contained Canvas projects up to ten minutes at 1–60 fps. It is not a timeline editor, a 3D engine, or a hosted media service. Rendering time grows with resolution and frame count. PNG buffering is bounded, while audio and the staged MP4 still need memory and temporary disk. Render one scene first.
 
 ## License
 

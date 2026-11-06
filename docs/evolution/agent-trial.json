@@ -1,0 +1,109 @@
+{
+  "protocolVersion": 1,
+  "participants": 2,
+  "crossProviderEvaluation": false,
+  "humanQualityReview": false,
+  "audioListening": false,
+  "tokenCostsAvailable": false,
+  "baseline": {
+    "engine": "0.2.1",
+    "creationElapsedSeconds": 1349.783,
+    "revisionElapsedSeconds": 638.325,
+    "creationStartedAt": "2026-11-05T23:11:50Z",
+    "creationEndedAt": "2026-11-05T23:34:19.783Z",
+    "revisionStartedAt": "2026-11-05T23:41:01Z",
+    "revisionEndedAt": "2026-11-05T23:51:39.325Z",
+    "checks": [
+      {
+        "format": "landscape",
+        "earlierFramePairs": 10,
+        "allEarlierPairsByteIdentical": true,
+        "embeddedAudioByteIdentical": true,
+        "expectedHopPixels": 28.8,
+        "observedHopPixels": 28,
+        "lavenderPixels": 1955,
+        "standingEndpoints": [
+          {
+            "time": 10.4,
+            "identical": true
+          },
+          {
+            "time": 11.2,
+            "identical": true
+          },
+          {
+            "time": 11.4,
+            "identical": true
+          }
+        ],
+        "seekOrderRepeatable": true
+      },
+      {
+        "format": "portrait",
+        "earlierFramePairs": 10,
+        "allEarlierPairsByteIdentical": true,
+        "embeddedAudioByteIdentical": true,
+        "expectedHopPixels": 92.16000000000001,
+        "observedHopPixels": 92,
+        "lavenderPixels": 1989,
+        "standingEndpoints": [
+          {
+            "time": 10.4,
+            "identical": true
+          },
+          {
+            "time": 11.2,
+            "identical": true
+          },
+          {
+            "time": 11.4,
+            "identical": true
+          }
+        ],
+        "seekOrderRepeatable": true
+      }
+    ]
+  },
+  "current": {
+    "engine": "0.3 development snapshot",
+    "creationElapsedSeconds": 893.837,
+    "revisionElapsedSeconds": 1163.08,
+    "creationStartedAt": "2026-11-05T23:51:11.4164408Z",
+    "creationEndedAt": "2026-11-06T00:06:05.253Z",
+    "revisionStartedAt": "2026-11-06T00:14:50.4098791Z",
+    "revisionEndedAt": "2026-11-06T00:34:13.489Z",
+    "sourceHashBefore": "cd647a9e60d007c376f0c096d4c02b75df5447d7b6ea68a922ed2418d74769a4",
+    "sourceHashAfter": "bdcd38d2a7f72f72e07a267d36ccf818fefbdf99a6e20563315ba763bca92513",
+    "checks": [
+      {
+        "format": "landscape",
+        "earlierFramesCompared": 240,
+        "mismatches": 0,
+        "lavenderPixels": {
+          "before": 0,
+          "after": 1448
+        },
+        "hopAtApex": 28.8
+      },
+      {
+        "format": "portrait",
+        "earlierFramesCompared": 240,
+        "mismatches": 0,
+        "lavenderPixels": {
+          "before": 0,
+          "after": 516
+        },
+        "hopAtApex": 51.20000000000003
+      }
+    ],
+    "scoreByteIdentical": true
+  },
+  "limitations": [
+    "One separate participant per version; no crossover or repeated sampling.",
+    "Baseline experienced host command stalls.",
+    "The revision brief corrected a nonexistent pre-existing hop assumption; both received the corrected action.",
+    "Different logical-stage conventions and verification effort limit comparison.",
+    "Current frozen snapshot preceded final preview/color fixes.",
+    "No human preference score, listening review, token/cost telemetry, physical-device or cross-provider validation."
+  ]
+}

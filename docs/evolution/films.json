@@ -1,0 +1,258 @@
+[
+  {
+    "slug": "brass-observatory",
+    "media": [
+      {
+        "example": "brass-observatory",
+        "format": "landscape",
+        "file": "brass-observatory-landscape.mp4",
+        "width": 1280,
+        "height": 720,
+        "fps": 30,
+        "frames": 960,
+        "duration": 32,
+        "video": "h264",
+        "audio": "aac",
+        "colorSpace": "bt709",
+        "range": {
+          "start": 0,
+          "end": 32,
+          "firstFrame": 0,
+          "frames": 960,
+          "duration": 32
+        },
+        "pipeline": "ordered-png-stream",
+        "metrics": {
+          "elapsedMs": 139608,
+          "peakBufferedPngBytes": 2483375,
+          "encodedPngBytes": 1004261337,
+          "temporaryPngFiles": 0
+        },
+        "integratedLufs": -14.94,
+        "truePeakDb": -1.55
+      },
+      {
+        "example": "brass-observatory",
+        "format": "portrait",
+        "file": "brass-observatory-portrait.mp4",
+        "width": 720,
+        "height": 1280,
+        "fps": 30,
+        "frames": 960,
+        "duration": 32,
+        "video": "h264",
+        "audio": "aac",
+        "colorSpace": "bt709",
+        "range": {
+          "start": 0,
+          "end": 32,
+          "firstFrame": 0,
+          "frames": 960,
+          "duration": 32
+        },
+        "pipeline": "ordered-png-stream",
+        "metrics": {
+          "elapsedMs": 102995,
+          "peakBufferedPngBytes": 2218511,
+          "encodedPngBytes": 876009797,
+          "temporaryPngFiles": 0
+        },
+        "integratedLufs": -14.94,
+        "truePeakDb": -1.55
+      }
+    ],
+    "playback": [
+      {
+        "src": "brass-observatory-landscape.mp4",
+        "ended": true,
+        "duration": 32,
+        "width": 1280,
+        "height": 720,
+        "decodedFrames": 960,
+        "droppedFrames": 0
+      },
+      {
+        "src": "brass-observatory-portrait.mp4",
+        "ended": true,
+        "duration": 32,
+        "width": 720,
+        "height": 1280,
+        "decodedFrames": 960,
+        "droppedFrames": 0
+      }
+    ],
+    "review": "Every-second encoded contact sheets visually inspected across the whole duration in both formats; full encoded playback completed; no human listening claimed."
+  },
+  {
+    "slug": "the-quiet-between",
+    "media": [
+      {
+        "example": "the-quiet-between",
+        "format": "landscape",
+        "file": "the-quiet-between-landscape.mp4",
+        "width": 1280,
+        "height": 720,
+        "fps": 30,
+        "frames": 960,
+        "duration": 32,
+        "video": "h264",
+        "audio": "aac",
+        "colorSpace": "bt709",
+        "range": {
+          "start": 0,
+          "end": 32,
+          "firstFrame": 0,
+          "frames": 960,
+          "duration": 32
+        },
+        "pipeline": "ordered-png-stream",
+        "metrics": {
+          "elapsedMs": 60204,
+          "peakBufferedPngBytes": 806644,
+          "encodedPngBytes": 179608457,
+          "temporaryPngFiles": 0
+        },
+        "integratedLufs": -16.02,
+        "truePeakDb": -1.87
+      },
+      {
+        "example": "the-quiet-between",
+        "format": "portrait",
+        "file": "the-quiet-between-portrait.mp4",
+        "width": 720,
+        "height": 1280,
+        "fps": 30,
+        "frames": 960,
+        "duration": 32,
+        "video": "h264",
+        "audio": "aac",
+        "colorSpace": "bt709",
+        "range": {
+          "start": 0,
+          "end": 32,
+          "firstFrame": 0,
+          "frames": 960,
+          "duration": 32
+        },
+        "pipeline": "ordered-png-stream",
+        "metrics": {
+          "elapsedMs": 40734,
+          "peakBufferedPngBytes": 668375,
+          "encodedPngBytes": 146775793,
+          "temporaryPngFiles": 0
+        },
+        "integratedLufs": -16.02,
+        "truePeakDb": -1.87
+      }
+    ],
+    "playback": [
+      {
+        "format": "landscape",
+        "ended": true,
+        "duration": 32,
+        "width": 1280,
+        "height": 720,
+        "decodedFrames": 960,
+        "droppedFrames": 0,
+        "errors": []
+      },
+      {
+        "format": "portrait",
+        "ended": true,
+        "duration": 32,
+        "width": 720,
+        "height": 1280,
+        "decodedFrames": 960,
+        "droppedFrames": 0,
+        "errors": []
+      }
+    ],
+    "review": "Every-second encoded contact sheets visually inspected across the whole duration in both formats; full encoded playback completed; no human listening claimed."
+  },
+  {
+    "slug": "make-room",
+    "media": [
+      {
+        "example": "make-room",
+        "format": "landscape",
+        "file": "make-room-landscape.mp4",
+        "width": 1280,
+        "height": 720,
+        "fps": 30,
+        "frames": 840,
+        "duration": 28,
+        "video": "h264",
+        "audio": "aac",
+        "colorSpace": "bt709",
+        "range": {
+          "start": 0,
+          "end": 28,
+          "firstFrame": 0,
+          "frames": 840,
+          "duration": 28
+        },
+        "pipeline": "ordered-png-stream",
+        "metrics": {
+          "elapsedMs": 26217,
+          "peakBufferedPngBytes": 170853,
+          "encodedPngBytes": 49866199,
+          "temporaryPngFiles": 0
+        },
+        "integratedLufs": -15.82,
+        "truePeakDb": -1.38
+      },
+      {
+        "example": "make-room",
+        "format": "portrait",
+        "file": "make-room-portrait.mp4",
+        "width": 720,
+        "height": 1280,
+        "fps": 30,
+        "frames": 840,
+        "duration": 28,
+        "video": "h264",
+        "audio": "aac",
+        "colorSpace": "bt709",
+        "range": {
+          "start": 0,
+          "end": 28,
+          "firstFrame": 0,
+          "frames": 840,
+          "duration": 28
+        },
+        "pipeline": "ordered-png-stream",
+        "metrics": {
+          "elapsedMs": 34486,
+          "peakBufferedPngBytes": 160742,
+          "encodedPngBytes": 47873589,
+          "temporaryPngFiles": 0
+        },
+        "integratedLufs": -15.82,
+        "truePeakDb": -1.38
+      }
+    ],
+    "playback": [
+      {
+        "format": "landscape",
+        "ended": true,
+        "duration": 28,
+        "width": 1280,
+        "height": 720,
+        "decodedFrames": 840,
+        "droppedFrames": 0,
+        "errors": []
+      },
+      {
+        "format": "portrait",
+        "ended": true,
+        "duration": 28,
+        "width": 720,
+        "height": 1280,
+        "decodedFrames": 840,
+        "droppedFrames": 0,
+        "errors": []
+      }
+    ],
+    "review": "Every-second encoded contact sheets visually inspected across the whole duration in both formats; full encoded playback completed; no human listening claimed."
+  }
+]

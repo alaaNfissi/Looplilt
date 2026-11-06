@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "title": "The Smallest Delivery",
+  "duration": 12,
+  "fps": 30,
+  "audio": { "mode": "studio", "room": 0.24, "delay": 0.08, "echoSeconds": 0.375 },
+  "scenes": [
+    { "id": "first-try", "label": "The gap", "start": 0, "end": 4, "description": "A little rooftop courier attempts the gap, but a gust returns them to the starting roof. The seed stays safe.", "params": { "coatColor": "#e9aa54", "jumpHeight": 82, "recoil": 24 } },
+    { "id": "clever-crossing", "label": "A softer bridge", "start": 4, "end": 8, "description": "The courier notices the scarf, hooks its end around the opposite roof post, and crosses the scarf bridge carrying the seed.", "params": { "coatColor": "#e9aa54", "scarfColor": "#e57e6c", "bridgeSag": 18, "crossingBounce": 6 } },
+    { "id": "garden", "label": "The smallest delivery", "start": 8, "end": 12, "description": "The courier plants the seed in a waiting pot. Leaves unfurl into a rooftop garden, and the courier rests beside it.", "params": { "coatColor": "#e9aa54", "flowerColor": "#b8a4dc", "leafColor": "#639980", "bloomScale": 1, "bloomSpeed": 1 } }
+  ],
+  "cues": [
+    { "id": "takeoff", "at": 1 },
+    { "id": "gust", "at": 1.6 },
+    { "id": "back-home", "at": 2.6 },
+    { "id": "idea", "at": 4.6 },
+    { "id": "bridge-ready", "at": 5.8 },
+    { "id": "arrival", "at": 7.8 },
+    { "id": "plant", "at": 8.7 },
+    { "id": "bloom", "at": 9.2 }
+  ],
+  "music": {
+    "bpm": 120,
+    "patterns": [
+      { "id": "courier", "beats": 4, "notes": [
+        { "beat": 0, "length": 0.45, "pitch": 62 },
+        { "beat": 0.75, "length": 0.45, "pitch": 65, "gain": 0.8 },
+        { "beat": 1.5, "length": 0.65, "pitch": 69 },
+        { "beat": 2.5, "length": 0.55, "pitch": 67, "gain": 0.75 },
+        { "beat": 3.25, "length": 0.65, "pitch": 65, "gain": 0.65 }
+      ] },
+      { "id": "second-thought", "beats": 2, "notes": [
+        { "beat": 0, "length": 0.4, "pitch": 62 },
+        { "beat": 0.5, "length": 0.4, "pitch": 69 },
+        { "beat": 1, "length": 0.85, "pitch": 74 }
+      ] },
+      { "id": "walking", "beats": 4, "notes": [
+        { "beat": 0, "length": 0.18, "pitch": 60 },
+        { "beat": 1, "length": 0.18, "pitch": 60, "gain": 0.6 },
+        { "beat": 2, "length": 0.18, "pitch": 60, "gain": 0.8 },
+        { "beat": 3, "length": 0.18, "pitch": 60, "gain": 0.6 }
+      ] },
+      { "id": "garden-answer", "beats": 4, "notes": [
+        { "beat": 0, "length": 0.65, "pitch": 65 },
+        { "beat": 0.5, "length": 0.7, "pitch": 69 },
+        { "beat": 1, "length": 0.75, "pitch": 74 },
+        { "beat": 2, "length": 1.8, "pitch": 77, "gain": 0.75 }
+      ] },
+      { "id": "open-chord", "beats": 4, "notes": [
+        { "beat": 0, "length": 3.7, "pitch": 50, "gain": 0.7 },
+        { "beat": 0, "length": 3.7, "pitch": 57, "gain": 0.55 },
+        { "beat": 0, "length": 3.7, "pitch": 65, "gain": 0.5 }
+      ] }
+    ],
+    "tracks": [
+      { "id": "courier-steps", "voice": "marimba", "gain": 0.22, "pan": -0.22, "send": 0.22, "clips": [ { "pattern": "courier", "at": 0.1 }, { "pattern": "courier", "at": 5.9 } ] },
+      { "id": "new-idea", "voice": "guitar", "gain": 0.23, "pan": 0.15, "send": 0.3, "clips": [ { "pattern": "second-thought", "at": { "cue": "idea" } } ] },
+      { "id": "soft-footfalls", "voice": "brush", "gain": 0.065, "pan": -0.05, "send": 0.08, "clips": [ { "pattern": "walking", "at": 0.1 }, { "pattern": "walking", "at": 5.9 } ] },
+      { "id": "warm-rooftops", "voice": "pad", "gain": 0.095, "pan": 0, "send": 0.3, "clips": [ { "pattern": "open-chord", "at": 0 }, { "pattern": "open-chord", "at": 4, "transpose": 5 }, { "pattern": "open-chord", "at": 8.8 } ] },
+      { "id": "garden-melody", "voice": "piano", "gain": 0.21, "pan": 0.3, "send": 0.35, "clips": [ { "pattern": "garden-answer", "at": { "cue": "bloom" } } ] }
+    ]
+  },
+  "score": [
+    { "at": 0, "length": 11.5, "pitch": 60, "voice": "wind", "gain": 0.016, "pan": 0, "send": 0.1 },
+    { "at": 1.6, "length": 0.6, "pitch": 60, "voice": "wind", "gain": 0.09, "pan": 0.4, "send": 0.1 },
+    { "at": 2.6, "length": 0.2, "pitch": 50, "voice": "footstep", "gain": 0.16, "pan": -0.35, "send": 0.08 },
+    { "at": 2.65, "length": 0.75, "pitch": 57, "voice": "marimba", "gain": 0.16, "pan": -0.3, "send": 0.2 },
+    { "at": 5.8, "length": 0.5, "pitch": 81, "voice": "bell", "gain": 0.1, "pan": 0.4, "send": 0.3 },
+    { "at": 7.8, "length": 1.1, "pitch": 38, "voice": "bass", "gain": 0.15, "pan": 0, "send": 0.1 },
+    { "at": 8.7, "length": 0.6, "pitch": 74, "voice": "pluck", "gain": 0.14, "pan": 0.25, "send": 0.25 },
+    { "at": 9.2, "length": 2.2, "pitch": 62, "voice": "strings", "gain": 0.09, "pan": -0.3, "send": 0.35 },
+    { "at": 9.2, "length": 2.2, "pitch": 69, "voice": "strings", "gain": 0.08, "pan": 0.3, "send": 0.35 },
+    { "at": 10.2, "length": 1.2, "pitch": 50, "voice": "bass", "gain": 0.12, "pan": 0, "send": 0.05 }
+  ]
+}

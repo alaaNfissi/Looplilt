@@ -41,10 +41,10 @@ Check DNS with `Resolve-DnsName looplilt.com -Type A` and `Resolve-DnsName www.l
 - HTTPS has a valid certificate on apex and www; HTTP upgrades to HTTPS.
 - www redirects to apex; the previous https://alaanfissi.github.io/Looplilt/ URL redirects to the correct home page.
 - Old deep links such as `/Looplilt/remix/` and `/Looplilt/play/paper-garden.html` reach the equivalent new paths. Test actual redirect responses; do not assume path behavior.
-- Home, all nine films in both formats (18 videos), standalone players, remixer download, and setup-prompt copying work on desktop and mobile.
+- Home, all twelve gallery films in both formats (24 videos), standalone players, remixer download, and setup-prompt copying work on desktop and mobile.
 - Social-card, favicon, robots.txt, sitemap.xml, and release-download links load successfully.
 - No mixed-content errors, missing modules, redirect loops, or unexpected external requests occur.
 
-Run `node scripts/verify-domain.mjs` after activation for public HTTP/redirect checks. It checks seven canonical/redirect routes and the availability and content types of 53 assets across the nine films, using HEAD requests for large files. It is read-only and deliberately fails while the domain is unconfigured. Automated fixtures exercise successful routing, incorrect redirects, missing videos, and HTML responses masquerading as video; these do not replace live checks after activation.
+Run `node scripts/verify-domain.mjs` after activation for public HTTP/redirect checks. It checks seven canonical/redirect routes and the availability and content types of the catalog-driven asset list, including every gallery film, using HEAD requests for large files. It is read-only and deliberately fails while the domain is unconfigured. Automated fixtures exercise successful routing, incorrect redirects, missing videos, and HTML responses masquerading as video; these do not replace live checks after activation.
 
 If the cutover fails, restore the saved web DNS and Pages setting together, retain domain verification, and restore prior canonical metadata through a normal revert PR if needed. Avoid leaving web DNS pointed at an unclaimed Pages hostname. The initial production cutover and live checks completed on 4 November 2026; rerun the checker after future domain or hosting changes.

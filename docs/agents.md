@@ -20,7 +20,7 @@ These are examples, not an exhaustive list. Another coding agent can follow `SKI
 
 A text-only ChatGPT, Claude, Gemini, or other chat session can help write the two project files, but cannot build or render them without file and process tools. A skill does not add those tools. Hosted agents may also restrict browser downloads, binaries, or access to finished files.
 
-**What we verified:** portable installation, bundled runtime commands, HTML builds, project downloads, and local video rendering. Agent-specific selector discovery and independent task success rates are separate checks. The setup prompt asks the agent to report what it actually verified.
+**What we verified:** portable installation, bundled runtime commands, HTML builds, project downloads, and local video rendering. Two separate creation/revision participants also completed the [documented local trial](evolution/AGENT-TRIAL.md). This does not establish a cross-provider success rate or selector discovery. The setup prompt asks the agent to report what it actually verified.
 
 ## Start with the smallest working setup
 
@@ -53,7 +53,7 @@ For example, from that workspace the portable runtime can build a preview:
 node .agents/skills/looplilt/runtime/bin/looplilt.mjs build my-first-loop --out my-first-loop-v2.html
 ```
 
-The skill locates `runtime/` relative to its own `SKILL.md`. It does not depend on the original clone's absolute path. You can also unpack the `looplilt-skill-0.2.1.zip` asset from the [stable release](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.2.1) into a new skill folder. Keep `SKILL.md` and `runtime/` at the same level. The archive includes the instruction skill and its matching portable runtime.
+The skill locates `runtime/` relative to its own `SKILL.md`. It does not depend on the original clone's absolute path. You can also unpack the `looplilt-skill-0.3.0.zip` asset from the [stable release](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.3.0) into a new skill folder. Keep `SKILL.md` and `runtime/` at the same level. The archive includes the instruction skill and its matching portable runtime.
 
 In Codex, check that Looplilt appears in the skill selector, or explicitly mention `$looplilt`. If discovery has not refreshed, reopen the session. Follow [Codex's documented local skill locations](https://learn.chatgpt.com/docs/build-skills). A successful file copy verifies installation layout; selector discovery and an independent agent completing the task are separate checks.
 
@@ -87,6 +87,10 @@ node bin/looplilt.mjs check first-loop.mp4
 ```
 
 ChatGPT or another chat surface needs an environment with file and process access for these steps. Text-only chat can produce the two source files for you to run elsewhere. Skill compatibility does not add a shell, browser, FFmpeg, speech synthesis, or permission to publish.
+
+## Inspect and refine a scene
+
+Use capabilities --json to discover commands, then inspect --json for scene IDs, timing, parameters, audio tracks, and a source fingerprint. For an existing scalar parameter, revise applies a bounded patch to a new folder. For a new action, edit drawing code and inspect an exact frame or scene export. The live preview keeps your place after saves. [Complete workflow](workflow.md).
 
 ## First creative request
 

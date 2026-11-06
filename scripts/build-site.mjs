@@ -4,7 +4,7 @@ import { galleryMarkup } from './gallery.mjs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readProject } from '../lib/project.mjs';
-import { makeHtml } from '../lib/build.mjs';
+import { makeHtml, audioWorkerSource } from '../lib/build.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const target = path.join(root, '.site');
@@ -35,13 +35,18 @@ await fs.writeFile(path.join(target, 'remix', 'scene.mjs'), greenhouse.drawing +
 await fs.writeFile(path.join(target, 'remix', 'source.mjs'), `export const project=${moduleLiteral(greenhouse.data)};\nexport const drawing=${moduleLiteral(greenhouse.drawing)};\nexport const license=${moduleLiteral(license)};\n`);
 await fs.copyFile(path.join(root, 'lib', 'remix.mjs'), path.join(target, 'remix', 'model.mjs'));
 await fs.copyFile(path.join(root, 'lib', 'store-zip.mjs'), path.join(target, 'remix', 'store-zip.mjs'));
+await fs.writeFile(path.join(target, 'remix', 'audio-worker.js'), await audioWorkerSource());
 const prompt = await fs.readFile(path.join(root, 'docs', 'installation-prompt.txt'), 'utf8');
 const escape = text => text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 const gallery = await galleryMarkup(root);
 const index = await fs.readFile(path.join(target, 'index.html'), 'utf8');
-await fs.writeFile(path.join(target, 'index.html'), index.replace('<!-- INSTALLATION_PROMPT -->', escape(prompt.trim())).replace('<!-- FILM_INDEX -->', gallery.index).replace('<!-- FILMS -->', gallery.cards));
+await fs.writeFile(path.join(target, 'index.html'), index.replace('<!-- INSTALLATION_PROMPT -->', escape(prompt.trim())).replace('<!-- FILM_INDEX -->', gallery.index).replace('<!-- FILMS -->', gallery.cards).replaceAll('<!-- FILM_COUNT -->', String(SHOWCASE.length)));
 for (const { slug, posterType } of SHOWCASE) {
   await fs.writeFile(path.join(target, 'play', `${slug}.html`), await makeHtml(await readProject(path.join(root, 'examples', slug))));
+}
+for (const stage of ['creation','revision']) {
+  const trial = await readProject(path.join(root, 'docs/evolution/trials/current', stage));
+  await fs.writeFile(path.join(target, 'play', 'agent-trial-' + stage + '.html'), await makeHtml(trial));
 }
 await fs.writeFile(path.join(target, '.nojekyll'), '');
 console.log(target);

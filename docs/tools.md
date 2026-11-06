@@ -23,15 +23,19 @@ In PowerShell, use `$env:LOOPLILT_FFMPEG = 'C:/tools/ffmpeg.exe'`. In a POSIX sh
 - **FFmpeg command missing:** install FFmpeg/FFprobe, restart the terminal, and check `PATH` or set the executable variables.
 - **Drawing depends on frame history:** replace mutable counters and random calls with expressions based on `t`. Seek to the same time twice in the HTML player.
 - **Existing output:** choose a new filename. This protects work already on disk.
-- **Long export:** PNG capture uses temporary disk space proportional to the film. Test a short project first and check free space. Normal completion or a handled failure removes the renderer's own temporary directory; a forcibly killed process can leave a `looplilt-*` folder in the system temp directory for manual review.
+- **Long export:** PNG frames stream to the encoder with bounded buffering. Audio and the staged movie still need temporary disk. Test one scene with --scene or a frame-aligned --from/--to range; use --workers 1 for a smaller batch. Normal completion or a handled failure removes the renderer's own temporary directory; a forcibly killed process can leave a `looplilt-*` folder in the system temp directory for manual review.
+
+## Inspect and iterate
+
+The preview command needs only Node and your usual browser. It watches one project on a private loopback URL, retains the last valid film after a broken edit, and reloads at the current moment. Stop with Ctrl+C. Inspection does not execute the drawing; exact frame and scene rendering add Chromium. Use --json for automation and --timeout milliseconds to bound a video render. See [workflow](workflow.md) and [module APIs](api.md).
 
 ## Development commands
 
-`npm test` checks project validation, audio output, HTML embedding, file protection, packaging, and process timeouts. `npm run test:browser` checks real playback and seek-order repeatability across ten examples and three formats. `node scripts/make-showcase.mjs --out output/showcase` creates all nine gallery films as fresh wide/tall videos, posters, HTML players, a social card, and measured audio reports. The output folder must not already exist; its parent must exist.
+`npm test` checks project validation, audio output, HTML embedding, file protection, packaging, and process timeouts. `npm run test:browser` checks real playback and seek-order repeatability across every catalog example and three formats. `node scripts/make-showcase.mjs --out output/showcase` creates all gallery films as fresh wide/tall videos, posters, HTML players, a social card, and measured audio reports. The output folder must not already exist; its parent must exist.
 
 `npm run site` copies reviewed site files into `.site`. `npm run pack` creates source and portable skill ZIPs in `dist` and prints their checksums. These generated folders are ignored by Git.
 
-GitHub Pages deploys the checked-in `site` assets using the workflow in this repository. To update a film, render and review it first, then copy its public MP4 and poster into the matching site folders. The site build generates standalone players directly from the editable examples. Generated players embed PCM audio and are omitted from source archives to avoid duplicating large audio payloads.
+GitHub Pages deploys the checked-in `site` assets using the workflow in this repository. To update a film, render and review it first, then copy its public MP4 and poster into the matching site folders. The site build generates standalone players directly from the editable examples. Generated players synthesize audio on demand and are omitted from source archives because the site build reproduces them.
 
 ## Slow or unresponsive headless graphics
 

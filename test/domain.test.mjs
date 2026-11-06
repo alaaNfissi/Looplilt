@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { SHOWCASE } from '../lib/catalog.mjs';
 import { verifyDomain } from '../scripts/verify-domain.mjs';
 
 function servedResponse(url, options = {}) {
@@ -20,9 +21,9 @@ test('domain verifier checks canonical routes and every showcase asset without d
     calls.push({ url, method: options.method ?? 'GET' });
     return servedResponse(url);
   } });
-  assert.deepEqual(result, { routes: 7, assets: 53, films: 9 });
+  assert.deepEqual(result, { routes: 7, assets: 11 + SHOWCASE.length * 5, films: SHOWCASE.length });
   assert.equal(calls.filter(call => call.method === 'GET').length, 7);
-  assert.equal(calls.filter(call => call.url.endsWith('.mp4')).length, 18);
+  assert.equal(calls.filter(call => call.url.endsWith('.mp4')).length, SHOWCASE.length * 2);
   assert.ok(calls.some(call => call.url.endsWith('/media/one-more-light-portrait.mp4') && call.method === 'HEAD'));
   assert.ok(calls.some(call => call.url.endsWith('/media/neon-relay-landscape.jpg') && call.method === 'HEAD'));
   assert.ok(calls.some(call => call.url.endsWith('/play/the-missing-beat.html') && call.method === 'HEAD'));

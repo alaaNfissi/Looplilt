@@ -1,6 +1,6 @@
 # Compose sound in Looplilt
 
-A score is a list of timed notes and sound events in `project.json`. Looplilt synthesizes it locally into a WAV, embeds it in the HTML player, and mixes it into video exports. It needs no sample library, voice account, or remote audio service.
+A score is a list of timed notes and sound events in `project.json`. Looplilt synthesizes it locally into a WAV for exports. The portable HTML player prepares the same samples in a worker when Sound is enabled, keeping the first preview compact. It needs no sample library, voice account, or remote audio service.
 
 ## Choose a sound mode
 
@@ -42,6 +42,14 @@ These are synthesized timbres, not recordings of acoustic instruments. Their nam
 | `footstep` | A short low impact; footsteps, mechanisms, and rhythm accents. |
 
 The five original voices also work in studio mode. The stereo engine shapes their output differently; opt-in is a creative change, not a promise of identical timbre.
+
+## Named arrangements
+
+Use optional music patterns and tracks for recurring phrases. Patterns express offsets and lengths in beats; clips place or repeat a phrase at seconds or a shared cue. Track gain, pan, send and transposition compile to ordinary validated notes. Explicit score events can still hold unique effects.
+
+See the [complete schema](workflow.md) and the arrangements in [The Brass Observatory](../examples/brass-observatory), [The Quiet Between](../examples/the-quiet-between), and [Make Room](../examples/make-room). Music requires studio mode. The combined limit is 10,000 events and 12,000 note-seconds.
+
+Default HTML uses local worker synthesis. Use `build --audio pcm` for an embedded WAV fallback. The sound command always writes an ordinary WAV. Changing timbre or note order can change seeded synthesis; compare actual samples when exact preservation matters.
 
 ## Note and mix controls
 

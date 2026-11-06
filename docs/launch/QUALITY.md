@@ -1,6 +1,6 @@
 # Release quality report
 
-For the latest website, setup, and mobile improvements, see the [v0.2.1 launch review](LAUNCH-REVIEW.md). This report preserves the preceding film and runtime validation.
+For current workflow and release evidence, see the [0.3 engineering report](../evolution/REPORT.md). The [v0.2.1 launch review](LAUNCH-REVIEW.md) and this report preserve historical website, film and runtime validation.
 
 Validation dates: 29 October–4 November 2026. This report records executed checks and remaining limits for v0.2.0. The maintainer approved promotion to main and release publication on 3 November. The v0.1.0 release assets remain available.
 

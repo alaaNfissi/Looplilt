@@ -20,6 +20,9 @@ const assets = [
   ['style.css', /^text\/css(?:;|$)/i],
   ['remix/app.mjs', scriptType],
   ['remix/scene.mjs', scriptType],
+  ['remix/audio-worker.js', scriptType],
+  ['play/agent-trial-creation.html', /^text\/html(?:;|$)/i],
+  ['play/agent-trial-revision.html', /^text\/html(?:;|$)/i],
   ['robots.txt', /^text\/plain(?:;|$)/i],
   ['sitemap.xml', /^(?:application|text)\/xml(?:;|$)/i],
   ...SHOWCASE.flatMap(({ slug, posterType }) => [
