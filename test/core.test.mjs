@@ -59,7 +59,8 @@ test('all original examples validate and build a standalone document', async () 
     const project = await readProject(path.join(root, 'examples', slug));
     const html = await makeHtml(project, 'portrait');
     assert.ok(html.includes('width="720" height="1280"'));
-    assert.ok(html.includes('data:audio/wav;base64,'));
+    assert.ok(html.includes('window.loopliltAudioWorker='));
+    assert.ok(!html.includes('data:audio/wav;base64,'), 'Default HTML avoids eager PCM payloads');
     assert.ok(!/<script[^>]+src=/.test(html));
     assert.ok(html.includes("connect-src 'none'"));
   }
