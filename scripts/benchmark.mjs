@@ -26,7 +26,7 @@ const report = { version: JSON.parse(await fs.readFile(path.join(engine, 'packag
   platform: process.platform, arch: process.arch, node: process.version, cpus: os.cpus().length,
   memoryMetric: 'Sampled Node process RSS; excludes Chromium and FFmpeg. Not total system memory.',
   storageMetric: 'Sampled bytes in this run’s private scratch directory; 100 ms interval.',
-  workers: 2, samples: [] };
+  workers: 2, chromiumGpuDisabled: process.env.LOOPLILT_DISABLE_GPU === '1', samples: [] };
 async function size(dir) {
   let bytes = 0, files = 0;
   for (const item of await fs.readdir(dir, { withFileTypes: true }).catch(() => [])) {

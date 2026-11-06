@@ -5,7 +5,7 @@ import path from 'node:path';
 import os from 'node:os';
 import http from 'node:http';
 import { createHash } from 'node:crypto';
-import { inspectProject, reviseProject } from '../lib/inspect.mjs';
+import { inspectProject, reviseProject, exportFrame } from '../lib/inspect.mjs';
 import { readProject } from '../lib/project.mjs';
 import { startPreview } from '../lib/preview.mjs';
 import { run } from '../lib/process.mjs';
@@ -89,4 +89,11 @@ test('preview restricts host, origin, method and paths, and retains the last val
   await fs.writeFile(path.join(project,'project.json'),JSON.stringify({...data(),title:'A revision'}));
   await preview.refresh();const after=await(await fetch(new URL('state',url))).json();
   assert.notEqual(after.hash,state.hash);assert.equal(after.error,null);assert.equal(after.title,'A revision');
+});
+
+test('scene-relative frame requests cannot escape into an earlier shot', async t => {
+  const { root, project } = await fixture(t), out=path.join(root,'invalid.png');
+  for (const at of [-1, -Infinity, NaN]) await assert.rejects(exportFrame(project,out,{scene:'after',at}), /nonnegative/);
+  await assert.rejects(exportFrame(project,out,{scene:'after',at:2}), /outside/);
+  await assert.rejects(fs.stat(out), {code:'ENOENT'});
 });
