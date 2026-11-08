@@ -111,4 +111,4 @@ The graph focuses on 2D and video composition. Limits include 8 MiB JSON, 10,000
 
 No 3D engine, cloud renderer, OTIO adapter, automatic speech generation or unlimited export service is shipped. A browser project needs a portable-file backup. The local companion is the path for shared agent editing. Original source stays editable at its actual level of representation.
 
-Public release and deployment are complete only after the checks recorded in RELEASE.md succeed.
+The [versioned release record](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.4.0) identifies the published commit, CI runs, downloadable artifacts and post-deployment checks; [release verification](RELEASE.md) records the local evidence and verification commands.

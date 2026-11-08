@@ -1,0 +1,30 @@
+{
+  "version": "0.4.0",
+  "sourceArchive": true,
+  "skillArchive": true,
+  "checks": [
+    "Packaged MCP creation and animation, actual Studio edit, MCP reinspection; unrelated circle preserved",
+    "Packaged native MP4 renderer: 90 fully decoded frames at 640 x 360, intentional silent test scene"
+  ],
+  "errors": [],
+  "render": {
+    "frames": 90,
+    "width": 640,
+    "height": 360,
+    "sha256": "c970a03376a70b65206472883ec135aa42c73e82b8ad7b27492bd3b1f75ff0d2",
+    "verification": {
+      "decoded": true,
+      "width": 640,
+      "height": 360,
+      "frames": 90,
+      "durationSeconds": 3,
+      "rate": {
+        "numerator": 30,
+        "denominator": 1
+      },
+      "video": "h264",
+      "audio": null
+    }
+  },
+  "passed": true
+}
