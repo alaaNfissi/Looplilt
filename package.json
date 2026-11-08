@@ -39,7 +39,8 @@
     "test:studio-stories": "node scripts/verify-studio-stories.mjs",
     "studio:stories": "node scripts/build-studio-stories.mjs",
     "test:studio-complex": "node scripts/verify-studio-complex.mjs",
-    "test:studio-welcome": "node scripts/verify-studio-welcome.mjs"
+    "test:studio-welcome": "node scripts/verify-studio-welcome.mjs",
+    "test:graph-audio": "node scripts/verify-graph-audio.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/server": "2.4.0",

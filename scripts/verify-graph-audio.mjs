@@ -1,0 +1,22 @@
+import fs from 'node:fs/promises';import path from 'node:path';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';import {fileURLToPath} from 'node:url';
+import {run} from '../lib/process.mjs';import {ffmpeg} from '../lib/media-tools.mjs';import {artifactDigest,verifyGraphArtifact,finalizeGraphArtifact} from '../lib/graph/render-verify.mjs';
+const root=fileURLToPath(new URL('../',import.meta.url)),out=path.join(root,'.validation','graph-audio-'+Date.now());await fs.mkdir(out,{recursive:true});const file=path.join(out,'browser-opus.mp4'),report={checks:[]};
+const ff=(args,options={})=>run(ffmpeg(),['-hide_banner','-v','error','-nostdin','-n',...args],{timeout:120000,maxOutput:512*1024,...options});
+const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
+try{
+ await ff(['-f','lavfi','-i','color=c=0x173d2c:size=320x180:rate=30:duration=1','-f','lavfi','-i','aevalsrc=0.18*sin(2*PI*440*t)|0.14*sin(2*PI*660*t):s=48000:d=1','-map','0:v:0','-map','1:a:0','-c:v','libx264','-pix_fmt','yuv420p','-threads','1','-c:a','libopus','-b:a','192k','-t','1',file]);
+ const original=await artifactDigest(file),metadata={filename:'result.mp4',mime:'video/mp4',bytes:original.bytes,width:320,height:180,frames:30,durationSeconds:1,hasAudio:true},request={kind:'video',format:'mp4',rate:{numerator:30,denominator:1}};
+ await assert.rejects(verifyGraphArtifact(file,metadata,request),/Encoded audio/);
+ await assert.rejects(verifyGraphArtifact(file,{...metadata,audioCodec:'opus'},request),/Encoded audio/);
+ const cancelled=new AbortController();cancelled.abort(new Error('Stop the export'));await assert.rejects(finalizeGraphArtifact(file,metadata,request,{signal:cancelled.signal}),/Stop the export/);assert.deepEqual(await artifactDigest(file),original);
+ for(const [kind,args] of [['video',['-map','0:v:0','-c:v','copy','-bsf:v','h264_mp4toannexb','-f','h264']],['audio',['-map','0:a:0','-f','f32le','-acodec','pcm_f32le','-ar','48000','-ac','2']]])await ff(['-i',file,...args,path.join(out,'before-'+kind)]);
+ const finalized=await finalizeGraphArtifact(file,metadata,request);assert.deepEqual(finalized.audioNormalization,{from:'opus',to:'aac',video:'copied'});assert.equal(finalized.verification.audio,'aac');assert.equal(finalized.verification.frames,30);assert.equal(finalized.verification.decoded,true);
+ for(const [kind,args] of [['video',['-map','0:v:0','-c:v','copy','-bsf:v','h264_mp4toannexb','-f','h264']],['audio',['-map','0:a:0','-f','f32le','-acodec','pcm_f32le','-ar','48000','-ac','2']]])await ff(['-i',file,...args,path.join(out,'after-'+kind)]);
+ assert.equal(hash(await fs.readFile(path.join(out,'before-video'))),hash(await fs.readFile(path.join(out,'after-video'))),'Encoded video bytes must be unchanged');
+ const before=await fs.readFile(path.join(out,'before-audio')),after=await fs.readFile(path.join(out,'after-audio')),frames=Math.min(before.length,after.length)/8;assert.ok(frames>47000);let ab=0,aa=0,bb=0,peak=0;
+ for(let frame=1024;frame<frames-1024;frame++)for(let channel=0;channel<2;channel++){const at=frame*8+channel*4,a=before.readFloatLE(at),b=after.readFloatLE(at);ab+=a*b;aa+=a*a;bb+=b*b;peak=Math.max(peak,Math.abs(b));}
+ const correlation=ab/Math.sqrt(aa*bb);assert.ok(correlation>.99,'Soundtrack changed or shifted: '+correlation);assert.ok(peak>.1&&peak<1);
+ const second=await finalizeGraphArtifact(file,{...metadata,bytes:finalized.bytes},request);assert.equal(second.sha256,finalized.sha256,'Existing AAC must remain byte-identical');assert.equal(second.audioNormalization,undefined);
+ assert.equal((await fs.readdir(out)).some(name=>name.startsWith('render-audio-')),false);
+ report.checks=['Unsupported MP4 audio rejected before normalization','Cancelled conversion preserves original bytes','Native output is fully decoded H.264/AAC, stereo 48 kHz','Encoded picture bytes are identical','Audio remains aligned and audible','Existing AAC is untouched','No partial conversion file remains'];report.correlation=correlation;report.frames=30;report.videoPacketHash=hash(await fs.readFile(path.join(out,'after-video')));report.passed=true;console.log(JSON.stringify({out,...report}));
+}finally{await fs.writeFile(path.join(out,'report.json'),JSON.stringify(report,null,2));}

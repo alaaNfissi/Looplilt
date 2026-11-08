@@ -34,6 +34,6 @@ export async function exportGraph(document:GraphDocument,repository:GraphAssetRe
    frameSource:{async renderFrame(outputFrame){await renderer.render(start+sampleFrame(outputFrame,document.frameRate,timing.rate),{signal});return new VideoFrame(canvas,{timestamp:frameMicroseconds(outputFrame,timing.rate)});},dispose(){renderer.dispose();provider.dispose();}},
    videoWriter:{addFrame(frame){const timestamp=frameMicroseconds(index,timing.rate),duration=frameMicroseconds(index+1,timing.rate)-timestamp;index++;return writer.addFrame(frame,timestamp,duration);},finalize:()=>writer.finalize(),dispose:()=>writer.dispose()},
   });
-  signal?.throwIfAborted();return {blob:new Blob([bytes as Uint8Array<ArrayBuffer>],{type:format==='mp4'?'video/mp4':'video/webm'}),filename:document.title.replace(/[^a-zA-Z0-9_-]+/g,'-').slice(0,100)+'.'+format,frames:timing.frames,durationSeconds:timing.seconds,hasAudio:!!mixed};
+  signal?.throwIfAborted();return {blob:new Blob([bytes as Uint8Array<ArrayBuffer>],{type:format==='mp4'?'video/mp4':'video/webm'}),filename:document.title.replace(/[^a-zA-Z0-9_-]+/g,'-').slice(0,100)+'.'+format,frames:timing.frames,durationSeconds:timing.seconds,hasAudio:!!mixed,audioCodec:audio?.encoderConfig.codec??null};
  }finally{writer.dispose();provider.dispose();}
 }

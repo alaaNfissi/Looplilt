@@ -27,6 +27,7 @@ export function StudioShell(){
  const graph=useGraphEditorStore(s=>s.graph),ready=useGraphEditorStore(s=>s.ready),busy=useGraphEditorStore(s=>s.busy),dirty=useGraphEditorStore(s=>s.dirty),error=useGraphEditorStore(s=>s.error),history=useGraphEditorStore(s=>s.history),playhead=useGraphEditorStore(s=>s.playhead),playing=useGraphEditorStore(s=>s.isPlaying),saved=useGraphEditorStore(s=>s.lastSavedAt);
  const relinkInput=useRef<HTMLInputElement>(null),relinkTarget=useRef<{projectId:string;assetId:string}|null>(null),legacyInput=useRef<HTMLInputElement>(null),importInput=useRef<HTMLInputElement>(null),projectInput=useRef<HTMLInputElement>(null),exportCancel=useRef<AbortController|null>(null),importCancel=useRef<AbortController|null>(null);
  const [tab,setTab]=useState<'layers'|'media'>('layers'),[mobilePane,setMobilePane]=useState('canvas'),[importing,setImporting]=useState(false),[opening,setOpening]=useState<string|null>(null),[progress,setProgress]=useState<ExportProgress|null>(null),[format,setFormat]=useState<'mp4'|'webm'>('mp4');
+ const [exportNote,setExportNote]=useState<string|null>(null);
  const transport=useGraphTransport();
  useEffect(()=>{void useGraphEditorStore.getState().initialize();return()=>{exportCancel.current?.abort();importCancel.current?.abort();};},[]);
  useEffect(()=>{
@@ -59,8 +60,8 @@ export function StudioShell(){
   if(await current.edit(`Place ${asset.name}`,createNodeOperations(current.graph,specifications)))useGraphEditorStore.getState().selectClips([nodeId]);
  };
  const beginExport=async()=>{
-  if(exportCancel.current)return;transport.stop();const controller=new AbortController();exportCancel.current=controller;
-  try{if(!await useGraphEditorStore.getState().flush())return;const current=useGraphEditorStore.getState();const result=await exportGraph(current.graph,graphRepository(),{format,startFrame:current.inPoint??0,endFrame:current.outPoint??current.graph.durationFrames,signal:controller.signal,onProgress:setProgress});download(result.blob,result.filename);}
+  if(exportCancel.current)return;setExportNote(null);transport.stop();const controller=new AbortController();exportCancel.current=controller;
+  try{if(!await useGraphEditorStore.getState().flush())return;const current=useGraphEditorStore.getState();const result=await exportGraph(current.graph,graphRepository(),{format,startFrame:current.inPoint??0,endFrame:current.outPoint??current.graph.durationFrames,signal:controller.signal,onProgress:setProgress});download(result.blob,result.filename);if(format==='mp4'&&result.audioCodec==='opus')setExportNote('This browser used Opus sound in MP4. For wider player support, export MP4 with the local tools, or choose WebM here.');}
   catch(failure){if(!controller.signal.aborted)useGraphEditorStore.setState({error:failure instanceof Error?failure.message:String(failure)});}
   finally{setProgress(null);exportCancel.current=null;}
  };
@@ -148,6 +149,7 @@ export function StudioShell(){
   </div>
   <section className="studio-timeline" aria-label="Timeline"><TimelinePanel/></section>
   <footer className="studio-footer"><span><i/>{busy?'Saving changes…':dirty?'Editing changes…':saved?'All changes saved':'Ready to create'}</span><span>{Object.keys(graph.nodes).length-1} layers <b>·</b> Revision {graph.revision}</span><a href="https://github.com/alaaNfissi/Looplilt/blob/main/docs/studio.md" target="_blank" rel="noreferrer">Help & documentation ↗</a></footer>
+  {exportNote&&!error&&<div className="studio-error studio-export-note" role="status"><strong>Your film is exported.</strong><p>{exportNote} <a href="https://github.com/alaaNfissi/Looplilt/blob/main/docs/studio.md" target="_blank" rel="noopener noreferrer">Export options ↗</a></p><button aria-label="Dismiss export note" onClick={()=>setExportNote(null)}><X size={16}/></button></div>}
   {error&&<div className="studio-error" role="alert"><strong>Couldn’t finish that action.</strong><p>{error}</p><button aria-label="Dismiss error" onClick={()=>useGraphEditorStore.getState().dismissError()}><X size={16}/></button></div>}
   {opening&&<div className="studio-export-progress" role="status"><strong>Opening your story</strong><p>{opening}</p><button onClick={()=>importCancel.current?.abort()}>Cancel import</button></div>}
   {progress&&<div className="studio-export-progress" role="status"><strong>Exporting your film</strong><p>{progress.phase} · {Math.round(progress.ratio*100)}%</p><progress max={1} value={progress.ratio} aria-label="Export progress"/><button onClick={()=>exportCancel.current?.abort()}>Cancel export</button></div>}

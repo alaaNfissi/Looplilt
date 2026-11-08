@@ -111,8 +111,8 @@ export interface ResolvedAudioConfig {
 /**
  * Finds a supported AudioEncoder config for the plan's container and the mix's
  * channel/sample layout. WebM only carries Opus; MP4 prefers AAC then Opus.
- * Returns null when audio is disabled or nothing is supported (export then
- * proceeds video-only rather than failing).
+ * Returns null when audio is disabled or nothing is supported. Graph exports
+ * with a soundtrack reject an unsupported mix instead of dropping the audio.
  */
 export async function resolveAudioConfig(
   plan: ExportPlan,

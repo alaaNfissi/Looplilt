@@ -54,3 +54,7 @@ On a narrow screen, Layers, Canvas and Properties become separate panels. Deskto
 ## Scope
 
 This release path focuses on 2D animation and media composition, with Canvas 2D and shared deterministic evaluation. It does not claim a native desktop app, universal codec support, automatic 3D rendering or unlimited export sizes. Custom nodes require trusted host registration. See [graph contracts](scene-graph.md) and [MCP](mcp.md).
+
+## Soundtrack compatibility
+
+MP4 browser exports prefer AAC sound. Chromium builds without an AAC encoder can use Opus in MP4; Studio reports that choice because some players cannot play it. WebM uses Opus. For a broadly compatible MP4, use the local CLI or MCP export: it converts an Opus fallback soundtrack to stereo 48 kHz AAC, copies the encoded video unchanged, then fully verifies the finished file. The shared audio mix and editable project are preserved.

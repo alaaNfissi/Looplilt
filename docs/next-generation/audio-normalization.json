@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "Unsupported MP4 audio rejected before normalization",
+    "Cancelled conversion preserves original bytes",
+    "Native output is fully decoded H.264/AAC, stereo 48 kHz",
+    "Encoded picture bytes are identical",
+    "Audio remains aligned and audible",
+    "Existing AAC is untouched",
+    "No partial conversion file remains"
+  ],
+  "correlation": 0.9998098474783418,
+  "frames": 30,
+  "videoPacketHash": "5d84392aa101b599f199e08cc202feaa4acb3517c1fef6d2b8ac8c5e29ebca07",
+  "passed": true
+}

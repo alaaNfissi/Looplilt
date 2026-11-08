@@ -61,6 +61,7 @@ jobs:
       - run: npm run studio:check
       - run: npm run test:graph-renderer
       - run: npm run test:legacy
+      - run: npm run test:graph-audio
       - run: npm run test:graph-jobs
         env:
           LOOPLILT_DISABLE_GPU: '1'

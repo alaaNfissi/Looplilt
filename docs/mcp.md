@@ -89,3 +89,5 @@ Automated creative workflows also exercise the MCP SDK's legacy protocol mode an
 Codex uses a `[mcp_servers.looplilt]` TOML table with the same `command` and `args` shown above; project-scoped configuration is supported. Follow the [official client configuration](https://learn.chatgpt.com/docs/extend/mcp?surface=cli) and keep the workspace path specific to the project. The acceptance session supplied configuration only for that invocation and did not alter the user's persistent settings.
 
 The instruction skill remains useful to agents with file and command access even when MCP is unavailable. See [agent setup](agents.md) and [Studio](studio.md).
+
+Native MP4 exports normalize an Opus browser fallback to stereo 48 kHz AAC without re-encoding the picture. Completed artifact metadata records this as `audioNormalization`. The normalized file must pass the same complete timing, track and decode checks before publication.

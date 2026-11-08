@@ -173,3 +173,6 @@
 .looplilt-studio[data-welcome=true] .studio-workspace {grid-template-columns:228px minmax(0,1fr);}
 .looplilt-studio[data-welcome=true] .studio-start {inset:0;}
 @media(max-width:1000px) and (min-width:761px){.looplilt-studio[data-welcome=true] .studio-workspace{grid-template-columns:178px minmax(0,1fr);}}
+
+.studio-export-note {background:#193b31;border-color:#729c7e;color:#e9efd9;}
+.studio-export-note a,.studio-export-note>button {color:#d7e99c;}

@@ -10,7 +10,7 @@ import {createNodeOperations} from '../lib/graph/commands.mjs';
 import {importWorkspaceAsset} from '../lib/graph/assets.mjs';
 import {startGraphRenderHost} from '../lib/graph/render-host.mjs';
 import {normalizeRenderRequest} from '../lib/graph/render-request.mjs';
-import {verifyGraphArtifact} from '../lib/graph/render-verify.mjs';
+import {finalizeGraphArtifact} from '../lib/graph/render-verify.mjs';
 import {readProject} from '../lib/project.mjs';
 import {makeSound} from '../lib/sound.mjs';
 const repository=fileURLToPath(new URL('../',import.meta.url)),root=path.join(repository,'.validation','codec-failures-'+Date.now());
@@ -31,6 +31,8 @@ try{
   await context.route('**/*',route=>{const url=new URL(route.request().url());return url.origin===host.origin||['blob:','data:'].includes(url.protocol)?route.continue():route.abort();});
   await context.addInitScript(()=>{
    window.loopliltCodecFault={type:null,entered:false,closed:0};
+   // Exercise the Linux-style AAC gap on every platform, using the real Opus encoder.
+   if(globalThis.AudioEncoder){const inspect=AudioEncoder.isConfigSupported.bind(AudioEncoder);AudioEncoder.isConfigSupported=config=>config.codec.startsWith('mp4a')?Promise.resolve({supported:false,config}):inspect(config);}
    for(const [type,Encoder] of [['video',globalThis.VideoEncoder],['audio',globalThis.AudioEncoder]]){
     if(!Encoder)continue;
     const flush=Encoder.prototype.flush,close=Encoder.prototype.close;
@@ -63,8 +65,8 @@ try{
   await page.evaluate(()=>{window.loopliltCodecFault={type:null,entered:false,closed:0};});
   const download=page.waitForEvent('download',{timeout:60000}),metadata=await page.evaluate(request=>window.loopliltEngine.run(request),request);
   const file=path.join(root,'recovered-export.mp4');await(await download).saveAs(file);
-  const verification=await verifyGraphArtifact(file,metadata,normalizeRenderRequest(state.document,request));
-  assert.equal(verification.verification.decoded,true);assert.equal(downloads,1);
+  const verification=await finalizeGraphArtifact(file,metadata,normalizeRenderRequest(state.document,request));
+  assert.equal(verification.verification.decoded,true);assert.equal(verification.verification.audio,'aac');assert.equal(verification.audioNormalization?.from,'opus');assert.equal(downloads,1);
   assert.equal((await workspace.read(state.document.id)).fingerprint,state.fingerprint);
   report.checks.push({name:'same-session-real-export-after-failure',frames:metadata.frames,hasAudio:metadata.hasAudio,fullDecode:true,projectUnchanged:true});
   await context.close();
