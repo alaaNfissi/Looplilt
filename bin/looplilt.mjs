@@ -23,6 +23,8 @@ const HELP = `Looplilt — small stories, real motion
   node bin/looplilt.mjs captions <project> --out <captions.vtt>
   node bin/looplilt.mjs sound <project> --out <score.wav>
   node bin/looplilt.mjs check <film.mp4>
+  node bin/looplilt.mjs studio <workspace> [--port 0]
+  node bin/looplilt.mjs graph help
   node bin/looplilt.mjs doctor
   node bin/looplilt.mjs capabilities
 
@@ -36,7 +38,7 @@ const flags = {
   init: ['example'], inspect: [], build: ['out','format','audio'], preview: ['format','port'],
   frame: ['out','format','at','scene'], storyboard: ['out','format','scene'],
   revise: ['patch','out'], render: ['out','format','workers','narration','scene','from','to','timeout'],
-  captions: ['out'], sound: ['out'], check: [], doctor: [], capabilities: []
+  captions: ['out'], sound: ['out'], check: [], doctor: [], capabilities: [], studio: ['port']
 };
 export function argumentsFor(args) {
   const values = [], options = {}, allowed = new Set([...Object.values(flags).flat(), 'json']);
@@ -55,6 +57,7 @@ export async function main(args, { signal } = {}) {
   if (!command || ['help', '--help', '-h'].includes(command)) { console.log(HELP); return; }
   const version = JSON.parse(await fs.readFile(path.join(root, 'package.json'), 'utf8')).version;
   if (command === '--version') { console.log(version); return; }
+  if(command==='graph'){const {graphCli}=await import('../lib/graph/cli.mjs');return graphCli(args.slice(1),{signal});}
   if (!Object.hasOwn(flags, command)) throw new Error('Unknown command: ' + command + '\n' + HELP);
   const { values, options } = argumentsFor(args.slice(1)), project = values[0];
   for (const key of Object.keys(options)) if (key !== 'json' && !flags[command].includes(key)) throw new Error('--' + key + ' is not supported by ' + command);
@@ -63,9 +66,16 @@ export async function main(args, { signal } = {}) {
   const emit = result => console.log(options.json || typeof result !== 'string' ? JSON.stringify(result, null, 2) : result);
   const numeric = key => options[key] === undefined ? undefined : Number(options[key]);
   if (command === 'capabilities') {
-    emit({ version, projectVersions: [1], commands: flags, formats: ['landscape','portrait','square'],
-      integration: 'local CLI and portable Agent Skill; no MCP server or cloud API',
+    emit({ version, projectVersions: [1,2], commands: {...flags,graph:['create','list','inspect','nodes','edit','import','legacy-import','frame','storyboard','render','check','jobs','job','cancel','artifact']}, formats: ['landscape','portrait','square'],
+      integration: 'Local CLI, portable Agent Skill, stdio MCP and Looplilt Studio share the canonical editable graph; no account or cloud render service required',
       revision: { version:1, expectedSourceHash:'from inspect', changes:[{scene:'shot-id',params:{existingParameter:'new value'}}] } }); return;
+  }
+  if (command === 'studio') {
+    const {startStudio}=await import('../lib/studio/server.mjs');
+    const studio=await startStudio(project,{port:numeric('port')??0,signal});
+    emit(options.json?{url:studio.url,workspace:studio.workspace.root,scope:'selected local workspace'}:'Open '+studio.url+'\nStudio and MCP share this workspace. Keep the link private. Stop with Ctrl+C.');
+    if(signal){await new Promise(resolve=>{if(signal.aborted)resolve();else signal.addEventListener('abort',resolve,{once:true});});await studio.close();}
+    return;
   }
   if (command === 'init') {
     const example = options.example || 'paper-garden';

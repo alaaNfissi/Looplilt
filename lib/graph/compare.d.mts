@@ -1,0 +1,2 @@
+import type {GraphDocument} from './types.mjs';
+export function compareGraphDocuments(before:GraphDocument,after:GraphDocument,options?:{offset?:number;limit?:number}):{projectId:string;fromRevision:number;toRevision:number;counts:Record<string,Record<string,number>>;items:{kind:string;id:string;status:string;fields?:string[];fieldCount?:number;fieldsTruncated?:boolean}[];total:number;nextOffset:number|null};

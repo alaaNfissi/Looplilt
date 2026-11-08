@@ -1,7 +1,7 @@
 {
   "name": "looplilt",
-  "version": "0.3.1",
-  "description": "Small stories. Real motion. Editable Canvas films with local video export.",
+  "version": "0.4.0",
+  "description": "Editable films in Studio, code and agents. A shared scene graph, local rendering and original sound.",
   "type": "module",
   "private": true,
   "author": "Alaa Nfissi",
@@ -10,10 +10,11 @@
     "node": ">=22"
   },
   "bin": {
-    "looplilt": "bin/looplilt.mjs"
+    "looplilt": "bin/looplilt.mjs",
+    "looplilt-mcp": "bin/looplilt-mcp.mjs"
   },
   "scripts": {
-    "test": "node --test test/*.test.mjs",
+    "test": "node --test --test-concurrency=1 test/*.test.mjs",
     "test:browser": "node scripts/verify-browser.mjs",
     "setup": "playwright install chromium",
     "demo": "node bin/looplilt.mjs build examples/paper-garden --out output/paper-garden.html",
@@ -23,9 +24,29 @@
     "test:remix": "node scripts/verify-remix.mjs",
     "test:install": "node scripts/verify-install.mjs",
     "test:workflow": "node scripts/verify-workflow.mjs",
-    "benchmark": "node scripts/benchmark.mjs"
+    "benchmark": "node scripts/benchmark.mjs",
+    "test:graph-renderer": "node scripts/verify-graph-renderer.mjs",
+    "studio:setup": "npm exec --yes --package=pnpm@10.17.1 -- pnpm --dir studio install --frozen-lockfile",
+    "studio:build": "node scripts/build-studio.mjs",
+    "studio:check": "node scripts/verify-studio-runtime.mjs",
+    "test:legacy": "node scripts/verify-legacy-adapter.mjs",
+    "test:graph-jobs": "node scripts/verify-graph-jobs.mjs",
+    "check:generated": "node scripts/build-legacy-runtime.mjs --check",
+    "test:graph-shutdown": "node scripts/verify-graph-shutdown.mjs",
+    "test:codec-failures": "node scripts/verify-codec-failures.mjs",
+    "test:studio-editing": "node scripts/verify-studio-editing.mjs",
+    "test:studio-handoff": "node scripts/verify-studio-handoff.mjs",
+    "test:studio-stories": "node scripts/verify-studio-stories.mjs",
+    "studio:stories": "node scripts/build-studio-stories.mjs",
+    "test:studio-complex": "node scripts/verify-studio-complex.mjs",
+    "test:studio-welcome": "node scripts/verify-studio-welcome.mjs"
   },
   "dependencies": {
-    "playwright": "1.58.2"
+    "@modelcontextprotocol/server": "2.4.0",
+    "playwright": "1.58.2",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.4.0"
   }
 }
