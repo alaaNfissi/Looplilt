@@ -1,18 +1,28 @@
 <p align="center"><img src="site/assets/banner.svg" alt="Looplilt — Small stories. Real motion." width="100%"></p>
 
-<p align="center"><strong>An open-source JavaScript toolkit for small animated films.</strong></p>
-<p align="center">Name the shots → inspect the moment → refine it → share the film.</p>
-<p align="center"><a href="https://looplilt.com/">Visit the screening room ↗</a> &nbsp; · &nbsp; <a href="#quick-start">Make your first film</a> &nbsp; · &nbsp; <a href="docs/authoring.md">Drawing guide</a> &nbsp; · &nbsp; <a href="LICENSE">MIT licensed</a></p>
+<p align="center"><strong>An open-source creative studio for editable animated films.</strong></p>
+<p align="center">Create in Studio. Refine with code or an agent. Keep every layer.</p>
+<p align="center"><a href="https://looplilt.com/studio/">Open Studio ↗</a> &nbsp; · &nbsp; <a href="#quick-start">Make your first film</a> &nbsp; · &nbsp; <a href="docs/authoring.md">Drawing guide</a> &nbsp; · &nbsp; <a href="LICENSE">MIT licensed</a></p>
 
-Looplilt is a small animation toolkit by **Alaa Nfissi**. A project has two files: a timeline in `project.json` and a drawing in `draw.js`. Change a shape, move a beat, add a score, and see the result in a self-contained HTML player. When it feels right, export an MP4.
+Looplilt brings visual editing, code and AI agents into one local-first creative workflow. Arrange footage and editable layers in **Studio**, animate a scene through the **graph API**, or ask an agent to make a precise change through **MCP**. They share the same project, with revision checks, portable files and local video export.
 
-**Draw it. Give it rhythm. Make it a film.** Everything runs on your computer. The project stays small, the source stays editable, and the finished film is yours to share.
+Made by **Alaa Nfissi**, and open to everyone who wants to contribute. No account or hosted rendering service is required. The original two-file Canvas workflow remains supported, including its drawings, standalone HTML players and procedural scores.
 
-The examples, illustrations, characters, and scores in this repository were created for Looplilt. Open one, change something, and make it yours.
+## Watch it. Open it. Make it yours.
+
+Three new original films demonstrate different visual languages and musical arrangements. Each opens as an editable copy in Studio; the artwork, score and reproducible source are included.
+
+| Cinematic vector illustration · 48s | Illustrated scientific fieldbook · 60s | Pixel art × moving-image collage · 52s |
+| --- | --- | --- |
+| [![The Last Light](site/media/the-last-light-studio.png)](https://looplilt.com/#studio-films) | [![The Shape of Returning](site/media/the-shape-of-returning-studio.png)](https://looplilt.com/#studio-films) | [![A Signal for the Garden](site/media/a-signal-for-the-garden-studio.png)](https://looplilt.com/#studio-films) |
+| A last delivery wakes a sleeping street. Piano, strings, guitar and brushed percussion. | Water returns through ocean, clouds, rain and underground passages. Fingerpicked guitar, marimba and atmospheric sound. | A tiny caretaker reconnects a silent station. Syncopated bass, piano, drums and a chiptune counterpoint. |
+| [Open editable film](https://looplilt.com/studio/?story=the-last-light) · [Source](examples/studio/the-last-light) | [Open editable film](https://looplilt.com/studio/?story=the-shape-of-returning) · [Source](examples/studio/the-shape-of-returning) | [Open editable film](https://looplilt.com/studio/?story=a-signal-for-the-garden) · [Source](examples/studio/a-signal-for-the-garden) |
+
+The Last Light has individually editable vector layers. The other two preserve their procedural artwork as editable drawing source, alongside separate titles, media, effects and audio; Studio does not turn arbitrary drawing code into individual vector objects.
 
 ## The screening room
 
-Twelve original films, from a clockwork observatory to a wave experiment and expressive kinetic type. Three compact starters keep the fundamentals approachable; the larger films show staging, responsive composition, and distinct musical arrangements.
+Twelve more original Canvas films, from a clockwork observatory to a wave experiment and expressive kinetic type. Three compact starters keep the fundamentals approachable; the larger films show staging, responsive composition, and distinct musical arrangements.
 
 **Visual styles:** clockwork storybook, scientific visualization, kinetic typography, pixel art, illustration, Art Deco, motion graphics, ink & wash, isometric, paper cutout, and mathematical visualization. [Filter the screening room by style](https://looplilt.com/#films); open “Inside this film” for the drawing techniques and original score.
 
@@ -44,11 +54,23 @@ Each film has original artwork and a procedural score. [Watch and download wide 
 | **A preview you can pass around** | One self-contained HTML file with playback, seeking, and sound. |
 | **A film you can take anywhere** | Local H.264 export, three frame formats, captions, and your narration. |
 
+## Studio, code and agents
+
+Looplilt Studio adds a visual timeline, editable layers, motion paths, masks, constraints, media import, audio mixing and MP4/WebM export. The same graph powers Studio, the CLI and the local MCP server. An agent can inspect a saved revision, change one object and compare what changed while a person keeps editing.
+
+[Studio guide](docs/studio.md) · [Scene graph](docs/scene-graph.md) · [MCP setup and tool catalog](docs/mcp.md)
+
+For a source checkout, install the pinned dependencies with `npm ci --ignore-scripts`, then run `npm run studio:setup` and `npm run studio:build`. Start the local editor with `node bin/looplilt.mjs studio YOUR_WORKSPACE`, using an existing dedicated workspace directory. Matching release bundles include the static Studio runtime.
+
+Original two-file Canvas films remain supported, including their exact source and procedural score. You can place one inside an editable graph without flattening its source.
+
 ## Quick start
 
-Try the [Pocket greenhouse remixer](https://looplilt.com/remix/) to change colors, words, and pacing in your browser, then download the actual editable project. No installation or account is needed for that first creative step. MP4 export runs locally.
+**Start in your browser:** [open Looplilt Studio](https://looplilt.com/studio/), choose an original film or import your own footage, and change a layer. Export a portable `.looplilt` project to keep a copy. Browser storage stays on that device; the local companion connects a disk workspace to code and MCP. See the [Studio guide](docs/studio.md) for browser requirements, export and recovery.
 
-Download [Looplilt v0.3.1](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.3.1) for the source or portable skill bundle. The showcase is live at [looplilt.com](https://looplilt.com/); the former GitHub Pages address redirects there. To preview locally, run `npm run site` and serve `.site/` with a local HTTP server.
+For a smaller first step, try the [Pocket greenhouse remixer](https://looplilt.com/remix/) to change colors, words, and pacing in your browser, then download the actual editable project. No installation or account is needed for that first creative step. MP4 export runs locally.
+
+Download [Looplilt v0.4.0](https://github.com/alaaNfissi/Looplilt/releases/tag/v0.4.0) for the source or portable skill bundle. The showcase is live at [looplilt.com](https://looplilt.com/); the former GitHub Pages address redirects there. To preview the complete site locally, build Studio as described above, run `npm run site`, and serve `.site/` with a local HTTP server.
 
 Install [Node.js 22 or newer](https://nodejs.org/). HTML previews use only Node's built-in modules.
 
@@ -75,7 +97,7 @@ node bin/looplilt.mjs render my-film --out output/my-film.mp4
 node bin/looplilt.mjs render my-film --format portrait --out output/my-film-tall.mp4
 ```
 
-The renderer streams ordered exact frames to FFmpeg, then verifies H.264 video with AAC audio and explicit Rec.709 color. It checks seek-order repeatability before rendering and decodes the finished MP4 to check for errors. Canvas capture and H.264 encoding use portable defaults; this version has no GPU-specific encoder option.
+The original Canvas renderer streams ordered exact frames to FFmpeg, then verifies H.264 video with AAC audio and explicit Rec.709 color. It checks seek-order repeatability before rendering and decodes the finished MP4 to check for errors. That path uses portable Canvas capture and H.264 defaults. Graph exports use the shared Studio compositor and browser WebCodecs, with capability-based hardware encoding and software fallback; speed depends on the device. Native graph jobs also verify the encoded result with FFmpeg/FFprobe.
 
 | Format | Resolution |
 | --- | --- |
@@ -118,6 +140,8 @@ Make the Looplilt skill available to this coding agent at project scope. Read do
 Create a new my-first-loop project and build a standalone HTML preview with Looplilt's CLI. Prefer --example brass-observatory when init help lists it, so the first film has named scenes and a layered score. Run inspect --json when available and summarize its scenes and creative controls. HTML needs only Node; do not make browser or video dependencies a prerequisite. Open the preview if your tools permit, check playback and seeking, and give me the exact project and player paths. If you cannot inspect playback, say so.
 
 Finish by telling me how to ask for a change to one scene, and give the local preview command for editing. Use a source-hash-checked revision into a new folder for an existing scene parameter; new actions may require drawing code. Inspect changed frames and check that unrelated scenes stay unchanged. If I request MP4 export, set up the pinned Chromium dependency and FFmpeg/FFprobe, run doctor, render a short film, and verify it with check. Do not publish anything or overwrite an existing project. Ask only for missing choices or permissions that actually block setup.
+
+For visual editing or structured agent collaboration, read docs/studio.md and docs/mcp.md if present. Use a matching release bundle with its prebuilt Studio runtime, or run the documented pinned Studio setup and build from the checkout. Verify the runtime before starting the local companion. Create a dedicated creative workspace and show me its private local Studio URL without publishing it. Configure a project-scoped stdio MCP connection if this agent supports it and my setup permissions allow that; otherwise give the exact server command and continue with the CLI. Inspect the tool catalog, create a small editable graph, check a real frame and demonstrate a revision-checked change. Do not claim a connection works until a real tool call succeeds. Keep the hosted editor's browser storage distinct from the local companion workspace, and explain portable project export when moving between them.
 ```
 <!-- SETUP_PROMPT_END -->
 
@@ -156,7 +180,7 @@ npm run site
 npm run pack
 ```
 
-Looplilt is intentionally small. It supports trusted, self-contained Canvas projects up to ten minutes at 1–60 fps. It is not a timeline editor, a 3D engine, or a hosted media service. Rendering time grows with resolution and frame count. PNG buffering is bounded, while audio and the staged MP4 still need memory and temporary disk. Render one scene first.
+The graph focuses on 2D animation and video composition: up to 10,000 nodes, an 8 MiB document and a one-hour timeline, with additional browser export and audio memory limits. Original Canvas projects remain bounded to ten minutes at 1–60 fps. 3D, cloud rendering and unlimited-duration exports are not implemented. Rendering time depends on complexity, resolution and frame count; preview a short range first. Read the [current evidence and limitations](docs/next-generation/REPORT.md).
 
 ## License
 

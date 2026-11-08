@@ -22,6 +22,12 @@ A text-only ChatGPT, Claude, Gemini, or other chat session can help write the tw
 
 **What we verified:** portable installation, bundled runtime commands, HTML builds, project downloads, and local video rendering. Two separate creation/revision participants also completed the [documented local trial](evolution/AGENT-TRIAL.md). This does not establish a cross-provider success rate or selector discovery. The setup prompt asks the agent to report what it actually verified.
 
+## Use MCP with a visual workspace
+
+Agents that support local stdio MCP can use Looplilt's structured tools for graph creation, revision-checked editing, preview images, video exports and cancellation. The CLI and instruction skill remain available to agents with file and process tools. See the [MCP setup and tested protocol modes](mcp.md) and [Studio guide](studio.md).
+
+A local Studio companion and MCP server share one workspace directory. The hosted editor uses browser storage; it does not automatically share files with a local agent. Export a portable project when moving between those environments.
+
 ## Start with the smallest working setup
 
 Git downloads the source. Node.js 22+ builds HTML using built-in modules. From a fresh workspace:

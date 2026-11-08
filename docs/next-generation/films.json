@@ -1,0 +1,86 @@
+[
+  {
+    "film": "the-last-light",
+    "seconds": 48,
+    "frames": 1440,
+    "size": [
+      1280,
+      720
+    ],
+    "codec": "h264",
+    "audio": {
+      "codec": "aac",
+      "channels": 2,
+      "sampleRate": 48000,
+      "integratedLufs": -16.42,
+      "truePeakDb": -1.24,
+      "loudnessRange": 6.2,
+      "alignment": {
+        "correlation": 0.9990719699653299,
+        "gain": 0.9969127820801915,
+        "lagSamples": 0,
+        "peak": 0.8594236969947815
+      }
+    },
+    "completeDecode": true,
+    "contactSheet": "full-timeline.png",
+    "originalGraphNodes": 2796,
+    "subjectiveReview": "Contact sheet and representative full-size frames require visual review; technical checks do not establish artistic quality."
+  },
+  {
+    "film": "the-shape-of-returning",
+    "seconds": 60.010667,
+    "frames": 1800,
+    "size": [
+      1280,
+      720
+    ],
+    "codec": "h264",
+    "audio": {
+      "codec": "aac",
+      "channels": 2,
+      "sampleRate": 48000,
+      "integratedLufs": -17.75,
+      "truePeakDb": -1.58,
+      "loudnessRange": 6.1,
+      "alignment": {
+        "correlation": 0.9975807564976817,
+        "gain": 0.9938844325273861,
+        "lagSamples": 0,
+        "peak": 0.8341104984283447
+      }
+    },
+    "completeDecode": true,
+    "contactSheet": "full-timeline.png",
+    "originalGraphNodes": 44,
+    "subjectiveReview": "Contact sheet and representative full-size frames require visual review; technical checks do not establish artistic quality."
+  },
+  {
+    "film": "a-signal-for-the-garden",
+    "seconds": 52.010667,
+    "frames": 1560,
+    "size": [
+      1280,
+      720
+    ],
+    "codec": "h264",
+    "audio": {
+      "codec": "aac",
+      "channels": 2,
+      "sampleRate": 48000,
+      "integratedLufs": -16.47,
+      "truePeakDb": -1.83,
+      "loudnessRange": 5,
+      "alignment": {
+        "correlation": 0.9996619976570383,
+        "gain": 0.9988441627023311,
+        "lagSamples": 0,
+        "peak": 0.8092121481895447
+      }
+    },
+    "completeDecode": true,
+    "contactSheet": "full-timeline.png",
+    "originalGraphNodes": 88,
+    "subjectiveReview": "Contact sheet and representative full-size frames require visual review; technical checks do not establish artistic quality."
+  }
+]

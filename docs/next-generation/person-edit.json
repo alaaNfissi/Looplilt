@@ -1,0 +1,47 @@
+{
+  "verifiedAt": "2026-11-07T04:10:45.552Z",
+  "personEditVerified": {
+    "verifiedAt": "2026-11-07T04:10:02.547Z",
+    "basis": "The user explicitly confirmed making a real edit; the actual changed revision and nodes were then inspected through MCP.",
+    "baselineRevision": 3,
+    "personRevision": 4,
+    "personFingerprint": "d38ccd225721cf572f31373add70ba1f2f095f3e063898946a6ad69ad1185e01",
+    "changedNodes": [
+      "message"
+    ],
+    "message": "Every window has a story. Enjoy it.",
+    "personSnapshot": {
+      "projectId": "the-last-light",
+      "fingerprint": "d38ccd225721cf572f31373add70ba1f2f095f3e063898946a6ad69ad1185e01",
+      "revision": 4,
+      "title": "The Last Light",
+      "rootId": "root",
+      "width": 1280,
+      "height": 720,
+      "frameRate": {
+        "denominator": 1,
+        "numerator": 30
+      },
+      "durationFrames": 480,
+      "nodeCount": 121,
+      "assetCount": 0,
+      "validation": {
+        "valid": true,
+        "unsupported": []
+      }
+    }
+  },
+  "agentEdit": {
+    "projectId": "the-last-light",
+    "fingerprint": "332388e02cb90e1e2ba96a473aba1a6939d49ee32f9b08eea642bd92e3cb829b",
+    "revision": 5,
+    "changedNodes": [
+      "courier"
+    ],
+    "changedAssets": [],
+    "noop": false
+  },
+  "preservedUntargetedNodes": 120,
+  "messagePreserved": true,
+  "notes": "The user performed and confirmed the text edit. Subsequent movement change used a real MCP call. No screen recording has been fabricated."
+}

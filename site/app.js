@@ -10,6 +10,7 @@ const films = {
   'paper-garden': { title: 'Pocket greenhouse', kind: 'PAPER CUTOUT / STARTER', duration: 16 }
 };
 const articles = [...document.querySelectorAll('.film')];
+const galleryVideos = [...document.querySelectorAll('.film video, .studio-film video')];
 const visualStyleCount = new Set(articles.map(article => article.dataset.style)).size;
 const filterButtons = [...document.querySelectorAll('[data-filter]')];
 let activePreview = 'one-more-light';
@@ -40,7 +41,7 @@ function syncPreview() {
 }
 function shouldPlayPreview() {
   return previewWanted && previewVisible && !document.hidden && !hero.error
-    && !articles.some(article => !article.querySelector('video').paused);
+    && !galleryVideos.some(video => !video.paused);
 }
 async function applyPlayback() {
   const version = previewVersion;
@@ -54,14 +55,14 @@ async function applyPlayback() {
 }
 toggle.addEventListener('click', () => {
   previewWanted = hero.paused;
-  if (previewWanted) articles.forEach(article => article.querySelector('video').pause());
+  if (previewWanted) galleryVideos.forEach(video => video.pause());
   applyPlayback();
 });
 sound.addEventListener('click', () => {
   hero.muted = !hero.muted;
   syncSound();
   if (!hero.muted && hero.paused) {
-    articles.forEach(article => article.querySelector('video').pause());
+    galleryVideos.forEach(video => video.pause());
     previewWanted = true; applyPlayback();
   }
 });
@@ -98,7 +99,7 @@ reducedMotion.addEventListener('change', () => {
   applyPlayback();
 });
 document.addEventListener('visibilitychange', () => {
-  if (document.hidden) articles.forEach(article => article.querySelector('video').pause());
+  if (document.hidden) galleryVideos.forEach(video => video.pause());
   applyPlayback();
 });
 if ('IntersectionObserver' in window) {
@@ -108,14 +109,15 @@ if ('IntersectionObserver' in window) {
   }, { threshold: 0.1 }).observe(hero);
 }
 
+galleryVideos.forEach(video => video.addEventListener('play', () => {
+  hero.pause();
+  galleryVideos.forEach(other => { if (other !== video) other.pause(); });
+}));
+
 articles.forEach(article => {
   const video = article.querySelector('video');
   const error = article.querySelector('.media-error');
   let formatVersion = 0;
-  video.addEventListener('play', () => {
-    hero.pause();
-    articles.forEach(other => { if (other !== article) other.querySelector('video').pause(); });
-  });
   video.addEventListener('error', () => { error.hidden = false; });
   video.addEventListener('loadeddata', () => { error.hidden = true; });
   article.querySelectorAll('[data-format]').forEach(button => button.addEventListener('click', () => {

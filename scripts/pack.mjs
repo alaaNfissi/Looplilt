@@ -7,7 +7,7 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const dist = path.join(root, 'dist');
 await fs.mkdir(dist, { recursive: true });
 if ((await fs.lstat(dist)).isSymbolicLink() || path.dirname(await fs.realpath(dist)) !== await fs.realpath(root)) throw new Error('Unexpected output folder');
-const source = await releaseEntries(root);
+const source = await releaseEntries(root,{requireStudio:true});
 const skill = portableSkillEntries(source);
 const { version } = JSON.parse(await fs.readFile(path.join(root, 'package.json'), 'utf8'));
 if (!/^[0-9]+\.[0-9]+\.[0-9]+(?:-[a-z0-9.-]+)?$/.test(version)) throw new Error('Invalid archive version');

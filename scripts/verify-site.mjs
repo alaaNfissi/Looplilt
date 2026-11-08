@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+const stories=JSON.parse(await fs.readFile(new URL('../studio/stories.json',import.meta.url),'utf8'));
 import { SHOWCASE } from '../lib/catalog.mjs';
 import path from 'node:path';
 import { serveSite } from './site-server.mjs';
@@ -15,10 +16,12 @@ try {
   await withBrowser(async browser => {
     for (const width of [1440, 390]) {
       const page = await browser.newPage({ viewport: { width, height: 1000 }, deviceScaleFactor: 1 });
+      page.setDefaultTimeout(60000);
       const failures = [];
       page.on('pageerror', error => failures.push(error.message));
       page.on('response', response => { if (response.status() >= 400) failures.push(`${response.status()} ${response.url()}`); });
-      await page.goto(origin, { waitUntil: 'networkidle' });
+      await page.goto(origin, { waitUntil: 'domcontentloaded', timeout: 60000 });
+      await page.locator('#copy-prompt').waitFor({state:'visible',timeout:60000});
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `No horizontal overflow at ${width}px`);
       const local = await page.locator('a[href]').evaluateAll(links => links.map(link => link.getAttribute('href')).filter(href => !/^(https?:|#)/.test(href)));
       for (const href of local) {
@@ -52,6 +55,22 @@ try {
       await page.locator('[data-preview="paper-garden"]').click();
       assert.equal(await hero.evaluate(video => video.paused), true, 'Reduced motion disables preview autoplay');
       assert.equal(await page.locator('.film').count(), SHOWCASE.length);
+      assert.equal(await page.locator('.studio-film').count(),stories.length);
+      for(const story of stories){
+        const card=page.locator('#studio-film-'+story.slug),video=card.locator('video');
+        assert.equal(await card.locator('.studio-film-style').textContent(),story.style);
+        assert.ok((await card.locator('.studio-film-score').textContent()).includes(story.audio));
+        assert.equal(await card.getByRole('link',{name:/Open editable film/}).getAttribute('href'),'studio/?story='+story.slug);
+        assert.equal(await card.getByRole('link',{name:/Take the project home/}).getAttribute('download'),'');
+        assert.equal(await video.getAttribute('autoplay'),null);
+        await video.evaluate(async item=>{item.muted=true;await item.play();});
+        await page.waitForFunction(slug=>document.querySelector('#studio-film-'+slug+' video').currentTime>.1,story.slug);
+        assert.equal(await hero.evaluate(item=>item.paused),true);
+        assert.equal(await page.locator('video').evaluateAll(items=>items.filter(item=>!item.paused).length),1,'Only one film plays at a time');
+        assert.equal(await video.evaluate(item=>item.videoWidth),1280);
+        assert.ok(Math.abs((await video.evaluate(item=>item.duration))-story.seconds)<.1);
+        await video.evaluate(item=>item.pause());
+      }
       const styleCount = await page.locator('[data-filter]:not([data-filter="all"])').count();
       const allSummary = `${SHOWCASE.length} original films · ${styleCount} visual styles · sound on, when you press play`;
       assert.equal(await page.locator('#film-count').textContent(), allSummary, 'Initial summary matches the available styles');
@@ -114,6 +133,8 @@ try {
     await plain.goto(origin);
     assert.equal(await plain.locator('#hero-video').getAttribute('controls'), '');
     assert.equal(await plain.locator('.film:visible').count(), SHOWCASE.length);
+    assert.equal(await plain.locator('.studio-film:visible').count(),stories.length);
+    assert.equal(await plain.locator('.studio-film video[controls]').count(),stories.length);
     assert.equal(await plain.locator('.film-filters').isVisible(), false);
     await plain.locator('.prompt-details summary').click();
     assert.ok((await plain.locator('#installation-prompt').inputValue()).startsWith('Set up Looplilt'));
@@ -121,7 +142,7 @@ try {
     console.log('Unavailable clipboard and no-JavaScript fallbacks passed');
     for (const width of [320, 768]) {
       const page = await browser.newPage({ viewport: { width, height: 900 }, reducedMotion: 'reduce' });
-      await page.goto(origin, { waitUntil: 'networkidle' });
+      await page.goto(origin, { waitUntil: 'domcontentloaded', timeout: 60000 });
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `No horizontal overflow at ${width}px`);
       assert.equal(await page.locator('#hero-video').evaluate(video => video.paused), true);
       await page.screenshot({ path: path.join(folder, `site-${width}.png`), fullPage: true });
@@ -139,9 +160,9 @@ try {
     const failures = [];
     page.on('pageerror', error => failures.push(error.message));
     page.on('response', response => { if (response.status() >= 400) failures.push(response.url()); });
-    await page.goto(mounted.origin + '/', { waitUntil: 'networkidle' });
+    await page.goto(mounted.origin + '/', { waitUntil: 'domcontentloaded', timeout: 60000 });
     assert.equal(await page.locator('link[rel=canonical]').getAttribute('href'), 'https://looplilt.com/');
-    await page.locator('.actions a[href="remix/"]').click();
+    await page.locator('.remix-invitation .invitation-art[href="remix/"]').click();
     await page.waitForFunction(() => document.querySelector('#boot-status').textContent === '');
     assert.equal(await page.locator('#download').isDisabled(), false);
     assert.deepEqual(failures, []);

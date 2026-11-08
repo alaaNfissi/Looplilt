@@ -1,0 +1,9 @@
+{
+  "nodes": 1202,
+  "samples": 720,
+  "fullMilliseconds": 1242.2456,
+  "targetedMilliseconds": 2.334600000000137,
+  "speedup": 532.1021159941434,
+  "exactGainParity": true,
+  "scope": "CPU evaluation only, one audio clip, synthetic1200-layer graph; not overall video-export speed"
+}

@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.0 — 2026-11-08
+
+- Add Looplilt Studio: a visual timeline, graph layers, media import, direct manipulation, keyframes, motion paths, masks, effects, transitions, audio and browser MP4/WebM export.
+- Share one versioned scene graph across Studio, the CLI, rendering and 15 scoped local MCP tools, with optimistic transactions, undo/redo and recovery.
+- Preserve original Canvas films as editable source inside larger compositions. Add verified portable projects, content-addressed assets and missing-media relinking.
+- Add the local companion, secure render host, immutable render jobs, cancellation and native full-file export verification.
+- Add three original editable films: The Last Light, The Shape of Returning, and A Signal for the Garden, each with a complete arranged score.
+- Add large-timeline viewport rendering, focused graph evaluation, a three-film welcome screen and shared browser/code/agent onboarding.
+- Extend real browser, media, failure, packaging and security acceptance checks. See docs/next-generation/REPORT.md for measured results and limits.
+
 ## 0.3.1 — 2026-11-06
 
 - Keep the gallery status accurate after changing style filters: derive the visual-style count from the current films instead of retaining the earlier eight-style total.

@@ -12,7 +12,7 @@ jobs:
         os: [ubuntu-latest, windows-latest]
         node: [22, 24]
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
@@ -20,13 +20,17 @@ jobs:
           node-version: ${{ matrix.node }}
           cache: npm
       - run: npm ci --ignore-scripts
+      - run: npm run check:generated
       - run: npm test
+      - run: npm run studio:setup
+      - run: npm run studio:build
+      - run: npm run studio:check
       - run: npm run site
       - run: npm run pack
   browser-and-media:
     # Playwright 1.58 supports Ubuntu 24.04; keep browser dependencies reproducible.
     runs-on: ubuntu-24.04
-    timeout-minutes: 25
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
@@ -52,9 +56,26 @@ jobs:
           # Exact installed paths only; Chromium's own sandbox stays enabled.
           sudo apparmor_parser --replace "$sandbox_profile"
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: npm run studio:setup
+      - run: npm run studio:build
+      - run: npm run studio:check
+      - run: npm run test:graph-renderer
+      - run: npm run test:legacy
+      - run: npm run test:graph-jobs
+        env:
+          LOOPLILT_DISABLE_GPU: '1'
+      - run: npm run test:graph-shutdown
+        env:
+          LOOPLILT_DISABLE_GPU: '1'
+      - run: npm run test:codec-failures
+      - run: npm run test:studio-editing
+      - run: npm run test:studio-handoff
+      - run: npm run test:studio-stories
+      - run: npm run test:studio-complex
       - run: npm run site
       - run: npm run test:browser
       - run: npm run test:site
+      - run: npm run test:studio-welcome
       - run: npm run test:workflow
         env:
           LOOPLILT_TEST_MEDIA: '1'

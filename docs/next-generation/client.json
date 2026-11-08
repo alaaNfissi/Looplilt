@@ -1,0 +1,55 @@
+{
+  "client": "Codex CLI",
+  "durationFrames": 180,
+  "frameRate": {
+    "denominator": 1,
+    "numerator": 30
+  },
+  "finalRevision": 3,
+  "finalFingerprint": "291e2d48de2eebfc2db55f9678e5be74281970857c97dad0b6736ad8987f88c2",
+  "title": "A little care grows",
+  "circleAt90": 230,
+  "comparison": {
+    "projectId": "83635f99-adfc-46c4-886b-284753c19524",
+    "fromRevision": 2,
+    "toRevision": 3,
+    "counts": {
+      "nodes": {
+        "added": 0,
+        "removed": 0,
+        "changed": 1
+      },
+      "assets": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      }
+    },
+    "items": [
+      {
+        "kind": "project",
+        "id": "83635f99-adfc-46c4-886b-284753c19524",
+        "status": "changed",
+        "fields": [
+          "revision"
+        ],
+        "fieldCount": 1,
+        "fieldsTruncated": false
+      },
+      {
+        "kind": "nodes",
+        "id": "title",
+        "status": "changed",
+        "fields": [
+          "props.text"
+        ],
+        "fieldCount": 1,
+        "fieldsTruncated": false
+      }
+    ],
+    "total": 2,
+    "nextOffset": null,
+    "fromFingerprint": "61c0bb2d64e2b4e4d6f008fba00408b808a025f7df8eafad318f3125dc5dd954",
+    "toFingerprint": "291e2d48de2eebfc2db55f9678e5be74281970857c97dad0b6736ad8987f88c2"
+  }
+}

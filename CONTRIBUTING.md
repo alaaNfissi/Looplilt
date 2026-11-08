@@ -27,6 +27,12 @@ Fork the repository and create a branch for one clear change. Describe the probl
 
 For a code change, run `npm test`. If it affects drawing, the player, or rendering, also run `npm run test:browser` and inspect a short exported film. Website changes should pass `npm run site` and `npm run test:site`; remixer changes should also pass `npm run test:remix`. Report the checks you ran and any environment limits. Documentation-only fixes do not need the full video-rendering suite. Keep temporary outputs, local paths, credentials, and dependency folders out of commits.
 
+## Work on Studio or MCP
+
+From a source checkout, run `npm ci --ignore-scripts`, `npm run studio:setup`, `npm run studio:build` and `npm run studio:check`. Studio uses a pinned frontend workspace; its generated runtime stays outside version control and is included in verified release ZIPs. After changing only an original Studio film, `npm run studio:stories` refreshes the example bundles without recompiling unchanged editor code.
+
+Use shared graph transactions for new editing behavior. Do not add a competing saved timeline model. Run the relevant [acceptance commands](docs/validation.md): visual editing, legacy source import, MCP handoff or complex mixed-media export. For welcome-screen changes, build the site and run `npm run test:studio-welcome`. Include actual frames or media when reporting renderer changes; a passing schema check does not establish visual correctness.
+
 ## Share original work
 
 Examples should tell a distinct visual story and include their editable drawing and score. Submit only material you have the right to share. Do not copy another project's illustrations, characters, prose, code, or example media into the collection. By contributing, you agree to license your contribution under this repository's MIT license; retain notices required for any separately licensed contribution and discuss them before adding it.

@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Make a little film. Keep the whole world. An open-source JavaScript animation toolkit with original films, a browser remixer, and local video export.">
+  <meta name="description" content="Create animated films with Looplilt Studio, code, or an AI agent. Editable layers, expressive motion, original soundtracks, and local video export. Open source. No account.">
   <meta name="theme-color" content="#102d29">
   <meta property="og:title" content="Looplilt — Small stories. Real motion.">
-  <meta property="og:description" content="Original films. Named scenes. A browser remix with sound. An open-source animation toolkit by Alaa Nfissi.">
+  <meta property="og:description" content="One editable film. Create visually, program a scene, or collaborate with an AI agent. Open-source animation and video editing by Alaa Nfissi.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://looplilt.com/">
   <meta property="og:image" content="https://looplilt.com/assets/social-card.png">
@@ -25,16 +25,16 @@
   <a class="skip" href="#main">Skip to content</a>
   <header class="nav wrap">
     <a class="wordmark" href="./" aria-label="Looplilt home"><img src="assets/logo.svg" width="150" height="40" alt="Looplilt"></a>
-    <nav aria-label="Main navigation"><a class="nav-films" href="#films">The films</a><a href="#start">Get started</a><a href="remix/" class="nav-start">Try a remix <span aria-hidden="true">↗</span></a></nav>
+    <nav aria-label="Main navigation"><a class="nav-films" href="#films">The films</a><a href="#start">Get started</a><a href="studio/" class="nav-start">Open Studio <span aria-hidden="true">↗</span></a></nav>
   </header>
   <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> A LITTLE OPEN-SOURCE ANIMATION STUDIO</p>
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> AN OPEN-SOURCE STUDIO FOR MOVING IDEAS</p>
         <h1 id="hero-title">Small stories.<br>Real <em>motion.</em><span class="title-dot" aria-hidden="true"></span></h1>
-        <p class="lede">Make animated films with JavaScript or a coding agent. Edit every scene. Give it a soundtrack. Keep the whole little world.</p>
-        <div class="actions"><a class="button primary" href="remix/">Remix a film <span aria-hidden="true">↗</span></a><a class="text-link" href="#films">Watch the films <span aria-hidden="true">↓</span></a></div>
-        <p class="try-note">Try it in your browser. No install or account.</p><div class="hero-meta"><span>Editable source</span><span>Local MP4 export</span><span>MIT licensed</span></div>
+        <p class="lede">Create a film visually, shape it with code, or bring an AI agent. Layer the picture. Find the movement. Give it a score. Keep every part editable.</p>
+        <div class="actions"><a class="button primary" href="studio/">Open Looplilt Studio <span aria-hidden="true">↗</span></a><a class="text-link" href="#films">Watch the films <span aria-hidden="true">↓</span></a></div>
+        <p class="try-note">Try it in your browser. No install or account.</p><div class="hero-meta"><span>Editable layers + source</span><span>Local MP4 / WebM</span><span>Open source</span></div>
       </div>
       <div class="hero-stage">
         <span class="stage-orbit" aria-hidden="true"></span>
@@ -57,6 +57,11 @@
       </div>
     </section>
     <div class="ribbon"><div class="wrap"><span>Draw something.</span><i aria-hidden="true">✳</i><span>Give it a beat.</span><i aria-hidden="true">✳</i><span>Make it move.</span><i aria-hidden="true">✳</i><span>Share the source.</span></div></div>
+    <section id="studio-films" class="studio-showcase" aria-labelledby="studio-films-title"><div class="wrap">
+      <div class="section-heading"><div><p class="eyebrow">MEET LOOPLILT STUDIO</p><h2 id="studio-films-title">Watch the story.<br><em>Step inside the film.</em></h2></div><p>Finished films are a starting point. Open an editable copy, find a layer, change a moment, and export your own version—all in your browser.</p></div>
+      <div class="studio-showcase-grid"><!-- STUDIO_FILMS --></div>
+      <div class="studio-showcase-foot"><p><strong>One project, three ways in.</strong> Work visually in Studio. Shape a scene in code. Let an MCP-compatible agent inspect and revise the same project.</p><a href="#start">Find your way to start <span aria-hidden="true">↓</span></a></div>
+    </div></section>
     <section id="films" class="films wrap" aria-labelledby="films-title">
       <div class="section-heading"><div><p class="eyebrow">01 / THE SCREENING ROOM</p><h2 id="films-title">Pick a world.<br><em>Find your rhythm.</em></h2></div><p><!-- FILM_COUNT --> original films, each with its own story and score. Play one with sound. Then open the source and make a world of your own.</p></div>
       <!-- FILM_INDEX -->
@@ -68,26 +73,31 @@
       <div><p class="eyebrow">A SMALL CHANGE IS A REAL BEGINNING</p><h2 id="remix-invitation-title">This one can<br>be <em>yours.</em></h2><p>Pick a color. Give it a name. Turn on the score, watch your greenhouse grow, then take the editable project home.</p><a class="button primary" href="remix/">Make it yours <span aria-hidden="true">↗</span></a><span class="invitation-note">No account. Nothing to install.</span></div>
     </section>
     <section id="workshop" class="workshop" aria-labelledby="workshop-title"><div class="wrap">
-      <div class="section-heading"><div><p class="eyebrow">02 / INSIDE THE LITTLE STUDIO</p><h2 id="workshop-title">The film is the beginning.<br><em>The source is yours to explore.</em></h2></div><p>Plain JavaScript. A playable HTML file. An MP4 when you’re ready. Name the shots. Find the exact frame. Refine one moment and keep creating.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">02 / THE CODE WORKFLOW</p><h2 id="workshop-title">The film is the beginning.<br><em>The source is yours to explore.</em></h2></div><p>Plain JavaScript. A playable HTML file. An MP4 when you’re ready. Name the shots. Find the exact frame. Refine one moment and keep creating.</p></div>
       <div class="workflow">
         <div class="workflow-step"><div class="step-art code-art" aria-hidden="true"><span class="code-comment">// a world, at any moment</span><span><b>drawFrame</b>({ ctx, t }) {</span><span>&nbsp; ctx.arc(t * 40, 80, 20,</span><span>&nbsp; &nbsp; 0, Math.PI * 2);</span><span>}</span><i></i></div><p class="eyebrow">01 / NAME THE SHOTS</p><h3>Give the story a shape.</h3><p>Keep expressive Canvas drawing in <code>draw.js</code>. Name the scenes, expose a few creative controls, and arrange music in <code>project.json</code>.</p></div>
         <div class="workflow-step"><div class="step-art timeline-art" aria-hidden="true"><div><i></i><i></i><i></i><i></i><i></i></div><span class="timeline-track"></span><span class="timeline-playhead"></span><small>00:08.00</small></div><p class="eyebrow">02 / FIND THE FEELING</p><h3>Make the moment land.</h3><p>Open the live local preview. Jump to a named scene, inspect an exact frame, and refine a color or motion. Save your source; see the change.</p></div>
         <div class="workflow-step"><div class="step-art formats-art" aria-hidden="true"><span class="format-wide">16:9</span><span class="format-square">1:1</span><span class="format-tall">9:16</span></div><p class="eyebrow">03 / SEND IT INTO THE WORLD</p><h3>Take the film with you.</h3><p>Export one scene or the whole film, in wide, tall, or square. Looplilt checks the finished MP4; your editable source stays beside it.</p></div>
       </div>
-      <div class="iteration-note"><div><p class="eyebrow">NEW IN 0.3 / WORK SCENE BY SCENE</p><h3>Find the moment.<br><em>Make it yours.</em></h3><p>Short feedback loops, ordinary files. The same tools work in your terminal and with an equipped coding agent.</p><a class="text-link" href="https://github.com/alaaNfissi/Looplilt/blob/main/docs/workflow.md">Explore the creation workflow ↗</a></div><div class="iteration-code"><span>YOUR FILM / YOUR WORKSPACE</span><pre><code>looplilt inspect my-film --json
-looplilt preview my-film
-looplilt frame my-film --scene reply --at 4 --out reply.png
-looplilt render my-film --scene reply --out reply.mp4</code></pre><small>Use <code>node bin/looplilt.mjs</code> from your checkout in place of <code>looplilt</code>.</small></div></div><div class="toolbox-foot"><span>Named scenes <i>+</i> Musical patterns <i>+</i> Live preview <i>+</i> Local export</span><a href="https://github.com/alaaNfissi/Looplilt/blob/main/docs/architecture.md">Look under the hood ↗</a></div>
+<div class="iteration-note"><div><p class="eyebrow">ONE PROJECT / THREE WAYS TO CREATE</p><h3>Move between tools.<br><em>Keep the whole story.</em></h3><p>Build a scene in Studio, refine it through code, or ask an equipped agent to change one layer. The local companion connects them to the same saved project, with revision checks that protect newer edits.</p><a class="text-link" href="https://github.com/alaaNfissi/Looplilt/blob/main/docs/studio.md">Meet the shared creative workspace ↗</a></div><div class="iteration-code"><span>STUDIO + CODE + MCP</span><pre><code>looplilt studio my-workspace
+# In a second terminal:
+looplilt graph list my-workspace
+looplilt graph inspect my-workspace --project &lt;project-id&gt;
+looplilt graph render my-workspace --project &lt;project-id&gt;</code></pre><small>Create a dedicated workspace first; replace <code>&lt;project-id&gt;</code> with an ID from the list. Use <code>node bin/looplilt.mjs</code> from a checkout. <a href="https://github.com/alaaNfissi/Looplilt/blob/main/docs/mcp.md">Connect your agent through MCP ↗</a></small></div></div><div class="toolbox-foot"><span>Named scenes <i>+</i> Musical patterns <i>+</i> Live preview <i>+</i> Local export</span><a href="https://github.com/alaaNfissi/Looplilt/blob/main/docs/architecture.md">Look under the hood ↗</a></div>
     </div></section>
     <section id="start" class="start wrap" aria-labelledby="start-title">
-      <div class="section-heading"><div><p class="eyebrow">03 / YOUR FIRST FILM</p><h2 id="start-title">One small step.<br><em>Two ways to take it.</em></h2></div><p>Start with a working HTML film. Add video-export tools when you need them. On a phone? <a href="remix/">Try the browser remixer first.</a></p></div>
+      <div class="section-heading"><div><p class="eyebrow">03 / YOUR FIRST FILM</p><h2 id="start-title">One small step.<br><em>Your way to take it.</em></h2></div><p>Open Studio and start creating. Prefer code or an agent? Keep working with ordinary files and local tools. The same project can move between them.</p></div>
+      <article class="studio-entry" aria-labelledby="studio-entry-title">
+        <div><p class="eyebrow">IN YOUR BROWSER / NO SETUP</p><h3 id="studio-entry-title">Meet your new editing room.</h3><p>Bring your video, images and audio. Arrange layers, animate a path, add a title, and export the film. Your media stays on your device.</p></div>
+        <div class="studio-entry-actions"><a class="button primary" href="studio/">Start in Studio <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/alaaNfissi/Looplilt/blob/main/docs/studio.md">Take the quick tour ↗</a><small>No account. Save a portable project.<br>Use current Chrome or Edge for video export.</small></div>
+      </article>
       <div class="setup-grid">
         <article id="agent-setup" class="setup-card agent-card" aria-labelledby="agent-title">
           <div class="setup-card-top"><span class="setup-number" aria-hidden="true">A</span><span class="setup-tag">WITH A CODING AGENT</span></div>
           <h3 id="agent-title">“Set it up for me.”</h3>
           <p>Bring a coding agent that can edit files and run terminal commands. Use the setup prompt with, for example:</p>
           <ul class="agent-list" aria-label="Examples of compatible coding agents"><li>OpenAI Codex</li><li>Claude Code</li><li>Cursor Agent</li><li>Gemini CLI</li><li>GitHub Copilot CLI</li></ul>
-          <p class="agent-scope">Other agents with the same tools can follow the instructions too. <a href="https://github.com/alaaNfissi/Looplilt/blob/main/docs/agents.md#compatible-agents">See requirements & compatibility.</a></p>
+          <p class="agent-scope">Other agents with the same tools can follow the instructions too. Local MCP clients can inspect and edit the same project as Studio. <a href="https://github.com/alaaNfissi/Looplilt/blob/main/docs/agents.md#compatible-agents">See requirements & compatibility.</a></p>
           <ol class="setup-steps"><li>Copy the setup prompt.</li><li>Paste it into your agent’s workspace.</li><li>Open your first film. Ask for a change.</li></ol>
           <button id="copy-prompt" class="button primary" type="button" hidden>Copy setup prompt <span aria-hidden="true">↗</span></button>
           <p id="prompt-status" class="copy-status" role="status" aria-live="polite"></p>
@@ -113,10 +123,10 @@ node bin/looplilt.mjs build my-film --out my-film.html</code></pre></div>
     <section class="questions wrap" aria-labelledby="questions-title">
       <div><p class="eyebrow">A FEW GOOD QUESTIONS</p><h2 id="questions-title">Before your<br><em>first frame.</em></h2></div>
       <div class="question-list">
-        <details><summary>Can I try it without writing code?</summary><p>Yes. The <a href="remix/">Pocket greenhouse remixer</a> lets you change colors, a title, timing, and format in your browser. To create a different scene, edit the JavaScript or work with a coding agent using the setup prompt above.</p></details>
-        <details><summary>Does it work with every AI chat or agent?</summary><p>Looplilt works through local files and commands. Coding agents such as Codex, Claude Code, Cursor, Gemini CLI, and GitHub Copilot CLI provide those tools. Other agents can use it when their environment allows the same access. A text-only chat can help write the source; you still need a suitable environment to build and render it. <a href="https://github.com/alaaNfissi/Looplilt/blob/main/docs/agents.md#compatible-agents">Read the compatibility guide.</a></p></details>
-        <details><summary>What does Looplilt actually make?</summary><p>Looplilt draws animations from editable JavaScript. It builds a standalone HTML player, and can render an MP4 locally. The website’s remixer downloads a source project; MP4 export happens on your computer.</p></details>
-        <details><summary>Where do my project and files go?</summary><p>Remixer changes stay in your browser until you download them. Your local projects and video renders stay on your computer. Looplilt has no account system, uploads, or hosted rendering service.</p></details>
+        <details><summary>Can I try it without writing code?</summary><p>Yes. <a href="studio/">Looplilt Studio</a> lets you arrange video and audio, add shapes and text, animate layers, and export a film. For a smaller first step, the <a href="remix/">Pocket greenhouse remixer</a> lets you change a finished animation’s colors, title and timing.</p></details>
+        <details><summary>Does it work with every AI chat or agent?</summary><p>Looplilt supports coding agents with file and terminal access, including Codex, Claude Code, Cursor, Gemini CLI, and GitHub Copilot CLI. Its local MCP server also exposes structured creation, editing and rendering tools to compatible MCP clients. Client configuration and permissions differ. A text-only chat can help write a scene, but cannot run the local tools by itself. <a href="https://github.com/alaaNfissi/Looplilt/blob/main/docs/agents.md#compatible-agents">Read the compatibility guide.</a></p></details>
+        <details><summary>What does Looplilt actually make?</summary><p>Looplilt creates editable 2D animation and video compositions. Studio combines shapes, text, imported media, motion, masks and audio in one project and exports MP4 or WebM. JavaScript films also keep their standalone HTML player and original source workflow.</p></details>
+        <details><summary>Where do my project and files go?</summary><p>Hosted Studio saves projects in your browser; download a portable .looplilt file to keep a copy with its media. The local companion saves ordinary files in the workspace you choose, so Studio and an agent can edit them together. There are no mandatory accounts or cloud media uploads.</p></details>
         <details><summary>Can I build on these examples?</summary><p>Yes. The toolkit and original examples are <a href="https://github.com/alaaNfissi/Looplilt/blob/main/LICENSE">MIT licensed</a>. Keep the included license notices when redistributing the code. Your own additions remain yours.</p></details>
       </div>
     </section>
@@ -124,7 +134,7 @@ node bin/looplilt.mjs build my-film --out my-film.html</code></pre></div>
       <div><p class="eyebrow">EVERY KIND OF MAKER IS WELCOME</p><h2 id="community-title">Your ideas<br><em>belong here.</em></h2></div>
       <div><p>A new film. A better score. Clearer instructions. A bug you noticed. You don’t have to be a developer to help Looplilt grow.</p><div class="actions"><a class="button primary" href="https://github.com/alaaNfissi/Looplilt/blob/main/CONTRIBUTING.md">Find a way to contribute <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/alaaNfissi/Looplilt/issues/new?template=showcase.yml">Share your film ↗</a></div></div>
     </section>
-    <section class="closing wrap" aria-labelledby="closing-title"><div class="closing-mark" aria-hidden="true"><img src="assets/mark.svg" width="96" height="96" alt=""></div><p class="eyebrow">MADE TO BE MADE YOUR OWN</p><h2 id="closing-title">Your next little idea<br>could <em>move.</em></h2><p>Start with a seed. See where it takes you.</p><a class="button primary" href="remix/">Make your first remix <span aria-hidden="true">↗</span></a><a class="closing-secondary" href="https://github.com/alaaNfissi/Looplilt">Explore the source on GitHub ↗</a></section>
+    <section class="closing wrap" aria-labelledby="closing-title"><div class="closing-mark" aria-hidden="true"><img src="assets/mark.svg" width="96" height="96" alt=""></div><p class="eyebrow">MADE TO BE MADE YOUR OWN</p><h2 id="closing-title">Your next little idea<br>could <em>move.</em></h2><p>Start with a seed. See where it takes you.</p><a class="button primary" href="studio/">Make your first film <span aria-hidden="true">↗</span></a><a class="closing-secondary" href="https://github.com/alaaNfissi/Looplilt">Explore the source on GitHub ↗</a></section>
   </main>
   <footer class="wrap"><div><a class="wordmark" href="./" aria-label="Looplilt home"><img src="assets/logo.svg" width="150" height="40" alt="Looplilt"></a><p>Small stories. Real motion.</p></div><div class="footer-links"><a href="https://github.com/alaaNfissi/Looplilt">GitHub ↗</a><a href="https://github.com/alaaNfissi/Looplilt/blob/main/CONTRIBUTING.md">Contribute ↗</a><a href="https://github.com/alaaNfissi/Looplilt/blob/main/docs/brand.md">Brand kit ↗</a><a href="https://github.com/alaaNfissi/Looplilt/issues">Ideas & issues ↗</a></div><p class="byline">Created by <a href="https://github.com/alaaNfissi">Alaa Nfissi</a><br>© 2026 · <a href="https://github.com/alaaNfissi/Looplilt/blob/main/LICENSE">MIT license</a></p></footer>
   <script src="app.js" defer></script>

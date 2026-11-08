@@ -1,6 +1,8 @@
+import {verifyStudioRuntime} from '../lib/studio/distribution.mjs';
 import fs from 'node:fs/promises';
 import { SHOWCASE } from '../lib/catalog.mjs';
 import { galleryMarkup } from './gallery.mjs';
+import {studioGalleryMarkup} from './studio-gallery.mjs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readProject } from '../lib/project.mjs';
@@ -9,6 +11,7 @@ import { makeHtml, audioWorkerSource } from '../lib/build.mjs';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const target = path.join(root, '.site');
 const source = path.join(root, 'site');
+await verifyStudioRuntime(root);
 // Only the fixed generated directory owned by this script can be replaced.
 try {
   const stat = await fs.lstat(target);
@@ -27,6 +30,7 @@ for (const { slug, posterType } of SHOWCASE) {
   for (const format of ['landscape', 'portrait']) for (const ext of ['mp4', posterType]) await fs.access(path.join(source, 'media', `${slug}-${format}.${ext}`));
 }
 await fs.cp(source, target, { recursive: true });
+await fs.cp(path.join(root,'studio/apps/web/out'),path.join(target,'studio'),{recursive:true});
 await fs.mkdir(path.join(target, 'play'), { recursive: true });
 const greenhouse = await readProject(path.join(root, 'examples', 'paper-garden'));
 const license = await fs.readFile(path.join(root, 'LICENSE'), 'utf8');
@@ -38,9 +42,9 @@ await fs.copyFile(path.join(root, 'lib', 'store-zip.mjs'), path.join(target, 're
 await fs.writeFile(path.join(target, 'remix', 'audio-worker.js'), await audioWorkerSource());
 const prompt = await fs.readFile(path.join(root, 'docs', 'installation-prompt.txt'), 'utf8');
 const escape = text => text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
-const gallery = await galleryMarkup(root);
+const gallery = await galleryMarkup(root), studioFilms=await studioGalleryMarkup(root);
 const index = await fs.readFile(path.join(target, 'index.html'), 'utf8');
-await fs.writeFile(path.join(target, 'index.html'), index.replace('<!-- INSTALLATION_PROMPT -->', escape(prompt.trim())).replace('<!-- FILM_INDEX -->', gallery.index).replace('<!-- FILMS -->', gallery.cards).replaceAll('<!-- FILM_COUNT -->', String(SHOWCASE.length)));
+await fs.writeFile(path.join(target, 'index.html'), index.replace('<!-- STUDIO_FILMS -->',studioFilms).replace('<!-- INSTALLATION_PROMPT -->', escape(prompt.trim())).replace('<!-- FILM_INDEX -->', gallery.index).replace('<!-- FILMS -->', gallery.cards).replaceAll('<!-- FILM_COUNT -->', String(SHOWCASE.length)));
 for (const { slug, posterType } of SHOWCASE) {
   await fs.writeFile(path.join(target, 'play', `${slug}.html`), await makeHtml(await readProject(path.join(root, 'examples', slug))));
 }
