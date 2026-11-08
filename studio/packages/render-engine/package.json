@@ -1,0 +1,32 @@
+{
+  "name": "@looplilt-studio/render-engine",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@looplilt-studio/types": "workspace:*",
+    "@looplilt-studio/animation-engine": "workspace:*",
+    "@looplilt-studio/mask-engine": "workspace:*",
+    "@looplilt-studio/caption-engine": "workspace:*",
+    "@looplilt-studio/color-engine": "workspace:*",
+    "@looplilt-studio/effects-engine": "workspace:*"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.8",
+    "@looplilt-studio/utils": "workspace:*",
+    "@looplilt-studio/mask-engine": "workspace:*",
+    "@looplilt-studio/caption-engine": "workspace:*",
+    "@looplilt-studio/color-engine": "workspace:*",
+    "@looplilt-studio/effects-engine": "workspace:*"
+  }
+}

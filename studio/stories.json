@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "the-last-light",
+    "title": "The Last Light",
+    "style": "Cinematic vector illustration",
+    "seconds": 48,
+    "description": "A last delivery brings a sleeping street back to life. Explore editable cameras, masks, lighting and an original chamber score.",
+    "audio": "Piano, strings, guitar and brushed percussion"
+  },
+  {
+    "slug": "the-shape-of-returning",
+    "title": "The Shape of Returning",
+    "style": "Illustrated scientific fieldbook",
+    "seconds": 60,
+    "description": "Follow water through an illustrated world of oceans, clouds and underground passages. Open the artwork source, titles and six-chapter timeline.",
+    "audio": "Fingerpicked guitar, marimba, strings, rain and surf"
+  },
+  {
+    "slug": "a-signal-for-the-garden",
+    "title": "A Signal for the Garden",
+    "style": "Pixel art × moving-image collage",
+    "seconds": 52,
+    "description": "A tiny caretaker reconnects a silent station and brings its last garden back to life. Explore pixel artwork, moving footage, masks and an animated signal.",
+    "audio": "Syncopated bass, piano, drums, marimba and chiptune counterpoint"
+  }
+]

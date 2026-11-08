@@ -13,3 +13,9 @@ Thumbs.db
 
 # The site build generates standalone players from the examples.
 /site/play/*.html
+
+# Studio build products
+.next/
+.turbo/
+/studio/apps/web/out/
+*.tsbuildinfo

@@ -1,0 +1,52 @@
+{
+  "name": "@looplilt-studio/web",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf .next .turbo *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@looplilt-studio/animation-engine": "workspace:*",
+    "@looplilt-studio/caption-engine": "workspace:*",
+    "@looplilt-studio/color-engine": "workspace:*",
+    "@looplilt-studio/effects-engine": "workspace:*",
+    "@looplilt-studio/export-engine": "workspace:*",
+    "@looplilt-studio/history-engine": "workspace:*",
+    "@looplilt-studio/mask-engine": "workspace:*",
+    "@looplilt-studio/media-engine": "workspace:*",
+    "@looplilt-studio/playback-engine": "workspace:*",
+    "@looplilt-studio/project-io": "workspace:*",
+    "@looplilt-studio/render-engine": "workspace:*",
+    "@looplilt-studio/timeline-engine": "workspace:*",
+    "@looplilt-studio/types": "workspace:*",
+    "@looplilt-studio/ui": "workspace:*",
+    "@looplilt-studio/utils": "workspace:*",
+    "@huggingface/transformers": "^4.2.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.25.0",
+    "mediabunny": "^1.55.1",
+    "mp4-muxer": "^5.2.2",
+    "next": "16.2.10",
+    "pixi.js": "^8.19.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "tailwind-merge": "^2.6.1",
+    "webm-muxer": "^5.1.4",
+    "zustand": "^5.0.14"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.10",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
