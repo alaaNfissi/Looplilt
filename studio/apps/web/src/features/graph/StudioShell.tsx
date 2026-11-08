@@ -118,7 +118,8 @@ export function StudioShell(){
 
  const saveProject=async()=>{if(!await useGraphEditorStore.getState().flush())return;const current=useGraphEditorStore.getState().graph;download(new Blob([serializeGraph(current)],{type:'application/json'}),current.title.replace(/[^a-zA-Z0-9_-]+/g,'-')+'.looplilt.json');};
 
- const welcome=ready&&Object.keys(graph.nodes).length===1&&Object.keys(graph.assets).length===0;
+ const hasSelection=useGraphEditorStore(s=>s.selectedClipIds.length>0);
+ const welcome=ready&&!hasSelection&&Object.keys(graph.nodes).length===1&&Object.keys(graph.assets).length===0;
  return <main className="looplilt-studio" data-mobile-pane={mobilePane} data-welcome={welcome}>
   <header className="studio-header"><a className="studio-brand" href="https://looplilt.com/" title="Looplilt home"><img src="/studio/mark.svg" width="32" height="32" alt=""/><span>Looplilt <small>STUDIO</small></span></a><span className="studio-divider"/>
    <ProjectTitle key={graph.id}/>

@@ -11,6 +11,7 @@ try{await withBrowser(async browser=>{
    await page.locator('.studio-story-card img').evaluateAll(async images=>{await Promise.all(images.map(image=>image.decode()));if(images.some(image=>!image.naturalWidth))throw new Error('Missing example poster');});
    await page.screenshot({path:path.join(out,'welcome-'+width+'x'+height+'.png')});
    for(const story of stories){const card=page.getByRole('button',{name:'Open example: '+story.title,exact:true});await card.scrollIntoViewIfNeeded();await card.focus();assert.equal(await card.evaluate(node=>node===document.activeElement),true);assert.ok((await card.innerText()).includes(story.audio));}
+   if(width>=760){await page.locator(".studio-layer").first().click();await page.getByRole("spinbutton",{name:"Duration",exact:true}).waitFor();assert.equal(await page.locator(".studio-start").count(),0,"A selected composition must reveal its properties");await page.getByRole("button",{name:"New project",exact:true}).click();await page.getByRole("button",{name:"Start with a title",exact:true}).waitFor();}
    await page.getByRole("button",{name:"Start with a title",exact:true}).focus();await page.keyboard.press("Space");await page.locator(".studio-footer").filter({hasText:"1 layers"}).waitFor({timeout:60000});assert.equal(await page.locator(".studio-timeline").isVisible(),true,"Editing timeline returns after keyboard creation");
    report.layouts.push({width,height,...geometry});
   }finally{await context.close();}
