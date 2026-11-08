@@ -1,0 +1,2229 @@
+{
+  "version": 1,
+  "title": "Warmth travels · original chamber score",
+  "duration": 48,
+  "fps": 30,
+  "audio": {
+    "mode": "studio",
+    "room": 0.4,
+    "delay": 0.075,
+    "echoSeconds": 0.75
+  },
+  "captions": [],
+  "score": [
+    {
+      "at": 0,
+      "length": 2,
+      "pitch": 62,
+      "voice": "piano",
+      "gain": 0.06825,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 0.75,
+      "length": 2,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.06825,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 1.5,
+      "length": 2,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.06825,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 2.25,
+      "length": 2,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.06825,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 0,
+      "length": 1.2,
+      "pitch": 38,
+      "voice": "bass",
+      "gain": 0.0975,
+      "pan": -0.05,
+      "send": 0.1
+    },
+    {
+      "at": 3,
+      "length": 2,
+      "pitch": 58,
+      "voice": "piano",
+      "gain": 0.06825,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 3.75,
+      "length": 2,
+      "pitch": 65,
+      "voice": "piano",
+      "gain": 0.06825,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 4.5,
+      "length": 2,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.06825,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 5.25,
+      "length": 2,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.06825,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 3,
+      "length": 1.2,
+      "pitch": 34,
+      "voice": "bass",
+      "gain": 0.0975,
+      "pan": -0.05,
+      "send": 0.1
+    },
+    {
+      "at": 6,
+      "length": 2,
+      "pitch": 65,
+      "voice": "piano",
+      "gain": 0.06825,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 6.75,
+      "length": 2,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.06825,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 7.5,
+      "length": 2,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.06825,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 8.25,
+      "length": 2,
+      "pitch": 79,
+      "voice": "piano",
+      "gain": 0.06825,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 6.06,
+      "length": 2.85,
+      "pitch": 53,
+      "voice": "strings",
+      "gain": 0.0273,
+      "pan": -0.45,
+      "send": 0.55
+    },
+    {
+      "at": 6.06,
+      "length": 2.85,
+      "pitch": 60,
+      "voice": "strings",
+      "gain": 0.0273,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 6.06,
+      "length": 2.85,
+      "pitch": 64,
+      "voice": "strings",
+      "gain": 0.0273,
+      "pan": 0.45,
+      "send": 0.55
+    },
+    {
+      "at": 6,
+      "length": 1.2,
+      "pitch": 41,
+      "voice": "bass",
+      "gain": 0.0975,
+      "pan": -0.05,
+      "send": 0.1
+    },
+    {
+      "at": 9,
+      "length": 2,
+      "pitch": 60,
+      "voice": "piano",
+      "gain": 0.06825,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 9.75,
+      "length": 2,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.06825,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 10.5,
+      "length": 2,
+      "pitch": 70,
+      "voice": "piano",
+      "gain": 0.06825,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 11.25,
+      "length": 2,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.06825,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 9.06,
+      "length": 2.85,
+      "pitch": 48,
+      "voice": "strings",
+      "gain": 0.0273,
+      "pan": -0.45,
+      "send": 0.55
+    },
+    {
+      "at": 9.06,
+      "length": 2.85,
+      "pitch": 55,
+      "voice": "strings",
+      "gain": 0.0273,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 9.06,
+      "length": 2.85,
+      "pitch": 58,
+      "voice": "strings",
+      "gain": 0.0273,
+      "pan": 0.45,
+      "send": 0.55
+    },
+    {
+      "at": 9,
+      "length": 1.2,
+      "pitch": 36,
+      "voice": "bass",
+      "gain": 0.0975,
+      "pan": -0.05,
+      "send": 0.1
+    },
+    {
+      "at": 12,
+      "length": 2,
+      "pitch": 62,
+      "voice": "piano",
+      "gain": 0.08925,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 12.75,
+      "length": 2,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.08925,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 13.5,
+      "length": 2,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.08925,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 14.25,
+      "length": 2,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.08925,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 12.06,
+      "length": 2.85,
+      "pitch": 50,
+      "voice": "strings",
+      "gain": 0.0357,
+      "pan": -0.45,
+      "send": 0.55
+    },
+    {
+      "at": 12.06,
+      "length": 2.85,
+      "pitch": 57,
+      "voice": "strings",
+      "gain": 0.0357,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 12.06,
+      "length": 2.85,
+      "pitch": 60,
+      "voice": "strings",
+      "gain": 0.0357,
+      "pan": 0.45,
+      "send": 0.55
+    },
+    {
+      "at": 12,
+      "length": 1.2,
+      "pitch": 38,
+      "voice": "bass",
+      "gain": 0.1275,
+      "pan": -0.05,
+      "send": 0.1
+    },
+    {
+      "at": 13.5,
+      "length": 0.9,
+      "pitch": 45,
+      "voice": "bass",
+      "gain": 0.095,
+      "pan": 0.07,
+      "send": 0.12
+    },
+    {
+      "at": 12,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 12.75,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 12.75,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 13.5,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 14.25,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 14.25,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 15,
+      "length": 2,
+      "pitch": 58,
+      "voice": "piano",
+      "gain": 0.08925,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 15.75,
+      "length": 2,
+      "pitch": 65,
+      "voice": "piano",
+      "gain": 0.08925,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 16.5,
+      "length": 2,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.08925,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 17.25,
+      "length": 2,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.08925,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 15.06,
+      "length": 2.85,
+      "pitch": 46,
+      "voice": "strings",
+      "gain": 0.0357,
+      "pan": -0.45,
+      "send": 0.55
+    },
+    {
+      "at": 15.06,
+      "length": 2.85,
+      "pitch": 53,
+      "voice": "strings",
+      "gain": 0.0357,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 15.06,
+      "length": 2.85,
+      "pitch": 57,
+      "voice": "strings",
+      "gain": 0.0357,
+      "pan": 0.45,
+      "send": 0.55
+    },
+    {
+      "at": 15,
+      "length": 1.2,
+      "pitch": 34,
+      "voice": "bass",
+      "gain": 0.1275,
+      "pan": -0.05,
+      "send": 0.1
+    },
+    {
+      "at": 16.5,
+      "length": 0.9,
+      "pitch": 41,
+      "voice": "bass",
+      "gain": 0.095,
+      "pan": 0.07,
+      "send": 0.12
+    },
+    {
+      "at": 15,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 15.75,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 15.75,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 16.5,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 17.25,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 17.25,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 18,
+      "length": 2,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.08925,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 18.75,
+      "length": 2,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.08925,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 19.5,
+      "length": 2,
+      "pitch": 77,
+      "voice": "piano",
+      "gain": 0.08925,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 20.25,
+      "length": 2,
+      "pitch": 81,
+      "voice": "piano",
+      "gain": 0.08925,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 18.06,
+      "length": 2.85,
+      "pitch": 55,
+      "voice": "strings",
+      "gain": 0.0357,
+      "pan": -0.45,
+      "send": 0.55
+    },
+    {
+      "at": 18.06,
+      "length": 2.85,
+      "pitch": 62,
+      "voice": "strings",
+      "gain": 0.0357,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 18.06,
+      "length": 2.85,
+      "pitch": 65,
+      "voice": "strings",
+      "gain": 0.0357,
+      "pan": 0.45,
+      "send": 0.55
+    },
+    {
+      "at": 18,
+      "length": 1.2,
+      "pitch": 43,
+      "voice": "bass",
+      "gain": 0.1275,
+      "pan": -0.05,
+      "send": 0.1
+    },
+    {
+      "at": 19.5,
+      "length": 0.9,
+      "pitch": 50,
+      "voice": "bass",
+      "gain": 0.095,
+      "pan": 0.07,
+      "send": 0.12
+    },
+    {
+      "at": 18,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 18.75,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 18.75,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 19.5,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 20.25,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 20.25,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 21,
+      "length": 2,
+      "pitch": 57,
+      "voice": "piano",
+      "gain": 0.08925,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 21.75,
+      "length": 2,
+      "pitch": 64,
+      "voice": "piano",
+      "gain": 0.08925,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 22.5,
+      "length": 2,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.08925,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 23.25,
+      "length": 2,
+      "pitch": 73,
+      "voice": "piano",
+      "gain": 0.08925,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 21.06,
+      "length": 2.85,
+      "pitch": 45,
+      "voice": "strings",
+      "gain": 0.0357,
+      "pan": -0.45,
+      "send": 0.55
+    },
+    {
+      "at": 21.06,
+      "length": 2.85,
+      "pitch": 52,
+      "voice": "strings",
+      "gain": 0.0357,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 21.06,
+      "length": 2.85,
+      "pitch": 55,
+      "voice": "strings",
+      "gain": 0.0357,
+      "pan": 0.45,
+      "send": 0.55
+    },
+    {
+      "at": 21,
+      "length": 1.2,
+      "pitch": 33,
+      "voice": "bass",
+      "gain": 0.1275,
+      "pan": -0.05,
+      "send": 0.1
+    },
+    {
+      "at": 22.5,
+      "length": 0.9,
+      "pitch": 40,
+      "voice": "bass",
+      "gain": 0.095,
+      "pan": 0.07,
+      "send": 0.12
+    },
+    {
+      "at": 21,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 21.75,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 21.75,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 22.5,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 23.25,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 23.25,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 24,
+      "length": 2,
+      "pitch": 62,
+      "voice": "piano",
+      "gain": 0.105,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 24.75,
+      "length": 2,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.105,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 25.5,
+      "length": 2,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.105,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 26.25,
+      "length": 2,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.105,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 24.06,
+      "length": 2.85,
+      "pitch": 50,
+      "voice": "strings",
+      "gain": 0.042,
+      "pan": -0.45,
+      "send": 0.55
+    },
+    {
+      "at": 24.06,
+      "length": 2.85,
+      "pitch": 57,
+      "voice": "strings",
+      "gain": 0.042,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 24.06,
+      "length": 2.85,
+      "pitch": 60,
+      "voice": "strings",
+      "gain": 0.042,
+      "pan": 0.45,
+      "send": 0.55
+    },
+    {
+      "at": 24,
+      "length": 1.2,
+      "pitch": 38,
+      "voice": "bass",
+      "gain": 0.15,
+      "pan": -0.05,
+      "send": 0.1
+    },
+    {
+      "at": 25.5,
+      "length": 0.9,
+      "pitch": 45,
+      "voice": "bass",
+      "gain": 0.095,
+      "pan": 0.07,
+      "send": 0.12
+    },
+    {
+      "at": 24,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 24.75,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 24.75,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 25.5,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 26.25,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 26.25,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 24.375,
+      "length": 0.8,
+      "pitch": 62,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": 0.55,
+      "send": 0.4
+    },
+    {
+      "at": 24.975,
+      "length": 0.8,
+      "pitch": 69,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": -0.55,
+      "send": 0.4
+    },
+    {
+      "at": 25.575,
+      "length": 0.8,
+      "pitch": 72,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": 0.55,
+      "send": 0.4
+    },
+    {
+      "at": 26.175,
+      "length": 0.8,
+      "pitch": 76,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": -0.55,
+      "send": 0.4
+    },
+    {
+      "at": 27,
+      "length": 2,
+      "pitch": 58,
+      "voice": "piano",
+      "gain": 0.105,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 27.75,
+      "length": 2,
+      "pitch": 65,
+      "voice": "piano",
+      "gain": 0.105,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 28.5,
+      "length": 2,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.105,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 29.25,
+      "length": 2,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.105,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 27.06,
+      "length": 2.85,
+      "pitch": 46,
+      "voice": "strings",
+      "gain": 0.042,
+      "pan": -0.45,
+      "send": 0.55
+    },
+    {
+      "at": 27.06,
+      "length": 2.85,
+      "pitch": 53,
+      "voice": "strings",
+      "gain": 0.042,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 27.06,
+      "length": 2.85,
+      "pitch": 57,
+      "voice": "strings",
+      "gain": 0.042,
+      "pan": 0.45,
+      "send": 0.55
+    },
+    {
+      "at": 27,
+      "length": 1.2,
+      "pitch": 34,
+      "voice": "bass",
+      "gain": 0.15,
+      "pan": -0.05,
+      "send": 0.1
+    },
+    {
+      "at": 28.5,
+      "length": 0.9,
+      "pitch": 41,
+      "voice": "bass",
+      "gain": 0.095,
+      "pan": 0.07,
+      "send": 0.12
+    },
+    {
+      "at": 27,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 27.75,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 27.75,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 28.5,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 29.25,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 29.25,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 27.375,
+      "length": 0.8,
+      "pitch": 58,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": 0.55,
+      "send": 0.4
+    },
+    {
+      "at": 27.975,
+      "length": 0.8,
+      "pitch": 65,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": -0.55,
+      "send": 0.4
+    },
+    {
+      "at": 28.575,
+      "length": 0.8,
+      "pitch": 69,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": 0.55,
+      "send": 0.4
+    },
+    {
+      "at": 29.175,
+      "length": 0.8,
+      "pitch": 72,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": -0.55,
+      "send": 0.4
+    },
+    {
+      "at": 30,
+      "length": 2,
+      "pitch": 65,
+      "voice": "piano",
+      "gain": 0.105,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 30.75,
+      "length": 2,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.105,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 31.5,
+      "length": 2,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.105,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 32.25,
+      "length": 2,
+      "pitch": 79,
+      "voice": "piano",
+      "gain": 0.105,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 30.06,
+      "length": 2.85,
+      "pitch": 53,
+      "voice": "strings",
+      "gain": 0.042,
+      "pan": -0.45,
+      "send": 0.55
+    },
+    {
+      "at": 30.06,
+      "length": 2.85,
+      "pitch": 60,
+      "voice": "strings",
+      "gain": 0.042,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 30.06,
+      "length": 2.85,
+      "pitch": 64,
+      "voice": "strings",
+      "gain": 0.042,
+      "pan": 0.45,
+      "send": 0.55
+    },
+    {
+      "at": 30,
+      "length": 1.2,
+      "pitch": 41,
+      "voice": "bass",
+      "gain": 0.15,
+      "pan": -0.05,
+      "send": 0.1
+    },
+    {
+      "at": 31.5,
+      "length": 0.9,
+      "pitch": 48,
+      "voice": "bass",
+      "gain": 0.095,
+      "pan": 0.07,
+      "send": 0.12
+    },
+    {
+      "at": 30,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 30.75,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 30.75,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 31.5,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 32.25,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 32.25,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 30.375,
+      "length": 0.8,
+      "pitch": 65,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": 0.55,
+      "send": 0.4
+    },
+    {
+      "at": 30.975,
+      "length": 0.8,
+      "pitch": 72,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": -0.55,
+      "send": 0.4
+    },
+    {
+      "at": 31.575,
+      "length": 0.8,
+      "pitch": 76,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": 0.55,
+      "send": 0.4
+    },
+    {
+      "at": 32.175,
+      "length": 0.8,
+      "pitch": 79,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": -0.55,
+      "send": 0.4
+    },
+    {
+      "at": 33,
+      "length": 2,
+      "pitch": 60,
+      "voice": "piano",
+      "gain": 0.105,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 33.75,
+      "length": 2,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.105,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 34.5,
+      "length": 2,
+      "pitch": 70,
+      "voice": "piano",
+      "gain": 0.105,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 35.25,
+      "length": 2,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.105,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 33.06,
+      "length": 2.85,
+      "pitch": 48,
+      "voice": "strings",
+      "gain": 0.042,
+      "pan": -0.45,
+      "send": 0.55
+    },
+    {
+      "at": 33.06,
+      "length": 2.85,
+      "pitch": 55,
+      "voice": "strings",
+      "gain": 0.042,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 33.06,
+      "length": 2.85,
+      "pitch": 58,
+      "voice": "strings",
+      "gain": 0.042,
+      "pan": 0.45,
+      "send": 0.55
+    },
+    {
+      "at": 33,
+      "length": 1.2,
+      "pitch": 36,
+      "voice": "bass",
+      "gain": 0.15,
+      "pan": -0.05,
+      "send": 0.1
+    },
+    {
+      "at": 34.5,
+      "length": 0.9,
+      "pitch": 43,
+      "voice": "bass",
+      "gain": 0.095,
+      "pan": 0.07,
+      "send": 0.12
+    },
+    {
+      "at": 33,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 33.75,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 33.75,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 34.5,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 35.25,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 35.25,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 33.375,
+      "length": 0.8,
+      "pitch": 60,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": 0.55,
+      "send": 0.4
+    },
+    {
+      "at": 33.975,
+      "length": 0.8,
+      "pitch": 67,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": -0.55,
+      "send": 0.4
+    },
+    {
+      "at": 34.575,
+      "length": 0.8,
+      "pitch": 70,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": 0.55,
+      "send": 0.4
+    },
+    {
+      "at": 35.175,
+      "length": 0.8,
+      "pitch": 74,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": -0.55,
+      "send": 0.4
+    },
+    {
+      "at": 36,
+      "length": 2,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.1134,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 36.75,
+      "length": 2,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.1134,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 37.5,
+      "length": 2,
+      "pitch": 77,
+      "voice": "piano",
+      "gain": 0.1134,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 38.25,
+      "length": 2,
+      "pitch": 81,
+      "voice": "piano",
+      "gain": 0.1134,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 36.06,
+      "length": 2.85,
+      "pitch": 55,
+      "voice": "strings",
+      "gain": 0.045360000000000004,
+      "pan": -0.45,
+      "send": 0.55
+    },
+    {
+      "at": 36.06,
+      "length": 2.85,
+      "pitch": 62,
+      "voice": "strings",
+      "gain": 0.045360000000000004,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 36.06,
+      "length": 2.85,
+      "pitch": 65,
+      "voice": "strings",
+      "gain": 0.045360000000000004,
+      "pan": 0.45,
+      "send": 0.55
+    },
+    {
+      "at": 36,
+      "length": 1.2,
+      "pitch": 43,
+      "voice": "bass",
+      "gain": 0.162,
+      "pan": -0.05,
+      "send": 0.1
+    },
+    {
+      "at": 37.5,
+      "length": 0.9,
+      "pitch": 50,
+      "voice": "bass",
+      "gain": 0.095,
+      "pan": 0.07,
+      "send": 0.12
+    },
+    {
+      "at": 36,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 36.75,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 36.75,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 37.5,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 38.25,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 38.25,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 36.375,
+      "length": 0.8,
+      "pitch": 67,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": 0.55,
+      "send": 0.4
+    },
+    {
+      "at": 36.975,
+      "length": 0.8,
+      "pitch": 74,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": -0.55,
+      "send": 0.4
+    },
+    {
+      "at": 37.575,
+      "length": 0.8,
+      "pitch": 77,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": 0.55,
+      "send": 0.4
+    },
+    {
+      "at": 38.175,
+      "length": 0.8,
+      "pitch": 81,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": -0.55,
+      "send": 0.4
+    },
+    {
+      "at": 39,
+      "length": 2,
+      "pitch": 57,
+      "voice": "piano",
+      "gain": 0.1134,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 39.75,
+      "length": 2,
+      "pitch": 64,
+      "voice": "piano",
+      "gain": 0.1134,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 40.5,
+      "length": 2,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.1134,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 41.25,
+      "length": 2,
+      "pitch": 73,
+      "voice": "piano",
+      "gain": 0.1134,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 39.06,
+      "length": 2.85,
+      "pitch": 45,
+      "voice": "strings",
+      "gain": 0.045360000000000004,
+      "pan": -0.45,
+      "send": 0.55
+    },
+    {
+      "at": 39.06,
+      "length": 2.85,
+      "pitch": 52,
+      "voice": "strings",
+      "gain": 0.045360000000000004,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 39.06,
+      "length": 2.85,
+      "pitch": 55,
+      "voice": "strings",
+      "gain": 0.045360000000000004,
+      "pan": 0.45,
+      "send": 0.55
+    },
+    {
+      "at": 39,
+      "length": 1.2,
+      "pitch": 33,
+      "voice": "bass",
+      "gain": 0.162,
+      "pan": -0.05,
+      "send": 0.1
+    },
+    {
+      "at": 40.5,
+      "length": 0.9,
+      "pitch": 40,
+      "voice": "bass",
+      "gain": 0.095,
+      "pan": 0.07,
+      "send": 0.12
+    },
+    {
+      "at": 39,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 39.75,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 39.75,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 40.5,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 41.25,
+      "length": 0.3,
+      "pitch": 60,
+      "voice": "brush",
+      "gain": 0.035,
+      "pan": -0.32,
+      "send": 0.1
+    },
+    {
+      "at": 41.25,
+      "length": 0.18,
+      "pitch": 60,
+      "voice": "hat",
+      "gain": 0.02,
+      "pan": 0.38,
+      "send": 0.12
+    },
+    {
+      "at": 39.375,
+      "length": 0.8,
+      "pitch": 57,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": 0.55,
+      "send": 0.4
+    },
+    {
+      "at": 39.975,
+      "length": 0.8,
+      "pitch": 64,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": -0.55,
+      "send": 0.4
+    },
+    {
+      "at": 40.575,
+      "length": 0.8,
+      "pitch": 67,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": 0.55,
+      "send": 0.4
+    },
+    {
+      "at": 41.175,
+      "length": 0.8,
+      "pitch": 73,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": -0.55,
+      "send": 0.4
+    },
+    {
+      "at": 42,
+      "length": 2,
+      "pitch": 62,
+      "voice": "piano",
+      "gain": 0.1134,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 42.75,
+      "length": 2,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.1134,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 43.5,
+      "length": 2,
+      "pitch": 73,
+      "voice": "piano",
+      "gain": 0.1134,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 44.25,
+      "length": 2,
+      "pitch": 78,
+      "voice": "piano",
+      "gain": 0.1134,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 42.06,
+      "length": 2.85,
+      "pitch": 50,
+      "voice": "strings",
+      "gain": 0.045360000000000004,
+      "pan": -0.45,
+      "send": 0.55
+    },
+    {
+      "at": 42.06,
+      "length": 2.85,
+      "pitch": 57,
+      "voice": "strings",
+      "gain": 0.045360000000000004,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 42.06,
+      "length": 2.85,
+      "pitch": 61,
+      "voice": "strings",
+      "gain": 0.045360000000000004,
+      "pan": 0.45,
+      "send": 0.55
+    },
+    {
+      "at": 42,
+      "length": 1.2,
+      "pitch": 38,
+      "voice": "bass",
+      "gain": 0.162,
+      "pan": -0.05,
+      "send": 0.1
+    },
+    {
+      "at": 43.5,
+      "length": 0.9,
+      "pitch": 45,
+      "voice": "bass",
+      "gain": 0.095,
+      "pan": 0.07,
+      "send": 0.12
+    },
+    {
+      "at": 42.375,
+      "length": 0.8,
+      "pitch": 62,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": 0.55,
+      "send": 0.4
+    },
+    {
+      "at": 42.975,
+      "length": 0.8,
+      "pitch": 69,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": -0.55,
+      "send": 0.4
+    },
+    {
+      "at": 43.575,
+      "length": 0.8,
+      "pitch": 73,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": 0.55,
+      "send": 0.4
+    },
+    {
+      "at": 44.175,
+      "length": 0.8,
+      "pitch": 78,
+      "voice": "guitar",
+      "gain": 0.058,
+      "pan": -0.55,
+      "send": 0.4
+    },
+    {
+      "at": 45,
+      "length": 2,
+      "pitch": 62,
+      "voice": "piano",
+      "gain": 0.1134,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 45.75,
+      "length": 2,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.1134,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 46.5,
+      "length": 1.5,
+      "pitch": 73,
+      "voice": "piano",
+      "gain": 0.1134,
+      "pan": -0.28,
+      "send": 0.4
+    },
+    {
+      "at": 47.25,
+      "length": 0.75,
+      "pitch": 78,
+      "voice": "piano",
+      "gain": 0.1134,
+      "pan": 0.33,
+      "send": 0.4
+    },
+    {
+      "at": 45.06,
+      "length": 2.85,
+      "pitch": 50,
+      "voice": "strings",
+      "gain": 0.045360000000000004,
+      "pan": -0.45,
+      "send": 0.55
+    },
+    {
+      "at": 45.06,
+      "length": 2.85,
+      "pitch": 57,
+      "voice": "strings",
+      "gain": 0.045360000000000004,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 45.06,
+      "length": 2.85,
+      "pitch": 61,
+      "voice": "strings",
+      "gain": 0.045360000000000004,
+      "pan": 0.45,
+      "send": 0.55
+    },
+    {
+      "at": 45,
+      "length": 1.2,
+      "pitch": 38,
+      "voice": "bass",
+      "gain": 0.162,
+      "pan": -0.05,
+      "send": 0.1
+    },
+    {
+      "at": 24,
+      "length": 1.7,
+      "pitch": 69,
+      "voice": "marimba",
+      "gain": 0.075,
+      "pan": -0.15,
+      "send": 0.48
+    },
+    {
+      "at": 25.35,
+      "length": 1.7,
+      "pitch": 72,
+      "voice": "marimba",
+      "gain": 0.075,
+      "pan": 0.15,
+      "send": 0.48
+    },
+    {
+      "at": 26.7,
+      "length": 1.7,
+      "pitch": 74,
+      "voice": "marimba",
+      "gain": 0.075,
+      "pan": -0.15,
+      "send": 0.48
+    },
+    {
+      "at": 28.05,
+      "length": 1.7,
+      "pitch": 76,
+      "voice": "marimba",
+      "gain": 0.075,
+      "pan": 0.15,
+      "send": 0.48
+    },
+    {
+      "at": 29.4,
+      "length": 1.7,
+      "pitch": 72,
+      "voice": "marimba",
+      "gain": 0.075,
+      "pan": -0.15,
+      "send": 0.48
+    },
+    {
+      "at": 30.75,
+      "length": 1.7,
+      "pitch": 69,
+      "voice": "marimba",
+      "gain": 0.075,
+      "pan": 0.15,
+      "send": 0.48
+    },
+    {
+      "at": 32.1,
+      "length": 1.7,
+      "pitch": 67,
+      "voice": "marimba",
+      "gain": 0.075,
+      "pan": -0.15,
+      "send": 0.48
+    },
+    {
+      "at": 33.45,
+      "length": 1.7,
+      "pitch": 65,
+      "voice": "marimba",
+      "gain": 0.075,
+      "pan": 0.15,
+      "send": 0.48
+    },
+    {
+      "at": 34.8,
+      "length": 1.7,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.11,
+      "pan": -0.15,
+      "send": 0.48
+    },
+    {
+      "at": 36.15,
+      "length": 1.7,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.11,
+      "pan": 0.15,
+      "send": 0.48
+    },
+    {
+      "at": 37.5,
+      "length": 1.7,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.11,
+      "pan": -0.15,
+      "send": 0.48
+    },
+    {
+      "at": 38.85,
+      "length": 1.7,
+      "pitch": 77,
+      "voice": "piano",
+      "gain": 0.11,
+      "pan": 0.15,
+      "send": 0.48
+    },
+    {
+      "at": 40.2,
+      "length": 1.7,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.11,
+      "pan": -0.15,
+      "send": 0.48
+    },
+    {
+      "at": 41.55,
+      "length": 1.7,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.11,
+      "pan": 0.15,
+      "send": 0.48
+    },
+    {
+      "at": 42.900000000000006,
+      "length": 1.7,
+      "pitch": 73,
+      "voice": "piano",
+      "gain": 0.11,
+      "pan": -0.15,
+      "send": 0.48
+    },
+    {
+      "at": 44.25,
+      "length": 1.7,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.11,
+      "pan": 0.15,
+      "send": 0.48
+    },
+    {
+      "at": 0,
+      "length": 11.8,
+      "pitch": 48,
+      "voice": "wind",
+      "gain": 0.028,
+      "pan": -0.4,
+      "send": 0.5
+    },
+    {
+      "at": 12,
+      "length": 9.9,
+      "pitch": 48,
+      "voice": "rain",
+      "gain": 0.013,
+      "pan": 0,
+      "send": 0.2
+    },
+    {
+      "at": 22,
+      "length": 11.9,
+      "pitch": 48,
+      "voice": "wind",
+      "gain": 0.025,
+      "pan": 0.3,
+      "send": 0.4
+    },
+    {
+      "at": 25.5,
+      "length": 0.13,
+      "pitch": 54,
+      "voice": "footstep",
+      "gain": 0.22,
+      "pan": -0.1,
+      "send": 0.2
+    },
+    {
+      "at": 25.9,
+      "length": 0.13,
+      "pitch": 54,
+      "voice": "footstep",
+      "gain": 0.22,
+      "pan": -0.1,
+      "send": 0.2
+    },
+    {
+      "at": 27.2,
+      "length": 2,
+      "pitch": 81,
+      "voice": "bell",
+      "gain": 0.075,
+      "pan": 0.23,
+      "send": 0.6
+    },
+    {
+      "at": 29,
+      "length": 2,
+      "pitch": 84,
+      "voice": "bell",
+      "gain": 0.075,
+      "pan": 0.23,
+      "send": 0.6
+    },
+    {
+      "at": 34.8,
+      "length": 2,
+      "pitch": 86,
+      "voice": "bell",
+      "gain": 0.075,
+      "pan": 0.23,
+      "send": 0.6
+    },
+    {
+      "at": 37.1,
+      "length": 2,
+      "pitch": 81,
+      "voice": "bell",
+      "gain": 0.075,
+      "pan": 0.23,
+      "send": 0.6
+    }
+  ]
+}

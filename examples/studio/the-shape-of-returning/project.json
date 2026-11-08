@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "title": "The Shape of Returning · original procedural landscape",
+  "duration": 60,
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "ocean",
+      "label": "A departure",
+      "start": 0,
+      "end": 8,
+      "description": "A drop leaves the ocean as invisible water vapor."
+    },
+    {
+      "id": "evaporation",
+      "label": "An invisible departure",
+      "start": 8,
+      "end": 18,
+      "description": "Sunlight supplies energy for evaporation; a magnified symbolic view makes water vapor visible."
+    },
+    {
+      "id": "condensation",
+      "label": "A gathering",
+      "start": 18,
+      "end": 29,
+      "description": "Cooling water vapor condenses into tiny liquid droplets suspended in a cloud."
+    },
+    {
+      "id": "rain",
+      "label": "The fall",
+      "start": 29,
+      "end": 39,
+      "description": "Precipitation returns water to land; the scene follows one possible path."
+    },
+    {
+      "id": "groundwater",
+      "label": "The hidden journey",
+      "start": 39,
+      "end": 50,
+      "description": "Water infiltrates soil and flows slowly through pores and cracks, with timescales compressed."
+    },
+    {
+      "id": "return",
+      "label": "A return, not an ending",
+      "start": 50,
+      "end": 60,
+      "description": "Rivers and groundwater connect back to the sea while other pathways remain possible."
+    }
+  ],
+  "captions": [],
+  "score": []
+}

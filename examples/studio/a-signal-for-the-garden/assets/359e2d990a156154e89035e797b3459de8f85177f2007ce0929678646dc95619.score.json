@@ -1,0 +1,4470 @@
+{
+  "version": 1,
+  "title": "Reconnect · original downtempo electro-acoustic score",
+  "duration": 52,
+  "fps": 30,
+  "audio": {
+    "mode": "studio",
+    "room": 0.3,
+    "delay": 0.11,
+    "echoSeconds": 0.40625
+  },
+  "captions": [],
+  "score": [
+    {
+      "at": 0,
+      "length": 0.5,
+      "pitch": 38,
+      "voice": "bass",
+      "gain": 0.1334,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 1.21875,
+      "length": 0.5,
+      "pitch": 38,
+      "voice": "bass",
+      "gain": 0.1334,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 1.828125,
+      "length": 0.5,
+      "pitch": 45,
+      "voice": "bass",
+      "gain": 0.1334,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 2.84375,
+      "length": 0.5,
+      "pitch": 38,
+      "voice": "bass",
+      "gain": 0.1334,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 0.40625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 0.40625,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 0.40625,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 1.625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 1.625,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 1.625,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 2.640625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 2.640625,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 2.640625,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 0.04,
+      "length": 3.12,
+      "pitch": 57,
+      "voice": "pad",
+      "gain": 0.01334,
+      "pan": -0.6,
+      "send": 0.55
+    },
+    {
+      "at": 0.04,
+      "length": 3.12,
+      "pitch": 60,
+      "voice": "pad",
+      "gain": 0.01334,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 0.04,
+      "length": 3.12,
+      "pitch": 64,
+      "voice": "pad",
+      "gain": 0.01334,
+      "pan": 0.6,
+      "send": 0.55
+    },
+    {
+      "at": 3.25,
+      "length": 0.5,
+      "pitch": 31,
+      "voice": "bass",
+      "gain": 0.1334,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 4.46875,
+      "length": 0.5,
+      "pitch": 31,
+      "voice": "bass",
+      "gain": 0.1334,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 5.078125,
+      "length": 0.5,
+      "pitch": 38,
+      "voice": "bass",
+      "gain": 0.1334,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 6.09375,
+      "length": 0.5,
+      "pitch": 31,
+      "voice": "bass",
+      "gain": 0.1334,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 3.65625,
+      "length": 0.35,
+      "pitch": 62,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 3.65625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 3.65625,
+      "length": 0.35,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 4.875,
+      "length": 0.35,
+      "pitch": 62,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 4.875,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 4.875,
+      "length": 0.35,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 5.890625,
+      "length": 0.35,
+      "pitch": 62,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 5.890625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 5.890625,
+      "length": 0.35,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 3.29,
+      "length": 3.12,
+      "pitch": 50,
+      "voice": "pad",
+      "gain": 0.01334,
+      "pan": -0.6,
+      "send": 0.55
+    },
+    {
+      "at": 3.29,
+      "length": 3.12,
+      "pitch": 57,
+      "voice": "pad",
+      "gain": 0.01334,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 3.29,
+      "length": 3.12,
+      "pitch": 62,
+      "voice": "pad",
+      "gain": 0.01334,
+      "pan": 0.6,
+      "send": 0.55
+    },
+    {
+      "at": 6.5,
+      "length": 0.5,
+      "pitch": 36,
+      "voice": "bass",
+      "gain": 0.1334,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 7.71875,
+      "length": 0.5,
+      "pitch": 36,
+      "voice": "bass",
+      "gain": 0.1334,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 8.328125,
+      "length": 0.5,
+      "pitch": 43,
+      "voice": "bass",
+      "gain": 0.1334,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 9.34375,
+      "length": 0.5,
+      "pitch": 36,
+      "voice": "bass",
+      "gain": 0.1334,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 6.90625,
+      "length": 0.35,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 6.90625,
+      "length": 0.35,
+      "pitch": 71,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 6.90625,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 8.125,
+      "length": 0.35,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 8.125,
+      "length": 0.35,
+      "pitch": 71,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 8.125,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 9.140625,
+      "length": 0.35,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 9.140625,
+      "length": 0.35,
+      "pitch": 71,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 9.140625,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.030159999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 6.5,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.0928,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 7.921875,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.0928,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 8.53125,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.0928,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 7.3125,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.0377,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 8.9375,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.0377,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 6.5,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 6.94125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 7.3125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 7.75375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 8.125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 8.56625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 8.9375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 9.37875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 6.54,
+      "length": 3.12,
+      "pitch": 55,
+      "voice": "pad",
+      "gain": 0.01334,
+      "pan": -0.6,
+      "send": 0.55
+    },
+    {
+      "at": 6.54,
+      "length": 3.12,
+      "pitch": 59,
+      "voice": "pad",
+      "gain": 0.01334,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 6.54,
+      "length": 3.12,
+      "pitch": 64,
+      "voice": "pad",
+      "gain": 0.01334,
+      "pan": 0.6,
+      "send": 0.55
+    },
+    {
+      "at": 9.75,
+      "length": 0.5,
+      "pitch": 33,
+      "voice": "bass",
+      "gain": 0.1955,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 10.96875,
+      "length": 0.5,
+      "pitch": 33,
+      "voice": "bass",
+      "gain": 0.1955,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 11.578125,
+      "length": 0.5,
+      "pitch": 40,
+      "voice": "bass",
+      "gain": 0.1955,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 12.59375,
+      "length": 0.5,
+      "pitch": 33,
+      "voice": "bass",
+      "gain": 0.1955,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 10.15625,
+      "length": 0.35,
+      "pitch": 64,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 10.15625,
+      "length": 0.35,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 10.15625,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 11.375,
+      "length": 0.35,
+      "pitch": 64,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 11.375,
+      "length": 0.35,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 11.375,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 12.390625,
+      "length": 0.35,
+      "pitch": 64,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 12.390625,
+      "length": 0.35,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 12.390625,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 9.75,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.136,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 11.171875,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.136,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 11.78125,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.136,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 10.5625,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.05525,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 12.1875,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.05525,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 9.75,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 10.19125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 10.5625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 11.00375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 11.375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 11.81625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 12.1875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 12.62875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 9.79,
+      "length": 3.12,
+      "pitch": 52,
+      "voice": "pad",
+      "gain": 0.019549999999999998,
+      "pan": -0.6,
+      "send": 0.55
+    },
+    {
+      "at": 9.79,
+      "length": 3.12,
+      "pitch": 55,
+      "voice": "pad",
+      "gain": 0.019549999999999998,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 9.79,
+      "length": 3.12,
+      "pitch": 60,
+      "voice": "pad",
+      "gain": 0.019549999999999998,
+      "pan": 0.6,
+      "send": 0.55
+    },
+    {
+      "at": 13,
+      "length": 0.5,
+      "pitch": 38,
+      "voice": "bass",
+      "gain": 0.1955,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 14.21875,
+      "length": 0.5,
+      "pitch": 38,
+      "voice": "bass",
+      "gain": 0.1955,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 14.828125,
+      "length": 0.5,
+      "pitch": 45,
+      "voice": "bass",
+      "gain": 0.1955,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 15.84375,
+      "length": 0.5,
+      "pitch": 38,
+      "voice": "bass",
+      "gain": 0.1955,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 13.40625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 13.40625,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 13.40625,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 14.625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 14.625,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 14.625,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 15.640625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 15.640625,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 15.640625,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 13,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.136,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 14.421875,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.136,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 15.03125,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.136,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 13.8125,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.05525,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 15.4375,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.05525,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 13,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 13.44125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 13.8125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 14.25375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 14.625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 15.06625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 15.4375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 15.87875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 13.04,
+      "length": 3.12,
+      "pitch": 57,
+      "voice": "pad",
+      "gain": 0.019549999999999998,
+      "pan": -0.6,
+      "send": 0.55
+    },
+    {
+      "at": 13.04,
+      "length": 3.12,
+      "pitch": 60,
+      "voice": "pad",
+      "gain": 0.019549999999999998,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 13.04,
+      "length": 3.12,
+      "pitch": 64,
+      "voice": "pad",
+      "gain": 0.019549999999999998,
+      "pan": 0.6,
+      "send": 0.55
+    },
+    {
+      "at": 13.40625,
+      "length": 0.17,
+      "pitch": 74,
+      "voice": "chip",
+      "gain": 0.0204,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 14.00625,
+      "length": 0.17,
+      "pitch": 81,
+      "voice": "chip",
+      "gain": 0.0204,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 14.60625,
+      "length": 0.17,
+      "pitch": 84,
+      "voice": "chip",
+      "gain": 0.0204,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 15.20625,
+      "length": 0.17,
+      "pitch": 88,
+      "voice": "chip",
+      "gain": 0.0204,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 16.25,
+      "length": 0.5,
+      "pitch": 34,
+      "voice": "bass",
+      "gain": 0.1955,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 17.46875,
+      "length": 0.5,
+      "pitch": 34,
+      "voice": "bass",
+      "gain": 0.1955,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 18.078125,
+      "length": 0.5,
+      "pitch": 41,
+      "voice": "bass",
+      "gain": 0.1955,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 19.09375,
+      "length": 0.5,
+      "pitch": 34,
+      "voice": "bass",
+      "gain": 0.1955,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 16.65625,
+      "length": 0.35,
+      "pitch": 65,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 16.65625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 16.65625,
+      "length": 0.35,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 17.875,
+      "length": 0.35,
+      "pitch": 65,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 17.875,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 17.875,
+      "length": 0.35,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 18.890625,
+      "length": 0.35,
+      "pitch": 65,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 18.890625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 18.890625,
+      "length": 0.35,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 16.25,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.136,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 17.671875,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.136,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 18.28125,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.136,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 17.0625,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.05525,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 18.6875,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.05525,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 16.25,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 16.69125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 17.0625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 17.50375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 17.875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 18.31625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 18.6875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 19.12875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 16.29,
+      "length": 3.12,
+      "pitch": 53,
+      "voice": "pad",
+      "gain": 0.019549999999999998,
+      "pan": -0.6,
+      "send": 0.55
+    },
+    {
+      "at": 16.29,
+      "length": 3.12,
+      "pitch": 57,
+      "voice": "pad",
+      "gain": 0.019549999999999998,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 16.29,
+      "length": 3.12,
+      "pitch": 62,
+      "voice": "pad",
+      "gain": 0.019549999999999998,
+      "pan": 0.6,
+      "send": 0.55
+    },
+    {
+      "at": 16.65625,
+      "length": 0.17,
+      "pitch": 77,
+      "voice": "chip",
+      "gain": 0.0204,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 17.25625,
+      "length": 0.17,
+      "pitch": 81,
+      "voice": "chip",
+      "gain": 0.0204,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 17.85625,
+      "length": 0.17,
+      "pitch": 86,
+      "voice": "chip",
+      "gain": 0.0204,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 18.45625,
+      "length": 0.17,
+      "pitch": 70,
+      "voice": "chip",
+      "gain": 0.0204,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 19.5,
+      "length": 0.5,
+      "pitch": 31,
+      "voice": "bass",
+      "gain": 0.1955,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 20.71875,
+      "length": 0.5,
+      "pitch": 31,
+      "voice": "bass",
+      "gain": 0.1955,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 21.328125,
+      "length": 0.5,
+      "pitch": 38,
+      "voice": "bass",
+      "gain": 0.1955,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 22.34375,
+      "length": 0.5,
+      "pitch": 31,
+      "voice": "bass",
+      "gain": 0.1955,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 19.90625,
+      "length": 0.35,
+      "pitch": 62,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 19.90625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 19.90625,
+      "length": 0.35,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 21.125,
+      "length": 0.35,
+      "pitch": 62,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 21.125,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 21.125,
+      "length": 0.35,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 22.140625,
+      "length": 0.35,
+      "pitch": 62,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 22.140625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 22.140625,
+      "length": 0.35,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.044199999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 19.5,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.136,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 20.921875,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.136,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 21.53125,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.136,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 20.3125,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.05525,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 21.9375,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.05525,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 19.5,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 19.94125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 20.3125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 20.75375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 21.125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 21.56625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 21.9375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 22.37875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 19.54,
+      "length": 3.12,
+      "pitch": 50,
+      "voice": "pad",
+      "gain": 0.019549999999999998,
+      "pan": -0.6,
+      "send": 0.55
+    },
+    {
+      "at": 19.54,
+      "length": 3.12,
+      "pitch": 57,
+      "voice": "pad",
+      "gain": 0.019549999999999998,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 19.54,
+      "length": 3.12,
+      "pitch": 62,
+      "voice": "pad",
+      "gain": 0.019549999999999998,
+      "pan": 0.6,
+      "send": 0.55
+    },
+    {
+      "at": 19.90625,
+      "length": 0.17,
+      "pitch": 81,
+      "voice": "chip",
+      "gain": 0.0204,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 20.50625,
+      "length": 0.17,
+      "pitch": 86,
+      "voice": "chip",
+      "gain": 0.0204,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 21.10625,
+      "length": 0.17,
+      "pitch": 67,
+      "voice": "chip",
+      "gain": 0.0204,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 21.70625,
+      "length": 0.17,
+      "pitch": 74,
+      "voice": "chip",
+      "gain": 0.0204,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 22.75,
+      "length": 0.5,
+      "pitch": 33,
+      "voice": "bass",
+      "gain": 0.23,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 23.96875,
+      "length": 0.5,
+      "pitch": 33,
+      "voice": "bass",
+      "gain": 0.23,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 24.578125,
+      "length": 0.5,
+      "pitch": 40,
+      "voice": "bass",
+      "gain": 0.23,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 25.59375,
+      "length": 0.5,
+      "pitch": 33,
+      "voice": "bass",
+      "gain": 0.23,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 23.15625,
+      "length": 0.35,
+      "pitch": 64,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 23.15625,
+      "length": 0.35,
+      "pitch": 68,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 23.15625,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 24.375,
+      "length": 0.35,
+      "pitch": 64,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 24.375,
+      "length": 0.35,
+      "pitch": 68,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 24.375,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 25.390625,
+      "length": 0.35,
+      "pitch": 64,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 25.390625,
+      "length": 0.35,
+      "pitch": 68,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 25.390625,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 22.75,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.16,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 24.171875,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.16,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 24.78125,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.16,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 23.5625,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.065,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 25.1875,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.065,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 22.75,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 23.19125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 23.5625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 24.00375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 24.375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 24.81625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 25.1875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 25.62875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 22.79,
+      "length": 3.12,
+      "pitch": 52,
+      "voice": "pad",
+      "gain": 0.023,
+      "pan": -0.6,
+      "send": 0.55
+    },
+    {
+      "at": 22.79,
+      "length": 3.12,
+      "pitch": 56,
+      "voice": "pad",
+      "gain": 0.023,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 22.79,
+      "length": 3.12,
+      "pitch": 60,
+      "voice": "pad",
+      "gain": 0.023,
+      "pan": 0.6,
+      "send": 0.55
+    },
+    {
+      "at": 23.15625,
+      "length": 0.17,
+      "pitch": 84,
+      "voice": "chip",
+      "gain": 0.024,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 23.75625,
+      "length": 0.17,
+      "pitch": 69,
+      "voice": "chip",
+      "gain": 0.024,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 24.35625,
+      "length": 0.17,
+      "pitch": 76,
+      "voice": "chip",
+      "gain": 0.024,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 24.95625,
+      "length": 0.17,
+      "pitch": 80,
+      "voice": "chip",
+      "gain": 0.024,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 26,
+      "length": 0.5,
+      "pitch": 38,
+      "voice": "bass",
+      "gain": 0.23,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 27.21875,
+      "length": 0.5,
+      "pitch": 38,
+      "voice": "bass",
+      "gain": 0.23,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 27.828125,
+      "length": 0.5,
+      "pitch": 45,
+      "voice": "bass",
+      "gain": 0.23,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 28.84375,
+      "length": 0.5,
+      "pitch": 38,
+      "voice": "bass",
+      "gain": 0.23,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 26.40625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 26.40625,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 26.40625,
+      "length": 0.35,
+      "pitch": 77,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 27.625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 27.625,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 27.625,
+      "length": 0.35,
+      "pitch": 77,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 28.640625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 28.640625,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 28.640625,
+      "length": 0.35,
+      "pitch": 77,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 26,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.16,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 27.421875,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.16,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 28.03125,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.16,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 26.8125,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.065,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 28.4375,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.065,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 26,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 26.44125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 26.8125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 27.25375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 27.625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 28.06625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 28.4375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 28.87875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 26.04,
+      "length": 3.12,
+      "pitch": 57,
+      "voice": "pad",
+      "gain": 0.023,
+      "pan": -0.6,
+      "send": 0.55
+    },
+    {
+      "at": 26.04,
+      "length": 3.12,
+      "pitch": 60,
+      "voice": "pad",
+      "gain": 0.023,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 26.04,
+      "length": 3.12,
+      "pitch": 65,
+      "voice": "pad",
+      "gain": 0.023,
+      "pan": 0.6,
+      "send": 0.55
+    },
+    {
+      "at": 26.40625,
+      "length": 0.17,
+      "pitch": 74,
+      "voice": "chip",
+      "gain": 0.024,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 27.00625,
+      "length": 0.17,
+      "pitch": 81,
+      "voice": "chip",
+      "gain": 0.024,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 27.60625,
+      "length": 0.17,
+      "pitch": 84,
+      "voice": "chip",
+      "gain": 0.024,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 28.20625,
+      "length": 0.17,
+      "pitch": 89,
+      "voice": "chip",
+      "gain": 0.024,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 29.25,
+      "length": 0.5,
+      "pitch": 31,
+      "voice": "bass",
+      "gain": 0.23,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 30.46875,
+      "length": 0.5,
+      "pitch": 31,
+      "voice": "bass",
+      "gain": 0.23,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 31.078125,
+      "length": 0.5,
+      "pitch": 38,
+      "voice": "bass",
+      "gain": 0.23,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 32.09375,
+      "length": 0.5,
+      "pitch": 31,
+      "voice": "bass",
+      "gain": 0.23,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 29.65625,
+      "length": 0.35,
+      "pitch": 62,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 29.65625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 29.65625,
+      "length": 0.35,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 30.875,
+      "length": 0.35,
+      "pitch": 62,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 30.875,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 30.875,
+      "length": 0.35,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 31.890625,
+      "length": 0.35,
+      "pitch": 62,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 31.890625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 31.890625,
+      "length": 0.35,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 29.25,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.16,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 30.671875,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.16,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 31.28125,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.16,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 30.0625,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.065,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 31.6875,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.065,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 29.25,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 29.69125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 30.0625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 30.50375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 30.875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 31.31625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 31.6875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 32.12875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 29.29,
+      "length": 3.12,
+      "pitch": 50,
+      "voice": "pad",
+      "gain": 0.023,
+      "pan": -0.6,
+      "send": 0.55
+    },
+    {
+      "at": 29.29,
+      "length": 3.12,
+      "pitch": 57,
+      "voice": "pad",
+      "gain": 0.023,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 29.29,
+      "length": 3.12,
+      "pitch": 62,
+      "voice": "pad",
+      "gain": 0.023,
+      "pan": 0.6,
+      "send": 0.55
+    },
+    {
+      "at": 29.65625,
+      "length": 0.17,
+      "pitch": 74,
+      "voice": "chip",
+      "gain": 0.024,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 30.25625,
+      "length": 0.17,
+      "pitch": 81,
+      "voice": "chip",
+      "gain": 0.024,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 30.85625,
+      "length": 0.17,
+      "pitch": 86,
+      "voice": "chip",
+      "gain": 0.024,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 31.45625,
+      "length": 0.17,
+      "pitch": 67,
+      "voice": "chip",
+      "gain": 0.024,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 32.5,
+      "length": 0.5,
+      "pitch": 36,
+      "voice": "bass",
+      "gain": 0.23,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 33.71875,
+      "length": 0.5,
+      "pitch": 36,
+      "voice": "bass",
+      "gain": 0.23,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 34.328125,
+      "length": 0.5,
+      "pitch": 43,
+      "voice": "bass",
+      "gain": 0.23,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 35.34375,
+      "length": 0.5,
+      "pitch": 36,
+      "voice": "bass",
+      "gain": 0.23,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 32.90625,
+      "length": 0.35,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 32.90625,
+      "length": 0.35,
+      "pitch": 71,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 32.90625,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 34.125,
+      "length": 0.35,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 34.125,
+      "length": 0.35,
+      "pitch": 71,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 34.125,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 35.140625,
+      "length": 0.35,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 35.140625,
+      "length": 0.35,
+      "pitch": 71,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 35.140625,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.052,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 32.5,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.16,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 33.921875,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.16,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 34.53125,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.16,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 33.3125,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.065,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 34.9375,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.065,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 32.5,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 32.94125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 33.3125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 33.75375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 34.125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 34.56625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 34.9375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 35.37875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 32.54,
+      "length": 3.12,
+      "pitch": 55,
+      "voice": "pad",
+      "gain": 0.023,
+      "pan": -0.6,
+      "send": 0.55
+    },
+    {
+      "at": 32.54,
+      "length": 3.12,
+      "pitch": 59,
+      "voice": "pad",
+      "gain": 0.023,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 32.54,
+      "length": 3.12,
+      "pitch": 64,
+      "voice": "pad",
+      "gain": 0.023,
+      "pan": 0.6,
+      "send": 0.55
+    },
+    {
+      "at": 32.90625,
+      "length": 0.17,
+      "pitch": 83,
+      "voice": "chip",
+      "gain": 0.024,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 33.50625,
+      "length": 0.17,
+      "pitch": 88,
+      "voice": "chip",
+      "gain": 0.024,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 34.10625,
+      "length": 0.17,
+      "pitch": 72,
+      "voice": "chip",
+      "gain": 0.024,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 34.70625,
+      "length": 0.17,
+      "pitch": 79,
+      "voice": "chip",
+      "gain": 0.024,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 35.75,
+      "length": 0.5,
+      "pitch": 33,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 36.96875,
+      "length": 0.5,
+      "pitch": 33,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 37.578125,
+      "length": 0.5,
+      "pitch": 40,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 38.59375,
+      "length": 0.5,
+      "pitch": 33,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 36.15625,
+      "length": 0.35,
+      "pitch": 64,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 36.15625,
+      "length": 0.35,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 36.15625,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 37.375,
+      "length": 0.35,
+      "pitch": 64,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 37.375,
+      "length": 0.35,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 37.375,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 38.390625,
+      "length": 0.35,
+      "pitch": 64,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 38.390625,
+      "length": 0.35,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 38.390625,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 35.75,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.1376,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 37.171875,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.1376,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 37.78125,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.1376,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 36.5625,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.0559,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 38.1875,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.0559,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 35.75,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 36.19125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 36.5625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 37.00375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 37.375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 37.81625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 38.1875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 38.62875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 35.79,
+      "length": 3.12,
+      "pitch": 52,
+      "voice": "pad",
+      "gain": 0.01978,
+      "pan": -0.6,
+      "send": 0.55
+    },
+    {
+      "at": 35.79,
+      "length": 3.12,
+      "pitch": 55,
+      "voice": "pad",
+      "gain": 0.01978,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 35.79,
+      "length": 3.12,
+      "pitch": 60,
+      "voice": "pad",
+      "gain": 0.01978,
+      "pan": 0.6,
+      "send": 0.55
+    },
+    {
+      "at": 36.15625,
+      "length": 0.17,
+      "pitch": 84,
+      "voice": "chip",
+      "gain": 0.02064,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 36.75625,
+      "length": 0.17,
+      "pitch": 69,
+      "voice": "chip",
+      "gain": 0.02064,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 37.35625,
+      "length": 0.17,
+      "pitch": 76,
+      "voice": "chip",
+      "gain": 0.02064,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 37.95625,
+      "length": 0.17,
+      "pitch": 79,
+      "voice": "chip",
+      "gain": 0.02064,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 39,
+      "length": 0.5,
+      "pitch": 41,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 40.21875,
+      "length": 0.5,
+      "pitch": 41,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 40.828125,
+      "length": 0.5,
+      "pitch": 48,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 41.84375,
+      "length": 0.5,
+      "pitch": 41,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 39.40625,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 39.40625,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 39.40625,
+      "length": 0.35,
+      "pitch": 79,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 40.625,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 40.625,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 40.625,
+      "length": 0.35,
+      "pitch": 79,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 41.640625,
+      "length": 0.35,
+      "pitch": 72,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 41.640625,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 41.640625,
+      "length": 0.35,
+      "pitch": 79,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 39,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.1376,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 40.421875,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.1376,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 41.03125,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.1376,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 39.8125,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.0559,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 41.4375,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.0559,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 39,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 39.44125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 39.8125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 40.25375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 40.625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 41.06625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 41.4375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 41.87875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 39.04,
+      "length": 3.12,
+      "pitch": 60,
+      "voice": "pad",
+      "gain": 0.01978,
+      "pan": -0.6,
+      "send": 0.55
+    },
+    {
+      "at": 39.04,
+      "length": 3.12,
+      "pitch": 64,
+      "voice": "pad",
+      "gain": 0.01978,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 39.04,
+      "length": 3.12,
+      "pitch": 67,
+      "voice": "pad",
+      "gain": 0.01978,
+      "pan": 0.6,
+      "send": 0.55
+    },
+    {
+      "at": 39.40625,
+      "length": 0.17,
+      "pitch": 77,
+      "voice": "chip",
+      "gain": 0.02064,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 40.00625,
+      "length": 0.17,
+      "pitch": 84,
+      "voice": "chip",
+      "gain": 0.02064,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 40.60625,
+      "length": 0.17,
+      "pitch": 88,
+      "voice": "chip",
+      "gain": 0.02064,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 41.20625,
+      "length": 0.17,
+      "pitch": 91,
+      "voice": "chip",
+      "gain": 0.02064,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 42.25,
+      "length": 0.5,
+      "pitch": 31,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 43.46875,
+      "length": 0.5,
+      "pitch": 31,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 44.078125,
+      "length": 0.5,
+      "pitch": 38,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 45.09375,
+      "length": 0.5,
+      "pitch": 31,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 42.65625,
+      "length": 0.35,
+      "pitch": 62,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 42.65625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 42.65625,
+      "length": 0.35,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 43.875,
+      "length": 0.35,
+      "pitch": 62,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 43.875,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 43.875,
+      "length": 0.35,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 44.890625,
+      "length": 0.35,
+      "pitch": 62,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 44.890625,
+      "length": 0.35,
+      "pitch": 69,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 44.890625,
+      "length": 0.35,
+      "pitch": 74,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 42.25,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.1376,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 43.671875,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.1376,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 44.28125,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.1376,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 43.0625,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.0559,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 44.6875,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.0559,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 42.25,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 42.69125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 43.0625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 43.50375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 43.875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 44.31625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 44.6875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 45.12875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 42.29,
+      "length": 3.12,
+      "pitch": 50,
+      "voice": "pad",
+      "gain": 0.01978,
+      "pan": -0.6,
+      "send": 0.55
+    },
+    {
+      "at": 42.29,
+      "length": 3.12,
+      "pitch": 57,
+      "voice": "pad",
+      "gain": 0.01978,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 42.29,
+      "length": 3.12,
+      "pitch": 62,
+      "voice": "pad",
+      "gain": 0.01978,
+      "pan": 0.6,
+      "send": 0.55
+    },
+    {
+      "at": 42.65625,
+      "length": 0.17,
+      "pitch": 74,
+      "voice": "chip",
+      "gain": 0.02064,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 43.25625,
+      "length": 0.17,
+      "pitch": 81,
+      "voice": "chip",
+      "gain": 0.02064,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 43.85625,
+      "length": 0.17,
+      "pitch": 86,
+      "voice": "chip",
+      "gain": 0.02064,
+      "pan": 0.25,
+      "send": 0.4
+    },
+    {
+      "at": 44.45625,
+      "length": 0.17,
+      "pitch": 67,
+      "voice": "chip",
+      "gain": 0.02064,
+      "pan": -0.25,
+      "send": 0.4
+    },
+    {
+      "at": 45.5,
+      "length": 0.5,
+      "pitch": 36,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 46.71875,
+      "length": 0.5,
+      "pitch": 36,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 47.328125,
+      "length": 0.5,
+      "pitch": 43,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 48.34375,
+      "length": 0.5,
+      "pitch": 36,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 45.90625,
+      "length": 0.35,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 45.90625,
+      "length": 0.35,
+      "pitch": 71,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 45.90625,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 47.125,
+      "length": 0.35,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 47.125,
+      "length": 0.35,
+      "pitch": 71,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 47.125,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 48.140625,
+      "length": 0.35,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 48.140625,
+      "length": 0.35,
+      "pitch": 71,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 48.140625,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 45.5,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.1376,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 46.921875,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.1376,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 47.53125,
+      "length": 0.18,
+      "pitch": 48,
+      "voice": "kick",
+      "gain": 0.1376,
+      "pan": 0.04,
+      "send": 0.06
+    },
+    {
+      "at": 46.3125,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.0559,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 47.9375,
+      "length": 0.2,
+      "pitch": 60,
+      "voice": "snare",
+      "gain": 0.0559,
+      "pan": -0.12,
+      "send": 0.2
+    },
+    {
+      "at": 45.5,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 45.94125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 46.3125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 46.75375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 47.125,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 47.56625,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 47.9375,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.0143,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 48.37875,
+      "length": 0.07,
+      "pitch": 72,
+      "voice": "hat",
+      "gain": 0.022,
+      "pan": 0.38,
+      "send": 0.15
+    },
+    {
+      "at": 45.54,
+      "length": 3.12,
+      "pitch": 55,
+      "voice": "pad",
+      "gain": 0.01978,
+      "pan": -0.6,
+      "send": 0.55
+    },
+    {
+      "at": 45.54,
+      "length": 3.12,
+      "pitch": 59,
+      "voice": "pad",
+      "gain": 0.01978,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 45.54,
+      "length": 3.12,
+      "pitch": 64,
+      "voice": "pad",
+      "gain": 0.01978,
+      "pan": 0.6,
+      "send": 0.55
+    },
+    {
+      "at": 48.75,
+      "length": 0.5,
+      "pitch": 36,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 49.96875,
+      "length": 0.5,
+      "pitch": 36,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 50.578125,
+      "length": 0.5,
+      "pitch": 43,
+      "voice": "bass",
+      "gain": 0.1978,
+      "pan": -0.04,
+      "send": 0.08
+    },
+    {
+      "at": 49.15625,
+      "length": 0.35,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 49.15625,
+      "length": 0.35,
+      "pitch": 71,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 49.15625,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 50.375,
+      "length": 0.35,
+      "pitch": 67,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": -0.55,
+      "send": 0.22
+    },
+    {
+      "at": 50.375,
+      "length": 0.35,
+      "pitch": 71,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0,
+      "send": 0.22
+    },
+    {
+      "at": 50.375,
+      "length": 0.35,
+      "pitch": 76,
+      "voice": "piano",
+      "gain": 0.044719999999999996,
+      "pan": 0.55,
+      "send": 0.22
+    },
+    {
+      "at": 48.79,
+      "length": 3.009999999999997,
+      "pitch": 55,
+      "voice": "pad",
+      "gain": 0.01978,
+      "pan": -0.6,
+      "send": 0.55
+    },
+    {
+      "at": 48.79,
+      "length": 3.009999999999997,
+      "pitch": 59,
+      "voice": "pad",
+      "gain": 0.01978,
+      "pan": 0,
+      "send": 0.55
+    },
+    {
+      "at": 48.79,
+      "length": 3.009999999999997,
+      "pitch": 64,
+      "voice": "pad",
+      "gain": 0.01978,
+      "pan": 0.6,
+      "send": 0.55
+    },
+    {
+      "at": 36,
+      "length": 1.2,
+      "pitch": 74,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0,
+      "send": 0.42
+    },
+    {
+      "at": 36.82,
+      "length": 1.2,
+      "pitch": 77,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.33658839392315865,
+      "send": 0.42
+    },
+    {
+      "at": 37.64,
+      "length": 1.2,
+      "pitch": 81,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.3637189707302727,
+      "send": 0.42
+    },
+    {
+      "at": 38.46,
+      "length": 1.2,
+      "pitch": 79,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.056448003223946885,
+      "send": 0.42
+    },
+    {
+      "at": 39.28,
+      "length": 1.2,
+      "pitch": 77,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": -0.3027209981231713,
+      "send": 0.42
+    },
+    {
+      "at": 40.1,
+      "length": 1.2,
+      "pitch": 74,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": -0.3835697098652554,
+      "send": 0.42
+    },
+    {
+      "at": 40.92,
+      "length": 1.2,
+      "pitch": 72,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": -0.11176619927957035,
+      "send": 0.42
+    },
+    {
+      "at": 41.74,
+      "length": 1.2,
+      "pitch": 69,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.26279463948751564,
+      "send": 0.42
+    },
+    {
+      "at": 42.56,
+      "length": 1.2,
+      "pitch": 74,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.39574329864935276,
+      "send": 0.42
+    },
+    {
+      "at": 43.38,
+      "length": 1.2,
+      "pitch": 76,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.16484739409670265,
+      "send": 0.42
+    },
+    {
+      "at": 44.2,
+      "length": 1.2,
+      "pitch": 77,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": -0.21760844435574792,
+      "send": 0.42
+    },
+    {
+      "at": 45.019999999999996,
+      "length": 1.2,
+      "pitch": 81,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": -0.3999960826202814,
+      "send": 0.42
+    },
+    {
+      "at": 45.84,
+      "length": 1.2,
+      "pitch": 84,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": -0.214629167200174,
+      "send": 0.42
+    },
+    {
+      "at": 46.66,
+      "length": 1.2,
+      "pitch": 81,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.16806681473065638,
+      "send": 0.42
+    },
+    {
+      "at": 47.48,
+      "length": 1.2,
+      "pitch": 79,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.39624294227794815,
+      "send": 0.42
+    },
+    {
+      "at": 48.3,
+      "length": 1.2,
+      "pitch": 76,
+      "voice": "marimba",
+      "gain": 0.11,
+      "pan": 0.26011513606284675,
+      "send": 0.42
+    },
+    {
+      "at": 5,
+      "length": 0.85,
+      "pitch": 76,
+      "voice": "bell",
+      "gain": 0.065,
+      "pan": 0.2,
+      "send": 0.6
+    },
+    {
+      "at": 7,
+      "length": 0.85,
+      "pitch": 81,
+      "voice": "bell",
+      "gain": 0.065,
+      "pan": 0.2,
+      "send": 0.6
+    },
+    {
+      "at": 18.4,
+      "length": 0.85,
+      "pitch": 74,
+      "voice": "bell",
+      "gain": 0.065,
+      "pan": 0.2,
+      "send": 0.6
+    },
+    {
+      "at": 20.2,
+      "length": 0.85,
+      "pitch": 79,
+      "voice": "bell",
+      "gain": 0.065,
+      "pan": 0.2,
+      "send": 0.6
+    },
+    {
+      "at": 32.2,
+      "length": 0.85,
+      "pitch": 86,
+      "voice": "bell",
+      "gain": 0.065,
+      "pan": 0.2,
+      "send": 0.6
+    },
+    {
+      "at": 36,
+      "length": 0.85,
+      "pitch": 84,
+      "voice": "bell",
+      "gain": 0.065,
+      "pan": 0.2,
+      "send": 0.6
+    },
+    {
+      "at": 0,
+      "length": 11.8,
+      "pitch": 36,
+      "voice": "wind",
+      "gain": 0.016,
+      "pan": -0.4,
+      "send": 0.35
+    },
+    {
+      "at": 24,
+      "length": 11.8,
+      "pitch": 39,
+      "voice": "wind",
+      "gain": 0.022,
+      "pan": 0.35,
+      "send": 0.3
+    },
+    {
+      "at": 37,
+      "length": 13.9,
+      "pitch": 48,
+      "voice": "rain",
+      "gain": 0.016,
+      "pan": 0,
+      "send": 0.25
+    },
+    {
+      "at": 12.9,
+      "length": 0.14,
+      "pitch": 50,
+      "voice": "footstep",
+      "gain": 0.16,
+      "pan": -0.15,
+      "send": 0.18
+    },
+    {
+      "at": 13.4,
+      "length": 0.14,
+      "pitch": 50,
+      "voice": "footstep",
+      "gain": 0.16,
+      "pan": -0.15,
+      "send": 0.18
+    },
+    {
+      "at": 13.9,
+      "length": 0.14,
+      "pitch": 50,
+      "voice": "footstep",
+      "gain": 0.16,
+      "pan": -0.15,
+      "send": 0.18
+    },
+    {
+      "at": 14.4,
+      "length": 0.14,
+      "pitch": 50,
+      "voice": "footstep",
+      "gain": 0.16,
+      "pan": -0.15,
+      "send": 0.18
+    },
+    {
+      "at": 25.4,
+      "length": 0.14,
+      "pitch": 50,
+      "voice": "footstep",
+      "gain": 0.16,
+      "pan": -0.15,
+      "send": 0.18
+    },
+    {
+      "at": 26.1,
+      "length": 0.14,
+      "pitch": 50,
+      "voice": "footstep",
+      "gain": 0.16,
+      "pan": -0.15,
+      "send": 0.18
+    },
+    {
+      "at": 27.1,
+      "length": 0.14,
+      "pitch": 50,
+      "voice": "footstep",
+      "gain": 0.16,
+      "pan": -0.15,
+      "send": 0.18
+    },
+    {
+      "at": 28.2,
+      "length": 0.14,
+      "pitch": 50,
+      "voice": "footstep",
+      "gain": 0.16,
+      "pan": -0.15,
+      "send": 0.18
+    },
+    {
+      "at": 29.3,
+      "length": 0.14,
+      "pitch": 50,
+      "voice": "footstep",
+      "gain": 0.16,
+      "pan": -0.15,
+      "send": 0.18
+    }
+  ]
+}

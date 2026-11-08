@@ -1,0 +1,2397 @@
+{
+  "format": "looplilt",
+  "version": 2,
+  "id": "the-shape-of-returning",
+  "title": "The Shape of Returning",
+  "revision": 0,
+  "frameRate": {
+    "numerator": 30,
+    "denominator": 1
+  },
+  "width": 1280,
+  "height": 720,
+  "durationFrames": 1800,
+  "rootId": "root",
+  "nodes": {
+    "root": {
+      "id": "root",
+      "type": "composition",
+      "version": 1,
+      "name": "The Shape of Returning",
+      "parentId": null,
+      "children": [
+        "landscape",
+        "n1",
+        "n2",
+        "n3",
+        "n4",
+        "n5",
+        "n6",
+        "n10",
+        "n14",
+        "n18",
+        "n22",
+        "n26",
+        "n30",
+        "n33",
+        "n36",
+        "n39",
+        "n42"
+      ],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 1280,
+        "height": 720,
+        "clip": true,
+        "background": "#e9e1cc"
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "landscape": {
+      "id": "landscape",
+      "type": "canvas",
+      "version": 1,
+      "name": "Original landscape · editable procedural source",
+      "parentId": "root",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 1280,
+        "height": 720,
+        "format": "landscape",
+        "gain": 0,
+        "projectAsset": "asset_bb93f04da45cd58a642851c94043ff651c4ef8794b4a60c83bb7ea0f7c331ac6",
+        "scriptAsset": "asset_e18b70f2105d99cb556c2c55881e65a50199de50c019bcac4f1596434b6ae2bc"
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": {
+          "type": "fade",
+          "duration": 24
+        }
+      },
+      "extensions": {}
+    },
+    "n1": {
+      "id": "n1",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Top paper edge",
+      "parentId": "root",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 1280,
+        "height": 24,
+        "fill": "#eee7d4",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n2": {
+      "id": "n2",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Bottom paper edge",
+      "parentId": "root",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 683,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 1280,
+        "height": 37,
+        "fill": "#eee7d4",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n3": {
+      "id": "n3",
+      "type": "text",
+      "version": 1,
+      "name": "Running folio",
+      "parentId": "root",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 48,
+        "y": 31,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "FIELD NOTES  /  THE WATER CYCLE",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 10,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#9a633d",
+        "maxWidth": 800,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n4": {
+      "id": "n4",
+      "type": "text",
+      "version": 1,
+      "name": "Source note",
+      "parentId": "root",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 48,
+        "y": 696,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "ONE POSSIBLE JOURNEY · TIME AND SCALE COMPRESSED",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 9,
+        "fontWeight": 400,
+        "align": "left",
+        "fill": "#63766b",
+        "maxWidth": 1000,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n5": {
+      "id": "n5",
+      "type": "text",
+      "version": 1,
+      "name": "Film credit",
+      "parentId": "root",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 1162,
+        "y": 696,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "LOOPLILT",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 10,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#9a633d",
+        "maxWidth": 90,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n6": {
+      "id": "n6",
+      "type": "group",
+      "version": 1,
+      "name": "Chapter · A small departure.",
+      "parentId": "root",
+      "children": [
+        "n7",
+        "n8",
+        "n9"
+      ],
+      "time": {
+        "start": 0,
+        "duration": 240,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {},
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 15
+        },
+        "out": {
+          "type": "fade",
+          "duration": 12
+        }
+      },
+      "extensions": {}
+    },
+    "n7": {
+      "id": "n7",
+      "type": "text",
+      "version": 1,
+      "name": "Chapter label",
+      "parentId": "n6",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 49,
+        "y": 67,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "A SMALL DEPARTURE.",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#9a633d",
+        "maxWidth": 1100,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n8": {
+      "id": "n8",
+      "type": "text",
+      "version": 1,
+      "name": "Chapter title",
+      "parentId": "n6",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 45,
+        "y": 96,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "The shape\nof returning.",
+        "fontFamily": "Georgia, serif",
+        "fontSize": 61,
+        "fontWeight": 400,
+        "align": "left",
+        "fill": "#274f51",
+        "maxWidth": 720,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n9": {
+      "id": "n9",
+      "type": "text",
+      "version": 1,
+      "name": "Explanation",
+      "parentId": "n6",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 49,
+        "y": 257,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "A journey through water, weather and the spaces between.",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 19,
+        "fontWeight": 400,
+        "align": "left",
+        "fill": "#63766b",
+        "maxWidth": 1100,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n10": {
+      "id": "n10",
+      "type": "group",
+      "version": 1,
+      "name": "Chapter · 01  /  EVAPORATION",
+      "parentId": "root",
+      "children": [
+        "n11",
+        "n12",
+        "n13"
+      ],
+      "time": {
+        "start": 240,
+        "duration": 300,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {},
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 15
+        },
+        "out": {
+          "type": "fade",
+          "duration": 12
+        }
+      },
+      "extensions": {}
+    },
+    "n11": {
+      "id": "n11",
+      "type": "text",
+      "version": 1,
+      "name": "Chapter label",
+      "parentId": "n10",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 49,
+        "y": 67,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "01  /  EVAPORATION",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#9a633d",
+        "maxWidth": 1100,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n12": {
+      "id": "n12",
+      "type": "text",
+      "version": 1,
+      "name": "Chapter title",
+      "parentId": "n10",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 45,
+        "y": 103,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "Leaving without a trace.",
+        "fontFamily": "Georgia, serif",
+        "fontSize": 48,
+        "fontWeight": 400,
+        "align": "left",
+        "fill": "#274f51",
+        "maxWidth": 1160,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n13": {
+      "id": "n13",
+      "type": "text",
+      "version": 1,
+      "name": "Explanation",
+      "parentId": "n10",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 49,
+        "y": 176,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "Water becomes invisible vapor. Sunlight supplies the energy.",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 19,
+        "fontWeight": 400,
+        "align": "left",
+        "fill": "#63766b",
+        "maxWidth": 1100,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n14": {
+      "id": "n14",
+      "type": "group",
+      "version": 1,
+      "name": "Chapter · 02  /  CONDENSATION",
+      "parentId": "root",
+      "children": [
+        "n15",
+        "n16",
+        "n17"
+      ],
+      "time": {
+        "start": 540,
+        "duration": 330,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {},
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 15
+        },
+        "out": {
+          "type": "fade",
+          "duration": 12
+        }
+      },
+      "extensions": {}
+    },
+    "n15": {
+      "id": "n15",
+      "type": "text",
+      "version": 1,
+      "name": "Chapter label",
+      "parentId": "n14",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 49,
+        "y": 67,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "02  /  CONDENSATION",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#9a633d",
+        "maxWidth": 1100,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n16": {
+      "id": "n16",
+      "type": "text",
+      "version": 1,
+      "name": "Chapter title",
+      "parentId": "n14",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 45,
+        "y": 103,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "Finding each other.",
+        "fontFamily": "Georgia, serif",
+        "fontSize": 48,
+        "fontWeight": 400,
+        "align": "left",
+        "fill": "#274f51",
+        "maxWidth": 1160,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n17": {
+      "id": "n17",
+      "type": "text",
+      "version": 1,
+      "name": "Explanation",
+      "parentId": "n14",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 49,
+        "y": 176,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "As moist air cools, vapor can condense into tiny liquid droplets.",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 19,
+        "fontWeight": 400,
+        "align": "left",
+        "fill": "#63766b",
+        "maxWidth": 1100,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n18": {
+      "id": "n18",
+      "type": "group",
+      "version": 1,
+      "name": "Chapter · 03  /  PRECIPITATION",
+      "parentId": "root",
+      "children": [
+        "n19",
+        "n20",
+        "n21"
+      ],
+      "time": {
+        "start": 870,
+        "duration": 300,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {},
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 15
+        },
+        "out": {
+          "type": "fade",
+          "duration": 12
+        }
+      },
+      "extensions": {}
+    },
+    "n19": {
+      "id": "n19",
+      "type": "text",
+      "version": 1,
+      "name": "Chapter label",
+      "parentId": "n18",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 49,
+        "y": 67,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "03  /  PRECIPITATION",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#9a633d",
+        "maxWidth": 1100,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n20": {
+      "id": "n20",
+      "type": "text",
+      "version": 1,
+      "name": "Chapter title",
+      "parentId": "n18",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 45,
+        "y": 103,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "The sky lets go.",
+        "fontFamily": "Georgia, serif",
+        "fontSize": 48,
+        "fontWeight": 400,
+        "align": "left",
+        "fill": "#274f51",
+        "maxWidth": 1160,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n21": {
+      "id": "n21",
+      "type": "text",
+      "version": 1,
+      "name": "Explanation",
+      "parentId": "n18",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 49,
+        "y": 176,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "Rain returns water to the land. Its next path is still unwritten.",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 19,
+        "fontWeight": 400,
+        "align": "left",
+        "fill": "#63766b",
+        "maxWidth": 1100,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n22": {
+      "id": "n22",
+      "type": "group",
+      "version": 1,
+      "name": "Chapter · 04  /  INFILTRATION & GROUNDWATER",
+      "parentId": "root",
+      "children": [
+        "n23",
+        "n24",
+        "n25"
+      ],
+      "time": {
+        "start": 1170,
+        "duration": 330,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {},
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 15
+        },
+        "out": {
+          "type": "fade",
+          "duration": 12
+        }
+      },
+      "extensions": {}
+    },
+    "n23": {
+      "id": "n23",
+      "type": "text",
+      "version": 1,
+      "name": "Chapter label",
+      "parentId": "n22",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 49,
+        "y": 67,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "04  /  INFILTRATION & GROUNDWATER",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#9a633d",
+        "maxWidth": 1100,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n24": {
+      "id": "n24",
+      "type": "text",
+      "version": 1,
+      "name": "Chapter title",
+      "parentId": "n22",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 45,
+        "y": 103,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "A quieter way home.",
+        "fontFamily": "Georgia, serif",
+        "fontSize": 48,
+        "fontWeight": 400,
+        "align": "left",
+        "fill": "#274f51",
+        "maxWidth": 1160,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n25": {
+      "id": "n25",
+      "type": "text",
+      "version": 1,
+      "name": "Explanation",
+      "parentId": "n22",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 49,
+        "y": 176,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "Some water enters soil, moving through pores and cracks.",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 19,
+        "fontWeight": 400,
+        "align": "left",
+        "fill": "#63766b",
+        "maxWidth": 1100,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n26": {
+      "id": "n26",
+      "type": "group",
+      "version": 1,
+      "name": "Chapter · 05  /  CONNECTION",
+      "parentId": "root",
+      "children": [
+        "n27",
+        "n28",
+        "n29"
+      ],
+      "time": {
+        "start": 1500,
+        "duration": 300,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {},
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 15
+        },
+        "out": {
+          "type": "fade",
+          "duration": 12
+        }
+      },
+      "extensions": {}
+    },
+    "n27": {
+      "id": "n27",
+      "type": "text",
+      "version": 1,
+      "name": "Chapter label",
+      "parentId": "n26",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 49,
+        "y": 67,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "05  /  CONNECTION",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#9a633d",
+        "maxWidth": 1100,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n28": {
+      "id": "n28",
+      "type": "text",
+      "version": 1,
+      "name": "Chapter title",
+      "parentId": "n26",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 45,
+        "y": 103,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "A return. Not an ending.",
+        "fontFamily": "Georgia, serif",
+        "fontSize": 48,
+        "fontWeight": 400,
+        "align": "left",
+        "fill": "#274f51",
+        "maxWidth": 1160,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n29": {
+      "id": "n29",
+      "type": "text",
+      "version": 1,
+      "name": "Explanation",
+      "parentId": "n26",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 49,
+        "y": 176,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "Rivers and groundwater meet the sea. The cycle has many routes.",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 19,
+        "fontWeight": 400,
+        "align": "left",
+        "fill": "#63766b",
+        "maxWidth": 1100,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n30": {
+      "id": "n30",
+      "type": "group",
+      "version": 1,
+      "name": "Vapor detail",
+      "parentId": "root",
+      "children": [
+        "n31",
+        "n32"
+      ],
+      "time": {
+        "start": 270,
+        "duration": 240,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {},
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 18
+        },
+        "out": {
+          "type": "fade",
+          "duration": 18
+        }
+      },
+      "extensions": {}
+    },
+    "n31": {
+      "id": "n31",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Vapor detail rule",
+      "parentId": "n30",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 905,
+        "y": 383,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 25,
+        "height": 2,
+        "fill": "#a88c62",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n32": {
+      "id": "n32",
+      "type": "text",
+      "version": 1,
+      "name": "Vapor detail text",
+      "parentId": "n30",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 905,
+        "y": 396,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "WATER VAPOR · A GAS",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 13,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#274f51",
+        "maxWidth": 300,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n33": {
+      "id": "n33",
+      "type": "group",
+      "version": 1,
+      "name": "Liquid detail",
+      "parentId": "root",
+      "children": [
+        "n34",
+        "n35"
+      ],
+      "time": {
+        "start": 570,
+        "duration": 270,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {},
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 18
+        },
+        "out": {
+          "type": "fade",
+          "duration": 18
+        }
+      },
+      "extensions": {}
+    },
+    "n34": {
+      "id": "n34",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Liquid detail rule",
+      "parentId": "n33",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 930,
+        "y": 580,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 25,
+        "height": 2,
+        "fill": "#a88c62",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n35": {
+      "id": "n35",
+      "type": "text",
+      "version": 1,
+      "name": "Liquid detail text",
+      "parentId": "n33",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 930,
+        "y": 593,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "CLOUD DROPLETS · LIQUID",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 13,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#274f51",
+        "maxWidth": 300,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n36": {
+      "id": "n36",
+      "type": "group",
+      "version": 1,
+      "name": "Groundwater detail",
+      "parentId": "root",
+      "children": [
+        "n37",
+        "n38"
+      ],
+      "time": {
+        "start": 1200,
+        "duration": 270,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {},
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 18
+        },
+        "out": {
+          "type": "fade",
+          "duration": 18
+        }
+      },
+      "extensions": {}
+    },
+    "n37": {
+      "id": "n37",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Groundwater detail rule",
+      "parentId": "n36",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 954,
+        "y": 626,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 25,
+        "height": 2,
+        "fill": "#a88c62",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n38": {
+      "id": "n38",
+      "type": "text",
+      "version": 1,
+      "name": "Groundwater detail text",
+      "parentId": "n36",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 954,
+        "y": 639,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "WATER IN PORES AND CRACKS",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 13,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#274f51",
+        "maxWidth": 300,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n39": {
+      "id": "n39",
+      "type": "group",
+      "version": 1,
+      "name": "Timing reminder",
+      "parentId": "root",
+      "children": [
+        "n40",
+        "n41"
+      ],
+      "time": {
+        "start": 1200,
+        "duration": 270,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {},
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 18
+        },
+        "out": {
+          "type": "fade",
+          "duration": 18
+        }
+      },
+      "extensions": {}
+    },
+    "n40": {
+      "id": "n40",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Timing reminder rule",
+      "parentId": "n39",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 48,
+        "y": 636,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 25,
+        "height": 2,
+        "fill": "#a88c62",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n41": {
+      "id": "n41",
+      "type": "text",
+      "version": 1,
+      "name": "Timing reminder text",
+      "parentId": "n39",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 48,
+        "y": 649,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "THESE JOURNEYS TAKE DIFFERENT AMOUNTS OF TIME.",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 13,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#274f51",
+        "maxWidth": 760,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n42": {
+      "id": "n42",
+      "type": "score",
+      "version": 1,
+      "name": "Original music · The ways water remembers · original acoustic score",
+      "parentId": "root",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1800,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "gain": 3.9,
+        "asset": "asset_21ff76c2255b0bf3fafe3e70af1ad3dca42a48c68a0ece0cffaf4761a18d48f7"
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    }
+  },
+  "assets": {
+    "asset_bb93f04da45cd58a642851c94043ff651c4ef8794b4a60c83bb7ea0f7c331ac6": {
+      "id": "asset_bb93f04da45cd58a642851c94043ff651c4ef8794b4a60c83bb7ea0f7c331ac6",
+      "kind": "legacy-project",
+      "name": "Water-cycle landscape.project.json",
+      "path": "assets/bb93f04da45cd58a642851c94043ff651c4ef8794b4a60c83bb7ea0f7c331ac6.project.json",
+      "sha256": "bb93f04da45cd58a642851c94043ff651c4ef8794b4a60c83bb7ea0f7c331ac6",
+      "bytes": 1428,
+      "mime": "application/json",
+      "metadata": {
+        "title": "The Shape of Returning · original procedural landscape",
+        "durationSeconds": 60,
+        "fps": 30,
+        "hasAudio": false,
+        "scriptAsset": "asset_e18b70f2105d99cb556c2c55881e65a50199de50c019bcac4f1596434b6ae2bc"
+      }
+    },
+    "asset_e18b70f2105d99cb556c2c55881e65a50199de50c019bcac4f1596434b6ae2bc": {
+      "id": "asset_e18b70f2105d99cb556c2c55881e65a50199de50c019bcac4f1596434b6ae2bc",
+      "kind": "legacy-script",
+      "name": "Water-cycle landscape.draw.js",
+      "path": "assets/e18b70f2105d99cb556c2c55881e65a50199de50c019bcac4f1596434b6ae2bc.draw.js",
+      "sha256": "e18b70f2105d99cb556c2c55881e65a50199de50c019bcac4f1596434b6ae2bc",
+      "bytes": 15792,
+      "mime": "text/javascript",
+      "metadata": {}
+    },
+    "asset_21ff76c2255b0bf3fafe3e70af1ad3dca42a48c68a0ece0cffaf4761a18d48f7": {
+      "id": "asset_21ff76c2255b0bf3fafe3e70af1ad3dca42a48c68a0ece0cffaf4761a18d48f7",
+      "kind": "score",
+      "name": "The ways water remembers · original acoustic score.score.json",
+      "path": "assets/21ff76c2255b0bf3fafe3e70af1ad3dca42a48c68a0ece0cffaf4761a18d48f7.score.json",
+      "sha256": "21ff76c2255b0bf3fafe3e70af1ad3dca42a48c68a0ece0cffaf4761a18d48f7",
+      "bytes": 65538,
+      "mime": "application/json",
+      "metadata": {
+        "title": "The ways water remembers · original acoustic score",
+        "durationSeconds": 60,
+        "fps": 30,
+        "hasAudio": true
+      }
+    }
+  },
+  "extensions": {
+    "looplilt": {
+      "style": "Illustrated scientific fieldbook",
+      "description": "An original water-cycle journey with six cutaway landscapes, editable graph typography and a fingerpicked acoustic score.",
+      "chapters": [
+        {
+          "name": "A departure",
+          "start": 0
+        },
+        {
+          "name": "An invisible departure",
+          "start": 240
+        },
+        {
+          "name": "A gathering",
+          "start": 540
+        },
+        {
+          "name": "The fall",
+          "start": 870
+        },
+        {
+          "name": "The hidden journey",
+          "start": 1170
+        },
+        {
+          "name": "A return, not an ending",
+          "start": 1500
+        }
+      ],
+      "soundtrackNode": "n42",
+      "posterFrame": 100,
+      "reviewFrame": 1320,
+      "sourceReferences": [
+        {
+          "title": "NASA: What is the water cycle?",
+          "url": "https://gpm.nasa.gov/resources/faq/what-water-cycle"
+        },
+        {
+          "title": "USGS: The water cycle",
+          "url": "https://www.usgs.gov/water-science-school/water-cycle"
+        }
+      ],
+      "artwork": "Original draw.js kept byte-for-byte in the project bundle. Procedural marks remain editable as source; titles and callouts are individual graph objects."
+    }
+  }
+}

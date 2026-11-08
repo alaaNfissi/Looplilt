@@ -1,0 +1,77 @@
+{
+  "sourceFilm": "the-shape-of-returning",
+  "sourceFingerprint": "82d69d92e1fcac10a14faef98ce54e3b5e57d3845e6bf6ae30326f1a1fd3ba33",
+  "range": [
+    870,
+    1050
+  ],
+  "seconds": 6,
+  "width": 640,
+  "height": 360,
+  "frames": 180,
+  "render": {
+    "filename": "result.mp4",
+    "mime": "video/mp4",
+    "bytes": 639340,
+    "width": 640,
+    "height": 360,
+    "frames": 180,
+    "durationSeconds": 6,
+    "hasAudio": false,
+    "fingerprint": "06c088f77cb22be49649d88bead0558c4d76b60fd1fde1e21925f934934d5dce",
+    "sha256": "8630849666f5d048f8581ec30a0e29e69b39c092d7a4e938a954806940144a47",
+    "verification": {
+      "decoded": true,
+      "width": 640,
+      "height": 360,
+      "frames": 180,
+      "durationSeconds": 6,
+      "rate": {
+        "numerator": 30,
+        "denominator": 1
+      },
+      "video": "h264",
+      "audio": null
+    },
+    "metrics": {
+      "elapsedMs": 61216,
+      "networkRequests": 14,
+      "blockedRequests": 0,
+      "graphics": "software",
+      "attempts": [
+        {
+          "graphics": "software",
+          "elapsedMs": 61015,
+          "lifecycle": [
+            {
+              "phase": "launching",
+              "milliseconds": 0
+            },
+            {
+              "phase": "launched",
+              "milliseconds": 534
+            },
+            {
+              "phase": "connected",
+              "milliseconds": 570
+            },
+            {
+              "phase": "closing",
+              "milliseconds": 42674
+            },
+            {
+              "phase": "terminating",
+              "milliseconds": 45679
+            },
+            {
+              "phase": "closed",
+              "milliseconds": 61015
+            }
+          ]
+        }
+      ]
+    },
+    "engine": "studio-canvas-webcodecs"
+  },
+  "renderFingerprint": "06c088f77cb22be49649d88bead0558c4d76b60fd1fde1e21925f934934d5dce"
+}

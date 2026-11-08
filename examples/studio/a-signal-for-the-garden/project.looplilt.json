@@ -1,0 +1,4793 @@
+{
+  "format": "looplilt",
+  "version": 2,
+  "id": "a-signal-for-the-garden",
+  "title": "A Signal for the Garden",
+  "revision": 0,
+  "frameRate": {
+    "numerator": 30,
+    "denominator": 1
+  },
+  "width": 1280,
+  "height": 720,
+  "durationFrames": 1560,
+  "rootId": "root",
+  "nodes": {
+    "root": {
+      "id": "root",
+      "type": "composition",
+      "version": 1,
+      "name": "A Signal for the Garden",
+      "parentId": null,
+      "children": [
+        "pixel-world",
+        "n1",
+        "n31",
+        "n61",
+        "n66",
+        "n71",
+        "n76",
+        "n81",
+        "n82",
+        "n86"
+      ],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 1280,
+        "height": 720,
+        "clip": true,
+        "background": "#101b30"
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": {
+          "type": "fade",
+          "duration": 24
+        }
+      },
+      "extensions": {}
+    },
+    "pixel-world": {
+      "id": "pixel-world",
+      "type": "canvas",
+      "version": 1,
+      "name": "Pixel world · original source at320 ×180",
+      "parentId": "root",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 1280,
+        "height": 720,
+        "format": "landscape",
+        "gain": 0,
+        "projectAsset": "asset_0ab994a674e4ae306f1a23ebfab57acb62570ca9925f135ec69598cdbfb2f58b",
+        "scriptAsset": "asset_5fd1550974f849fc11fc7cc43b64abf3f0515fa42879962fd20d6dad1390a75d"
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n1": {
+      "id": "n1",
+      "type": "group",
+      "version": 1,
+      "name": "Remembering rain",
+      "parentId": "root",
+      "children": [
+        "n2",
+        "n3",
+        "n4",
+        "n5",
+        "n6",
+        "n7",
+        "n8",
+        "n9",
+        "n10",
+        "n11",
+        "n12",
+        "n13",
+        "n14",
+        "n15",
+        "n16",
+        "n17",
+        "n18",
+        "n19",
+        "n20",
+        "n21",
+        "n22",
+        "n23",
+        "n24",
+        "n25",
+        "n26",
+        "n27",
+        "n28",
+        "n29",
+        "n30"
+      ],
+      "time": {
+        "start": 45,
+        "duration": 300,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 820,
+        "y": 268,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {},
+      "animations": {},
+      "effects": [
+        {
+          "id": "memory-glow",
+          "type": "shadow",
+          "version": 1,
+          "enabled": true,
+          "props": {
+            "x": 0,
+            "y": 0,
+            "blur": 10,
+            "color": "#65cfad66"
+          }
+        }
+      ],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 14
+        },
+        "out": {
+          "type": "fade",
+          "duration": 18
+        }
+      },
+      "extensions": {}
+    },
+    "n2": {
+      "id": "n2",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Monitor aperture",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 192,
+        "fill": "#ffffff",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n3": {
+      "id": "n3",
+      "type": "image",
+      "version": 1,
+      "name": "Rain memory · still",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 192,
+        "fit": "cover",
+        "asset": "asset_0a9a21a1116e8ad9bc182dfa134ebc67f4602f26071b9d9725bd4382d51ad26e"
+      },
+      "animations": {},
+      "effects": [],
+      "mask": {
+        "nodeId": "n2",
+        "mode": "alpha"
+      },
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n4": {
+      "id": "n4",
+      "type": "video",
+      "version": 1,
+      "name": "Rain memory · half-speed footage",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 300,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 2
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 192,
+        "fit": "cover",
+        "gain": 0,
+        "muted": false,
+        "asset": "asset_8630849666f5d048f8581ec30a0e29e69b39c092d7a4e938a954806940144a47"
+      },
+      "animations": {},
+      "effects": [
+        {
+          "id": "archive-tone",
+          "type": "saturate",
+          "version": 1,
+          "enabled": true,
+          "props": {
+            "amount": 0.72
+          }
+        }
+      ],
+      "mask": {
+        "nodeId": "n2",
+        "mode": "alpha"
+      },
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 12
+        },
+        "out": {
+          "type": "fade",
+          "duration": 12
+        }
+      },
+      "extensions": {}
+    },
+    "n5": {
+      "id": "n5",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Monitor glass",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "screen",
+      "props": {
+        "width": 344,
+        "height": 192,
+        "fill": "#8ed8cb18",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n6": {
+      "id": "n6",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 0",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n7": {
+      "id": "n7",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 8",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 8,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n8": {
+      "id": "n8",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 16",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 16,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n9": {
+      "id": "n9",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 24",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 24,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n10": {
+      "id": "n10",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 32",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 32,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n11": {
+      "id": "n11",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 40",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 40,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n12": {
+      "id": "n12",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 48",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 48,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n13": {
+      "id": "n13",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 56",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 56,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n14": {
+      "id": "n14",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 64",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 64,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n15": {
+      "id": "n15",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 72",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 72,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n16": {
+      "id": "n16",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 80",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 80,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n17": {
+      "id": "n17",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 88",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 88,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n18": {
+      "id": "n18",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 96",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 96,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n19": {
+      "id": "n19",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 104",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 104,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n20": {
+      "id": "n20",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 112",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 112,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n21": {
+      "id": "n21",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 120",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 120,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n22": {
+      "id": "n22",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 128",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 128,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n23": {
+      "id": "n23",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 136",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 136,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n24": {
+      "id": "n24",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 144",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 144,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n25": {
+      "id": "n25",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 152",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 152,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n26": {
+      "id": "n26",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 160",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 160,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n27": {
+      "id": "n27",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 168",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 168,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n28": {
+      "id": "n28",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 176",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 176,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n29": {
+      "id": "n29",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 184",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 184,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n30": {
+      "id": "n30",
+      "type": "text",
+      "version": 1,
+      "name": "Archive label",
+      "parentId": "n1",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": -19,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "EARTH ARCHIVE  /  RAIN",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 10,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#8ed8cb",
+        "maxWidth": 344,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n31": {
+      "id": "n31",
+      "type": "group",
+      "version": 1,
+      "name": "A memory becomes a garden",
+      "parentId": "root",
+      "children": [
+        "n32",
+        "n33",
+        "n34",
+        "n35",
+        "n36",
+        "n37",
+        "n38",
+        "n39",
+        "n40",
+        "n41",
+        "n42",
+        "n43",
+        "n44",
+        "n45",
+        "n46",
+        "n47",
+        "n48",
+        "n49",
+        "n50",
+        "n51",
+        "n52",
+        "n53",
+        "n54",
+        "n55",
+        "n56",
+        "n57",
+        "n58",
+        "n59",
+        "n60"
+      ],
+      "time": {
+        "start": 1110,
+        "duration": 360,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 144,
+        "y": 268,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {},
+      "animations": {},
+      "effects": [
+        {
+          "id": "memory-glow",
+          "type": "shadow",
+          "version": 1,
+          "enabled": true,
+          "props": {
+            "x": 0,
+            "y": 0,
+            "blur": 10,
+            "color": "#65cfad66"
+          }
+        }
+      ],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 14
+        },
+        "out": {
+          "type": "fade",
+          "duration": 18
+        }
+      },
+      "extensions": {}
+    },
+    "n32": {
+      "id": "n32",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Monitor aperture",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 192,
+        "fill": "#ffffff",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n33": {
+      "id": "n33",
+      "type": "image",
+      "version": 1,
+      "name": "Rain memory · still",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 192,
+        "fit": "cover",
+        "asset": "asset_0a9a21a1116e8ad9bc182dfa134ebc67f4602f26071b9d9725bd4382d51ad26e"
+      },
+      "animations": {},
+      "effects": [],
+      "mask": {
+        "nodeId": "n32",
+        "mode": "alpha"
+      },
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n34": {
+      "id": "n34",
+      "type": "video",
+      "version": 1,
+      "name": "Rain memory · half-speed footage",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 360,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 2
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 192,
+        "fit": "cover",
+        "gain": 0,
+        "muted": false,
+        "asset": "asset_8630849666f5d048f8581ec30a0e29e69b39c092d7a4e938a954806940144a47"
+      },
+      "animations": {},
+      "effects": [
+        {
+          "id": "archive-tone",
+          "type": "saturate",
+          "version": 1,
+          "enabled": true,
+          "props": {
+            "amount": 0.72
+          }
+        }
+      ],
+      "mask": {
+        "nodeId": "n32",
+        "mode": "alpha"
+      },
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 12
+        },
+        "out": {
+          "type": "fade",
+          "duration": 12
+        }
+      },
+      "extensions": {}
+    },
+    "n35": {
+      "id": "n35",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Monitor glass",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "screen",
+      "props": {
+        "width": 344,
+        "height": 192,
+        "fill": "#8ed8cb18",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n36": {
+      "id": "n36",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 0",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n37": {
+      "id": "n37",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 8",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 8,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n38": {
+      "id": "n38",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 16",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 16,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n39": {
+      "id": "n39",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 24",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 24,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n40": {
+      "id": "n40",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 32",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 32,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n41": {
+      "id": "n41",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 40",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 40,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n42": {
+      "id": "n42",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 48",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 48,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n43": {
+      "id": "n43",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 56",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 56,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n44": {
+      "id": "n44",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 64",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 64,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n45": {
+      "id": "n45",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 72",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 72,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n46": {
+      "id": "n46",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 80",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 80,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n47": {
+      "id": "n47",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 88",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 88,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n48": {
+      "id": "n48",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 96",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 96,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n49": {
+      "id": "n49",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 104",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 104,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n50": {
+      "id": "n50",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 112",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 112,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n51": {
+      "id": "n51",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 120",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 120,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n52": {
+      "id": "n52",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 128",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 128,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n53": {
+      "id": "n53",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 136",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 136,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n54": {
+      "id": "n54",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 144",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 144,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n55": {
+      "id": "n55",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 152",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 152,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n56": {
+      "id": "n56",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 160",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 160,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n57": {
+      "id": "n57",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 168",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 168,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n58": {
+      "id": "n58",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 176",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 176,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n59": {
+      "id": "n59",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Pixel display scanline 184",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 184,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 344,
+        "height": 2,
+        "fill": "#101b3022",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n60": {
+      "id": "n60",
+      "type": "text",
+      "version": 1,
+      "name": "Archive label",
+      "parentId": "n31",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": -19,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "EARTH ARCHIVE  /  RAIN",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 10,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#8ed8cb",
+        "maxWidth": 344,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n61": {
+      "id": "n61",
+      "type": "group",
+      "version": 1,
+      "name": "Story · The garden is waiting.",
+      "parentId": "root",
+      "children": [
+        "n62",
+        "n63",
+        "n64",
+        "n65"
+      ],
+      "time": {
+        "start": 0,
+        "duration": 360,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {},
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 16
+        },
+        "out": {
+          "type": "fade",
+          "duration": 15
+        }
+      },
+      "extensions": {}
+    },
+    "n62": {
+      "id": "n62",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Title shade",
+      "parentId": "n61",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 1280,
+        "height": 174,
+        "fill": "#101b30ef",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n63": {
+      "id": "n63",
+      "type": "text",
+      "version": 1,
+      "name": "Chapter",
+      "parentId": "n61",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 47,
+        "y": 29,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "STATION 07 · NIGHT 906",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#d2a35f",
+        "maxWidth": 1180,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n64": {
+      "id": "n64",
+      "type": "text",
+      "version": 1,
+      "name": "Editable title · 0",
+      "parentId": "n61",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 44,
+        "y": 62,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "The garden is waiting.",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 43,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#e5d3a7",
+        "maxWidth": 1180,
+        "lineHeight": 1.2
+      },
+      "animations": {
+        "transform.y": [
+          {
+            "frame": 0,
+            "value": 72,
+            "easing": "ease-out"
+          },
+          {
+            "frame": 18,
+            "value": 62
+          }
+        ]
+      },
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n65": {
+      "id": "n65",
+      "type": "text",
+      "version": 1,
+      "name": "Story caption · 0",
+      "parentId": "n61",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 47,
+        "y": 123,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "One seed. No rain. And a memory of home.",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 19,
+        "fontWeight": 400,
+        "align": "left",
+        "fill": "#94b5b0",
+        "maxWidth": 1160,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n66": {
+      "id": "n66",
+      "type": "group",
+      "version": 1,
+      "name": "Story · A signal in the silence.",
+      "parentId": "root",
+      "children": [
+        "n67",
+        "n68",
+        "n69",
+        "n70"
+      ],
+      "time": {
+        "start": 360,
+        "duration": 360,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {},
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 16
+        },
+        "out": {
+          "type": "fade",
+          "duration": 15
+        }
+      },
+      "extensions": {}
+    },
+    "n67": {
+      "id": "n67",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Title shade",
+      "parentId": "n66",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 1280,
+        "height": 174,
+        "fill": "#101b30ef",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n68": {
+      "id": "n68",
+      "type": "text",
+      "version": 1,
+      "name": "Chapter",
+      "parentId": "n66",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 47,
+        "y": 29,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "01  /  LISTEN",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#d2a35f",
+        "maxWidth": 1180,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n69": {
+      "id": "n69",
+      "type": "text",
+      "version": 1,
+      "name": "Editable title · 12",
+      "parentId": "n66",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 44,
+        "y": 62,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "A signal in the silence.",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 43,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#e5d3a7",
+        "maxWidth": 1180,
+        "lineHeight": 1.2
+      },
+      "animations": {
+        "transform.y": [
+          {
+            "frame": 0,
+            "value": 72,
+            "easing": "ease-out"
+          },
+          {
+            "frame": 18,
+            "value": 62
+          }
+        ]
+      },
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n70": {
+      "id": "n70",
+      "type": "text",
+      "version": 1,
+      "name": "Story caption · 12",
+      "parentId": "n66",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 47,
+        "y": 123,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "The old rain engine still has something to give.",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 19,
+        "fontWeight": 400,
+        "align": "left",
+        "fill": "#94b5b0",
+        "maxWidth": 1160,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n71": {
+      "id": "n71",
+      "type": "group",
+      "version": 1,
+      "name": "Story · One wire. One chance.",
+      "parentId": "root",
+      "children": [
+        "n72",
+        "n73",
+        "n74",
+        "n75"
+      ],
+      "time": {
+        "start": 720,
+        "duration": 360,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {},
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 16
+        },
+        "out": {
+          "type": "fade",
+          "duration": 15
+        }
+      },
+      "extensions": {}
+    },
+    "n72": {
+      "id": "n72",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Title shade",
+      "parentId": "n71",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 1280,
+        "height": 174,
+        "fill": "#101b30ef",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n73": {
+      "id": "n73",
+      "type": "text",
+      "version": 1,
+      "name": "Chapter",
+      "parentId": "n71",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 47,
+        "y": 29,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "02  /  RECONNECT",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#d2a35f",
+        "maxWidth": 1180,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n74": {
+      "id": "n74",
+      "type": "text",
+      "version": 1,
+      "name": "Editable title · 24",
+      "parentId": "n71",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 44,
+        "y": 62,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "One wire. One chance.",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 43,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#e5d3a7",
+        "maxWidth": 1180,
+        "lineHeight": 1.2
+      },
+      "animations": {
+        "transform.y": [
+          {
+            "frame": 0,
+            "value": 72,
+            "easing": "ease-out"
+          },
+          {
+            "frame": 18,
+            "value": 62
+          }
+        ]
+      },
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n75": {
+      "id": "n75",
+      "type": "text",
+      "version": 1,
+      "name": "Story caption · 24",
+      "parentId": "n71",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 47,
+        "y": 123,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "The last connection has to be made outside.",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 19,
+        "fontWeight": 400,
+        "align": "left",
+        "fill": "#94b5b0",
+        "maxWidth": 1160,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n76": {
+      "id": "n76",
+      "type": "group",
+      "version": 1,
+      "name": "Story · Someone kept the promise.",
+      "parentId": "root",
+      "children": [
+        "n77",
+        "n78",
+        "n79",
+        "n80"
+      ],
+      "time": {
+        "start": 1080,
+        "duration": 480,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {},
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 16
+        },
+        "out": {
+          "type": "fade",
+          "duration": 15
+        }
+      },
+      "extensions": {}
+    },
+    "n77": {
+      "id": "n77",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Title shade",
+      "parentId": "n76",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 1280,
+        "height": 174,
+        "fill": "#101b30ef",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n78": {
+      "id": "n78",
+      "type": "text",
+      "version": 1,
+      "name": "Chapter",
+      "parentId": "n76",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 47,
+        "y": 29,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "03  /  GROW",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#d2a35f",
+        "maxWidth": 1180,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n79": {
+      "id": "n79",
+      "type": "text",
+      "version": 1,
+      "name": "Editable title · 36",
+      "parentId": "n76",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 44,
+        "y": 62,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "Someone kept the promise.",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 43,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#e5d3a7",
+        "maxWidth": 1180,
+        "lineHeight": 1.2
+      },
+      "animations": {
+        "transform.y": [
+          {
+            "frame": 0,
+            "value": 72,
+            "easing": "ease-out"
+          },
+          {
+            "frame": 18,
+            "value": 62
+          }
+        ]
+      },
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n80": {
+      "id": "n80",
+      "type": "text",
+      "version": 1,
+      "name": "Story caption · 36",
+      "parentId": "n76",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 47,
+        "y": 123,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "The pump wakes. A small world begins again.",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 19,
+        "fontWeight": 400,
+        "align": "left",
+        "fill": "#94b5b0",
+        "maxWidth": 1160,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n81": {
+      "id": "n81",
+      "type": "ellipse",
+      "version": 1,
+      "name": "The connection · path-driven packet",
+      "parentId": "root",
+      "children": [],
+      "time": {
+        "start": 930,
+        "duration": 100,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "screen",
+      "props": {
+        "width": 12,
+        "height": 12,
+        "fill": "#a4ddaf",
+        "stroke": "#00000000",
+        "strokeWidth": 0
+      },
+      "animations": {},
+      "effects": [
+        {
+          "id": "signal-halo",
+          "type": "shadow",
+          "version": 1,
+          "enabled": true,
+          "props": {
+            "x": 0,
+            "y": 0,
+            "blur": 12,
+            "color": "#8ed8cbcc"
+          }
+        }
+      ],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 8
+        },
+        "out": {
+          "type": "fade",
+          "duration": 12
+        }
+      },
+      "extensions": {},
+      "behaviors": [
+        {
+          "id": "route",
+          "type": "motion-path",
+          "version": 1,
+          "enabled": true,
+          "props": {
+            "path": "M392 596 C470 520 780 500 976 384",
+            "start": 0,
+            "duration": 85,
+            "progress": 0,
+            "driver": "time",
+            "repeat": "once",
+            "relative": false,
+            "orient": false,
+            "rotationOffset": 0
+          }
+        }
+      ]
+    },
+    "n82": {
+      "id": "n82",
+      "type": "group",
+      "version": 1,
+      "name": "Closing dedication",
+      "parentId": "root",
+      "children": [
+        "n83",
+        "n84",
+        "n85"
+      ],
+      "time": {
+        "start": 1380,
+        "duration": 180,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {},
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": {
+          "type": "fade",
+          "duration": 18
+        },
+        "out": {
+          "type": "fade",
+          "duration": 24
+        }
+      },
+      "extensions": {}
+    },
+    "n83": {
+      "id": "n83",
+      "type": "rectangle",
+      "version": 1,
+      "name": "Closing strip",
+      "parentId": "n82",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 650,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "width": 1280,
+        "height": 70,
+        "fill": "#101b30e6",
+        "stroke": "#00000000",
+        "strokeWidth": 0,
+        "radius": 0
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n84": {
+      "id": "n84",
+      "type": "text",
+      "version": 1,
+      "name": "Dedication",
+      "parentId": "n82",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 47,
+        "y": 669,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "FOR EVERYONE WHO KEEPS SOMETHING GROWING.",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 13,
+        "fontWeight": 600,
+        "align": "left",
+        "fill": "#a4ddaf",
+        "maxWidth": 1080,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n85": {
+      "id": "n85",
+      "type": "text",
+      "version": 1,
+      "name": "Credit",
+      "parentId": "n82",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 47,
+        "y": 693,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "text": "AN ORIGINAL LOOPLILT FILM",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": 9,
+        "fontWeight": 400,
+        "align": "left",
+        "fill": "#94b5b0",
+        "maxWidth": 1080,
+        "lineHeight": 1.2
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    },
+    "n86": {
+      "id": "n86",
+      "type": "score",
+      "version": 1,
+      "name": "Original music · Reconnect · original downtempo electro-acoustic score",
+      "parentId": "root",
+      "children": [],
+      "time": {
+        "start": 0,
+        "duration": 1560,
+        "offset": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "speed": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "anchorX": 0,
+        "anchorY": 0
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "blend": "source-over",
+      "props": {
+        "gain": 3.2,
+        "asset": "asset_359e2d990a156154e89035e797b3459de8f85177f2007ce0929678646dc95619"
+      },
+      "animations": {},
+      "effects": [],
+      "mask": null,
+      "constraints": [],
+      "transition": {
+        "in": null,
+        "out": null
+      },
+      "extensions": {}
+    }
+  },
+  "assets": {
+    "asset_0ab994a674e4ae306f1a23ebfab57acb62570ca9925f135ec69598cdbfb2f58b": {
+      "id": "asset_0ab994a674e4ae306f1a23ebfab57acb62570ca9925f135ec69598cdbfb2f58b",
+      "kind": "legacy-project",
+      "name": "Pixel world.project.json",
+      "path": "assets/0ab994a674e4ae306f1a23ebfab57acb62570ca9925f135ec69598cdbfb2f58b.project.json",
+      "sha256": "0ab994a674e4ae306f1a23ebfab57acb62570ca9925f135ec69598cdbfb2f58b",
+      "bytes": 601,
+      "mime": "application/json",
+      "metadata": {
+        "title": "A Signal for the Garden · original pixel world",
+        "durationSeconds": 52,
+        "fps": 30,
+        "hasAudio": false,
+        "scriptAsset": "asset_5fd1550974f849fc11fc7cc43b64abf3f0515fa42879962fd20d6dad1390a75d"
+      }
+    },
+    "asset_5fd1550974f849fc11fc7cc43b64abf3f0515fa42879962fd20d6dad1390a75d": {
+      "id": "asset_5fd1550974f849fc11fc7cc43b64abf3f0515fa42879962fd20d6dad1390a75d",
+      "kind": "legacy-script",
+      "name": "Pixel world.draw.js",
+      "path": "assets/5fd1550974f849fc11fc7cc43b64abf3f0515fa42879962fd20d6dad1390a75d.draw.js",
+      "sha256": "5fd1550974f849fc11fc7cc43b64abf3f0515fa42879962fd20d6dad1390a75d",
+      "bytes": 11716,
+      "mime": "text/javascript",
+      "metadata": {}
+    },
+    "asset_8630849666f5d048f8581ec30a0e29e69b39c092d7a4e938a954806940144a47": {
+      "id": "asset_8630849666f5d048f8581ec30a0e29e69b39c092d7a4e938a954806940144a47",
+      "kind": "video",
+      "name": "Original Looplilt rain memory",
+      "path": "assets/8630849666f5d048f8581ec30a0e29e69b39c092d7a4e938a954806940144a47.mp4",
+      "sha256": "8630849666f5d048f8581ec30a0e29e69b39c092d7a4e938a954806940144a47",
+      "bytes": 639340,
+      "mime": "video/mp4",
+      "metadata": {
+        "width": 640,
+        "height": 360,
+        "durationSeconds": 6,
+        "hasAudio": false,
+        "source": "The Shape of Returning · own Looplilt render"
+      }
+    },
+    "asset_0a9a21a1116e8ad9bc182dfa134ebc67f4602f26071b9d9725bd4382d51ad26e": {
+      "id": "asset_0a9a21a1116e8ad9bc182dfa134ebc67f4602f26071b9d9725bd4382d51ad26e",
+      "kind": "image",
+      "name": "Original Looplilt rain memory",
+      "path": "assets/0a9a21a1116e8ad9bc182dfa134ebc67f4602f26071b9d9725bd4382d51ad26e.png",
+      "sha256": "0a9a21a1116e8ad9bc182dfa134ebc67f4602f26071b9d9725bd4382d51ad26e",
+      "bytes": 97052,
+      "mime": "image/png",
+      "metadata": {
+        "width": 640,
+        "height": 360,
+        "source": "The Shape of Returning · own Looplilt render"
+      }
+    },
+    "asset_359e2d990a156154e89035e797b3459de8f85177f2007ce0929678646dc95619": {
+      "id": "asset_359e2d990a156154e89035e797b3459de8f85177f2007ce0929678646dc95619",
+      "kind": "score",
+      "name": "Reconnect · original downtempo electro-acoustic score.score.json",
+      "path": "assets/359e2d990a156154e89035e797b3459de8f85177f2007ce0929678646dc95619.score.json",
+      "sha256": "359e2d990a156154e89035e797b3459de8f85177f2007ce0929678646dc95619",
+      "bytes": 79920,
+      "mime": "application/json",
+      "metadata": {
+        "title": "Reconnect · original downtempo electro-acoustic score",
+        "durationSeconds": 52,
+        "fps": 30,
+        "hasAudio": true
+      }
+    }
+  },
+  "extensions": {
+    "looplilt": {
+      "style": "Pixel art × moving-image collage",
+      "description": "A tiny caretaker reconnects a silent station and brings its last garden back to life.",
+      "chapters": [
+        {
+          "name": "The garden is waiting",
+          "start": 0
+        },
+        {
+          "name": "The rain engine",
+          "start": 360
+        },
+        {
+          "name": "The last connection",
+          "start": 720
+        },
+        {
+          "name": "A small world begins again",
+          "start": 1080
+        }
+      ],
+      "soundtrackNode": "n86",
+      "posterFrame": 1350,
+      "reviewFrame": 1335,
+      "importedMedia": {
+        "source": "The Shape of Returning",
+        "creation": "node scripts/prepare-garden-memory.mjs",
+        "frames": 180,
+        "seconds": 6,
+        "silent": true
+      },
+      "artwork": "Original320×180 pixel drawings with nearest-neighbor enlargement. Imported own footage, masks, color treatment, display compositing, titles and a path-driven signal remain graph layers."
+    }
+  }
+}
