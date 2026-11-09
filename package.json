@@ -35,6 +35,7 @@
     "test:graph-shutdown": "node scripts/verify-graph-shutdown.mjs",
     "test:codec-failures": "node scripts/verify-codec-failures.mjs",
     "test:studio-editing": "node scripts/verify-studio-editing.mjs",
+    "test:studio-projects": "node scripts/verify-studio-projects.mjs",
     "test:studio-handoff": "node scripts/verify-studio-handoff.mjs",
     "test:studio-stories": "node scripts/verify-studio-stories.mjs",
     "studio:stories": "node scripts/build-studio-stories.mjs",

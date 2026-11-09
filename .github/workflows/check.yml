@@ -70,6 +70,7 @@ jobs:
           LOOPLILT_DISABLE_GPU: '1'
       - run: npm run test:codec-failures
       - run: npm run test:studio-editing
+      - run: npm run test:studio-projects
       - run: npm run test:studio-handoff
       - run: npm run test:studio-stories
       - run: npm run test:studio-complex

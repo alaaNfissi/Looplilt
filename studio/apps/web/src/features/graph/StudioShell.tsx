@@ -9,6 +9,7 @@ import { ProjectMenu } from "./ProjectMenu";
 import { serializeGraph } from "@graph/transactions.mjs";
 import { validateGraph } from "@graph/schema.mjs";
 import { createNodeOperations } from "@graph/commands.mjs";
+import { graphClocks } from "./timelineView";
 import type { GraphDocument } from "@graph/types.mjs";
 import { GraphPreview } from "./GraphPreview";
 import { GraphLayers } from "./GraphLayers";
@@ -54,9 +55,11 @@ export function StudioShell(){
   const nodeId=`${asset.kind}_${crypto.randomUUID()}`,selected=current.graph.nodes[current.selectedClipIds[0]];
   const compatible=selected&&selected.type==='track'&&(selected.props.kind==='audio')===(asset.kind==='audio');
   const parentId=compatible?selected.id:`track_${crypto.randomUUID()}`;
+  const clock=graphClocks(current.graph)[compatible?parentId:current.graph.rootId];
+  const start=Math.max(0,Math.round(current.playhead*clock.rate+clock.offset)),sourceDuration=Math.max(1,Math.round(duration*clock.rate));
   const specifications=[];
   if(!compatible)specifications.push({id:parentId,type:'track',name:asset.kind==='audio'?'Soundtrack':asset.name,props:{kind:asset.kind==='audio'?'audio':'visual'}});
-  specifications.push({id:nodeId,type:asset.kind,name:asset.name,parentId,start:current.playhead,duration,props:{asset:id,...(asset.kind==='audio'?{}:{width:current.graph.width,height:current.graph.height})}});
+  specifications.push({id:nodeId,type:asset.kind,name:asset.name,parentId,start,duration:sourceDuration,props:{asset:id,...(asset.kind==='audio'?{}:{width:current.graph.width,height:current.graph.height})}});
   if(await current.edit(`Place ${asset.name}`,createNodeOperations(current.graph,specifications)))useGraphEditorStore.getState().selectClips([nodeId]);
  };
  const beginExport=async()=>{

@@ -66,14 +66,14 @@ export const useGraphEditorStore=create<EditorState>()((set,get)=>({
   const interrupted=!!gesture;gesture=null;accept(next);if(interrupted)set({error:'The project changed in another window. Your unfinished gesture was cancelled; review the updated scene before continuing.'});
  },
  dismissError:()=>set({error:null}),
- newProject:()=>enqueue(async()=>{await finishGesture();accept(await graphRepository().create(createGraph()));set({playhead:0,selectedClipIds:[],isPlaying:false});}),
- openSaved:id=>enqueue(async()=>{await finishGesture();accept(await graphRepository().read(id));set({playhead:0,selectedClipIds:[],isPlaying:false});}),
+ newProject:()=>enqueue(async()=>{await finishGesture();accept(await graphRepository().create(createGraph()));set({playhead:0,selectedClipIds:[],isPlaying:false,inPoint:null,outPoint:null});}),
+ openSaved:id=>enqueue(async()=>{await finishGesture();accept(await graphRepository().read(id));set({playhead:0,selectedClipIds:[],isPlaying:false,inPoint:null,outPoint:null});}),
  openGraph:document=>enqueue(async()=>{
   await finishGesture();validateGraph(document,{allowUnsupported:true});const fingerprint=await graphFingerprint(document);
   const existing=(await graphRepository().list()).find(item=>item.id===document.id);
   if(existing?.fingerprint===fingerprint)accept(await graphRepository().read(document.id));
   else accept(await graphRepository().create(existing?{...document,id:crypto.randomUUID(),title:document.title+' (imported copy)'}:document));
-  set({playhead:0,selectedClipIds:[],isPlaying:false});
+  set({playhead:0,selectedClipIds:[],isPlaying:false,inPoint:null,outPoint:null});
  }),
  addNode:type=>enqueue(async()=>{
   await finishGesture();if(!committed)return;const document=committed.document,id=`${type}_${crypto.randomUUID()}`;
@@ -115,12 +115,22 @@ export const useGraphEditorStore=create<EditorState>()((set,get)=>({
   for(const id of candidates){const node=document.nodes[id];if(!node||node.children.length||!node.parentId)continue;const parent=clocks[node.parentId],at=Math.round(get().playhead*parent.rate+parent.offset);if(at>node.time.start&&at<node.time.start+node.time.duration)operations.push({op:'clip.split',id,at,newId:`clip_${crypto.randomUUID()}`});}
   await commit('Split clips',operations);
  });},
- deleteSelected:()=>{const ids=get().selectedClipIds.filter(id=>id!==get().graph.rootId);void get().edit('Delete selection',ids.filter(id=>!ids.includes(get().graph.nodes[id].parentId??'')).map(id=>({op:'node.remove',id}))).then(ok=>{if(ok)set({selectedClipIds:[]});});},
+ deleteSelected:()=>{void enqueue(async()=>{
+  await finishGesture();if(!committed)return;const document=committed.document;
+  const ids=new Set(get().selectedClipIds.filter(id=>id!==document.rootId&&!!document.nodes[id]));
+  const operations:GraphOperation[]=[];
+  for(const id of ids){
+   let parentId=document.nodes[id].parentId,covered=false;
+   while(parentId){if(ids.has(parentId)){covered=true;break;}parentId=document.nodes[parentId].parentId;}
+   if(!covered)operations.push({op:'node.remove',id,cascade:true});
+  }
+  await commit('Delete selection',operations);set({selectedClipIds:[]});
+ });},
  setTrackFlag:(laneId,flag,value)=>{const id=get().project.entities.tracks[laneId]?.graphNodeId??laneId;void get().edit(`Change layer ${flag}`,[{op:'node.patch',id,changes:flag==='hidden'?{visible:!value}:flag==='muted'?{props:{muted:value}}:{locked:value}}]);},
  addTrack:kind=>{void enqueue(async()=>{await finishGesture();if(!committed)return;await commit(`Add ${kind} track`,createNodeOperations(committed.document,[{id:`track_${crypto.randomUUID()}`,type:'track',name:kind==='audio'?'Audio track':'Visual track',props:{kind:kind==='audio'?'audio':'visual'}}]));});},
  moveCaptionBlock:(_track,id,frame)=>get().moveClipTo(id,frame),
  trimCaptionBlock:(_track,id,edge,frame)=>{const clip=get().project.entities.clips[id];if(!clip)return;get().updateClip(id,c=>({...c,startFrame:edge==='start'?Math.min(frame,c.startFrame+c.durationFrames-1):c.startFrame,durationFrames:edge==='start'?Math.max(1,c.startFrame+c.durationFrames-frame):Math.max(1,frame-c.startFrame)}),'Trim caption',`trim:${id}`);},
- removeCaptionTrack:id=>{void get().edit('Remove captions',[{op:'node.remove',id}]);},
+ removeCaptionTrack:id=>{void get().edit('Remove captions',[{op:'node.remove',id,cascade:true}]);},
  undo:()=>{void enqueue(async()=>{await finishGesture();if(committed)accept(await graphRepository().undoRedo(committed.document.id,'undo',committed.fingerprint));});},
  redo:()=>{void enqueue(async()=>{await finishGesture();if(committed)accept(await graphRepository().undoRedo(committed.document.id,'redo',committed.fingerprint));});},
 }));
