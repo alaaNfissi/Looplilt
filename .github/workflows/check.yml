@@ -27,6 +27,14 @@ jobs:
       - run: npm run studio:check
       - run: npm run site
       - run: npm run pack
+      - name: Preserve verified release bundles
+        if: matrix.os == 'ubuntu-latest' && matrix.node == 24
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: looplilt-release-bundles
+          path: dist/
+          compression-level: 0
+          retention-days: 14
   browser-and-media:
     # Playwright 1.58 supports Ubuntu 24.04; keep browser dependencies reproducible.
     runs-on: ubuntu-24.04

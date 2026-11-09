@@ -6,7 +6,7 @@ import {withBrowser} from '../lib/browser.mjs';
 import {startStudio} from '../lib/studio/server.mjs';
 import {createGraph} from '../lib/graph/schema.mjs';
 import {createNodeOperations} from '../lib/graph/commands.mjs';
-import {applyTransaction,serializeGraph} from '../lib/graph/transactions.mjs';
+import {applyTransaction,serializeGraph,graphFingerprint} from '../lib/graph/transactions.mjs';
 import {run} from '../lib/process.mjs';
 import {ffmpeg,ffprobe} from '../lib/media-tools.mjs';
 
@@ -14,13 +14,13 @@ const root=fileURLToPath(new URL('../',import.meta.url));
 const out=path.join(root,'.validation','studio-projects-'+Date.now()),workspace=path.join(out,'workspace');
 await fs.mkdir(workspace,{recursive:true});
 let nested=createGraph({id:'clock-laboratory',title:'Clock laboratory',width:320,height:180,durationFrames:120});
-nested=(await applyTransaction(nested,{label:'Prepare nested source clocks',operations:[
+nested=(await applyTransaction(nested,{expectedFingerprint:await graphFingerprint(nested),label:'Prepare nested source clocks',operations:[
  ...createNodeOperations(nested,[{id:'clock-group',type:'group',name:'Clock group',start:12,duration:108},{id:'clock-track',type:'track',name:'Clock track',parentId:'clock-group',start:9,duration:180,props:{kind:'visual'}}]),
  {op:'node.patch',id:'clock-group',changes:{time:{speed:{numerator:3,denominator:2},offset:{numerator:6,denominator:1}}}},
  {op:'node.patch',id:'clock-track',changes:{time:{speed:{numerator:2,denominator:1},offset:{numerator:3,denominator:1}}}}
 ]})).document;
 let short=createGraph({id:'short-film',title:'A complete short film',width:320,height:180,durationFrames:30});
-short=(await applyTransaction(short,{label:'Create a visible short film',operations:createNodeOperations(short,[{id:'light',type:'ellipse',name:'A small light',props:{width:60,height:60,fill:'#efbd78'},transform:{x:130,y:60}}])})).document;
+short=(await applyTransaction(short,{expectedFingerprint:await graphFingerprint(short),label:'Create a visible short film',operations:createNodeOperations(short,[{id:'light',type:'ellipse',name:'A small light',props:{width:60,height:60,fill:'#efbd78'},transform:{x:130,y:60}}])})).document;
 const nestedFile=path.join(out,'nested.json'),shortFile=path.join(out,'short.json');
 await fs.writeFile(nestedFile,serializeGraph(nested));await fs.writeFile(shortFile,serializeGraph(short));
 const server=await startStudio(workspace),report={checks:[],errors:[],passed:false};
